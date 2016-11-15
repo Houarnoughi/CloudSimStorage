@@ -51,17 +51,16 @@ public class RealWorkloadHelper {
 		
 		// Hamza : for debug
 		//Log.printLine("RealWorkloadHelper : "+inputFolderName);
-		
 		File inputFolder = new File(inputFolderName);
 		File[] files = inputFolder.listFiles();
-		// Hamza : for debug
 		
 		for (int i = 0; i < files.length; i++) {
 			Cloudlet cloudlet = null;
 			try {
 				cloudlet = new Cloudlet(i, Constants.CLOUDLET_LENGTH,
 						Constants.CLOUDLET_PES, fileSize, outputSize,
-						new IoUtilizationModelRealWorkloadInMemory(files[i]
+						new IoUtilizationModelRealWorkloadInMemory(
+								files[i]
 								.getAbsolutePath(),
 								Constants.SCHEDULING_INTERVAL, 10),
 						utilizationModelNull, utilizationModelNull);

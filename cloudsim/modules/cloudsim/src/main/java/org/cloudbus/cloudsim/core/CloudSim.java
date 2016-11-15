@@ -605,6 +605,8 @@ public class CloudSim {
 		}
 
 		SimEvent e = new SimEvent(SimEvent.SEND, clock + delay, src, dest, tag, data);
+		// Track events
+		e.CustomtoString("");
 		future.addEvent(e);
 	}
 

@@ -65,7 +65,7 @@ public class IoConstants {
 	public final static boolean STORAGE_ENABLED = true;
 	public final static IoWorkloadModel ioWorkload1 = new IoWorkloadModel("seq_read_dominant", 0.9, 0.1, 1024, 1000, 32300);
 	public final static boolean REAL_IO = true;
-	public final static String INPUT_IO_WORKLOAD_DIR = "/home/hamza/CloudSimStorage/CloudandIo/examples/workload/io/ssd/6vm_per_host";
+	public final static String INPUT_IO_WORKLOAD_DIR = "/home/hamza/CloudSimStorage/cloudsim/modules/cloudsim-examples/src/main/resources/workload/io/cpu";
 	
 	/*
 	 * Host types: Presented in the paper fgcs

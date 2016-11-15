@@ -29,9 +29,9 @@ public class ThrRs {
 	 */
 	public static void main(String[] args) throws IOException {
 		boolean enableOutput = true;
-		boolean outputToFile = false;
+		boolean outputToFile = true;
 		String inputFolder = "";
-		String outputFolder = "";
+		String outputFolder = "output";
 		String workload = "random"; // Random workload
 		String vmAllocationPolicy = "thr"; // Static Threshold (THR) VM allocation policy
 		String vmSelectionPolicy = "rs"; // Random Selection (RS) VM selection policy

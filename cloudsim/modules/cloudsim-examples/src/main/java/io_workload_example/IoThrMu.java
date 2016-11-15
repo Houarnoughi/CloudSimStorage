@@ -30,9 +30,9 @@ public class IoThrMu {
 	public static void main(String[] args) throws IOException {
 		boolean enableOutput = true;
 		boolean outputToFile = true;
-		String inputFolder = "";
+		String inputFolder = IoConstants.INPUT_IO_WORKLOAD_DIR;
 		String outputFolder = "output";
-		String workload = "random"; // Random workload
+		String workload = "6vm_per_host"; // Random workload
 		String ioVmAllocationPolicy = "thr"; // Static Threshold (THR) VM allocation policy
 		String ioVmSelectionPolicy = "mu"; // Minimum Utilization (MU) VM selection policy
 		//String ioVmSelectionPolicy = "miopsu"; // Minimum Utilization (MU) VM selection policy
