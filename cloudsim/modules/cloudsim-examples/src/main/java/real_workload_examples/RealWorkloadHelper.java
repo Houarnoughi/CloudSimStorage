@@ -54,6 +54,7 @@ public class RealWorkloadHelper {
 		File inputFolder = new File(inputFolderName);
 		File[] files = inputFolder.listFiles();
 		
+		System.out.println("RealWorkloadHelper : "+inputFolderName);
 		for (int i = 0; i < files.length; i++) {
 			Cloudlet cloudlet = null;
 			try {

@@ -43,6 +43,7 @@ import io_storage.IoStorageEnergyModel;
 import io_storage.IoStorageSlaModel;
 import io_storage.IoStorageWearOutModel;
 import io_storage.IoVm;
+import io_storage.IoWorkloadModel;
 import io_storage.IoWorkloadModelInMemory;
 import optim_storage.IoVmAllocationPolicy;
 import optim_storage.IoVmAllocationPolicyMigrationAbstract;
@@ -197,7 +198,7 @@ public class IoHelper {
 	 */
 	public static List<IoVm> createVmList(int brokerId, int vmsNumber) {
 		List<IoVm> vms = new ArrayList<IoVm>();
-		IoWorkloadModelInMemory ioModel = null;
+		IoWorkloadModel ioModel = null;
 		
 		for (int i = 0; i < vmsNumber; i++) {
 			
@@ -216,7 +217,7 @@ public class IoHelper {
 						e.printStackTrace();
 						}
 			} else {
-				ioModel = (IoWorkloadModelInMemory) IoConstants.ioWorkload1;
+				ioModel = IoConstants.ioWorkload1;
 			}
 			
 			vms.add(new IoVm(

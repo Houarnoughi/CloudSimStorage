@@ -50,9 +50,7 @@ public class IoUtilizationModelRealWorkloadInMemory implements UtilizationModel 
 			throws NumberFormatException,
 			IOException {
 		setSchedulingInterval(schedulingInterval);
-		//Log.printLine("UtilizationModelRealWorkloadInMemory: "+ inputPath);
 		data = new double[dataSamples];
-		System.out.println(inputPath);
 		BufferedReader input = new BufferedReader(new FileReader(inputPath));
 		int n = data.length;
 		for (int i = 0; i < n - 1; i++) {

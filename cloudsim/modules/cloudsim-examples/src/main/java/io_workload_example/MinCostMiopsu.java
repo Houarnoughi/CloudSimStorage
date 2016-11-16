@@ -30,12 +30,12 @@ public class MinCostMiopsu {
 	public static void main(String[] args) throws IOException {
 		boolean enableOutput = true;
 		boolean outputToFile = true;
-		String inputFolder = "";
+		String inputFolder = IoConstants.INPUT_IO_WORKLOAD_DIR;
 		String outputFolder = "output";
-		String workload = "random"; // Random workload
+		String workload = "8vm_per_host"; // Random workload
 		String ioVmAllocationPolicy = "minstrcost"; // Min Storage Cost
 		String ioVmSelectionPolicy = "miopsu"; // Minimum IOPS Utilization (MU) VM selection policy
-		String parameter = "0.5"; // the static utilization threshold
+		String parameter = "0.2"; // the static utilization threshold
 
 		new IoRandomRunner(
 				enableOutput,

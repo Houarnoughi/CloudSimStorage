@@ -32,11 +32,11 @@ public class IoThrMu {
 		boolean outputToFile = true;
 		String inputFolder = IoConstants.INPUT_IO_WORKLOAD_DIR;
 		String outputFolder = "output";
-		String workload = "6vm_per_host"; // Random workload
+		String workload = "8vm_per_host"; // Random workload
 		String ioVmAllocationPolicy = "thr"; // Static Threshold (THR) VM allocation policy
 		String ioVmSelectionPolicy = "mu"; // Minimum Utilization (MU) VM selection policy
 		//String ioVmSelectionPolicy = "miopsu"; // Minimum Utilization (MU) VM selection policy
-		String parameter = "0.9"; // the static utilization threshold
+		String parameter = "1"; // the static utilization threshold
 
 		new IoRandomRunner(
 				enableOutput,

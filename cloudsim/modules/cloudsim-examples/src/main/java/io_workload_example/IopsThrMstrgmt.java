@@ -30,12 +30,12 @@ public class IopsThrMstrgmt {
 	public static void main(String[] args) throws IOException {
 		boolean enableOutput = true;
 		boolean outputToFile = true;
-		String inputFolder = "";
+		String inputFolder = IoConstants.INPUT_IO_WORKLOAD_DIR;
 		String outputFolder = "output";
-		String workload = "random"; // Random workload
+		String workload = "8vm_per_host"; // Random workload
 		String ioVmAllocationPolicy = "iopsthr"; // Static Threshold (THR) VM allocation policy
 		String ioVmSelectionPolicy = "mstrgmt"; // Minimum Storage Migration Time (MSTRGMT) VM selection policy
-		String parameter = "0.9"; // the static utilization threshold
+		String parameter = "0.1"; // the static utilization threshold
 
 		new IoRandomRunner(
 				enableOutput,
