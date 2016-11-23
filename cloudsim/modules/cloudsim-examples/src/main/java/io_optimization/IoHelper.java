@@ -39,7 +39,6 @@ import io_storage.IoCpuCorrelationModel;
 import io_storage.IoDataCenter;
 import io_storage.IoHarddriveStorage;
 import io_storage.IoHost;
-import io_storage.IoSolidStateStorage;
 import io_storage.IoStorageEnergyModel;
 import io_storage.IoStorageSlaModel;
 import io_storage.IoStorageWearOutModel;
@@ -167,8 +166,8 @@ public class IoHelper {
 			}
 			
 			try {
-				//storageList.add(new IoHarddriveStorage(500000));
-				storageList.add(new IoSolidStateStorage(500000));
+				storageList.add(new IoHarddriveStorage(500000));
+				//storageList.add(new IoSolidStateStorage(500000));
 				//storageList.add(new IoHarddriveStorage(500000));
 				//storageList.add(new EnergyHarddriveStorage(500000));
 				} catch (ParameterException e) {

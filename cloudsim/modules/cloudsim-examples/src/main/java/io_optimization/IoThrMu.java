@@ -32,7 +32,7 @@ public class IoThrMu {
 		boolean outputToFile = true;
 		String inputFolder = IoConstants.INPUT_IO_WORKLOAD_DIR;
 		String outputFolder = "output";
-		String workload = "8vm_per_host"; // Random workload
+		String workload = "8vm_per_host"; // Real CPU and IO workloads
 		String ioVmAllocationPolicy = "thr"; // Static Threshold (THR) VM allocation policy
 		String ioVmSelectionPolicy = "mu"; // Minimum Utilization (MU) VM selection policy
 		//String ioVmSelectionPolicy = "miopsu"; // Minimum Utilization (MU) VM selection policy

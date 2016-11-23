@@ -35,7 +35,7 @@ public class MinCostMiopsu {
 		String workload = "8vm_per_host"; // Random workload
 		String ioVmAllocationPolicy = "minstrcost"; // Min Storage Cost
 		String ioVmSelectionPolicy = "miopsu"; // Minimum IOPS Utilization (MU) VM selection policy
-		String parameter = "1"; // the static utilization threshold
+		String parameter = "0.1"; // the static utilization threshold
 
 		new IoRandomRunner(
 				enableOutput,
