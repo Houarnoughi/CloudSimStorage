@@ -42,6 +42,7 @@ public class IoHost extends PowerHostUtilizationHistory {
 					  List<? extends Storage> storageList) {
 		super(id, ramProvisioner, bwProvisioner, storage, peList, vmScheduler, powerModel);
 		setStorageDevices(storageList);
+		assignStorage(storageList);
 		setVmStorageDeviceMap(new HashMap<String, String>());
 		setLastIoProcessingTime(0);
 	}
@@ -86,7 +87,19 @@ public class IoHost extends PowerHostUtilizationHistory {
 	protected void vmDeallocate(Vm vm) {
 		// TODO Auto-generated method stub
 		super.vmDeallocate(vm);
-		deallocateStorageForVm((IoVm)vm);
+		IoVm myVm = (IoVm)vm;
+		deallocateStorageForVm(myVm);
+	}
+	
+	@Override
+	public void vmDestroyAll() {
+		
+		// Free all storage devices
+		for (Vm vm : getVmList()) {
+			IoVm myVm = (IoVm) vm;
+			deallocateStorageForVm(myVm);
+		}
+		super.vmDestroyAll();
 	}
 	
 	public double updateVmsIoProcessing(double currentTime) {
@@ -304,5 +317,20 @@ public class IoHost extends PowerHostUtilizationHistory {
 			}
 		}
 		return MathUtil.trimZeroTail(utilizationHistory);
+	}
+	
+	/**
+	 * Assign the storage device list to this host
+	 */
+	public void assignStorage(List<? extends Storage> storageDevices) {
+		for (Storage device : storageDevices) {
+			if(device instanceof IoHarddriveStorage) {
+				IoHarddriveStorage hdd = (IoHarddriveStorage) device;
+				hdd.setHost(this);
+			}else if (device instanceof IoSolidStateStorage) {
+				IoSolidStateStorage ssd = (IoSolidStateStorage) device;
+				ssd.setHost(this);
+			}
+		}
 	}
 }

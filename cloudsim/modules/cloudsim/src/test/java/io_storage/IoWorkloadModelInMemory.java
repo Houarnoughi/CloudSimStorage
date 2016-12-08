@@ -43,6 +43,7 @@ public class IoWorkloadModelInMemory extends IoWorkloadModel {
 		ioPerSec = new int[dataSample];
 		
 		// Hamza : Fill tables
+		//System.out.println("IoWorkloadModelInMemory : "+ IofilePath);
 		FileReader fr = new FileReader(IofilePath);
 		BufferedReader br = new BufferedReader(fr);
 		

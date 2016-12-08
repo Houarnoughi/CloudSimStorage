@@ -11,11 +11,11 @@ import org.cloudbus.cloudsim.core.CloudSim;
 import org.cloudbus.cloudsim.power.PowerDatacenterNonPowerAware;
 import org.cloudbus.cloudsim.power.PowerVmAllocationPolicySimple;
 
-import enery_example.Constants;
-import enery_example.Helper;
 import io_storage.IoDataCenter;
 import io_storage.IoHost;
 import io_storage.IoVm;
+import old_enery_example.Constants;
+import old_enery_example.Helper;
 
 /**
  * A simulation of a heterogeneous non-power aware data center: all hosts

@@ -231,7 +231,8 @@ public class IoHarddriveStorage implements Storage {
 		setAvgTransferRate(150);	// Average data rate, read/write (MB/s)
 		setMaxIops(35000);			// 4k iops
 		setAvgIops(35000);
-			// From the old implementation
+		
+		// From the old implementation
 		avgSeekTime = 0.009;   // 9 ms
 		maxTransferRate = 133; // in MB/sec
 		

@@ -6,8 +6,8 @@ import org.cloudbus.cloudsim.Log;
 
 import org.cloudbus.cloudsim.core.CloudSim;
 
-import enery_example.Helper;
-import enery_example.RunnerAbstract;
+import old_enery_example.Helper;
+import old_enery_example.RunnerAbstract;
 
 /**
  * The example runner for the PlanetLab workload.

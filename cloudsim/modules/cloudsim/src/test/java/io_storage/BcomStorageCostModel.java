@@ -258,7 +258,7 @@ public class BcomStorageCostModel implements IoStorageCostModel {
 	 * @return 
 	 */
 	private double getExecSsdEnergyCost(IoVm vm, IoSolidStateStorage ssd) {
-		double egyExeHddCost = 0.0, egy = 0.0;
+		double egyExeHddCost = 0.0, egy = 0.0, cpuPower = 0.0; 
 		int megaBytesToBytes = 1048576;
 		IoWorkloadModel model = vm.getIoWorkloadModel();
 		MarsIoCpuCorrelationModel marsModel = new MarsIoCpuCorrelationModel();
@@ -281,7 +281,10 @@ public class BcomStorageCostModel implements IoStorageCostModel {
 		/* Fourth: get the energy from using the CPU usage */
 		double utilization = marsModel.getCpuLoad(ssd, vm, CloudSim.clock());
 		IoHost egyHost = ssd.getHost();
-		double cpuPower = egyHost.getPowerModel().getPower(utilization);
+		//double cpuPower = egyHost.getPowerModel().getPower(utilization);
+		if (egyHost != null) {
+			cpuPower = egyHost.getPowerModel().getPower(utilization);
+		}
 		
 		/* Update the energy */
 		egy += (rndIoTime + seqIoTime) * cpuPower;
@@ -309,7 +312,7 @@ public class BcomStorageCostModel implements IoStorageCostModel {
 		double costPerMb = (hdd.getStorageUnitPrice() * hdd.getCapacity()) 
 							/ hdd.getMaxDataWrite();
 		
-		Log.printLine(" Unit price "+hdd.getStorageUnitPrice()+" capacity  "+hdd.getCapacity()+ "getMaxDataWrite"+hdd.getMaxDataWrite());
+		//Log.printLine(" Unit price "+hdd.getStorageUnitPrice()+" capacity  "+hdd.getCapacity()+ "getMaxDataWrite"+hdd.getMaxDataWrite());
 		/* Finally: we calculate the cost of writing this volume */
 		exeWOCost = writeVolume * costPerMb;
 		

@@ -94,7 +94,7 @@ public class IoSolidStateStorage implements Storage {
 	/** the warranty period defined in the data sheet **/
 	private int warrantyPeriod;
 	/** The host where the device is attached **/
-	//private EnergyHost host;
+	private IoHost host;
 
 	/**
 	 * Creates a new solid state storage with a given name and capacity.
@@ -929,11 +929,12 @@ public class IoSolidStateStorage implements Storage {
 
 	public IoHost getHost() {
 		// TODO Auto-generated method stub
-		return null;
+		return this.host;
 	}
 
 	public void setHost(IoHost host) {
 		// TODO Auto-generated method stub
+		this.host = host;
 		
 	}
 

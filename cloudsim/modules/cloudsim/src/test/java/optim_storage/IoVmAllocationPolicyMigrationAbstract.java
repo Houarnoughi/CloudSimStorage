@@ -427,7 +427,7 @@ public abstract class IoVmAllocationPolicyMigrationAbstract extends IoVmAllocati
 	 * @return the under utilized host
 	 */
 	protected IoHost getUnderUtilizedHost(Set<? extends Host> excludedHosts) {
-		double minUtilization = 1;
+		double minUtilization = 0.0;
 		IoHost underUtilizedHost = null;
 		for (IoHost host : this.<IoHost> getHostList()) {
 			if (excludedHosts.contains(host)) {
