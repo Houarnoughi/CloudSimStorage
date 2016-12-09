@@ -10,8 +10,8 @@ import org.cloudbus.cloudsim.Cloudlet;
 import org.cloudbus.cloudsim.UtilizationModel;
 import org.cloudbus.cloudsim.UtilizationModelNull;
 
-import io_storage.IoUtilizationModelRealWorkloadInMemory;
 import old_enery_example.Constants;
+import optim_storage_infrastructure.IoUtilizationModelRealWorkloadInMemory;
 
 /**
  * A helper class for the running examples for the PlanetLab workload.

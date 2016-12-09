@@ -35,18 +35,18 @@ import org.cloudbus.cloudsim.provisioners.PeProvisionerSimple;
 import org.cloudbus.cloudsim.provisioners.RamProvisionerSimple;
 import org.cloudbus.cloudsim.util.MathUtil;
 
-import io_storage.IoCpuCorrelationModel;
-import io_storage.IoDataCenter;
-import io_storage.IoHarddriveStorage;
-import io_storage.IoHost;
-import io_storage.IoStorageEnergyModel;
-import io_storage.IoStorageSlaModel;
-import io_storage.IoStorageWearOutModel;
-import io_storage.IoVm;
-import io_storage.IoWorkloadModel;
-import io_storage.IoWorkloadModelInMemory;
-import optim_storage.IoVmAllocationPolicy;
-import optim_storage.IoVmAllocationPolicyMigrationAbstract;
+import optim_storage_allocation_policy.IoVmAllocationPolicy;
+import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationAbstract;
+import optim_storage_infrastructure.IoCpuCorrelationModel;
+import optim_storage_infrastructure.IoDataCenter;
+import optim_storage_infrastructure.IoHarddriveStorage;
+import optim_storage_infrastructure.IoHost;
+import optim_storage_infrastructure.IoStorageEnergyModel;
+import optim_storage_infrastructure.IoStorageSlaModel;
+import optim_storage_infrastructure.IoStorageWearOutModel;
+import optim_storage_infrastructure.IoVm;
+import optim_storage_infrastructure.IoWorkloadModel;
+import optim_storage_infrastructure.IoWorkloadModelInMemory;
 
 /**
  * The Class Helper.

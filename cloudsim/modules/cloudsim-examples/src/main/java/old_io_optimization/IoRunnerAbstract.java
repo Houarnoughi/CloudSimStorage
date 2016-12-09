@@ -11,26 +11,19 @@ import org.cloudbus.cloudsim.DatacenterBroker;
 import org.cloudbus.cloudsim.Log;
 import org.cloudbus.cloudsim.core.CloudSim;
 
-import io_storage.IoDataCenter;
-import io_storage.IoHost;
-import io_storage.IoVm;
-import optim_storage.IoVmAllocationPolicy;
-import optim_storage.IoVmAllocationPolicyMigrationAbstract;
-import optim_storage.IoVmAllocationPolicyMigrationInterQuartileRange;
-import optim_storage.IoVmAllocationPolicyMigrationLocalRegression;
-import optim_storage.IoVmAllocationPolicyMigrationLocalRegressionRobust;
-import optim_storage.IoVmAllocationPolicyMigrationMedianAbsoluteDeviation;
-import optim_storage.IoVmAllocationPolicyMigrationStaticIopsThreshold;
-import optim_storage.IoVmAllocationPolicyMigrationStaticThreshold;
-import optim_storage.IoVmAllocationPolicyGreedyMinStorageCost;
-import optim_storage.IoVmAllocationPolicySimple;
-import optim_storage.IoVmSelectionPolicy;
-import optim_storage.IoVmSelectionPolicyMaximumCorrelation;
-import optim_storage.IoVmSelectionPolicyMinimumCpuUtilization;
-import optim_storage.IoVmSelectionPolicyMinimumIopsUtilization;
-import optim_storage.IoVmSelectionPolicyMinimumMigrationTime;
-import optim_storage.IoVmSelectionPolicyMinimumStorageMigrationTime;
-import optim_storage.IoVmSelectionPolicyRandomSelection;
+import optim_storage_allocation_policy.IoVmAllocationPolicy;
+import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationStaticIopsThreshold;
+import optim_storage_allocation_policy.IoVmAllocationPolicySimple;
+import optim_storage_infrastructure.IoDataCenter;
+import optim_storage_infrastructure.IoHost;
+import optim_storage_infrastructure.IoVm;
+import optim_storage_selection_policy.IoVmSelectionPolicy;
+import optim_storage_selection_policy.IoVmSelectionPolicyMaximumCorrelation;
+import optim_storage_selection_policy.IoVmSelectionPolicyMinimumCpuUtilization;
+import optim_storage_selection_policy.IoVmSelectionPolicyMinimumIopsUtilization;
+import optim_storage_selection_policy.IoVmSelectionPolicyMinimumMigrationTime;
+import optim_storage_selection_policy.IoVmSelectionPolicyMinimumStorageMigrationTime;
+import optim_storage_selection_policy.IoVmSelectionPolicyRandomSelection;
 
 /**
  * The Class RunnerAbstract.
@@ -147,6 +140,7 @@ public abstract class IoRunnerAbstract {
 		if (!parameterName.isEmpty()) {
 			parameter = Double.valueOf(parameterName);
 		}
+		/*
 		if (ioVmAllocationPolicyName.equals("iqr")) {
 			IoVmAllocationPolicyMigrationAbstract fallbackVmSelectionPolicy = new IoVmAllocationPolicyMigrationStaticThreshold(
 					hostList, ioVmSelectionPolicy, 0.7);
@@ -174,14 +168,18 @@ public abstract class IoRunnerAbstract {
 		} else if (ioVmAllocationPolicyName.equals("thr")) {
 			ioVmAllocationPolicy = new IoVmAllocationPolicyMigrationStaticThreshold(
 					hostList, ioVmSelectionPolicy, parameter);
-		} else if (ioVmAllocationPolicyName.equals("dvfs")) {
+		} else
+			*/
+			if (ioVmAllocationPolicyName.equals("dvfs")) {
 			ioVmAllocationPolicy = new IoVmAllocationPolicySimple(hostList);
 		//////// Storage Allocation optimization Policies //////////////
 		} else if (ioVmAllocationPolicyName.equals("iopsthr")) {
 			ioVmAllocationPolicy = new IoVmAllocationPolicyMigrationStaticIopsThreshold(
 					hostList, ioVmSelectionPolicy, parameter);
-		} else if (ioVmAllocationPolicyName.equals("minstrcost")) {
+		/* } 
+		else if (ioVmAllocationPolicyName.equals("minstrcost")) {
 			ioVmAllocationPolicy = new IoVmAllocationPolicyGreedyMinStorageCost(hostList, ioVmSelectionPolicy, parameter);
+		*/
 		} else {
 			System.out.println("Unknown VM allocation policy: "
 					+ ioVmAllocationPolicyName);

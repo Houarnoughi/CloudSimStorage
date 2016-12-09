@@ -11,26 +11,26 @@ import org.cloudbus.cloudsim.DatacenterBroker;
 import org.cloudbus.cloudsim.Log;
 import org.cloudbus.cloudsim.core.CloudSim;
 
-import io_storage.IoDataCenter;
-import io_storage.IoHost;
-import io_storage.IoVm;
-import optim_storage.IoVmAllocationPolicy;
-import optim_storage.IoVmAllocationPolicyMigrationAbstract;
-import optim_storage.IoVmAllocationPolicyMigrationInterQuartileRange;
-import optim_storage.IoVmAllocationPolicyMigrationLocalRegression;
-import optim_storage.IoVmAllocationPolicyMigrationLocalRegressionRobust;
-import optim_storage.IoVmAllocationPolicyMigrationMedianAbsoluteDeviation;
-import optim_storage.IoVmAllocationPolicyMigrationStaticIopsThreshold;
-import optim_storage.IoVmAllocationPolicyMigrationStaticThreshold;
-import optim_storage.IoVmAllocationPolicyGreedyMinStorageCost;
-import optim_storage.IoVmAllocationPolicySimple;
-import optim_storage.IoVmSelectionPolicy;
-import optim_storage.IoVmSelectionPolicyMaximumCorrelation;
-import optim_storage.IoVmSelectionPolicyMinimumCpuUtilization;
-import optim_storage.IoVmSelectionPolicyMinimumIopsUtilization;
-import optim_storage.IoVmSelectionPolicyMinimumMigrationTime;
-import optim_storage.IoVmSelectionPolicyMinimumStorageMigrationTime;
-import optim_storage.IoVmSelectionPolicyRandomSelection;
+import optim_storage_allocation_policy.IoVmAllocationPolicy;
+import optim_storage_allocation_policy.IoVmAllocationPolicyGreedyMinStorageCost;
+import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationAbstract;
+import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationInterQuartileRange;
+import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationLocalRegression;
+import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationLocalRegressionRobust;
+import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationMedianAbsoluteDeviation;
+import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationStaticIopsThreshold;
+import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationStaticThreshold;
+import optim_storage_allocation_policy.IoVmAllocationPolicySimple;
+import optim_storage_infrastructure.IoDataCenter;
+import optim_storage_infrastructure.IoHost;
+import optim_storage_infrastructure.IoVm;
+import optim_storage_selection_policy.IoVmSelectionPolicy;
+import optim_storage_selection_policy.IoVmSelectionPolicyMaximumCorrelation;
+import optim_storage_selection_policy.IoVmSelectionPolicyMinimumCpuUtilization;
+import optim_storage_selection_policy.IoVmSelectionPolicyMinimumIopsUtilization;
+import optim_storage_selection_policy.IoVmSelectionPolicyMinimumMigrationTime;
+import optim_storage_selection_policy.IoVmSelectionPolicyMinimumStorageMigrationTime;
+import optim_storage_selection_policy.IoVmSelectionPolicyRandomSelection;
 
 /**
  * The Class RunnerAbstract.
@@ -86,10 +86,14 @@ public abstract class IoRunnerAbstract {
 	public IoRunnerAbstract(boolean enableOutput, boolean outputToFile,
 			String inputFolder, String outputFolder, String workload,
 			String ioVmAllocationPolicy, String ioVmSelectionPolicy,
-			String parameter) {
+			String parameter,
+			String maxThe,
+			String minThr) {
 		try {
 			initLogOutput(enableOutput, outputToFile, outputFolder, workload,
-					ioVmAllocationPolicy, ioVmSelectionPolicy, parameter);
+					ioVmAllocationPolicy, ioVmSelectionPolicy, //parameter
+					maxThe,
+					minThr);
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.exit(0);
@@ -97,10 +101,14 @@ public abstract class IoRunnerAbstract {
 
 		init(inputFolder, workload);
 		start(getExperimentName(workload, ioVmAllocationPolicy,
-				ioVmSelectionPolicy, parameter),
+				ioVmSelectionPolicy, //parameter
+				maxThe,
+				minThr),
 				outputFolder,
 				getVmAllocationPolicy(ioVmAllocationPolicy, ioVmSelectionPolicy,
-						parameter));
+						parameter,
+						maxThe,
+						minThr));
 	}
 
 	/**
@@ -137,43 +145,77 @@ public abstract class IoRunnerAbstract {
 	 */
 	protected IoVmAllocationPolicy getVmAllocationPolicy(
 			String ioVmAllocationPolicyName, String ioVmSelectionPolicyName,
-			String parameterName) {
+			String parameterName,
+			String maxThr, 
+			String minThr) {
 		IoVmAllocationPolicy ioVmAllocationPolicy = null;
 		IoVmSelectionPolicy ioVmSelectionPolicy = null;
 		if (!ioVmSelectionPolicyName.isEmpty()) {
 			ioVmSelectionPolicy = getVmSelectionPolicy(ioVmSelectionPolicyName);
 		}
-		double parameter = 0;
+		
+		double parameter = 0.0;
 		if (!parameterName.isEmpty()) {
 			parameter = Double.valueOf(parameterName);
 		}
+		
+		double max = 0;
+		if (!maxThr.isEmpty()) {
+			max = Double.valueOf(maxThr);
+		}
+		
+		double min = 0;
+		if (!minThr.isEmpty()) {
+			min = Double.valueOf(minThr);
+		}
+		
 		if (ioVmAllocationPolicyName.equals("iqr")) {
 			IoVmAllocationPolicyMigrationAbstract fallbackVmSelectionPolicy = new IoVmAllocationPolicyMigrationStaticThreshold(
-					hostList, ioVmSelectionPolicy, 0.7);
+					hostList, ioVmSelectionPolicy, 
+					max,
+					min,
+					0.7);
 			ioVmAllocationPolicy = new IoVmAllocationPolicyMigrationInterQuartileRange(
-					hostList, ioVmSelectionPolicy, parameter,
+					hostList, ioVmSelectionPolicy, 
+					parameter,
+					max,
+					min,
 					fallbackVmSelectionPolicy);
 		} else if (ioVmAllocationPolicyName.equals("mad")) {
 			IoVmAllocationPolicyMigrationAbstract fallbackVmSelectionPolicy = new IoVmAllocationPolicyMigrationStaticThreshold(
-					hostList, ioVmSelectionPolicy, 0.7);
+					hostList, ioVmSelectionPolicy,
+					max,
+					min,
+					0.7);
 			ioVmAllocationPolicy = new IoVmAllocationPolicyMigrationMedianAbsoluteDeviation(
 					hostList, ioVmSelectionPolicy, parameter,
+					max,
+					min,
 					fallbackVmSelectionPolicy);
 		} else if (ioVmAllocationPolicyName.equals("lr")) {
 			IoVmAllocationPolicyMigrationAbstract fallbackVmSelectionPolicy = new IoVmAllocationPolicyMigrationStaticThreshold(
-					hostList, ioVmSelectionPolicy, 0.7);
+					hostList, ioVmSelectionPolicy, 
+					max,
+					min,
+					0.7);
 			ioVmAllocationPolicy = new IoVmAllocationPolicyMigrationLocalRegression(
 					hostList, ioVmSelectionPolicy, parameter,
 					IoConstants.SCHEDULING_INTERVAL, fallbackVmSelectionPolicy);
 		} else if (ioVmAllocationPolicyName.equals("lrr")) {
 			IoVmAllocationPolicyMigrationAbstract fallbackVmSelectionPolicy = new IoVmAllocationPolicyMigrationStaticThreshold(
-					hostList, ioVmSelectionPolicy, 0.7);
+					hostList, ioVmSelectionPolicy, 
+					max,
+					min,
+					0.7);
 			ioVmAllocationPolicy = new IoVmAllocationPolicyMigrationLocalRegressionRobust(
 					hostList, ioVmSelectionPolicy, parameter,
 					IoConstants.SCHEDULING_INTERVAL, fallbackVmSelectionPolicy);
 		} else if (ioVmAllocationPolicyName.equals("thr")) {
 			ioVmAllocationPolicy = new IoVmAllocationPolicyMigrationStaticThreshold(
-					hostList, ioVmSelectionPolicy, parameter);
+					hostList, ioVmSelectionPolicy, 
+					max,
+					min,
+					parameter);
 		} else if (ioVmAllocationPolicyName.equals("dvfs")) {
 			ioVmAllocationPolicy = new IoVmAllocationPolicySimple(hostList);
 		//////// Storage Allocation optimization Policies //////////////
@@ -181,7 +223,11 @@ public abstract class IoRunnerAbstract {
 			ioVmAllocationPolicy = new IoVmAllocationPolicyMigrationStaticIopsThreshold(
 					hostList, ioVmSelectionPolicy, parameter);
 		} else if (ioVmAllocationPolicyName.equals("greedyMinStrgCost")) {
-			ioVmAllocationPolicy = new IoVmAllocationPolicyGreedyMinStorageCost(hostList, ioVmSelectionPolicy, parameter);
+			ioVmAllocationPolicy = new IoVmAllocationPolicyGreedyMinStorageCost(hostList, 
+					ioVmSelectionPolicy,
+					max,
+					min,
+					parameter);
 		} else {
 			System.out.println("Unknown VM allocation policy: "
 					+ ioVmAllocationPolicyName);
@@ -254,7 +300,9 @@ public abstract class IoRunnerAbstract {
 	 */
 	protected void initLogOutput(boolean enableOutput, boolean outputToFile,
 			String outputFolder, String workload, String vmAllocationPolicy,
-			String vmSelectionPolicy, String parameter) throws IOException,
+			String vmSelectionPolicy,
+			// String parameter
+			String maxThr, String minThr) throws IOException,
 			FileNotFoundException {
 		setEnableOutput(enableOutput);
 		Log.setDisabled(!isEnableOutput());
@@ -272,7 +320,9 @@ public abstract class IoRunnerAbstract {
 			File file = new File(outputFolder
 					+ "/log/"
 					+ getExperimentName(workload, vmAllocationPolicy,
-							vmSelectionPolicy, parameter) + ".txt");
+							vmSelectionPolicy, //parameter
+							maxThr, 
+							minThr) + ".txt");
 			file.createNewFile();
 			Log.setOutput(new FileOutputStream(file));
 		}

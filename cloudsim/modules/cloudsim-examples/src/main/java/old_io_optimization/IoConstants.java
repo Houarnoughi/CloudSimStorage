@@ -2,12 +2,12 @@ package old_io_optimization;
 
 import org.cloudbus.cloudsim.power.models.PowerModel;
 
-import io_storage.IoCpuCorrelationModel;
-import io_storage.IoPowerModelFgcsConst;
-import io_storage.IoStorageEnergyModel;
-import io_storage.IoStorageSlaModel;
-import io_storage.IoStorageWearOutModel;
-import io_storage.IoWorkloadModel;
+import optim_storage_infrastructure.IoCpuCorrelationModel;
+import optim_storage_infrastructure.IoPowerModelFgcsConst;
+import optim_storage_infrastructure.IoStorageEnergyModel;
+import optim_storage_infrastructure.IoStorageSlaModel;
+import optim_storage_infrastructure.IoStorageWearOutModel;
+import optim_storage_infrastructure.IoWorkloadModel;
 
 
 /**

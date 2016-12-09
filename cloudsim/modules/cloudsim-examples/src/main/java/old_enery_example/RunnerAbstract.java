@@ -24,9 +24,9 @@ import org.cloudbus.cloudsim.power.PowerVmSelectionPolicyMinimumMigrationTime;
 import org.cloudbus.cloudsim.power.PowerVmSelectionPolicyMinimumUtilization;
 import org.cloudbus.cloudsim.power.PowerVmSelectionPolicyRandomSelection;
 
-import io_storage.IoDataCenter;
-import io_storage.IoHost;
-import io_storage.IoVm;
+import optim_storage_infrastructure.IoDataCenter;
+import optim_storage_infrastructure.IoHost;
+import optim_storage_infrastructure.IoVm;
 
 /**
  * The Class RunnerAbstract.

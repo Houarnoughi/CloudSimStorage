@@ -41,7 +41,9 @@ public class IoRandomRunner extends IoRunnerAbstract {
 			String workload,
 			String ioVmAllocationPolicy,
 			String ioVmSelectionPolicy,
-			String parameter) {
+			String parameter,
+			String maxThr,
+			String minThr) {
 		super(
 				enableOutput,
 				outputToFile,
@@ -50,7 +52,9 @@ public class IoRandomRunner extends IoRunnerAbstract {
 				workload,
 				ioVmAllocationPolicy,
 				ioVmSelectionPolicy,
-				parameter);
+				parameter,
+				maxThr,
+				minThr);
 		
 		// Set the workload
 		setWorkload(workload);

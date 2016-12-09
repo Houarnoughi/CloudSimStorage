@@ -32,10 +32,12 @@ public class MinStorageCostRandomSelection {
 		boolean outputToFile = true;
 		String inputFolder = IoConstants.INPUT_IO_WORKLOAD_CPU_DIR;
 		String outputFolder = "output";
-		String workload = "8vm_per_host"; // Real Workload
+		String workload = "2vm_per_host"; // Real Workload
 		String ioVmAllocationPolicy = "greedyMinStrgCost"; // Min Storage Cost
-		String ioVmSelectionPolicy = "rs"; // Minimum IOPS Utilization (MU) VM selection policy
-		String parameter = "0.1"; // the static utilization threshold
+		String ioVmSelectionPolicy = "mmt"; // Minimum IOPS Utilization (MU) VM selection policy
+		String parameter = "1"; // the static utilization threshold
+		String maxThr = "1";
+		String minThr = "0";
 
 		new IoRandomRunner(
 				enableOutput,
@@ -45,7 +47,9 @@ public class MinStorageCostRandomSelection {
 				workload,
 				ioVmAllocationPolicy,
 				ioVmSelectionPolicy,
-				parameter);
+				parameter,
+				maxThr,
+				minThr);
 	}
 
 }

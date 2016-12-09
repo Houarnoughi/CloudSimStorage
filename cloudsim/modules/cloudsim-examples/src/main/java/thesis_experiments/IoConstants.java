@@ -2,12 +2,12 @@ package thesis_experiments;
 
 import org.cloudbus.cloudsim.power.models.PowerModel;
 
-import io_storage.IoCpuCorrelationModel;
-import io_storage.IoPowerModelFgcsConst;
-import io_storage.IoStorageEnergyModel;
-import io_storage.IoStorageSlaModel;
-import io_storage.IoStorageWearOutModel;
-import io_storage.IoWorkloadModel;
+import optim_storage_infrastructure.IoCpuCorrelationModel;
+import optim_storage_infrastructure.IoPowerModelFgcsConst;
+import optim_storage_infrastructure.IoStorageEnergyModel;
+import optim_storage_infrastructure.IoStorageSlaModel;
+import optim_storage_infrastructure.IoStorageWearOutModel;
+import optim_storage_infrastructure.IoWorkloadModel;
 
 
 /**
@@ -53,7 +53,7 @@ public class IoConstants {
 	 * VM instance types: Presented in the paper fgcs
 	 */
 	public final static int VM_TYPES = 4;
-	public final static int[] VM_MIPS = { 1000, 1000, 1000, 1000 };
+	public final static int[] VM_MIPS = { 2000, 2000, 2000, 2000 };
 	public final static int[] VM_PES = { 1, 1, 1, 1 };
 	public final static int[] VM_RAM = { 1024, 1024, 1024, 1024 };
 	public final static int VM_BW = 100000; // 100 Mbit/s
@@ -81,7 +81,7 @@ public class IoConstants {
 	*/
 	
 	public final static int HOST_TYPES = 3;
-	public final static int[] HOST_MIPS = { 8000, 8000, 8000 };
+	public final static int[] HOST_MIPS = { 16000, 16000, 16000 };
 	public final static int[] HOST_PES = { 1, 1, 1 };
 	public final static int[] HOST_RAM = { 16384, 16384, 16384 };
 	public final static int HOST_BW = 1000000; // 1 Gbit/s
