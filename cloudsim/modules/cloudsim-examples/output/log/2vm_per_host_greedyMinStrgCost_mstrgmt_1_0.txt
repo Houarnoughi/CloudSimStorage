@@ -2243,144 +2243,434 @@ New resource usage for the time frame starting at 300,10:
 300,10: [Host #99] utilization is 0,00%
 
 Energy consumption for the last time frame from 0,00 to 300,10:
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #0] utilization at 0,00 was 0,00%, now is 100,00%
 300,10: [Host #0] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #1] utilization at 0,00 was 0,00%, now is 100,00%
 300,10: [Host #1] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #2] utilization at 0,00 was 0,00%, now is 100,00%
 300,10: [Host #2] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #3] utilization at 0,00 was 0,00%, now is 100,00%
 300,10: [Host #3] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #4] utilization at 0,00 was 0,00%, now is 100,00%
 300,10: [Host #4] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #5] utilization at 0,00 was 0,00%, now is 100,00%
 300,10: [Host #5] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #6] utilization at 0,00 was 0,00%, now is 100,00%
 300,10: [Host #6] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #7] utilization at 0,00 was 0,00%, now is 100,00%
 300,10: [Host #7] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #8] utilization at 0,00 was 0,00%, now is 100,00%
 300,10: [Host #8] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #9] utilization at 0,00 was 0,00%, now is 100,00%
 300,10: [Host #9] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #10] utilization at 0,00 was 0,00%, now is 100,00%
 300,10: [Host #10] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #11] utilization at 0,00 was 0,00%, now is 100,00%
 300,10: [Host #11] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #12] utilization at 0,00 was 0,00%, now is 100,00%
 300,10: [Host #12] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #13] utilization at 0,00 was 0,00%, now is 100,00%
 300,10: [Host #13] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #14] utilization at 0,00 was 0,00%, now is 100,00%
 300,10: [Host #14] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #15] utilization at 0,00 was 0,00%, now is 100,00%
 300,10: [Host #15] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #16] utilization at 0,00 was 0,00%, now is 100,00%
 300,10: [Host #16] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #17] utilization at 0,00 was 0,00%, now is 100,00%
 300,10: [Host #17] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #18] utilization at 0,00 was 0,00%, now is 75,00%
 300,10: [Host #18] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #19] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #19] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #20] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #20] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #21] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #21] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #22] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #22] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #23] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #23] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #24] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #24] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #25] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #25] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #26] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #26] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #27] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #27] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #28] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #28] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #29] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #29] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #30] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #30] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #31] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #31] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #32] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #32] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #33] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #33] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #34] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #34] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #35] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #35] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #36] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #36] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #37] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #37] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #38] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #38] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #39] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #39] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #40] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #40] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #41] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #41] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #42] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #42] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #43] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #43] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #44] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #44] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #45] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #45] energy is 0,00 W*sec
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
+Hamza: getVolume() 6131.900000000001
 
 300,10: [Host #46] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #46] energy is 0,00 W*sec
@@ -7109,144 +7399,434 @@ New resource usage for the time frame starting at 1200,10:
 1200,10: [Host #99] utilization is 0,00%
 
 Energy consumption for the last time frame from 900,10 to 1200,10:
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #0] utilization at 900,10 was 100,00%, now is 100,00%
 1200,10: [Host #0] energy is 27000,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #1] utilization at 900,10 was 100,00%, now is 100,00%
 1200,10: [Host #1] energy is 27000,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #2] utilization at 900,10 was 100,00%, now is 100,00%
 1200,10: [Host #2] energy is 27000,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #3] utilization at 900,10 was 100,00%, now is 100,00%
 1200,10: [Host #3] energy is 27000,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #4] utilization at 900,10 was 100,00%, now is 100,00%
 1200,10: [Host #4] energy is 27000,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #5] utilization at 900,10 was 100,00%, now is 100,00%
 1200,10: [Host #5] energy is 27000,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #6] utilization at 900,10 was 100,00%, now is 100,00%
 1200,10: [Host #6] energy is 27000,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #7] utilization at 900,10 was 100,00%, now is 100,00%
 1200,10: [Host #7] energy is 27000,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #8] utilization at 900,10 was 100,00%, now is 100,00%
 1200,10: [Host #8] energy is 27000,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #9] utilization at 900,10 was 100,00%, now is 100,00%
 1200,10: [Host #9] energy is 27000,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #10] utilization at 900,10 was 100,00%, now is 100,00%
 1200,10: [Host #10] energy is 27000,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #11] utilization at 900,10 was 100,00%, now is 100,00%
 1200,10: [Host #11] energy is 27000,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #12] utilization at 900,10 was 100,00%, now is 100,00%
 1200,10: [Host #12] energy is 27000,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #13] utilization at 900,10 was 100,00%, now is 100,00%
 1200,10: [Host #13] energy is 27000,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #14] utilization at 900,10 was 100,00%, now is 100,00%
 1200,10: [Host #14] energy is 27000,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #15] utilization at 900,10 was 100,00%, now is 100,00%
 1200,10: [Host #15] energy is 27000,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #16] utilization at 900,10 was 100,00%, now is 100,00%
 1200,10: [Host #16] energy is 27000,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #17] utilization at 900,10 was 100,00%, now is 100,00%
 1200,10: [Host #17] energy is 27000,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #18] utilization at 900,10 was 75,00%, now is 75,00%
 1200,10: [Host #18] energy is 24000,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #19] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #19] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #20] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #20] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #21] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #21] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #22] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #22] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #23] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #23] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #24] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #24] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #25] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #25] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #26] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #26] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #27] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #27] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #28] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #28] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #29] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #29] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #30] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #30] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #31] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #31] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #32] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #32] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #33] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #33] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #34] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #34] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #35] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #35] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #36] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #36] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #37] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #37] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #38] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #38] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #39] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #39] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #40] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #40] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #41] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #41] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #42] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #42] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #43] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #43] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #44] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #44] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #45] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #45] energy is 22500,00 W*sec
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
+Hamza: getVolume() -5231.999999999999
 
 1200,10: [Host #46] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #46] energy is 22500,00 W*sec
@@ -9865,7 +10445,7 @@ Simulation completed.
 Received 290 cloudlets
 Simulation completed.
 
-Experiment name: 2vm_per_host_greedyMinStrgCost_mmt_1_0
+Experiment name: 2vm_per_host_greedyMinStrgCost_mstrgmt_1_0
 Number of hosts: 100
 Number of VMs: 290
 Total simulation time: 1577,87 sec
@@ -9883,12 +10463,12 @@ Mean time before a VM migration: NaN sec
 StDev time before a VM migration: NaN sec
 Execution time - VM selection mean: 0,00000 sec
 Execution time - VM selection stDev: 0,00000 sec
-Execution time - host selection mean: 0,00000 sec
-Execution time - host selection stDev: 0,00000 sec
-Execution time - VM reallocation mean: 0,00020 sec
-Execution time - VM reallocation stDev: 0,00045 sec
-Execution time - total mean: 0,00580 sec
-Execution time - total stDev: 0,00192 sec
+Execution time - host selection mean: 0,00020 sec
+Execution time - host selection stDev: 0,00045 sec
+Execution time - VM reallocation mean: 0,00000 sec
+Execution time - VM reallocation stDev: 0,00000 sec
+Execution time - total mean: 0,01360 sec
+Execution time - total stDev: 0,01592 sec
 =========== Storage System Stats ============
 Hamza: Storage Energy consumption: 0,07420 kWh
 Hamza: total Energy consumption (CPU+storage): 1,34087 kWh

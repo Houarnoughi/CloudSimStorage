@@ -226,7 +226,7 @@ public class IoHelper {
 					IoConstants.VM_MIPS[vmType],
 					IoConstants.VM_PES[vmType],
 					IoConstants.VM_RAM[vmType],
-					IoConstants.VM_BW,
+					IoConstants.VM_BW[vmType],
 					IoConstants.VM_SIZE[vmType],
 					1,
 					"Xen",
@@ -236,8 +236,8 @@ public class IoHelper {
 					// Storage parts
 					//IoConstants.ioWorkload1,
 					ioModel,
-					IoConstants.VM_IOPS,
-					IoConstants.VM_THR));
+					IoConstants.VM_IOPS[vmType],
+					IoConstants.VM_THR[vmType]));
 		}
 		return vms;
 	}

@@ -55,13 +55,13 @@ public class IoConstants {
 	public final static int VM_TYPES = 4;
 	public final static int[] VM_MIPS = { 2000, 2000, 2000, 2000 };
 	public final static int[] VM_PES = { 1, 1, 1, 1 };
-	public final static int[] VM_RAM = { 1024, 1024, 1024, 1024 };
-	public final static int VM_BW = 100000; // 100 Mbit/s
-	public final static int [] VM_SIZE = {10000, 10000, 10000, 10000}; // 1 GB
+	public final static int[] VM_RAM = { 1024, 1024, 2048, 2048 };
+	public final static int [] VM_BW = {100000, 100000, 200000, 200000}; // 100 Mbit/s
+	public final static int [] VM_SIZE = {10000, 10000, 20000, 20000}; // 10GB, 20GB
 	
 	// VM storage
-	public final static int VM_IOPS = 100;
-	public final static int VM_THR = 100;
+	public final static int [] VM_IOPS = {100, 100, 200, 200};
+	public final static int [] VM_THR = {100, 100, 200, 200};
 	public final static boolean STORAGE_ENABLED = true;
 	public final static IoWorkloadModel ioWorkload1 = new IoWorkloadModel("seq_read_dominant", 0.9, 0.1, 1024, 1000, 32300);
 	public final static boolean REAL_IO = true;
