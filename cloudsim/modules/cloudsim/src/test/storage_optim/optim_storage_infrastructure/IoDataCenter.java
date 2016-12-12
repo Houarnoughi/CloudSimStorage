@@ -58,12 +58,12 @@ public class IoDataCenter extends PowerDatacenter {
 							boolean storageEnabled) throws Exception {
 		super(name, characteristics, vmAllocationPolicy, storageList, schedulingInterval);
 		setStorageEnergyModel(storageEnergyModel);
-		//setStorageWearOutModel(storageWearoutModel);
-		//setStorageSlaModel(storageSlaModel);
+		setStorageWearOutModel(storageWearoutModel);
+		setStorageSlaModel(storageSlaModel);
 		setIoCpuCorrelationModel(ioToCpuCorrelationModel);
 		setStoragePower(0);
-		//setStorageSla(0);
-		//setStorageWearout(0);
+		setStorageSla(0);
+		setStorageWearout(0);
 		setLocalStorageEnabled(storageEnabled);
 	}
 
@@ -304,12 +304,16 @@ public class IoDataCenter extends PowerDatacenter {
 				// Hamza: same thing for storage
 				
 				if (isLocalStorageEnabled()) {
-					double tmpStrEnergy = getStorageEnergyModel().getHostStorageEnergy(host, timeDiff);
+					double tmpStrEnergy = getStorageEnergyModel().getHostStorageEnergy(
+							host, 
+							timeDiff);
 					storageEnergy += tmpStrEnergy;
-					//double tmpWearOut = getStorageWearOutModel().getHostStorageWearOut(host, timeDiff);
-					//wearoutCost += tmpWearOut / getHostList().size();
-					//double tmpSlaStorage = getStorageSlaModel().getHostStorageSla(host, currentTime);
-					//sla_storage += tmpSlaStorage;
+					double tmpWearOut = getStorageWearOutModel().getHostStorageWearOut(
+							host, 
+							timeDiff);
+					wearoutCost += tmpWearOut / getHostList().size();
+					double tmpSlaStorage = getStorageSlaModel().getHostStorageSla(host, currentTime);
+					sla_storage += tmpSlaStorage;
 				}
 				
 				Log.printLine();

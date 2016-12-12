@@ -63,7 +63,7 @@ public class IoStorageWearOutModel {
 	private double getWearOutCostFromHdd(IoHarddriveStorage hdd, List<IoVm> vmlist, double time){
 		List<String> fileNameList = hdd.getFileNameList();
 		double wearout = 0;
-		
+		/*
 		// If there are no vm files
 		if (fileNameList.size() <= 0 ) {
 			return 0;
@@ -76,6 +76,27 @@ public class IoStorageWearOutModel {
 						wearout += getCostPerPowerOnSecond(hdd);
 					}
 				}
+		return wearout;
+		*/
+		double costPerMb = getCostPerMb(hdd);
+		
+		// If there are no vm files
+		if (fileNameList.size() <= 0 ) {
+			return 0;
+		}
+		double writeTot = 0.0;
+		// We assume that files' name are the same as VMs' name (ID)
+		for (IoVm vm: vmlist) {
+			if(fileNameList.contains(vm.getUid())) {
+				
+				// The amount of written data, in MB
+				writeTot = Math.ceil((1 - vm.getIoWorkloadModel().getReadRate(time)) * vm.getIoWorkloadModel().getVolume(time));
+				
+				// So the wear out cost is
+				wearout += writeTot * costPerMb;
+			}
+			
+		}
 		return wearout;
 	}
 	
@@ -135,11 +156,23 @@ public class IoStorageWearOutModel {
 	 * @param ssd storage device
 	 * @return cost in dollars
 	 */
-	private double getCostPerMb(IoSolidStateStorage ssd) {
+	private double getCostPerMb(Storage device) {
 		// The cost per MB written on SSD. 1024 *1024 is for conversion of $/GB to $/MB from 
 		// and MaxdataWrite from GB to MB 
-		return (ssd.getStorageUnitPrice() * ssd.getCapacity()) / 
-							(ssd.getMaxDataWrite() * 1024 * 1024);  
+		if(device instanceof IoHarddriveStorage) {
+			IoHarddriveStorage hdd = (IoHarddriveStorage)device;
+			
+			return (hdd.getStorageUnitPrice() * hdd.getCapacity()) / 
+					(hdd.getMaxDataWrite() * 1024 * 1024);
+		} else if (device instanceof IoSolidStateStorage) {
+			IoSolidStateStorage ssd = (IoSolidStateStorage)device;
+			return (ssd.getStorageUnitPrice() * ssd.getCapacity()) / 
+					(ssd.getMaxDataWrite() * 1024 * 1024); 
+		} else {
+			return 0.0;
+		}
+		
+		  
 	}
 	
 	/**
@@ -175,6 +208,7 @@ public class IoStorageWearOutModel {
 	 * @param device the storage device
 	 * @return the cost per second
 	 */
+	/*
 	private double getCostPerPowerOnSecond(Storage device) {
 
 		if (device instanceof IoSolidStateStorage){
@@ -186,5 +220,6 @@ public class IoStorageWearOutModel {
 		}
 		return 0;
 	}
+	*/
 
 }
