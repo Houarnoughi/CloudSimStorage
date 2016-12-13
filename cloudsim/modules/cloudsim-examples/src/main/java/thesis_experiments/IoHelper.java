@@ -41,6 +41,7 @@ import optim_storage_infrastructure.IoCpuCorrelationModel;
 import optim_storage_infrastructure.IoDataCenter;
 import optim_storage_infrastructure.IoHarddriveStorage;
 import optim_storage_infrastructure.IoHost;
+import optim_storage_infrastructure.IoSolidStateStorage;
 import optim_storage_infrastructure.IoStorageEnergyModel;
 import optim_storage_infrastructure.IoStorageSlaModel;
 import optim_storage_infrastructure.IoStorageWearOutModel;
@@ -127,6 +128,7 @@ public class IoHelper {
 														IoStorageWearOutModel.class,
 														IoStorageSlaModel.class,
 														IoCpuCorrelationModel.class,
+														Double.TYPE,
 														Boolean.TYPE).newInstance(name, 
 																						   characteristics,
 																						   ioVmAllocationPolicy, 
@@ -136,6 +138,7 @@ public class IoHelper {
 																						   IoConstants.STRG_WO,
 																						   IoConstants.STRG_SLA,
 																						   IoConstants.STRG_CPU,
+																						   IoConstants.COST_PER_KWH,
 																						   IoConstants.STORAGE_ENABLED);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -167,8 +170,9 @@ public class IoHelper {
 			}
 			
 			try {
-				storageList.add(new IoHarddriveStorage(500000));
-				//storageList.add(new IoSolidStateStorage(250000));
+				storageList.add(new IoHarddriveStorage(60000));
+				storageList.add(new IoSolidStateStorage(50000));
+				//storageList.add(new IoSolidStateStorage(50000));
 				//storageList.add(new IoHarddriveStorage(100000));
 				} catch (ParameterException e) {
 					e.printStackTrace();
@@ -566,11 +570,11 @@ public class IoHelper {
 		double slaAverage = slaMetrics.get("average");
 		double slaDegradationDueToMigration = slaMetrics
 				.get("underallocated_migration");
-		// double slaTimePerVmWithMigration =
-		// slaMetrics.get("sla_time_per_vm_with_migration");
-		// double slaTimePerVmWithoutMigration =
-		// slaMetrics.get("sla_time_per_vm_without_migration");
-		// double slaTimePerHost = getSlaTimePerHost(hosts);
+		//double slaTimePerVmWithMigration =
+		//slaMetrics.get("sla_time_per_vm_with_migration");
+		//double slaTimePerVmWithoutMigration =
+		//slaMetrics.get("sla_time_per_vm_without_migration");
+		double slaTimePerHost = getSlaTimePerHost(hosts);
 		double slaTimePerActiveHost = getSlaTimePerActiveHost(hosts);
 
 		double sla = slaTimePerActiveHost * slaDegradationDueToMigration;
@@ -634,11 +638,11 @@ public class IoHelper {
 					+ delimeter);
 			data.append(String.format("%.10f", slaOverall) + delimeter);
 			data.append(String.format("%.10f", slaAverage) + delimeter);
-			// data.append(String.format("%.5f", slaTimePerVmWithMigration) +
-			// delimeter);
+			//	data.append(String.format("%.5f", slaTimePerVmWithMigration) +
+			//	delimeter);
 			// data.append(String.format("%.5f", slaTimePerVmWithoutMigration) +
 			// delimeter);
-			// data.append(String.format("%.5f", slaTimePerHost) + delimeter);
+			data.append(String.format("%.5f", slaTimePerHost) + delimeter);
 			data.append(String.format("%d", numberOfHostShutdowns) + delimeter);
 			data.append(String.format("%.2f", meanTimeBeforeHostShutdown)
 					+ delimeter);
@@ -735,8 +739,8 @@ public class IoHelper {
 			// slaTimePerVmWithMigration * 100));
 			// Log.printLine(String.format("SLA time per VM without migration: %.2f%%",
 			// slaTimePerVmWithoutMigration * 100));
-			// Log.printLine(String.format("SLA time per host: %.2f%%",
-			// slaTimePerHost * 100));
+			Log.printLine(String.format("SLA time per host: %.2f%%",
+			slaTimePerHost * 100));
 			Log.printLine(String.format("Number of host shutdowns: %d",
 					numberOfHostShutdowns));
 			Log.printLine(String.format(
@@ -832,9 +836,10 @@ public class IoHelper {
 											double energy) {
 		// Hamza: Storage energy
 		double storagePower = datacenter.getStoragePower() / (3600 * 1000);
-		//double costEnergy = datacenter.getCharecteristics().getCostPerKwh() * (storagePower + energy);
+		double costEnergy = datacenter.getCostPerKwh() * (storagePower + energy);
 		double wearOutCost = datacenter.getStorageWearout();
-		//double slaStorage = datacenter.getStorageSla();
+		double slaStorage = datacenter.getStorageSla();
+		double allStorageCost = datacenter.getAllStorageCost();
 		
 		StringBuilder data = new StringBuilder();
 		String delimeter = ",";
@@ -842,12 +847,16 @@ public class IoHelper {
 		Log.printLine("=========== Storage System Stats ============");
 		// Hamza: format storage power
 		data.append(String.format("%.5f", storagePower) + delimeter);
-		//data.append(String.format("%.5f", costEnergy) + delimeter);
+		data.append(String.format("%.5f", costEnergy) + delimeter);
 		data.append(String.format("%.5f", wearOutCost) + delimeter);
+		data.append(String.format("%.5f", slaStorage) + delimeter);
+		data.append(String.format("%.5f", allStorageCost) + delimeter);
 		Log.printLine(String.format("Hamza: Storage Energy consumption: %.5f kWh", storagePower));
 		Log.printLine(String.format("Hamza: total Energy consumption (CPU+storage): %.5f kWh", storagePower+energy));
-		//Log.printLine(String.format("Hamza: Cost Energy consumption: %.2f $", costEnergy));
+		Log.printLine(String.format("Hamza: Cost Energy consumption: %.2f $", costEnergy));
 		Log.printLine(String.format("Hamza: Wear-Out cost: %.2f $", wearOutCost));
+		Log.printLine(String.format("Hamza: SLA cost: %.2f $", slaStorage));
+		Log.printLine(String.format("Hamza: All Storage cost: %.2f $", allStorageCost));
 		
 		
 	}

@@ -57,7 +57,7 @@ public class IoConstants {
 	public final static int[] VM_PES = { 1, 1, 1, 1 };
 	public final static int[] VM_RAM = { 1024, 1024, 2048, 2048 };
 	public final static int [] VM_BW = {100000, 100000, 200000, 200000}; // 100 Mbit/s
-	public final static int [] VM_SIZE = {10000, 10000, 20000, 20000}; // 10GB, 20GB
+	public final static int [] VM_SIZE = {10000, 10000, 10000, 10000}; // 10GB, 20GB
 	
 	// VM storage
 	public final static int [] VM_IOPS = {100, 100, 200, 200};
@@ -100,5 +100,6 @@ public class IoConstants {
 	public final static IoStorageWearOutModel STRG_WO = new IoStorageWearOutModel();
 	public final static IoStorageSlaModel STRG_SLA = new IoStorageSlaModel();
 	public final static IoCpuCorrelationModel STRG_CPU = new IoCpuCorrelationModel();
+	public final static double COST_PER_KWH = 0.1763; /// Prix en californie
 
 }
