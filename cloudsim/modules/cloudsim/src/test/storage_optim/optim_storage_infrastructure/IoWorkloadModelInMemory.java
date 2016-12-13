@@ -4,8 +4,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-import org.cloudbus.cloudsim.Log;
-
 
 /**
  * This model uses trace files to simulate IO workload utilization
@@ -85,7 +83,7 @@ public class IoWorkloadModelInMemory extends IoWorkloadModel {
 		double delta = (vol2 - vol1) / ((time2 - time1) * getSchedulingInterval());
 		retVolume = vol1 + delta * ((time - time1) * getSchedulingInterval());
 		
-		Log.printLine("Hamza: getVolume() "+ retVolume);
+		//Log.printLine("Hamza: getVolume() "+ retVolume);
 		return retVolume;
 	}
 	

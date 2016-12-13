@@ -2,7 +2,9 @@ package optim_storage_infrastructure;
 
 import java.util.List;
 
+import org.cloudbus.cloudsim.Log;
 import org.cloudbus.cloudsim.Storage;
+import org.cloudbus.cloudsim.core.CloudSim;
 
 
 public class IoStorageEnergyModel {
@@ -42,6 +44,7 @@ public class IoStorageEnergyModel {
 				// IMPORTANT: In real case case, usually we have the same power value for all kinds of IO operations (Operating mode power)
 				// So to simplify the energy computation: energy = IOprocessingtime X Operating_Mode_Power 
 				energy += vm.getLastIoProcessingTime() * Double.max(hdd.getSeqReadPower(), hdd.getRandReadPower());
+				//energy += getSingleHddEnergyCost(vm, hdd);
 				//Log.printLine("Hamza: getEnergyFromHdd from time "+vm.getLastIoProcessingTime()+" energy "+energy);
 			}
 		}
@@ -57,7 +60,7 @@ public class IoStorageEnergyModel {
 	double getEnergyFromSsd(IoSolidStateStorage ssd, List<IoVm> vmlist, double time){
 		List<String> fileNameList = ssd.getFileNameList();
 		double energy = 0;
-		double energySimple = 0;
+		//double energySimple = 0;
 		
 		// If there is no VM stored on this hard drive
 				if (fileNameList.size() <= 0) {
@@ -71,12 +74,13 @@ public class IoStorageEnergyModel {
 				
 				// IMPORTANT: In real case case, usually we have the same power value for all kinds of IO operations (Operating mode power)
 				// So to simplify the energy computation: energy = IOprocessingtime X Operating_Mode_Power 
-				energySimple += vm.getLastIoProcessingTime() * Double.max(ssd.getSeqReadPower(), ssd.getRandReadPower());
+				energy += vm.getLastIoProcessingTime() * Double.max(ssd.getSeqReadPower(), ssd.getRandReadPower());
+				//energy += getSingleSsdEnergyCost(vm, ssd);
 			}
 			
 		}
 		//Log.printLine("Hamza: getEnergyFromSsd from "+startTime+" to "+stopTime+" energy "+energy);
-		return energySimple;
+		return energy;
 	}
 	
 	double getHddToSSdMigrationEnergy(IoHarddriveStorage src,IoSolidStateStorage dst, IoVm vm){
@@ -94,8 +98,10 @@ public class IoStorageEnergyModel {
 		for (Storage device: host.getStorageDevices()) {
 			if(device instanceof IoHarddriveStorage) {
 				energy += getEnergyFromHdd((IoHarddriveStorage)device, host.getVmList(), time);
+				
 			}else if (device instanceof IoSolidStateStorage) {
-				energy += getEnergyFromSsd((IoSolidStateStorage)device, host.getVmList(), time);	
+				energy += getEnergyFromSsd((IoSolidStateStorage)device, host.getVmList(), time);
+				
 			}
 		}
 		return energy;
@@ -140,6 +146,95 @@ public class IoStorageEnergyModel {
 	public double getVmStorageRemoveFromHost(IoHost host, IoVm vm) {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+	
+	/**
+	 * Get the execution energy cost from HDD
+	 * @param vm
+	 * @param device
+	 * @return 
+	 */
+	private double getSingleHddEnergyCost(IoVm vm, IoHarddriveStorage hdd) {
+		double egy = 0.0, cpuPower = 0.0;
+		int megaBytesToBytes = 1024 *1024;
+		double bytesToMegaBytes = 0.000000954;
+		IoWorkloadModel model = vm.getIoWorkloadModel();
+		MarsIoCpuCorrelationModel marsModel = new MarsIoCpuCorrelationModel();
+		
+		// First: we compute the total number of IOs based on IO size and total volume */
+		int ioSize = model.getIoSize(CloudSim.clock()); // In bytes
+		double volume = model.getVolume(CloudSim.clock());
+		int ioNum = (int)Math.ceil((volume * megaBytesToBytes)/ioSize);
+		
+		// Second: we compute the number of IOs for each type (seq and rnd)*/
+		int rndIoNum = (int)Math.ceil(ioNum * model.getRandomRate(CloudSim.clock())/8);
+		int seqIoNum = ioNum - rndIoNum;
+		
+		// Third: we compute the time to execute IOs with full device performances */
+		double rndIoTime = (rndIoNum / hdd.getMaxIops());
+		double seqIoTime = (seqIoNum*(ioSize/bytesToMegaBytes)) / hdd.getMaxTransferRate();
+		egy = rndIoTime * Math.max(hdd.getRandReadPower(), hdd.getRandWritePower()) +
+				seqIoTime * Math.max(hdd.getSeqReadPower(), hdd.getSeqWritePower());
+		
+		// Fourth: get the energy from using the CPU usage */
+		double utilization = marsModel.getCpuLoad(hdd, vm, CloudSim.clock());
+		IoHost egyHost = hdd.getHost();
+		if (egyHost != null) {
+			cpuPower = egyHost.getPowerModel().getPower(utilization);
+		}
+		
+		// Update the energy */
+		egy += (rndIoTime + seqIoTime) * cpuPower;
+		
+		/* Fifth: we compute the energy cost */
+		//egyExeHddCost = egy * getEnergyPrice();
+		Log.printLine("Hamza getSingleHddEnergyCost HDD for vm "+vm.getId()+" is : "+egy);
+		return egy;
+	}
+	
+	/**
+	 * Get the execution energy cost from SSD
+	 * @param vm
+	 * @param device
+	 * @return 
+	 */
+	private double getSingleSsdEnergyCost(IoVm vm, IoSolidStateStorage ssd) {
+		double egy = 0.0, cpuPower = 0.0; 
+		int megaBytesToBytes = 1024 * 1024;
+		double bytesToMegaBytes = 0.000000954;
+		IoWorkloadModel model = vm.getIoWorkloadModel();
+		MarsIoCpuCorrelationModel marsModel = new MarsIoCpuCorrelationModel();
+		
+		/* First: we compute the total number of IOs based on IO size and total volume */
+		int ioSize = model.getIoSize(CloudSim.clock()); // In bytes
+		double volume = model.getVolume(CloudSim.clock());
+		int ioNum = (int)Math.ceil((volume * megaBytesToBytes)/ioSize);
+		
+		/* Second: we compute the number of IOs for each type (seq and rnd)*/
+		int rndIoNum = (int)Math.ceil(ioNum * model.getRandomRate(CloudSim.clock()));
+		int seqIoNum = 1 - rndIoNum;
+	
+		/* Third: we compute the time to execute IOs with full device performances */
+		double rndIoTime = (rndIoNum / ssd.getMaxIops());
+		double seqIoTime = (seqIoNum*(ioSize/bytesToMegaBytes)) / ssd.getMaxTransferRate();
+		egy = rndIoTime * Math.max(ssd.getRandReadPower(), ssd.getRandWritePower()) +
+				seqIoTime * Math.max(ssd.getSeqReadPower(), ssd.getSeqWritePower());
+		
+		/* Fourth: get the energy from using the CPU usage */
+		double utilization = marsModel.getCpuLoad(ssd, vm, CloudSim.clock());
+		IoHost egyHost = ssd.getHost();
+		//double cpuPower = egyHost.getPowerModel().getPower(utilization);
+		if (egyHost != null) {
+			cpuPower = egyHost.getPowerModel().getPower(utilization);
+		}
+		
+		/* Update the energy */
+		egy += Math.abs((rndIoTime + seqIoTime) * cpuPower);
+		
+		/* Fifth: we compute the energy cost */
+		// egyExeHddCost = egy * getEnergyPrice();
+		Log.printLine("Hamza getSingleSsdEnergyCost SSD for vm "+vm.getId()+" is : "+egy);
+		return egy;
 	}
 
 }

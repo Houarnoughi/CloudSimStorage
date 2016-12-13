@@ -43,7 +43,7 @@ public class IoStorageSlaModel {
 			}
 		}
 		prop = device.getMaxIops()/Math.ceil(all_iops);
-		return (prop<=0)?prop:0;
+		return (prop<1 && prop>0)?prop:0;
 	}
 
 }

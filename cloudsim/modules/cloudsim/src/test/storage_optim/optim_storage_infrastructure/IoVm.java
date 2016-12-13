@@ -111,15 +111,15 @@ public class IoVm extends PowerVm {
 						this.getId(),
 						ioTime);
 		}
-		
+		setLastIoProcessingTime(ioTime);
 		return ioTime;
 	}
 
-	/*
+	
 	private void setLastIoProcessingTime(double lastIoProcessingTime) {
 		this.lastIoProcessingTime = lastIoProcessingTime;		
 	}
-	*/
+	
 	
 	public double getLastIoProcessingTime() {
 		return lastIoProcessingTime;

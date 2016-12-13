@@ -42,6 +42,10 @@ public class IoDataCenter extends PowerDatacenter {
 	
 	private boolean localStorageEnabled;
 	
+	private double costPerKwh;
+	
+	private double allStorageCost;
+	
 	/** The List of all storage devices got from hosts **/
 	private List<Storage> allStorageDevices;
 
@@ -55,6 +59,7 @@ public class IoDataCenter extends PowerDatacenter {
 							IoStorageWearOutModel storageWearoutModel,
 							IoStorageSlaModel storageSlaModel, 
 							IoCpuCorrelationModel ioToCpuCorrelationModel,
+							double cotPerKwh,
 							boolean storageEnabled) throws Exception {
 		super(name, characteristics, vmAllocationPolicy, storageList, schedulingInterval);
 		setStorageEnergyModel(storageEnergyModel);
@@ -64,6 +69,8 @@ public class IoDataCenter extends PowerDatacenter {
 		setStoragePower(0);
 		setStorageSla(0);
 		setStorageWearout(0);
+		setAllStorageCost(0);
+		setCostPerKwh(cotPerKwh);
 		setLocalStorageEnabled(storageEnabled);
 	}
 
@@ -260,11 +267,18 @@ public class IoDataCenter extends PowerDatacenter {
 		double timeDiff = currentTime - getLastProcessTime();
 		double timeFrameDatacenterEnergy = 0.0;
 		double ioTime = 0.0;
-
+		
+		double egyPriceKwh = 0.0887; 			// 0.0887 euros / kWh
+		double egyPrice =  egyPriceKwh/3600000; // Price per WattSec (Joule)
+		double CloudServPrice = 0.5;			// Cloud Service Price / hour
+		double bill = CloudServPrice * 30 * 24; // Bill amount / month
+		
 		// Hamza: Storage energy
 		double storageEnergy = 0.0;
 		double wearoutCost = 0.0;
 		double sla_storage = 0.0;
+		
+		BcomStorageCostModel costModel = new BcomStorageCostModel(0.0, egyPrice, bill);
 
 		Log.printLine("\n\n--------------------------------------------------------------\n\n");
 		Log.formatLine("New resource usage for the time frame starting at %.2f:", currentTime);
@@ -277,6 +291,7 @@ public class IoDataCenter extends PowerDatacenter {
 			if (!host.getVmList().isEmpty()) {
 				ioTime = host.updateVmsIoProcessing(currentTime);
 				send(getId(), ioTime, VM_IO);
+				
 			}
 			
 			double time = host.updateVmsProcessing(currentTime); // inform VMs
@@ -333,6 +348,15 @@ public class IoDataCenter extends PowerDatacenter {
 			setStoragePower(getStoragePower() + storageEnergy);
 			setStorageWearout(getStorageWearout() + wearoutCost);
 			setStorageSla(getStorageSla() + sla_storage);
+			for (Host host: this.getHostList()){
+				IoHost ioHost = (IoHost) host;
+				for (Vm vm: ioHost.getVmList()){
+					IoVm ioVm = (IoVm) vm;
+					Storage device = IoStorageList.getDeviceContainsVm(ioHost.getStorageDevices(), ioVm);
+					double allCost = costModel.getVmStorageCost(vm, device);
+					setAllStorageCost(getAllStorageCost()+allCost);
+				}
+			}
 		}
 		
 		checkCloudletCompletion();
@@ -351,6 +375,7 @@ public class IoDataCenter extends PowerDatacenter {
 		setLastProcessTime(currentTime);
 		return minTime;
 	}
+	
 
 	public IoStorageEnergyModel getStorageEnergyModel() {
 		return storageEnergyModel;
@@ -437,6 +462,22 @@ public class IoDataCenter extends PowerDatacenter {
 
 	public void setAllStorageDevices(List<Storage> allStorageDevices) {
 		this.allStorageDevices = allStorageDevices;
+	}
+
+	public double getCostPerKwh() {
+		return costPerKwh;
+	}
+
+	public void setCostPerKwh(double costPerKwh) {
+		this.costPerKwh = costPerKwh;
+	}
+
+	public double getAllStorageCost() {
+		return allStorageCost;
+	}
+
+	public void setAllStorageCost(double allStorageCost) {
+		this.allStorageCost = allStorageCost;
 	}
 
 }
