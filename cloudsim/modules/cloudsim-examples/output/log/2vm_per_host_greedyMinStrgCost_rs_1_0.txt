@@ -2136,6 +2136,8 @@ New resource usage for the time frame starting at 300,10:
 300,10: [Host #46] MIPS for VM #289 by PEs (1 * 16000.0). PE #0: 2000,00.
 300,10: [Host #46] utilization is 62,50%
 
+300,10: [Host #47] utilization is 0,00%
+
 Energy consumption for the last time frame from 0,00 to 300,10:
 
 300,10: [Host #0] utilization at 0,00 was 0,00%, now is 100,00%
@@ -2278,6 +2280,9 @@ Energy consumption for the last time frame from 0,00 to 300,10:
 
 300,10: [Host #46] utilization at 0,00 was 0,00%, now is 62,50%
 300,10: [Host #46] energy is 0,00 W*sec
+
+300,10: [Host #47] utilization at 0,00 was 0,00%, now is 0,00%
+300,10: [Host #47] energy is 0,00 W*sec
 
 300,10: Data center's energy is 0,00 W*sec
 
@@ -3493,6 +3498,8 @@ New resource usage for the time frame starting at 600,10:
 600,10: [Host #46] MIPS for VM #289 by PEs (1 * 16000.0). PE #0: 2000,00.
 600,10: [Host #46] utilization is 62,50%
 
+600,10: [Host #47] utilization is 0,00%
+
 Energy consumption for the last time frame from 300,10 to 600,10:
 
 600,10: [Host #0] utilization at 300,10 was 100,00%, now is 100,00%
@@ -3635,6 +3642,9 @@ Energy consumption for the last time frame from 300,10 to 600,10:
 
 600,10: [Host #46] utilization at 300,10 was 62,50%, now is 62,50%
 600,10: [Host #46] energy is 22500,00 W*sec
+
+600,10: [Host #47] utilization at 300,10 was 0,00%, now is 0,00%
+600,10: [Host #47] energy is 0,00 W*sec
 
 600,10: Data center's energy is 1140000,00 W*sec
 
@@ -4850,6 +4860,8 @@ New resource usage for the time frame starting at 900,10:
 900,10: [Host #46] MIPS for VM #289 by PEs (1 * 16000.0). PE #0: 2000,00.
 900,10: [Host #46] utilization is 62,50%
 
+900,10: [Host #47] utilization is 0,00%
+
 Energy consumption for the last time frame from 600,10 to 900,10:
 
 900,10: [Host #0] utilization at 600,10 was 100,00%, now is 100,00%
@@ -4992,6 +5004,9 @@ Energy consumption for the last time frame from 600,10 to 900,10:
 
 900,10: [Host #46] utilization at 600,10 was 62,50%, now is 62,50%
 900,10: [Host #46] energy is 22500,00 W*sec
+
+900,10: [Host #47] utilization at 600,10 was 0,00%, now is 0,00%
+900,10: [Host #47] energy is 0,00 W*sec
 
 900,10: Data center's energy is 1140000,00 W*sec
 
@@ -6207,6 +6222,8 @@ New resource usage for the time frame starting at 1200,10:
 1200,10: [Host #46] MIPS for VM #289 by PEs (1 * 16000.0). PE #0: 2000,00.
 1200,10: [Host #46] utilization is 62,50%
 
+1200,10: [Host #47] utilization is 0,00%
+
 Energy consumption for the last time frame from 900,10 to 1200,10:
 
 1200,10: [Host #0] utilization at 900,10 was 100,00%, now is 100,00%
@@ -6349,6 +6366,9 @@ Energy consumption for the last time frame from 900,10 to 1200,10:
 
 1200,10: [Host #46] utilization at 900,10 was 62,50%, now is 62,50%
 1200,10: [Host #46] energy is 22500,00 W*sec
+
+1200,10: [Host #47] utilization at 900,10 was 0,00%, now is 0,00%
+1200,10: [Host #47] energy is 0,00 W*sec
 
 1200,10: Data center's energy is 1140000,00 W*sec
 
@@ -7564,6 +7584,8 @@ New resource usage for the time frame starting at 1500,10:
 1500,10: [Host #46] MIPS for VM #289 by PEs (1 * 16000.0). PE #0: 2000,00.
 1500,10: [Host #46] utilization is 62,50%
 
+1500,10: [Host #47] utilization is 0,00%
+
 Energy consumption for the last time frame from 1200,10 to 1500,10:
 
 1500,10: [Host #0] utilization at 1200,10 was 100,00%, now is 100,00%
@@ -7706,6 +7728,9 @@ Energy consumption for the last time frame from 1200,10 to 1500,10:
 
 1500,10: [Host #46] utilization at 1200,10 was 62,50%, now is 62,50%
 1500,10: [Host #46] energy is 22500,00 W*sec
+
+1500,10: [Host #47] utilization at 1200,10 was 0,00%, now is 0,00%
+1500,10: [Host #47] energy is 0,00 W*sec
 
 1500,10: Data center's energy is 1140000,00 W*sec
 
@@ -8540,8 +8565,8 @@ Simulation completed.
 Received 290 cloudlets
 Simulation completed.
 
-Experiment name: 2vm_per_host_greedyMinStrgCost_mstrgmt_1_0
-Number of hosts: 47
+Experiment name: 2vm_per_host_greedyMinStrgCost_rs_1_0
+Number of hosts: 48
 Number of VMs: 290
 Total simulation time: 1558,43 sec
 Energy consumption: 1,26667 kWh
@@ -8552,22 +8577,22 @@ SLA time per active host: 0,00%
 Overall SLA violation: 0,00%
 Average SLA violation: 0,00%
 SLA time per host: 0,00%
-Number of host shutdowns: 0
-Mean time before a host shutdown: NaN sec
+Number of host shutdowns: 1
+Mean time before a host shutdown: 300,10 sec
 StDev time before a host shutdown: NaN sec
 Mean time before a VM migration: NaN sec
 StDev time before a VM migration: NaN sec
 Execution time - VM selection mean: 0,00000 sec
 Execution time - VM selection stDev: 0,00000 sec
-Execution time - host selection mean: 0,00120 sec
-Execution time - host selection stDev: 0,00164 sec
+Execution time - host selection mean: 0,00000 sec
+Execution time - host selection stDev: 0,00000 sec
 Execution time - VM reallocation mean: 0,00000 sec
 Execution time - VM reallocation stDev: 0,00000 sec
-Execution time - total mean: 0,03040 sec
-Execution time - total stDev: 0,01167 sec
+Execution time - total mean: 0,01200 sec
+Execution time - total stDev: 0,00515 sec
 =========== Storage System Stats ============
-Hamza: Storage Energy consumption: 0,02402 kWh
-Hamza: total Energy consumption (CPU+storage): 1,29068 kWh
+Hamza: Storage Energy consumption: 0,02569 kWh
+Hamza: total Energy consumption (CPU+storage): 1,29235 kWh
 Hamza: Cost Energy consumption: 0,23 $
 Hamza: Wear-Out cost: 0,00 $
 Hamza: SLA cost: 0,00 $
