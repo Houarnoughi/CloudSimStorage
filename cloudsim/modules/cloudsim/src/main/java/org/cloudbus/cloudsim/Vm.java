@@ -72,6 +72,9 @@ public class Vm {
 
 	/** Indicates if the VM is being instantiated. */
 	private boolean beingInstantiated;
+	
+	/** Assigned storage device */
+	private String storageDevice;
 
 	/** The mips allocation history. 
          * @todo Instead of using a list, this attribute would be 
@@ -134,6 +137,7 @@ public class Vm {
 		setCurrentAllocatedMips(null);
 		setCurrentAllocatedRam(0);
 		setCurrentAllocatedSize(0);
+		setStorageDevice("nope");
 	}
 
 	/**
@@ -613,6 +617,14 @@ public class Vm {
 			}
 		}
 		getStateHistory().add(newState);
+	}
+
+	public String getStorageDevice() {
+		return storageDevice;
+	}
+
+	public void setStorageDevice(String storageDevice) {
+		this.storageDevice = storageDevice;
 	}
 
 }

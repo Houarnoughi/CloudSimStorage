@@ -44,7 +44,7 @@ public class BcomStorageCostModel implements IoStorageCostModel {
 		totalCost = getNonRecurrStorageCost() + 
 				workloadExecutionCost(egyVm, device) + 
 				vmStorageMigration(egyVm, device);
-		
+		//Log.printLine("The cost of VM "+egyVm.getId()+" in the device "+device.getUid()+" is "+totalCost);
 		return totalCost;
 	}
 	

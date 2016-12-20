@@ -311,6 +311,7 @@ public class IoVmAllocationPolicyGreedyMinStorageCost extends IoVmAllocationPoli
 	public IoHost findHostForVm(Vm vm, Set<? extends Host> excludedHosts) {
 		double minCost = Double.MAX_VALUE;
 		IoHost allocatedHost = null;
+		Storage allocatedDevice = null;
 		
 		// Get the cost model used to run the optimization
 		double constCost = 0.0 ; 				//non recurring costs
@@ -336,11 +337,13 @@ public class IoVmAllocationPolicyGreedyMinStorageCost extends IoVmAllocationPoli
 						if (costAfterAllocation < minCost) {
 						minCost = costAfterAllocation;
 						allocatedHost = host;
+						allocatedDevice = device;
 						}
 					}
 				}
 			}
 		}
+		vm.setStorageDevice(allocatedDevice.getUid());
 		return allocatedHost;
 	}
 	
