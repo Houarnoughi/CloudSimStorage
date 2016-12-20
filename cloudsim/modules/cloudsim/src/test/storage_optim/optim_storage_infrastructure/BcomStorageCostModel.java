@@ -216,24 +216,30 @@ public class BcomStorageCostModel implements IoStorageCostModel {
 	 */
 	private double getExecHddEnergyCost(IoVm vm, IoHarddriveStorage hdd) {
 		double egyExeHddCost = 0.0, egy = 0.0, cpuPower = 0.0;
-		int megaBytesToBytes = 1024 *1024;
-		IoWorkloadModel model = vm.getIoWorkloadModel();
+		// int megaBytesToBytes = 1024 *1024;
+		// IoWorkloadModel model = vm.getIoWorkloadModel();
 		MarsIoCpuCorrelationModel marsModel = new MarsIoCpuCorrelationModel();
 		
 		/* First: we compute the total number of IOs based on IO size and total volume */
+		/*
 		int ioSize = model.getIoSize(CloudSim.clock()); // In bytes
 		double volume = model.getVolume(CloudSim.clock());
 		int ioNum = (int)Math.ceil((volume * megaBytesToBytes)/ioSize);
-		
+		*/
 		/* Second: we compute the number of IOs for each type (seq and rnd)*/
+		/*
 		int rndIoNum = (int)Math.ceil(ioNum * model.getRandomRate(CloudSim.clock()));
 		int seqIoNum = ioNum - rndIoNum;
+		*/
 		
 		/* Third: we compute the time to execute IOs with full device performances */
+		/*
 		double rndIoTime = (rndIoNum / hdd.getMaxIops());
 		double seqIoTime = (seqIoNum*ioSize) / hdd.getMaxTransferRate();
 		egy = rndIoTime * Math.max(hdd.getRandReadPower(), hdd.getRandWritePower()) +
 				seqIoTime * Math.max(hdd.getSeqReadPower(), hdd.getSeqWritePower());
+		*/
+		egy = vm.getLastIoProcessingTime() * Double.max(hdd.getSeqReadPower(), hdd.getRandReadPower());
 		
 		/* Fourth: get the energy from using the CPU usage */
 		double utilization = marsModel.getCpuLoad(hdd, vm, CloudSim.clock());
@@ -243,7 +249,8 @@ public class BcomStorageCostModel implements IoStorageCostModel {
 		}
 		
 		/* Update the energy */
-		egy += (rndIoTime + seqIoTime) * cpuPower;
+		// egy += (rndIoTime + seqIoTime) * cpuPower;
+		egy += vm.getLastIoProcessingTime() * cpuPower;
 		
 		/* Fifth: we compute the energy cost */
 		egyExeHddCost = egy * getEnergyPrice(); 
@@ -258,24 +265,32 @@ public class BcomStorageCostModel implements IoStorageCostModel {
 	 */
 	private double getExecSsdEnergyCost(IoVm vm, IoSolidStateStorage ssd) {
 		double egyExeHddCost = 0.0, egy = 0.0, cpuPower = 0.0; 
-		int megaBytesToBytes = 1048576;
-		IoWorkloadModel model = vm.getIoWorkloadModel();
+		// int megaBytesToBytes = 1048576;
+		// IoWorkloadModel model = vm.getIoWorkloadModel();
 		MarsIoCpuCorrelationModel marsModel = new MarsIoCpuCorrelationModel();
 		
 		/* First: we compute the total number of IOs based on IO size and total volume */
+		/*
 		int ioSize = model.getIoSize(CloudSim.clock()); // In bytes
 		double volume = model.getVolume(CloudSim.clock());
 		int ioNum = (int)Math.ceil((volume * megaBytesToBytes)/ioSize);
+		*/
 		
 		/* Second: we compute the number of IOs for each type (seq and rnd)*/
+		/*
 		int rndIoNum = (int)Math.ceil(ioNum * model.getRandomRate(CloudSim.clock()));
 		int seqIoNum = ioNum - rndIoNum;
-	
+		*/
+		
 		/* Third: we compute the time to execute IOs with full device performances */
+		/*
 		double rndIoTime = (rndIoNum / ssd.getMaxIops());
 		double seqIoTime = (seqIoNum*ioSize) / ssd.getMaxTransferRate();
 		egy = rndIoTime * Math.max(ssd.getRandReadPower(), ssd.getRandWritePower()) +
 				seqIoTime * Math.max(ssd.getSeqReadPower(), ssd.getSeqWritePower());
+		*/
+		
+		egy = vm.getLastIoProcessingTime() * Double.max(ssd.getSeqReadPower(), ssd.getRandReadPower());
 		
 		/* Fourth: get the energy from using the CPU usage */
 		double utilization = marsModel.getCpuLoad(ssd, vm, CloudSim.clock());
@@ -286,7 +301,7 @@ public class BcomStorageCostModel implements IoStorageCostModel {
 		}
 		
 		/* Update the energy */
-		egy += (rndIoTime + seqIoTime) * cpuPower;
+		egy += vm.getLastIoProcessingTime() * cpuPower;
 		
 		/* Fifth: we compute the energy cost */
 		egyExeHddCost = egy * getEnergyPrice(); 

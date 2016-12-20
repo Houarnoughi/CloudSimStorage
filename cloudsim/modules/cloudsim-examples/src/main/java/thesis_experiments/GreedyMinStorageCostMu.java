@@ -19,7 +19,7 @@ import java.io.IOException;
  * @author Anton Beloglazov
  * @since Jan 5, 2012
  */
-public class MinStorageCostRandomSelection {
+public class GreedyMinStorageCostMu {
 
 	/**
 	 * The main method.
@@ -34,7 +34,7 @@ public class MinStorageCostRandomSelection {
 		String outputFolder = "output";
 		String workload = "2vm_per_host"; // Real Workload
 		String ioVmAllocationPolicy = "greedyMinStrgCost"; // Min Storage Cost
-		String ioVmSelectionPolicy = "rs"; // Minimum IOPS Utilization (MU) VM selection policy
+		String ioVmSelectionPolicy = "mu"; // Minimum CPU Utilization (MU) VM selection policy
 		String parameter = "1"; // the static utilization threshold
 		String maxThr = "1";
 		String minThr = "0";

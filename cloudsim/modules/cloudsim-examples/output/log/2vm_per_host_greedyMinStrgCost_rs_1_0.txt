@@ -8584,17 +8584,17 @@ Mean time before a VM migration: NaN sec
 StDev time before a VM migration: NaN sec
 Execution time - VM selection mean: 0,00000 sec
 Execution time - VM selection stDev: 0,00000 sec
-Execution time - host selection mean: 0,00000 sec
-Execution time - host selection stDev: 0,00000 sec
+Execution time - host selection mean: 0,00020 sec
+Execution time - host selection stDev: 0,00045 sec
 Execution time - VM reallocation mean: 0,00000 sec
 Execution time - VM reallocation stDev: 0,00000 sec
-Execution time - total mean: 0,01200 sec
-Execution time - total stDev: 0,00515 sec
+Execution time - total mean: 0,00540 sec
+Execution time - total stDev: 0,00207 sec
 =========== Storage System Stats ============
 Hamza: Storage Energy consumption: 0,02569 kWh
 Hamza: total Energy consumption (CPU+storage): 1,29235 kWh
 Hamza: Cost Energy consumption: 0,23 $
 Hamza: Wear-Out cost: 0,00 $
 Hamza: SLA cost: 0,00 $
-Hamza: All Storage cost: -3764,51 $
+Hamza: All Storage cost: 159,46 $
 

@@ -1178,8 +1178,8 @@ New resource usage for the time frame starting at 300,10:
 300,10: [Host #0] IO processing of VM #3 elapsed time is 8,17293 s
 300,10: [Host #0] IO processing of VM #4 elapsed time is 8,17293 s
 300,10: [Host #0] IO processing of VM #5 elapsed time is 8,17293 s
-300,10: [Host #0] IO processing of VM #6 elapsed time is 8,17293 s
-300,10: [Host #0] IO processing of VM #7 elapsed time is 8,17293 s
+300,10: [Host #0] IO processing of VM #6 elapsed time is 2,76727 s
+300,10: [Host #0] IO processing of VM #7 elapsed time is 2,76727 s
 300,10: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 300,10: [Host #0] MIPS for VM #0 by PEs (1 * 16000.0). PE #0: 2000,00.
 300,10: [Host #0] Total allocated MIPS for VM #1 (Host #0) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -1204,8 +1204,8 @@ New resource usage for the time frame starting at 300,10:
 300,10: [Host #1] IO processing of VM #11 elapsed time is 8,17293 s
 300,10: [Host #1] IO processing of VM #12 elapsed time is 8,17293 s
 300,10: [Host #1] IO processing of VM #13 elapsed time is 8,17293 s
-300,10: [Host #1] IO processing of VM #14 elapsed time is 8,17293 s
-300,10: [Host #1] IO processing of VM #15 elapsed time is 8,17293 s
+300,10: [Host #1] IO processing of VM #14 elapsed time is 2,76727 s
+300,10: [Host #1] IO processing of VM #15 elapsed time is 2,76727 s
 300,10: [Host #1] Total allocated MIPS for VM #8 (Host #1) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 300,10: [Host #1] MIPS for VM #8 by PEs (1 * 16000.0). PE #0: 2000,00.
 300,10: [Host #1] Total allocated MIPS for VM #9 (Host #1) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -1230,8 +1230,8 @@ New resource usage for the time frame starting at 300,10:
 300,10: [Host #2] IO processing of VM #19 elapsed time is 8,17293 s
 300,10: [Host #2] IO processing of VM #20 elapsed time is 8,17293 s
 300,10: [Host #2] IO processing of VM #21 elapsed time is 8,17293 s
-300,10: [Host #2] IO processing of VM #22 elapsed time is 8,17293 s
-300,10: [Host #2] IO processing of VM #23 elapsed time is 8,17293 s
+300,10: [Host #2] IO processing of VM #22 elapsed time is 2,76727 s
+300,10: [Host #2] IO processing of VM #23 elapsed time is 2,76727 s
 300,10: [Host #2] Total allocated MIPS for VM #16 (Host #2) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 300,10: [Host #2] MIPS for VM #16 by PEs (1 * 16000.0). PE #0: 2000,00.
 300,10: [Host #2] Total allocated MIPS for VM #17 (Host #2) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -1256,8 +1256,8 @@ New resource usage for the time frame starting at 300,10:
 300,10: [Host #3] IO processing of VM #27 elapsed time is 8,17293 s
 300,10: [Host #3] IO processing of VM #28 elapsed time is 8,17293 s
 300,10: [Host #3] IO processing of VM #29 elapsed time is 8,17293 s
-300,10: [Host #3] IO processing of VM #30 elapsed time is 8,17293 s
-300,10: [Host #3] IO processing of VM #31 elapsed time is 8,17293 s
+300,10: [Host #3] IO processing of VM #30 elapsed time is 2,76727 s
+300,10: [Host #3] IO processing of VM #31 elapsed time is 2,76727 s
 300,10: [Host #3] Total allocated MIPS for VM #24 (Host #3) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 300,10: [Host #3] MIPS for VM #24 by PEs (1 * 16000.0). PE #0: 2000,00.
 300,10: [Host #3] Total allocated MIPS for VM #25 (Host #3) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -1282,8 +1282,8 @@ New resource usage for the time frame starting at 300,10:
 300,10: [Host #4] IO processing of VM #35 elapsed time is 8,17293 s
 300,10: [Host #4] IO processing of VM #36 elapsed time is 8,17293 s
 300,10: [Host #4] IO processing of VM #37 elapsed time is 8,17293 s
-300,10: [Host #4] IO processing of VM #38 elapsed time is 8,17293 s
-300,10: [Host #4] IO processing of VM #39 elapsed time is 8,17293 s
+300,10: [Host #4] IO processing of VM #38 elapsed time is 2,76727 s
+300,10: [Host #4] IO processing of VM #39 elapsed time is 2,76727 s
 300,10: [Host #4] Total allocated MIPS for VM #32 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 300,10: [Host #4] MIPS for VM #32 by PEs (1 * 16000.0). PE #0: 2000,00.
 300,10: [Host #4] Total allocated MIPS for VM #33 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -1308,8 +1308,8 @@ New resource usage for the time frame starting at 300,10:
 300,10: [Host #5] IO processing of VM #43 elapsed time is 8,17293 s
 300,10: [Host #5] IO processing of VM #44 elapsed time is 8,17293 s
 300,10: [Host #5] IO processing of VM #45 elapsed time is 8,17293 s
-300,10: [Host #5] IO processing of VM #46 elapsed time is 8,17293 s
-300,10: [Host #5] IO processing of VM #47 elapsed time is 8,17293 s
+300,10: [Host #5] IO processing of VM #46 elapsed time is 2,76727 s
+300,10: [Host #5] IO processing of VM #47 elapsed time is 2,76727 s
 300,10: [Host #5] Total allocated MIPS for VM #40 (Host #5) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 300,10: [Host #5] MIPS for VM #40 by PEs (1 * 16000.0). PE #0: 2000,00.
 300,10: [Host #5] Total allocated MIPS for VM #41 (Host #5) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -1334,8 +1334,8 @@ New resource usage for the time frame starting at 300,10:
 300,10: [Host #6] IO processing of VM #51 elapsed time is 8,17293 s
 300,10: [Host #6] IO processing of VM #52 elapsed time is 8,17293 s
 300,10: [Host #6] IO processing of VM #53 elapsed time is 8,17293 s
-300,10: [Host #6] IO processing of VM #54 elapsed time is 8,17293 s
-300,10: [Host #6] IO processing of VM #55 elapsed time is 8,17293 s
+300,10: [Host #6] IO processing of VM #54 elapsed time is 2,76727 s
+300,10: [Host #6] IO processing of VM #55 elapsed time is 2,76727 s
 300,10: [Host #6] Total allocated MIPS for VM #48 (Host #6) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 300,10: [Host #6] MIPS for VM #48 by PEs (1 * 16000.0). PE #0: 2000,00.
 300,10: [Host #6] Total allocated MIPS for VM #49 (Host #6) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -1360,8 +1360,8 @@ New resource usage for the time frame starting at 300,10:
 300,10: [Host #7] IO processing of VM #59 elapsed time is 8,17293 s
 300,10: [Host #7] IO processing of VM #60 elapsed time is 8,17293 s
 300,10: [Host #7] IO processing of VM #61 elapsed time is 8,17293 s
-300,10: [Host #7] IO processing of VM #62 elapsed time is 8,17293 s
-300,10: [Host #7] IO processing of VM #63 elapsed time is 8,17293 s
+300,10: [Host #7] IO processing of VM #62 elapsed time is 2,76727 s
+300,10: [Host #7] IO processing of VM #63 elapsed time is 2,76727 s
 300,10: [Host #7] Total allocated MIPS for VM #56 (Host #7) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 300,10: [Host #7] MIPS for VM #56 by PEs (1 * 16000.0). PE #0: 2000,00.
 300,10: [Host #7] Total allocated MIPS for VM #57 (Host #7) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -1386,8 +1386,8 @@ New resource usage for the time frame starting at 300,10:
 300,10: [Host #8] IO processing of VM #67 elapsed time is 8,17293 s
 300,10: [Host #8] IO processing of VM #68 elapsed time is 8,17293 s
 300,10: [Host #8] IO processing of VM #69 elapsed time is 8,17293 s
-300,10: [Host #8] IO processing of VM #70 elapsed time is 8,17293 s
-300,10: [Host #8] IO processing of VM #71 elapsed time is 8,17293 s
+300,10: [Host #8] IO processing of VM #70 elapsed time is 2,76727 s
+300,10: [Host #8] IO processing of VM #71 elapsed time is 2,76727 s
 300,10: [Host #8] Total allocated MIPS for VM #64 (Host #8) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 300,10: [Host #8] MIPS for VM #64 by PEs (1 * 16000.0). PE #0: 2000,00.
 300,10: [Host #8] Total allocated MIPS for VM #65 (Host #8) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -1412,8 +1412,8 @@ New resource usage for the time frame starting at 300,10:
 300,10: [Host #9] IO processing of VM #75 elapsed time is 8,17293 s
 300,10: [Host #9] IO processing of VM #76 elapsed time is 8,17293 s
 300,10: [Host #9] IO processing of VM #77 elapsed time is 8,17293 s
-300,10: [Host #9] IO processing of VM #78 elapsed time is 8,17293 s
-300,10: [Host #9] IO processing of VM #79 elapsed time is 8,17293 s
+300,10: [Host #9] IO processing of VM #78 elapsed time is 2,76727 s
+300,10: [Host #9] IO processing of VM #79 elapsed time is 2,76727 s
 300,10: [Host #9] Total allocated MIPS for VM #72 (Host #9) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 300,10: [Host #9] MIPS for VM #72 by PEs (1 * 16000.0). PE #0: 2000,00.
 300,10: [Host #9] Total allocated MIPS for VM #73 (Host #9) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -1438,8 +1438,8 @@ New resource usage for the time frame starting at 300,10:
 300,10: [Host #10] IO processing of VM #83 elapsed time is 8,17293 s
 300,10: [Host #10] IO processing of VM #84 elapsed time is 8,17293 s
 300,10: [Host #10] IO processing of VM #85 elapsed time is 8,17293 s
-300,10: [Host #10] IO processing of VM #86 elapsed time is 8,17293 s
-300,10: [Host #10] IO processing of VM #87 elapsed time is 8,17293 s
+300,10: [Host #10] IO processing of VM #86 elapsed time is 2,76727 s
+300,10: [Host #10] IO processing of VM #87 elapsed time is 2,76727 s
 300,10: [Host #10] Total allocated MIPS for VM #80 (Host #10) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 300,10: [Host #10] MIPS for VM #80 by PEs (1 * 16000.0). PE #0: 2000,00.
 300,10: [Host #10] Total allocated MIPS for VM #81 (Host #10) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -1464,8 +1464,8 @@ New resource usage for the time frame starting at 300,10:
 300,10: [Host #11] IO processing of VM #91 elapsed time is 8,17293 s
 300,10: [Host #11] IO processing of VM #92 elapsed time is 8,17293 s
 300,10: [Host #11] IO processing of VM #93 elapsed time is 8,17293 s
-300,10: [Host #11] IO processing of VM #94 elapsed time is 8,17293 s
-300,10: [Host #11] IO processing of VM #95 elapsed time is 8,17293 s
+300,10: [Host #11] IO processing of VM #94 elapsed time is 2,76727 s
+300,10: [Host #11] IO processing of VM #95 elapsed time is 2,76727 s
 300,10: [Host #11] Total allocated MIPS for VM #88 (Host #11) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 300,10: [Host #11] MIPS for VM #88 by PEs (1 * 16000.0). PE #0: 2000,00.
 300,10: [Host #11] Total allocated MIPS for VM #89 (Host #11) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -1490,8 +1490,8 @@ New resource usage for the time frame starting at 300,10:
 300,10: [Host #12] IO processing of VM #99 elapsed time is 8,17293 s
 300,10: [Host #12] IO processing of VM #100 elapsed time is 8,17293 s
 300,10: [Host #12] IO processing of VM #101 elapsed time is 8,17293 s
-300,10: [Host #12] IO processing of VM #102 elapsed time is 8,17293 s
-300,10: [Host #12] IO processing of VM #103 elapsed time is 8,17293 s
+300,10: [Host #12] IO processing of VM #102 elapsed time is 2,76727 s
+300,10: [Host #12] IO processing of VM #103 elapsed time is 2,76727 s
 300,10: [Host #12] Total allocated MIPS for VM #96 (Host #12) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 300,10: [Host #12] MIPS for VM #96 by PEs (1 * 16000.0). PE #0: 2000,00.
 300,10: [Host #12] Total allocated MIPS for VM #97 (Host #12) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -1516,8 +1516,8 @@ New resource usage for the time frame starting at 300,10:
 300,10: [Host #13] IO processing of VM #107 elapsed time is 8,17293 s
 300,10: [Host #13] IO processing of VM #108 elapsed time is 8,17293 s
 300,10: [Host #13] IO processing of VM #109 elapsed time is 8,17293 s
-300,10: [Host #13] IO processing of VM #110 elapsed time is 8,17293 s
-300,10: [Host #13] IO processing of VM #111 elapsed time is 8,17293 s
+300,10: [Host #13] IO processing of VM #110 elapsed time is 2,76727 s
+300,10: [Host #13] IO processing of VM #111 elapsed time is 2,76727 s
 300,10: [Host #13] Total allocated MIPS for VM #104 (Host #13) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 300,10: [Host #13] MIPS for VM #104 by PEs (1 * 16000.0). PE #0: 2000,00.
 300,10: [Host #13] Total allocated MIPS for VM #105 (Host #13) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -1542,8 +1542,8 @@ New resource usage for the time frame starting at 300,10:
 300,10: [Host #14] IO processing of VM #115 elapsed time is 8,17293 s
 300,10: [Host #14] IO processing of VM #116 elapsed time is 8,17293 s
 300,10: [Host #14] IO processing of VM #117 elapsed time is 8,17293 s
-300,10: [Host #14] IO processing of VM #118 elapsed time is 8,17293 s
-300,10: [Host #14] IO processing of VM #119 elapsed time is 8,17293 s
+300,10: [Host #14] IO processing of VM #118 elapsed time is 2,76727 s
+300,10: [Host #14] IO processing of VM #119 elapsed time is 2,76727 s
 300,10: [Host #14] Total allocated MIPS for VM #112 (Host #14) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 300,10: [Host #14] MIPS for VM #112 by PEs (1 * 16000.0). PE #0: 2000,00.
 300,10: [Host #14] Total allocated MIPS for VM #113 (Host #14) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -1568,8 +1568,8 @@ New resource usage for the time frame starting at 300,10:
 300,10: [Host #15] IO processing of VM #123 elapsed time is 8,17293 s
 300,10: [Host #15] IO processing of VM #124 elapsed time is 8,17293 s
 300,10: [Host #15] IO processing of VM #125 elapsed time is 8,17293 s
-300,10: [Host #15] IO processing of VM #126 elapsed time is 8,17293 s
-300,10: [Host #15] IO processing of VM #127 elapsed time is 8,17293 s
+300,10: [Host #15] IO processing of VM #126 elapsed time is 2,76727 s
+300,10: [Host #15] IO processing of VM #127 elapsed time is 2,76727 s
 300,10: [Host #15] Total allocated MIPS for VM #120 (Host #15) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 300,10: [Host #15] MIPS for VM #120 by PEs (1 * 16000.0). PE #0: 2000,00.
 300,10: [Host #15] Total allocated MIPS for VM #121 (Host #15) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -1594,8 +1594,8 @@ New resource usage for the time frame starting at 300,10:
 300,10: [Host #16] IO processing of VM #131 elapsed time is 8,17293 s
 300,10: [Host #16] IO processing of VM #132 elapsed time is 8,17293 s
 300,10: [Host #16] IO processing of VM #133 elapsed time is 8,17293 s
-300,10: [Host #16] IO processing of VM #134 elapsed time is 8,17293 s
-300,10: [Host #16] IO processing of VM #135 elapsed time is 8,17293 s
+300,10: [Host #16] IO processing of VM #134 elapsed time is 2,76727 s
+300,10: [Host #16] IO processing of VM #135 elapsed time is 2,76727 s
 300,10: [Host #16] Total allocated MIPS for VM #128 (Host #16) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 300,10: [Host #16] MIPS for VM #128 by PEs (1 * 16000.0). PE #0: 2000,00.
 300,10: [Host #16] Total allocated MIPS for VM #129 (Host #16) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -1620,8 +1620,8 @@ New resource usage for the time frame starting at 300,10:
 300,10: [Host #17] IO processing of VM #139 elapsed time is 8,17293 s
 300,10: [Host #17] IO processing of VM #140 elapsed time is 8,17293 s
 300,10: [Host #17] IO processing of VM #141 elapsed time is 8,17293 s
-300,10: [Host #17] IO processing of VM #142 elapsed time is 8,17293 s
-300,10: [Host #17] IO processing of VM #143 elapsed time is 8,17293 s
+300,10: [Host #17] IO processing of VM #142 elapsed time is 2,76727 s
+300,10: [Host #17] IO processing of VM #143 elapsed time is 2,76727 s
 300,10: [Host #17] Total allocated MIPS for VM #136 (Host #17) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 300,10: [Host #17] MIPS for VM #136 by PEs (1 * 16000.0). PE #0: 2000,00.
 300,10: [Host #17] Total allocated MIPS for VM #137 (Host #17) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -2138,110 +2138,6 @@ New resource usage for the time frame starting at 300,10:
 
 300,10: [Host #47] utilization is 0,00%
 
-300,10: [Host #48] utilization is 0,00%
-
-300,10: [Host #49] utilization is 0,00%
-
-300,10: [Host #50] utilization is 0,00%
-
-300,10: [Host #51] utilization is 0,00%
-
-300,10: [Host #52] utilization is 0,00%
-
-300,10: [Host #53] utilization is 0,00%
-
-300,10: [Host #54] utilization is 0,00%
-
-300,10: [Host #55] utilization is 0,00%
-
-300,10: [Host #56] utilization is 0,00%
-
-300,10: [Host #57] utilization is 0,00%
-
-300,10: [Host #58] utilization is 0,00%
-
-300,10: [Host #59] utilization is 0,00%
-
-300,10: [Host #60] utilization is 0,00%
-
-300,10: [Host #61] utilization is 0,00%
-
-300,10: [Host #62] utilization is 0,00%
-
-300,10: [Host #63] utilization is 0,00%
-
-300,10: [Host #64] utilization is 0,00%
-
-300,10: [Host #65] utilization is 0,00%
-
-300,10: [Host #66] utilization is 0,00%
-
-300,10: [Host #67] utilization is 0,00%
-
-300,10: [Host #68] utilization is 0,00%
-
-300,10: [Host #69] utilization is 0,00%
-
-300,10: [Host #70] utilization is 0,00%
-
-300,10: [Host #71] utilization is 0,00%
-
-300,10: [Host #72] utilization is 0,00%
-
-300,10: [Host #73] utilization is 0,00%
-
-300,10: [Host #74] utilization is 0,00%
-
-300,10: [Host #75] utilization is 0,00%
-
-300,10: [Host #76] utilization is 0,00%
-
-300,10: [Host #77] utilization is 0,00%
-
-300,10: [Host #78] utilization is 0,00%
-
-300,10: [Host #79] utilization is 0,00%
-
-300,10: [Host #80] utilization is 0,00%
-
-300,10: [Host #81] utilization is 0,00%
-
-300,10: [Host #82] utilization is 0,00%
-
-300,10: [Host #83] utilization is 0,00%
-
-300,10: [Host #84] utilization is 0,00%
-
-300,10: [Host #85] utilization is 0,00%
-
-300,10: [Host #86] utilization is 0,00%
-
-300,10: [Host #87] utilization is 0,00%
-
-300,10: [Host #88] utilization is 0,00%
-
-300,10: [Host #89] utilization is 0,00%
-
-300,10: [Host #90] utilization is 0,00%
-
-300,10: [Host #91] utilization is 0,00%
-
-300,10: [Host #92] utilization is 0,00%
-
-300,10: [Host #93] utilization is 0,00%
-
-300,10: [Host #94] utilization is 0,00%
-
-300,10: [Host #95] utilization is 0,00%
-
-300,10: [Host #96] utilization is 0,00%
-
-300,10: [Host #97] utilization is 0,00%
-
-300,10: [Host #98] utilization is 0,00%
-
-300,10: [Host #99] utilization is 0,00%
-
 Energy consumption for the last time frame from 0,00 to 300,10:
 
 300,10: [Host #0] utilization at 0,00 was 0,00%, now is 100,00%
@@ -2387,162 +2283,6 @@ Energy consumption for the last time frame from 0,00 to 300,10:
 
 300,10: [Host #47] utilization at 0,00 was 0,00%, now is 0,00%
 300,10: [Host #47] energy is 0,00 W*sec
-
-300,10: [Host #48] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #48] energy is 0,00 W*sec
-
-300,10: [Host #49] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #49] energy is 0,00 W*sec
-
-300,10: [Host #50] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #50] energy is 0,00 W*sec
-
-300,10: [Host #51] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #51] energy is 0,00 W*sec
-
-300,10: [Host #52] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #52] energy is 0,00 W*sec
-
-300,10: [Host #53] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #53] energy is 0,00 W*sec
-
-300,10: [Host #54] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #54] energy is 0,00 W*sec
-
-300,10: [Host #55] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #55] energy is 0,00 W*sec
-
-300,10: [Host #56] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #56] energy is 0,00 W*sec
-
-300,10: [Host #57] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #57] energy is 0,00 W*sec
-
-300,10: [Host #58] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #58] energy is 0,00 W*sec
-
-300,10: [Host #59] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #59] energy is 0,00 W*sec
-
-300,10: [Host #60] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #60] energy is 0,00 W*sec
-
-300,10: [Host #61] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #61] energy is 0,00 W*sec
-
-300,10: [Host #62] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #62] energy is 0,00 W*sec
-
-300,10: [Host #63] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #63] energy is 0,00 W*sec
-
-300,10: [Host #64] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #64] energy is 0,00 W*sec
-
-300,10: [Host #65] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #65] energy is 0,00 W*sec
-
-300,10: [Host #66] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #66] energy is 0,00 W*sec
-
-300,10: [Host #67] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #67] energy is 0,00 W*sec
-
-300,10: [Host #68] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #68] energy is 0,00 W*sec
-
-300,10: [Host #69] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #69] energy is 0,00 W*sec
-
-300,10: [Host #70] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #70] energy is 0,00 W*sec
-
-300,10: [Host #71] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #71] energy is 0,00 W*sec
-
-300,10: [Host #72] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #72] energy is 0,00 W*sec
-
-300,10: [Host #73] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #73] energy is 0,00 W*sec
-
-300,10: [Host #74] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #74] energy is 0,00 W*sec
-
-300,10: [Host #75] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #75] energy is 0,00 W*sec
-
-300,10: [Host #76] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #76] energy is 0,00 W*sec
-
-300,10: [Host #77] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #77] energy is 0,00 W*sec
-
-300,10: [Host #78] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #78] energy is 0,00 W*sec
-
-300,10: [Host #79] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #79] energy is 0,00 W*sec
-
-300,10: [Host #80] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #80] energy is 0,00 W*sec
-
-300,10: [Host #81] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #81] energy is 0,00 W*sec
-
-300,10: [Host #82] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #82] energy is 0,00 W*sec
-
-300,10: [Host #83] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #83] energy is 0,00 W*sec
-
-300,10: [Host #84] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #84] energy is 0,00 W*sec
-
-300,10: [Host #85] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #85] energy is 0,00 W*sec
-
-300,10: [Host #86] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #86] energy is 0,00 W*sec
-
-300,10: [Host #87] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #87] energy is 0,00 W*sec
-
-300,10: [Host #88] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #88] energy is 0,00 W*sec
-
-300,10: [Host #89] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #89] energy is 0,00 W*sec
-
-300,10: [Host #90] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #90] energy is 0,00 W*sec
-
-300,10: [Host #91] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #91] energy is 0,00 W*sec
-
-300,10: [Host #92] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #92] energy is 0,00 W*sec
-
-300,10: [Host #93] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #93] energy is 0,00 W*sec
-
-300,10: [Host #94] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #94] energy is 0,00 W*sec
-
-300,10: [Host #95] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #95] energy is 0,00 W*sec
-
-300,10: [Host #96] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #96] energy is 0,00 W*sec
-
-300,10: [Host #97] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #97] energy is 0,00 W*sec
-
-300,10: [Host #98] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #98] energy is 0,00 W*sec
-
-300,10: [Host #99] utilization at 0,00 was 0,00%, now is 0,00%
-300,10: [Host #99] energy is 0,00 W*sec
 
 300,10: Data center's energy is 0,00 W*sec
 
@@ -2800,8 +2540,8 @@ New resource usage for the time frame starting at 600,10:
 600,10: [Host #0] IO processing of VM #3 elapsed time is 5,67669 s
 600,10: [Host #0] IO processing of VM #4 elapsed time is 5,67669 s
 600,10: [Host #0] IO processing of VM #5 elapsed time is 5,67669 s
-600,10: [Host #0] IO processing of VM #6 elapsed time is 5,67669 s
-600,10: [Host #0] IO processing of VM #7 elapsed time is 5,67669 s
+600,10: [Host #0] IO processing of VM #6 elapsed time is 1,64727 s
+600,10: [Host #0] IO processing of VM #7 elapsed time is 1,64727 s
 600,10: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 600,10: [Host #0] MIPS for VM #0 by PEs (1 * 16000.0). PE #0: 2000,00.
 600,10: [Host #0] Total allocated MIPS for VM #1 (Host #0) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -2826,8 +2566,8 @@ New resource usage for the time frame starting at 600,10:
 600,10: [Host #1] IO processing of VM #11 elapsed time is 5,67669 s
 600,10: [Host #1] IO processing of VM #12 elapsed time is 5,67669 s
 600,10: [Host #1] IO processing of VM #13 elapsed time is 5,67669 s
-600,10: [Host #1] IO processing of VM #14 elapsed time is 5,67669 s
-600,10: [Host #1] IO processing of VM #15 elapsed time is 5,67669 s
+600,10: [Host #1] IO processing of VM #14 elapsed time is 1,64727 s
+600,10: [Host #1] IO processing of VM #15 elapsed time is 1,64727 s
 600,10: [Host #1] Total allocated MIPS for VM #8 (Host #1) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 600,10: [Host #1] MIPS for VM #8 by PEs (1 * 16000.0). PE #0: 2000,00.
 600,10: [Host #1] Total allocated MIPS for VM #9 (Host #1) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -2852,8 +2592,8 @@ New resource usage for the time frame starting at 600,10:
 600,10: [Host #2] IO processing of VM #19 elapsed time is 5,67669 s
 600,10: [Host #2] IO processing of VM #20 elapsed time is 5,67669 s
 600,10: [Host #2] IO processing of VM #21 elapsed time is 5,67669 s
-600,10: [Host #2] IO processing of VM #22 elapsed time is 5,67669 s
-600,10: [Host #2] IO processing of VM #23 elapsed time is 5,67669 s
+600,10: [Host #2] IO processing of VM #22 elapsed time is 1,64727 s
+600,10: [Host #2] IO processing of VM #23 elapsed time is 1,64727 s
 600,10: [Host #2] Total allocated MIPS for VM #16 (Host #2) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 600,10: [Host #2] MIPS for VM #16 by PEs (1 * 16000.0). PE #0: 2000,00.
 600,10: [Host #2] Total allocated MIPS for VM #17 (Host #2) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -2878,8 +2618,8 @@ New resource usage for the time frame starting at 600,10:
 600,10: [Host #3] IO processing of VM #27 elapsed time is 5,67669 s
 600,10: [Host #3] IO processing of VM #28 elapsed time is 5,67669 s
 600,10: [Host #3] IO processing of VM #29 elapsed time is 5,67669 s
-600,10: [Host #3] IO processing of VM #30 elapsed time is 5,67669 s
-600,10: [Host #3] IO processing of VM #31 elapsed time is 5,67669 s
+600,10: [Host #3] IO processing of VM #30 elapsed time is 1,64727 s
+600,10: [Host #3] IO processing of VM #31 elapsed time is 1,64727 s
 600,10: [Host #3] Total allocated MIPS for VM #24 (Host #3) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 600,10: [Host #3] MIPS for VM #24 by PEs (1 * 16000.0). PE #0: 2000,00.
 600,10: [Host #3] Total allocated MIPS for VM #25 (Host #3) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -2904,8 +2644,8 @@ New resource usage for the time frame starting at 600,10:
 600,10: [Host #4] IO processing of VM #35 elapsed time is 5,67669 s
 600,10: [Host #4] IO processing of VM #36 elapsed time is 5,67669 s
 600,10: [Host #4] IO processing of VM #37 elapsed time is 5,67669 s
-600,10: [Host #4] IO processing of VM #38 elapsed time is 5,67669 s
-600,10: [Host #4] IO processing of VM #39 elapsed time is 5,67669 s
+600,10: [Host #4] IO processing of VM #38 elapsed time is 1,64727 s
+600,10: [Host #4] IO processing of VM #39 elapsed time is 1,64727 s
 600,10: [Host #4] Total allocated MIPS for VM #32 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 600,10: [Host #4] MIPS for VM #32 by PEs (1 * 16000.0). PE #0: 2000,00.
 600,10: [Host #4] Total allocated MIPS for VM #33 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -2930,8 +2670,8 @@ New resource usage for the time frame starting at 600,10:
 600,10: [Host #5] IO processing of VM #43 elapsed time is 5,67669 s
 600,10: [Host #5] IO processing of VM #44 elapsed time is 5,67669 s
 600,10: [Host #5] IO processing of VM #45 elapsed time is 5,67669 s
-600,10: [Host #5] IO processing of VM #46 elapsed time is 5,67669 s
-600,10: [Host #5] IO processing of VM #47 elapsed time is 5,67669 s
+600,10: [Host #5] IO processing of VM #46 elapsed time is 1,64727 s
+600,10: [Host #5] IO processing of VM #47 elapsed time is 1,64727 s
 600,10: [Host #5] Total allocated MIPS for VM #40 (Host #5) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 600,10: [Host #5] MIPS for VM #40 by PEs (1 * 16000.0). PE #0: 2000,00.
 600,10: [Host #5] Total allocated MIPS for VM #41 (Host #5) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -2956,8 +2696,8 @@ New resource usage for the time frame starting at 600,10:
 600,10: [Host #6] IO processing of VM #51 elapsed time is 5,67669 s
 600,10: [Host #6] IO processing of VM #52 elapsed time is 5,67669 s
 600,10: [Host #6] IO processing of VM #53 elapsed time is 5,67669 s
-600,10: [Host #6] IO processing of VM #54 elapsed time is 5,67669 s
-600,10: [Host #6] IO processing of VM #55 elapsed time is 5,67669 s
+600,10: [Host #6] IO processing of VM #54 elapsed time is 1,64727 s
+600,10: [Host #6] IO processing of VM #55 elapsed time is 1,64727 s
 600,10: [Host #6] Total allocated MIPS for VM #48 (Host #6) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 600,10: [Host #6] MIPS for VM #48 by PEs (1 * 16000.0). PE #0: 2000,00.
 600,10: [Host #6] Total allocated MIPS for VM #49 (Host #6) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -2982,8 +2722,8 @@ New resource usage for the time frame starting at 600,10:
 600,10: [Host #7] IO processing of VM #59 elapsed time is 5,67669 s
 600,10: [Host #7] IO processing of VM #60 elapsed time is 5,67669 s
 600,10: [Host #7] IO processing of VM #61 elapsed time is 5,67669 s
-600,10: [Host #7] IO processing of VM #62 elapsed time is 5,67669 s
-600,10: [Host #7] IO processing of VM #63 elapsed time is 5,67669 s
+600,10: [Host #7] IO processing of VM #62 elapsed time is 1,64727 s
+600,10: [Host #7] IO processing of VM #63 elapsed time is 1,64727 s
 600,10: [Host #7] Total allocated MIPS for VM #56 (Host #7) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 600,10: [Host #7] MIPS for VM #56 by PEs (1 * 16000.0). PE #0: 2000,00.
 600,10: [Host #7] Total allocated MIPS for VM #57 (Host #7) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -3008,8 +2748,8 @@ New resource usage for the time frame starting at 600,10:
 600,10: [Host #8] IO processing of VM #67 elapsed time is 5,67669 s
 600,10: [Host #8] IO processing of VM #68 elapsed time is 5,67669 s
 600,10: [Host #8] IO processing of VM #69 elapsed time is 5,67669 s
-600,10: [Host #8] IO processing of VM #70 elapsed time is 5,67669 s
-600,10: [Host #8] IO processing of VM #71 elapsed time is 5,67669 s
+600,10: [Host #8] IO processing of VM #70 elapsed time is 1,64727 s
+600,10: [Host #8] IO processing of VM #71 elapsed time is 1,64727 s
 600,10: [Host #8] Total allocated MIPS for VM #64 (Host #8) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 600,10: [Host #8] MIPS for VM #64 by PEs (1 * 16000.0). PE #0: 2000,00.
 600,10: [Host #8] Total allocated MIPS for VM #65 (Host #8) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -3034,8 +2774,8 @@ New resource usage for the time frame starting at 600,10:
 600,10: [Host #9] IO processing of VM #75 elapsed time is 5,67669 s
 600,10: [Host #9] IO processing of VM #76 elapsed time is 5,67669 s
 600,10: [Host #9] IO processing of VM #77 elapsed time is 5,67669 s
-600,10: [Host #9] IO processing of VM #78 elapsed time is 5,67669 s
-600,10: [Host #9] IO processing of VM #79 elapsed time is 5,67669 s
+600,10: [Host #9] IO processing of VM #78 elapsed time is 1,64727 s
+600,10: [Host #9] IO processing of VM #79 elapsed time is 1,64727 s
 600,10: [Host #9] Total allocated MIPS for VM #72 (Host #9) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 600,10: [Host #9] MIPS for VM #72 by PEs (1 * 16000.0). PE #0: 2000,00.
 600,10: [Host #9] Total allocated MIPS for VM #73 (Host #9) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -3060,8 +2800,8 @@ New resource usage for the time frame starting at 600,10:
 600,10: [Host #10] IO processing of VM #83 elapsed time is 5,67669 s
 600,10: [Host #10] IO processing of VM #84 elapsed time is 5,67669 s
 600,10: [Host #10] IO processing of VM #85 elapsed time is 5,67669 s
-600,10: [Host #10] IO processing of VM #86 elapsed time is 5,67669 s
-600,10: [Host #10] IO processing of VM #87 elapsed time is 5,67669 s
+600,10: [Host #10] IO processing of VM #86 elapsed time is 1,64727 s
+600,10: [Host #10] IO processing of VM #87 elapsed time is 1,64727 s
 600,10: [Host #10] Total allocated MIPS for VM #80 (Host #10) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 600,10: [Host #10] MIPS for VM #80 by PEs (1 * 16000.0). PE #0: 2000,00.
 600,10: [Host #10] Total allocated MIPS for VM #81 (Host #10) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -3086,8 +2826,8 @@ New resource usage for the time frame starting at 600,10:
 600,10: [Host #11] IO processing of VM #91 elapsed time is 5,67669 s
 600,10: [Host #11] IO processing of VM #92 elapsed time is 5,67669 s
 600,10: [Host #11] IO processing of VM #93 elapsed time is 5,67669 s
-600,10: [Host #11] IO processing of VM #94 elapsed time is 5,67669 s
-600,10: [Host #11] IO processing of VM #95 elapsed time is 5,67669 s
+600,10: [Host #11] IO processing of VM #94 elapsed time is 1,64727 s
+600,10: [Host #11] IO processing of VM #95 elapsed time is 1,64727 s
 600,10: [Host #11] Total allocated MIPS for VM #88 (Host #11) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 600,10: [Host #11] MIPS for VM #88 by PEs (1 * 16000.0). PE #0: 2000,00.
 600,10: [Host #11] Total allocated MIPS for VM #89 (Host #11) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -3112,8 +2852,8 @@ New resource usage for the time frame starting at 600,10:
 600,10: [Host #12] IO processing of VM #99 elapsed time is 5,67669 s
 600,10: [Host #12] IO processing of VM #100 elapsed time is 5,67669 s
 600,10: [Host #12] IO processing of VM #101 elapsed time is 5,67669 s
-600,10: [Host #12] IO processing of VM #102 elapsed time is 5,67669 s
-600,10: [Host #12] IO processing of VM #103 elapsed time is 5,67669 s
+600,10: [Host #12] IO processing of VM #102 elapsed time is 1,64727 s
+600,10: [Host #12] IO processing of VM #103 elapsed time is 1,64727 s
 600,10: [Host #12] Total allocated MIPS for VM #96 (Host #12) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 600,10: [Host #12] MIPS for VM #96 by PEs (1 * 16000.0). PE #0: 2000,00.
 600,10: [Host #12] Total allocated MIPS for VM #97 (Host #12) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -3138,8 +2878,8 @@ New resource usage for the time frame starting at 600,10:
 600,10: [Host #13] IO processing of VM #107 elapsed time is 5,67669 s
 600,10: [Host #13] IO processing of VM #108 elapsed time is 5,67669 s
 600,10: [Host #13] IO processing of VM #109 elapsed time is 5,67669 s
-600,10: [Host #13] IO processing of VM #110 elapsed time is 5,67669 s
-600,10: [Host #13] IO processing of VM #111 elapsed time is 5,67669 s
+600,10: [Host #13] IO processing of VM #110 elapsed time is 1,64727 s
+600,10: [Host #13] IO processing of VM #111 elapsed time is 1,64727 s
 600,10: [Host #13] Total allocated MIPS for VM #104 (Host #13) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 600,10: [Host #13] MIPS for VM #104 by PEs (1 * 16000.0). PE #0: 2000,00.
 600,10: [Host #13] Total allocated MIPS for VM #105 (Host #13) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -3164,8 +2904,8 @@ New resource usage for the time frame starting at 600,10:
 600,10: [Host #14] IO processing of VM #115 elapsed time is 5,67669 s
 600,10: [Host #14] IO processing of VM #116 elapsed time is 5,67669 s
 600,10: [Host #14] IO processing of VM #117 elapsed time is 5,67669 s
-600,10: [Host #14] IO processing of VM #118 elapsed time is 5,67669 s
-600,10: [Host #14] IO processing of VM #119 elapsed time is 5,67669 s
+600,10: [Host #14] IO processing of VM #118 elapsed time is 1,64727 s
+600,10: [Host #14] IO processing of VM #119 elapsed time is 1,64727 s
 600,10: [Host #14] Total allocated MIPS for VM #112 (Host #14) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 600,10: [Host #14] MIPS for VM #112 by PEs (1 * 16000.0). PE #0: 2000,00.
 600,10: [Host #14] Total allocated MIPS for VM #113 (Host #14) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -3190,8 +2930,8 @@ New resource usage for the time frame starting at 600,10:
 600,10: [Host #15] IO processing of VM #123 elapsed time is 5,67669 s
 600,10: [Host #15] IO processing of VM #124 elapsed time is 5,67669 s
 600,10: [Host #15] IO processing of VM #125 elapsed time is 5,67669 s
-600,10: [Host #15] IO processing of VM #126 elapsed time is 5,67669 s
-600,10: [Host #15] IO processing of VM #127 elapsed time is 5,67669 s
+600,10: [Host #15] IO processing of VM #126 elapsed time is 1,64727 s
+600,10: [Host #15] IO processing of VM #127 elapsed time is 1,64727 s
 600,10: [Host #15] Total allocated MIPS for VM #120 (Host #15) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 600,10: [Host #15] MIPS for VM #120 by PEs (1 * 16000.0). PE #0: 2000,00.
 600,10: [Host #15] Total allocated MIPS for VM #121 (Host #15) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -3216,8 +2956,8 @@ New resource usage for the time frame starting at 600,10:
 600,10: [Host #16] IO processing of VM #131 elapsed time is 5,67669 s
 600,10: [Host #16] IO processing of VM #132 elapsed time is 5,67669 s
 600,10: [Host #16] IO processing of VM #133 elapsed time is 5,67669 s
-600,10: [Host #16] IO processing of VM #134 elapsed time is 5,67669 s
-600,10: [Host #16] IO processing of VM #135 elapsed time is 5,67669 s
+600,10: [Host #16] IO processing of VM #134 elapsed time is 1,64727 s
+600,10: [Host #16] IO processing of VM #135 elapsed time is 1,64727 s
 600,10: [Host #16] Total allocated MIPS for VM #128 (Host #16) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 600,10: [Host #16] MIPS for VM #128 by PEs (1 * 16000.0). PE #0: 2000,00.
 600,10: [Host #16] Total allocated MIPS for VM #129 (Host #16) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -3242,8 +2982,8 @@ New resource usage for the time frame starting at 600,10:
 600,10: [Host #17] IO processing of VM #139 elapsed time is 5,67669 s
 600,10: [Host #17] IO processing of VM #140 elapsed time is 5,67669 s
 600,10: [Host #17] IO processing of VM #141 elapsed time is 5,67669 s
-600,10: [Host #17] IO processing of VM #142 elapsed time is 5,67669 s
-600,10: [Host #17] IO processing of VM #143 elapsed time is 5,67669 s
+600,10: [Host #17] IO processing of VM #142 elapsed time is 1,64727 s
+600,10: [Host #17] IO processing of VM #143 elapsed time is 1,64727 s
 600,10: [Host #17] Total allocated MIPS for VM #136 (Host #17) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 600,10: [Host #17] MIPS for VM #136 by PEs (1 * 16000.0). PE #0: 2000,00.
 600,10: [Host #17] Total allocated MIPS for VM #137 (Host #17) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -3760,110 +3500,6 @@ New resource usage for the time frame starting at 600,10:
 
 600,10: [Host #47] utilization is 0,00%
 
-600,10: [Host #48] utilization is 0,00%
-
-600,10: [Host #49] utilization is 0,00%
-
-600,10: [Host #50] utilization is 0,00%
-
-600,10: [Host #51] utilization is 0,00%
-
-600,10: [Host #52] utilization is 0,00%
-
-600,10: [Host #53] utilization is 0,00%
-
-600,10: [Host #54] utilization is 0,00%
-
-600,10: [Host #55] utilization is 0,00%
-
-600,10: [Host #56] utilization is 0,00%
-
-600,10: [Host #57] utilization is 0,00%
-
-600,10: [Host #58] utilization is 0,00%
-
-600,10: [Host #59] utilization is 0,00%
-
-600,10: [Host #60] utilization is 0,00%
-
-600,10: [Host #61] utilization is 0,00%
-
-600,10: [Host #62] utilization is 0,00%
-
-600,10: [Host #63] utilization is 0,00%
-
-600,10: [Host #64] utilization is 0,00%
-
-600,10: [Host #65] utilization is 0,00%
-
-600,10: [Host #66] utilization is 0,00%
-
-600,10: [Host #67] utilization is 0,00%
-
-600,10: [Host #68] utilization is 0,00%
-
-600,10: [Host #69] utilization is 0,00%
-
-600,10: [Host #70] utilization is 0,00%
-
-600,10: [Host #71] utilization is 0,00%
-
-600,10: [Host #72] utilization is 0,00%
-
-600,10: [Host #73] utilization is 0,00%
-
-600,10: [Host #74] utilization is 0,00%
-
-600,10: [Host #75] utilization is 0,00%
-
-600,10: [Host #76] utilization is 0,00%
-
-600,10: [Host #77] utilization is 0,00%
-
-600,10: [Host #78] utilization is 0,00%
-
-600,10: [Host #79] utilization is 0,00%
-
-600,10: [Host #80] utilization is 0,00%
-
-600,10: [Host #81] utilization is 0,00%
-
-600,10: [Host #82] utilization is 0,00%
-
-600,10: [Host #83] utilization is 0,00%
-
-600,10: [Host #84] utilization is 0,00%
-
-600,10: [Host #85] utilization is 0,00%
-
-600,10: [Host #86] utilization is 0,00%
-
-600,10: [Host #87] utilization is 0,00%
-
-600,10: [Host #88] utilization is 0,00%
-
-600,10: [Host #89] utilization is 0,00%
-
-600,10: [Host #90] utilization is 0,00%
-
-600,10: [Host #91] utilization is 0,00%
-
-600,10: [Host #92] utilization is 0,00%
-
-600,10: [Host #93] utilization is 0,00%
-
-600,10: [Host #94] utilization is 0,00%
-
-600,10: [Host #95] utilization is 0,00%
-
-600,10: [Host #96] utilization is 0,00%
-
-600,10: [Host #97] utilization is 0,00%
-
-600,10: [Host #98] utilization is 0,00%
-
-600,10: [Host #99] utilization is 0,00%
-
 Energy consumption for the last time frame from 300,10 to 600,10:
 
 600,10: [Host #0] utilization at 300,10 was 100,00%, now is 100,00%
@@ -4009,162 +3645,6 @@ Energy consumption for the last time frame from 300,10 to 600,10:
 
 600,10: [Host #47] utilization at 300,10 was 0,00%, now is 0,00%
 600,10: [Host #47] energy is 0,00 W*sec
-
-600,10: [Host #48] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #48] energy is 0,00 W*sec
-
-600,10: [Host #49] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #49] energy is 0,00 W*sec
-
-600,10: [Host #50] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #50] energy is 0,00 W*sec
-
-600,10: [Host #51] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #51] energy is 0,00 W*sec
-
-600,10: [Host #52] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #52] energy is 0,00 W*sec
-
-600,10: [Host #53] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #53] energy is 0,00 W*sec
-
-600,10: [Host #54] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #54] energy is 0,00 W*sec
-
-600,10: [Host #55] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #55] energy is 0,00 W*sec
-
-600,10: [Host #56] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #56] energy is 0,00 W*sec
-
-600,10: [Host #57] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #57] energy is 0,00 W*sec
-
-600,10: [Host #58] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #58] energy is 0,00 W*sec
-
-600,10: [Host #59] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #59] energy is 0,00 W*sec
-
-600,10: [Host #60] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #60] energy is 0,00 W*sec
-
-600,10: [Host #61] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #61] energy is 0,00 W*sec
-
-600,10: [Host #62] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #62] energy is 0,00 W*sec
-
-600,10: [Host #63] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #63] energy is 0,00 W*sec
-
-600,10: [Host #64] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #64] energy is 0,00 W*sec
-
-600,10: [Host #65] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #65] energy is 0,00 W*sec
-
-600,10: [Host #66] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #66] energy is 0,00 W*sec
-
-600,10: [Host #67] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #67] energy is 0,00 W*sec
-
-600,10: [Host #68] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #68] energy is 0,00 W*sec
-
-600,10: [Host #69] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #69] energy is 0,00 W*sec
-
-600,10: [Host #70] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #70] energy is 0,00 W*sec
-
-600,10: [Host #71] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #71] energy is 0,00 W*sec
-
-600,10: [Host #72] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #72] energy is 0,00 W*sec
-
-600,10: [Host #73] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #73] energy is 0,00 W*sec
-
-600,10: [Host #74] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #74] energy is 0,00 W*sec
-
-600,10: [Host #75] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #75] energy is 0,00 W*sec
-
-600,10: [Host #76] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #76] energy is 0,00 W*sec
-
-600,10: [Host #77] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #77] energy is 0,00 W*sec
-
-600,10: [Host #78] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #78] energy is 0,00 W*sec
-
-600,10: [Host #79] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #79] energy is 0,00 W*sec
-
-600,10: [Host #80] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #80] energy is 0,00 W*sec
-
-600,10: [Host #81] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #81] energy is 0,00 W*sec
-
-600,10: [Host #82] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #82] energy is 0,00 W*sec
-
-600,10: [Host #83] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #83] energy is 0,00 W*sec
-
-600,10: [Host #84] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #84] energy is 0,00 W*sec
-
-600,10: [Host #85] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #85] energy is 0,00 W*sec
-
-600,10: [Host #86] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #86] energy is 0,00 W*sec
-
-600,10: [Host #87] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #87] energy is 0,00 W*sec
-
-600,10: [Host #88] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #88] energy is 0,00 W*sec
-
-600,10: [Host #89] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #89] energy is 0,00 W*sec
-
-600,10: [Host #90] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #90] energy is 0,00 W*sec
-
-600,10: [Host #91] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #91] energy is 0,00 W*sec
-
-600,10: [Host #92] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #92] energy is 0,00 W*sec
-
-600,10: [Host #93] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #93] energy is 0,00 W*sec
-
-600,10: [Host #94] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #94] energy is 0,00 W*sec
-
-600,10: [Host #95] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #95] energy is 0,00 W*sec
-
-600,10: [Host #96] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #96] energy is 0,00 W*sec
-
-600,10: [Host #97] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #97] energy is 0,00 W*sec
-
-600,10: [Host #98] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #98] energy is 0,00 W*sec
-
-600,10: [Host #99] utilization at 300,10 was 0,00%, now is 0,00%
-600,10: [Host #99] energy is 0,00 W*sec
 
 600,10: Data center's energy is 1140000,00 W*sec
 
@@ -4422,8 +3902,8 @@ New resource usage for the time frame starting at 900,10:
 900,10: [Host #0] IO processing of VM #3 elapsed time is 8,44361 s
 900,10: [Host #0] IO processing of VM #4 elapsed time is 8,44361 s
 900,10: [Host #0] IO processing of VM #5 elapsed time is 8,44361 s
-900,10: [Host #0] IO processing of VM #6 elapsed time is 8,44361 s
-900,10: [Host #0] IO processing of VM #7 elapsed time is 8,44361 s
+900,10: [Host #0] IO processing of VM #6 elapsed time is 2,83273 s
+900,10: [Host #0] IO processing of VM #7 elapsed time is 2,83273 s
 900,10: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 900,10: [Host #0] MIPS for VM #0 by PEs (1 * 16000.0). PE #0: 2000,00.
 900,10: [Host #0] Total allocated MIPS for VM #1 (Host #0) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -4448,8 +3928,8 @@ New resource usage for the time frame starting at 900,10:
 900,10: [Host #1] IO processing of VM #11 elapsed time is 8,44361 s
 900,10: [Host #1] IO processing of VM #12 elapsed time is 8,44361 s
 900,10: [Host #1] IO processing of VM #13 elapsed time is 8,44361 s
-900,10: [Host #1] IO processing of VM #14 elapsed time is 8,44361 s
-900,10: [Host #1] IO processing of VM #15 elapsed time is 8,44361 s
+900,10: [Host #1] IO processing of VM #14 elapsed time is 2,83273 s
+900,10: [Host #1] IO processing of VM #15 elapsed time is 2,83273 s
 900,10: [Host #1] Total allocated MIPS for VM #8 (Host #1) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 900,10: [Host #1] MIPS for VM #8 by PEs (1 * 16000.0). PE #0: 2000,00.
 900,10: [Host #1] Total allocated MIPS for VM #9 (Host #1) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -4474,8 +3954,8 @@ New resource usage for the time frame starting at 900,10:
 900,10: [Host #2] IO processing of VM #19 elapsed time is 8,44361 s
 900,10: [Host #2] IO processing of VM #20 elapsed time is 8,44361 s
 900,10: [Host #2] IO processing of VM #21 elapsed time is 8,44361 s
-900,10: [Host #2] IO processing of VM #22 elapsed time is 8,44361 s
-900,10: [Host #2] IO processing of VM #23 elapsed time is 8,44361 s
+900,10: [Host #2] IO processing of VM #22 elapsed time is 2,83273 s
+900,10: [Host #2] IO processing of VM #23 elapsed time is 2,83273 s
 900,10: [Host #2] Total allocated MIPS for VM #16 (Host #2) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 900,10: [Host #2] MIPS for VM #16 by PEs (1 * 16000.0). PE #0: 2000,00.
 900,10: [Host #2] Total allocated MIPS for VM #17 (Host #2) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -4500,8 +3980,8 @@ New resource usage for the time frame starting at 900,10:
 900,10: [Host #3] IO processing of VM #27 elapsed time is 8,44361 s
 900,10: [Host #3] IO processing of VM #28 elapsed time is 8,44361 s
 900,10: [Host #3] IO processing of VM #29 elapsed time is 8,44361 s
-900,10: [Host #3] IO processing of VM #30 elapsed time is 8,44361 s
-900,10: [Host #3] IO processing of VM #31 elapsed time is 8,44361 s
+900,10: [Host #3] IO processing of VM #30 elapsed time is 2,83273 s
+900,10: [Host #3] IO processing of VM #31 elapsed time is 2,83273 s
 900,10: [Host #3] Total allocated MIPS for VM #24 (Host #3) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 900,10: [Host #3] MIPS for VM #24 by PEs (1 * 16000.0). PE #0: 2000,00.
 900,10: [Host #3] Total allocated MIPS for VM #25 (Host #3) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -4526,8 +4006,8 @@ New resource usage for the time frame starting at 900,10:
 900,10: [Host #4] IO processing of VM #35 elapsed time is 8,44361 s
 900,10: [Host #4] IO processing of VM #36 elapsed time is 8,44361 s
 900,10: [Host #4] IO processing of VM #37 elapsed time is 8,44361 s
-900,10: [Host #4] IO processing of VM #38 elapsed time is 8,44361 s
-900,10: [Host #4] IO processing of VM #39 elapsed time is 8,44361 s
+900,10: [Host #4] IO processing of VM #38 elapsed time is 2,83273 s
+900,10: [Host #4] IO processing of VM #39 elapsed time is 2,83273 s
 900,10: [Host #4] Total allocated MIPS for VM #32 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 900,10: [Host #4] MIPS for VM #32 by PEs (1 * 16000.0). PE #0: 2000,00.
 900,10: [Host #4] Total allocated MIPS for VM #33 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -4552,8 +4032,8 @@ New resource usage for the time frame starting at 900,10:
 900,10: [Host #5] IO processing of VM #43 elapsed time is 8,44361 s
 900,10: [Host #5] IO processing of VM #44 elapsed time is 8,44361 s
 900,10: [Host #5] IO processing of VM #45 elapsed time is 8,44361 s
-900,10: [Host #5] IO processing of VM #46 elapsed time is 8,44361 s
-900,10: [Host #5] IO processing of VM #47 elapsed time is 8,44361 s
+900,10: [Host #5] IO processing of VM #46 elapsed time is 2,83273 s
+900,10: [Host #5] IO processing of VM #47 elapsed time is 2,83273 s
 900,10: [Host #5] Total allocated MIPS for VM #40 (Host #5) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 900,10: [Host #5] MIPS for VM #40 by PEs (1 * 16000.0). PE #0: 2000,00.
 900,10: [Host #5] Total allocated MIPS for VM #41 (Host #5) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -4578,8 +4058,8 @@ New resource usage for the time frame starting at 900,10:
 900,10: [Host #6] IO processing of VM #51 elapsed time is 8,44361 s
 900,10: [Host #6] IO processing of VM #52 elapsed time is 8,44361 s
 900,10: [Host #6] IO processing of VM #53 elapsed time is 8,44361 s
-900,10: [Host #6] IO processing of VM #54 elapsed time is 8,44361 s
-900,10: [Host #6] IO processing of VM #55 elapsed time is 8,44361 s
+900,10: [Host #6] IO processing of VM #54 elapsed time is 2,83273 s
+900,10: [Host #6] IO processing of VM #55 elapsed time is 2,83273 s
 900,10: [Host #6] Total allocated MIPS for VM #48 (Host #6) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 900,10: [Host #6] MIPS for VM #48 by PEs (1 * 16000.0). PE #0: 2000,00.
 900,10: [Host #6] Total allocated MIPS for VM #49 (Host #6) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -4604,8 +4084,8 @@ New resource usage for the time frame starting at 900,10:
 900,10: [Host #7] IO processing of VM #59 elapsed time is 8,44361 s
 900,10: [Host #7] IO processing of VM #60 elapsed time is 8,44361 s
 900,10: [Host #7] IO processing of VM #61 elapsed time is 8,44361 s
-900,10: [Host #7] IO processing of VM #62 elapsed time is 8,44361 s
-900,10: [Host #7] IO processing of VM #63 elapsed time is 8,44361 s
+900,10: [Host #7] IO processing of VM #62 elapsed time is 2,83273 s
+900,10: [Host #7] IO processing of VM #63 elapsed time is 2,83273 s
 900,10: [Host #7] Total allocated MIPS for VM #56 (Host #7) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 900,10: [Host #7] MIPS for VM #56 by PEs (1 * 16000.0). PE #0: 2000,00.
 900,10: [Host #7] Total allocated MIPS for VM #57 (Host #7) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -4630,8 +4110,8 @@ New resource usage for the time frame starting at 900,10:
 900,10: [Host #8] IO processing of VM #67 elapsed time is 8,44361 s
 900,10: [Host #8] IO processing of VM #68 elapsed time is 8,44361 s
 900,10: [Host #8] IO processing of VM #69 elapsed time is 8,44361 s
-900,10: [Host #8] IO processing of VM #70 elapsed time is 8,44361 s
-900,10: [Host #8] IO processing of VM #71 elapsed time is 8,44361 s
+900,10: [Host #8] IO processing of VM #70 elapsed time is 2,83273 s
+900,10: [Host #8] IO processing of VM #71 elapsed time is 2,83273 s
 900,10: [Host #8] Total allocated MIPS for VM #64 (Host #8) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 900,10: [Host #8] MIPS for VM #64 by PEs (1 * 16000.0). PE #0: 2000,00.
 900,10: [Host #8] Total allocated MIPS for VM #65 (Host #8) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -4656,8 +4136,8 @@ New resource usage for the time frame starting at 900,10:
 900,10: [Host #9] IO processing of VM #75 elapsed time is 8,44361 s
 900,10: [Host #9] IO processing of VM #76 elapsed time is 8,44361 s
 900,10: [Host #9] IO processing of VM #77 elapsed time is 8,44361 s
-900,10: [Host #9] IO processing of VM #78 elapsed time is 8,44361 s
-900,10: [Host #9] IO processing of VM #79 elapsed time is 8,44361 s
+900,10: [Host #9] IO processing of VM #78 elapsed time is 2,83273 s
+900,10: [Host #9] IO processing of VM #79 elapsed time is 2,83273 s
 900,10: [Host #9] Total allocated MIPS for VM #72 (Host #9) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 900,10: [Host #9] MIPS for VM #72 by PEs (1 * 16000.0). PE #0: 2000,00.
 900,10: [Host #9] Total allocated MIPS for VM #73 (Host #9) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -4682,8 +4162,8 @@ New resource usage for the time frame starting at 900,10:
 900,10: [Host #10] IO processing of VM #83 elapsed time is 8,44361 s
 900,10: [Host #10] IO processing of VM #84 elapsed time is 8,44361 s
 900,10: [Host #10] IO processing of VM #85 elapsed time is 8,44361 s
-900,10: [Host #10] IO processing of VM #86 elapsed time is 8,44361 s
-900,10: [Host #10] IO processing of VM #87 elapsed time is 8,44361 s
+900,10: [Host #10] IO processing of VM #86 elapsed time is 2,83273 s
+900,10: [Host #10] IO processing of VM #87 elapsed time is 2,83273 s
 900,10: [Host #10] Total allocated MIPS for VM #80 (Host #10) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 900,10: [Host #10] MIPS for VM #80 by PEs (1 * 16000.0). PE #0: 2000,00.
 900,10: [Host #10] Total allocated MIPS for VM #81 (Host #10) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -4708,8 +4188,8 @@ New resource usage for the time frame starting at 900,10:
 900,10: [Host #11] IO processing of VM #91 elapsed time is 8,44361 s
 900,10: [Host #11] IO processing of VM #92 elapsed time is 8,44361 s
 900,10: [Host #11] IO processing of VM #93 elapsed time is 8,44361 s
-900,10: [Host #11] IO processing of VM #94 elapsed time is 8,44361 s
-900,10: [Host #11] IO processing of VM #95 elapsed time is 8,44361 s
+900,10: [Host #11] IO processing of VM #94 elapsed time is 2,83273 s
+900,10: [Host #11] IO processing of VM #95 elapsed time is 2,83273 s
 900,10: [Host #11] Total allocated MIPS for VM #88 (Host #11) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 900,10: [Host #11] MIPS for VM #88 by PEs (1 * 16000.0). PE #0: 2000,00.
 900,10: [Host #11] Total allocated MIPS for VM #89 (Host #11) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -4734,8 +4214,8 @@ New resource usage for the time frame starting at 900,10:
 900,10: [Host #12] IO processing of VM #99 elapsed time is 8,44361 s
 900,10: [Host #12] IO processing of VM #100 elapsed time is 8,44361 s
 900,10: [Host #12] IO processing of VM #101 elapsed time is 8,44361 s
-900,10: [Host #12] IO processing of VM #102 elapsed time is 8,44361 s
-900,10: [Host #12] IO processing of VM #103 elapsed time is 8,44361 s
+900,10: [Host #12] IO processing of VM #102 elapsed time is 2,83273 s
+900,10: [Host #12] IO processing of VM #103 elapsed time is 2,83273 s
 900,10: [Host #12] Total allocated MIPS for VM #96 (Host #12) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 900,10: [Host #12] MIPS for VM #96 by PEs (1 * 16000.0). PE #0: 2000,00.
 900,10: [Host #12] Total allocated MIPS for VM #97 (Host #12) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -4760,8 +4240,8 @@ New resource usage for the time frame starting at 900,10:
 900,10: [Host #13] IO processing of VM #107 elapsed time is 8,44361 s
 900,10: [Host #13] IO processing of VM #108 elapsed time is 8,44361 s
 900,10: [Host #13] IO processing of VM #109 elapsed time is 8,44361 s
-900,10: [Host #13] IO processing of VM #110 elapsed time is 8,44361 s
-900,10: [Host #13] IO processing of VM #111 elapsed time is 8,44361 s
+900,10: [Host #13] IO processing of VM #110 elapsed time is 2,83273 s
+900,10: [Host #13] IO processing of VM #111 elapsed time is 2,83273 s
 900,10: [Host #13] Total allocated MIPS for VM #104 (Host #13) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 900,10: [Host #13] MIPS for VM #104 by PEs (1 * 16000.0). PE #0: 2000,00.
 900,10: [Host #13] Total allocated MIPS for VM #105 (Host #13) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -4786,8 +4266,8 @@ New resource usage for the time frame starting at 900,10:
 900,10: [Host #14] IO processing of VM #115 elapsed time is 8,44361 s
 900,10: [Host #14] IO processing of VM #116 elapsed time is 8,44361 s
 900,10: [Host #14] IO processing of VM #117 elapsed time is 8,44361 s
-900,10: [Host #14] IO processing of VM #118 elapsed time is 8,44361 s
-900,10: [Host #14] IO processing of VM #119 elapsed time is 8,44361 s
+900,10: [Host #14] IO processing of VM #118 elapsed time is 2,83273 s
+900,10: [Host #14] IO processing of VM #119 elapsed time is 2,83273 s
 900,10: [Host #14] Total allocated MIPS for VM #112 (Host #14) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 900,10: [Host #14] MIPS for VM #112 by PEs (1 * 16000.0). PE #0: 2000,00.
 900,10: [Host #14] Total allocated MIPS for VM #113 (Host #14) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -4812,8 +4292,8 @@ New resource usage for the time frame starting at 900,10:
 900,10: [Host #15] IO processing of VM #123 elapsed time is 8,44361 s
 900,10: [Host #15] IO processing of VM #124 elapsed time is 8,44361 s
 900,10: [Host #15] IO processing of VM #125 elapsed time is 8,44361 s
-900,10: [Host #15] IO processing of VM #126 elapsed time is 8,44361 s
-900,10: [Host #15] IO processing of VM #127 elapsed time is 8,44361 s
+900,10: [Host #15] IO processing of VM #126 elapsed time is 2,83273 s
+900,10: [Host #15] IO processing of VM #127 elapsed time is 2,83273 s
 900,10: [Host #15] Total allocated MIPS for VM #120 (Host #15) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 900,10: [Host #15] MIPS for VM #120 by PEs (1 * 16000.0). PE #0: 2000,00.
 900,10: [Host #15] Total allocated MIPS for VM #121 (Host #15) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -4838,8 +4318,8 @@ New resource usage for the time frame starting at 900,10:
 900,10: [Host #16] IO processing of VM #131 elapsed time is 8,44361 s
 900,10: [Host #16] IO processing of VM #132 elapsed time is 8,44361 s
 900,10: [Host #16] IO processing of VM #133 elapsed time is 8,44361 s
-900,10: [Host #16] IO processing of VM #134 elapsed time is 8,44361 s
-900,10: [Host #16] IO processing of VM #135 elapsed time is 8,44361 s
+900,10: [Host #16] IO processing of VM #134 elapsed time is 2,83273 s
+900,10: [Host #16] IO processing of VM #135 elapsed time is 2,83273 s
 900,10: [Host #16] Total allocated MIPS for VM #128 (Host #16) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 900,10: [Host #16] MIPS for VM #128 by PEs (1 * 16000.0). PE #0: 2000,00.
 900,10: [Host #16] Total allocated MIPS for VM #129 (Host #16) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -4864,8 +4344,8 @@ New resource usage for the time frame starting at 900,10:
 900,10: [Host #17] IO processing of VM #139 elapsed time is 8,44361 s
 900,10: [Host #17] IO processing of VM #140 elapsed time is 8,44361 s
 900,10: [Host #17] IO processing of VM #141 elapsed time is 8,44361 s
-900,10: [Host #17] IO processing of VM #142 elapsed time is 8,44361 s
-900,10: [Host #17] IO processing of VM #143 elapsed time is 8,44361 s
+900,10: [Host #17] IO processing of VM #142 elapsed time is 2,83273 s
+900,10: [Host #17] IO processing of VM #143 elapsed time is 2,83273 s
 900,10: [Host #17] Total allocated MIPS for VM #136 (Host #17) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 900,10: [Host #17] MIPS for VM #136 by PEs (1 * 16000.0). PE #0: 2000,00.
 900,10: [Host #17] Total allocated MIPS for VM #137 (Host #17) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -5382,110 +4862,6 @@ New resource usage for the time frame starting at 900,10:
 
 900,10: [Host #47] utilization is 0,00%
 
-900,10: [Host #48] utilization is 0,00%
-
-900,10: [Host #49] utilization is 0,00%
-
-900,10: [Host #50] utilization is 0,00%
-
-900,10: [Host #51] utilization is 0,00%
-
-900,10: [Host #52] utilization is 0,00%
-
-900,10: [Host #53] utilization is 0,00%
-
-900,10: [Host #54] utilization is 0,00%
-
-900,10: [Host #55] utilization is 0,00%
-
-900,10: [Host #56] utilization is 0,00%
-
-900,10: [Host #57] utilization is 0,00%
-
-900,10: [Host #58] utilization is 0,00%
-
-900,10: [Host #59] utilization is 0,00%
-
-900,10: [Host #60] utilization is 0,00%
-
-900,10: [Host #61] utilization is 0,00%
-
-900,10: [Host #62] utilization is 0,00%
-
-900,10: [Host #63] utilization is 0,00%
-
-900,10: [Host #64] utilization is 0,00%
-
-900,10: [Host #65] utilization is 0,00%
-
-900,10: [Host #66] utilization is 0,00%
-
-900,10: [Host #67] utilization is 0,00%
-
-900,10: [Host #68] utilization is 0,00%
-
-900,10: [Host #69] utilization is 0,00%
-
-900,10: [Host #70] utilization is 0,00%
-
-900,10: [Host #71] utilization is 0,00%
-
-900,10: [Host #72] utilization is 0,00%
-
-900,10: [Host #73] utilization is 0,00%
-
-900,10: [Host #74] utilization is 0,00%
-
-900,10: [Host #75] utilization is 0,00%
-
-900,10: [Host #76] utilization is 0,00%
-
-900,10: [Host #77] utilization is 0,00%
-
-900,10: [Host #78] utilization is 0,00%
-
-900,10: [Host #79] utilization is 0,00%
-
-900,10: [Host #80] utilization is 0,00%
-
-900,10: [Host #81] utilization is 0,00%
-
-900,10: [Host #82] utilization is 0,00%
-
-900,10: [Host #83] utilization is 0,00%
-
-900,10: [Host #84] utilization is 0,00%
-
-900,10: [Host #85] utilization is 0,00%
-
-900,10: [Host #86] utilization is 0,00%
-
-900,10: [Host #87] utilization is 0,00%
-
-900,10: [Host #88] utilization is 0,00%
-
-900,10: [Host #89] utilization is 0,00%
-
-900,10: [Host #90] utilization is 0,00%
-
-900,10: [Host #91] utilization is 0,00%
-
-900,10: [Host #92] utilization is 0,00%
-
-900,10: [Host #93] utilization is 0,00%
-
-900,10: [Host #94] utilization is 0,00%
-
-900,10: [Host #95] utilization is 0,00%
-
-900,10: [Host #96] utilization is 0,00%
-
-900,10: [Host #97] utilization is 0,00%
-
-900,10: [Host #98] utilization is 0,00%
-
-900,10: [Host #99] utilization is 0,00%
-
 Energy consumption for the last time frame from 600,10 to 900,10:
 
 900,10: [Host #0] utilization at 600,10 was 100,00%, now is 100,00%
@@ -5631,162 +5007,6 @@ Energy consumption for the last time frame from 600,10 to 900,10:
 
 900,10: [Host #47] utilization at 600,10 was 0,00%, now is 0,00%
 900,10: [Host #47] energy is 0,00 W*sec
-
-900,10: [Host #48] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #48] energy is 0,00 W*sec
-
-900,10: [Host #49] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #49] energy is 0,00 W*sec
-
-900,10: [Host #50] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #50] energy is 0,00 W*sec
-
-900,10: [Host #51] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #51] energy is 0,00 W*sec
-
-900,10: [Host #52] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #52] energy is 0,00 W*sec
-
-900,10: [Host #53] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #53] energy is 0,00 W*sec
-
-900,10: [Host #54] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #54] energy is 0,00 W*sec
-
-900,10: [Host #55] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #55] energy is 0,00 W*sec
-
-900,10: [Host #56] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #56] energy is 0,00 W*sec
-
-900,10: [Host #57] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #57] energy is 0,00 W*sec
-
-900,10: [Host #58] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #58] energy is 0,00 W*sec
-
-900,10: [Host #59] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #59] energy is 0,00 W*sec
-
-900,10: [Host #60] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #60] energy is 0,00 W*sec
-
-900,10: [Host #61] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #61] energy is 0,00 W*sec
-
-900,10: [Host #62] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #62] energy is 0,00 W*sec
-
-900,10: [Host #63] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #63] energy is 0,00 W*sec
-
-900,10: [Host #64] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #64] energy is 0,00 W*sec
-
-900,10: [Host #65] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #65] energy is 0,00 W*sec
-
-900,10: [Host #66] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #66] energy is 0,00 W*sec
-
-900,10: [Host #67] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #67] energy is 0,00 W*sec
-
-900,10: [Host #68] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #68] energy is 0,00 W*sec
-
-900,10: [Host #69] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #69] energy is 0,00 W*sec
-
-900,10: [Host #70] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #70] energy is 0,00 W*sec
-
-900,10: [Host #71] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #71] energy is 0,00 W*sec
-
-900,10: [Host #72] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #72] energy is 0,00 W*sec
-
-900,10: [Host #73] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #73] energy is 0,00 W*sec
-
-900,10: [Host #74] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #74] energy is 0,00 W*sec
-
-900,10: [Host #75] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #75] energy is 0,00 W*sec
-
-900,10: [Host #76] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #76] energy is 0,00 W*sec
-
-900,10: [Host #77] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #77] energy is 0,00 W*sec
-
-900,10: [Host #78] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #78] energy is 0,00 W*sec
-
-900,10: [Host #79] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #79] energy is 0,00 W*sec
-
-900,10: [Host #80] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #80] energy is 0,00 W*sec
-
-900,10: [Host #81] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #81] energy is 0,00 W*sec
-
-900,10: [Host #82] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #82] energy is 0,00 W*sec
-
-900,10: [Host #83] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #83] energy is 0,00 W*sec
-
-900,10: [Host #84] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #84] energy is 0,00 W*sec
-
-900,10: [Host #85] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #85] energy is 0,00 W*sec
-
-900,10: [Host #86] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #86] energy is 0,00 W*sec
-
-900,10: [Host #87] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #87] energy is 0,00 W*sec
-
-900,10: [Host #88] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #88] energy is 0,00 W*sec
-
-900,10: [Host #89] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #89] energy is 0,00 W*sec
-
-900,10: [Host #90] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #90] energy is 0,00 W*sec
-
-900,10: [Host #91] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #91] energy is 0,00 W*sec
-
-900,10: [Host #92] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #92] energy is 0,00 W*sec
-
-900,10: [Host #93] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #93] energy is 0,00 W*sec
-
-900,10: [Host #94] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #94] energy is 0,00 W*sec
-
-900,10: [Host #95] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #95] energy is 0,00 W*sec
-
-900,10: [Host #96] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #96] energy is 0,00 W*sec
-
-900,10: [Host #97] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #97] energy is 0,00 W*sec
-
-900,10: [Host #98] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #98] energy is 0,00 W*sec
-
-900,10: [Host #99] utilization at 600,10 was 0,00%, now is 0,00%
-900,10: [Host #99] energy is 0,00 W*sec
 
 900,10: Data center's energy is 1140000,00 W*sec
 
@@ -6044,8 +5264,8 @@ New resource usage for the time frame starting at 1200,10:
 1200,10: [Host #0] IO processing of VM #3 elapsed time is 5,39850 s
 1200,10: [Host #0] IO processing of VM #4 elapsed time is 5,39850 s
 1200,10: [Host #0] IO processing of VM #5 elapsed time is 5,39850 s
-1200,10: [Host #0] IO processing of VM #6 elapsed time is 5,39850 s
-1200,10: [Host #0] IO processing of VM #7 elapsed time is 5,39850 s
+1200,10: [Host #0] IO processing of VM #6 elapsed time is 1,58000 s
+1200,10: [Host #0] IO processing of VM #7 elapsed time is 1,58000 s
 1200,10: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1200,10: [Host #0] MIPS for VM #0 by PEs (1 * 16000.0). PE #0: 2000,00.
 1200,10: [Host #0] Total allocated MIPS for VM #1 (Host #0) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -6070,8 +5290,8 @@ New resource usage for the time frame starting at 1200,10:
 1200,10: [Host #1] IO processing of VM #11 elapsed time is 5,39850 s
 1200,10: [Host #1] IO processing of VM #12 elapsed time is 5,39850 s
 1200,10: [Host #1] IO processing of VM #13 elapsed time is 5,39850 s
-1200,10: [Host #1] IO processing of VM #14 elapsed time is 5,39850 s
-1200,10: [Host #1] IO processing of VM #15 elapsed time is 5,39850 s
+1200,10: [Host #1] IO processing of VM #14 elapsed time is 1,58000 s
+1200,10: [Host #1] IO processing of VM #15 elapsed time is 1,58000 s
 1200,10: [Host #1] Total allocated MIPS for VM #8 (Host #1) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1200,10: [Host #1] MIPS for VM #8 by PEs (1 * 16000.0). PE #0: 2000,00.
 1200,10: [Host #1] Total allocated MIPS for VM #9 (Host #1) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -6096,8 +5316,8 @@ New resource usage for the time frame starting at 1200,10:
 1200,10: [Host #2] IO processing of VM #19 elapsed time is 5,39850 s
 1200,10: [Host #2] IO processing of VM #20 elapsed time is 5,39850 s
 1200,10: [Host #2] IO processing of VM #21 elapsed time is 5,39850 s
-1200,10: [Host #2] IO processing of VM #22 elapsed time is 5,39850 s
-1200,10: [Host #2] IO processing of VM #23 elapsed time is 5,39850 s
+1200,10: [Host #2] IO processing of VM #22 elapsed time is 1,58000 s
+1200,10: [Host #2] IO processing of VM #23 elapsed time is 1,58000 s
 1200,10: [Host #2] Total allocated MIPS for VM #16 (Host #2) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1200,10: [Host #2] MIPS for VM #16 by PEs (1 * 16000.0). PE #0: 2000,00.
 1200,10: [Host #2] Total allocated MIPS for VM #17 (Host #2) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -6122,8 +5342,8 @@ New resource usage for the time frame starting at 1200,10:
 1200,10: [Host #3] IO processing of VM #27 elapsed time is 5,39850 s
 1200,10: [Host #3] IO processing of VM #28 elapsed time is 5,39850 s
 1200,10: [Host #3] IO processing of VM #29 elapsed time is 5,39850 s
-1200,10: [Host #3] IO processing of VM #30 elapsed time is 5,39850 s
-1200,10: [Host #3] IO processing of VM #31 elapsed time is 5,39850 s
+1200,10: [Host #3] IO processing of VM #30 elapsed time is 1,58000 s
+1200,10: [Host #3] IO processing of VM #31 elapsed time is 1,58000 s
 1200,10: [Host #3] Total allocated MIPS for VM #24 (Host #3) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1200,10: [Host #3] MIPS for VM #24 by PEs (1 * 16000.0). PE #0: 2000,00.
 1200,10: [Host #3] Total allocated MIPS for VM #25 (Host #3) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -6148,8 +5368,8 @@ New resource usage for the time frame starting at 1200,10:
 1200,10: [Host #4] IO processing of VM #35 elapsed time is 5,39850 s
 1200,10: [Host #4] IO processing of VM #36 elapsed time is 5,39850 s
 1200,10: [Host #4] IO processing of VM #37 elapsed time is 5,39850 s
-1200,10: [Host #4] IO processing of VM #38 elapsed time is 5,39850 s
-1200,10: [Host #4] IO processing of VM #39 elapsed time is 5,39850 s
+1200,10: [Host #4] IO processing of VM #38 elapsed time is 1,58000 s
+1200,10: [Host #4] IO processing of VM #39 elapsed time is 1,58000 s
 1200,10: [Host #4] Total allocated MIPS for VM #32 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1200,10: [Host #4] MIPS for VM #32 by PEs (1 * 16000.0). PE #0: 2000,00.
 1200,10: [Host #4] Total allocated MIPS for VM #33 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -6174,8 +5394,8 @@ New resource usage for the time frame starting at 1200,10:
 1200,10: [Host #5] IO processing of VM #43 elapsed time is 5,39850 s
 1200,10: [Host #5] IO processing of VM #44 elapsed time is 5,39850 s
 1200,10: [Host #5] IO processing of VM #45 elapsed time is 5,39850 s
-1200,10: [Host #5] IO processing of VM #46 elapsed time is 5,39850 s
-1200,10: [Host #5] IO processing of VM #47 elapsed time is 5,39850 s
+1200,10: [Host #5] IO processing of VM #46 elapsed time is 1,58000 s
+1200,10: [Host #5] IO processing of VM #47 elapsed time is 1,58000 s
 1200,10: [Host #5] Total allocated MIPS for VM #40 (Host #5) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1200,10: [Host #5] MIPS for VM #40 by PEs (1 * 16000.0). PE #0: 2000,00.
 1200,10: [Host #5] Total allocated MIPS for VM #41 (Host #5) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -6200,8 +5420,8 @@ New resource usage for the time frame starting at 1200,10:
 1200,10: [Host #6] IO processing of VM #51 elapsed time is 5,39850 s
 1200,10: [Host #6] IO processing of VM #52 elapsed time is 5,39850 s
 1200,10: [Host #6] IO processing of VM #53 elapsed time is 5,39850 s
-1200,10: [Host #6] IO processing of VM #54 elapsed time is 5,39850 s
-1200,10: [Host #6] IO processing of VM #55 elapsed time is 5,39850 s
+1200,10: [Host #6] IO processing of VM #54 elapsed time is 1,58000 s
+1200,10: [Host #6] IO processing of VM #55 elapsed time is 1,58000 s
 1200,10: [Host #6] Total allocated MIPS for VM #48 (Host #6) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1200,10: [Host #6] MIPS for VM #48 by PEs (1 * 16000.0). PE #0: 2000,00.
 1200,10: [Host #6] Total allocated MIPS for VM #49 (Host #6) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -6226,8 +5446,8 @@ New resource usage for the time frame starting at 1200,10:
 1200,10: [Host #7] IO processing of VM #59 elapsed time is 5,39850 s
 1200,10: [Host #7] IO processing of VM #60 elapsed time is 5,39850 s
 1200,10: [Host #7] IO processing of VM #61 elapsed time is 5,39850 s
-1200,10: [Host #7] IO processing of VM #62 elapsed time is 5,39850 s
-1200,10: [Host #7] IO processing of VM #63 elapsed time is 5,39850 s
+1200,10: [Host #7] IO processing of VM #62 elapsed time is 1,58000 s
+1200,10: [Host #7] IO processing of VM #63 elapsed time is 1,58000 s
 1200,10: [Host #7] Total allocated MIPS for VM #56 (Host #7) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1200,10: [Host #7] MIPS for VM #56 by PEs (1 * 16000.0). PE #0: 2000,00.
 1200,10: [Host #7] Total allocated MIPS for VM #57 (Host #7) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -6252,8 +5472,8 @@ New resource usage for the time frame starting at 1200,10:
 1200,10: [Host #8] IO processing of VM #67 elapsed time is 5,39850 s
 1200,10: [Host #8] IO processing of VM #68 elapsed time is 5,39850 s
 1200,10: [Host #8] IO processing of VM #69 elapsed time is 5,39850 s
-1200,10: [Host #8] IO processing of VM #70 elapsed time is 5,39850 s
-1200,10: [Host #8] IO processing of VM #71 elapsed time is 5,39850 s
+1200,10: [Host #8] IO processing of VM #70 elapsed time is 1,58000 s
+1200,10: [Host #8] IO processing of VM #71 elapsed time is 1,58000 s
 1200,10: [Host #8] Total allocated MIPS for VM #64 (Host #8) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1200,10: [Host #8] MIPS for VM #64 by PEs (1 * 16000.0). PE #0: 2000,00.
 1200,10: [Host #8] Total allocated MIPS for VM #65 (Host #8) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -6278,8 +5498,8 @@ New resource usage for the time frame starting at 1200,10:
 1200,10: [Host #9] IO processing of VM #75 elapsed time is 5,39850 s
 1200,10: [Host #9] IO processing of VM #76 elapsed time is 5,39850 s
 1200,10: [Host #9] IO processing of VM #77 elapsed time is 5,39850 s
-1200,10: [Host #9] IO processing of VM #78 elapsed time is 5,39850 s
-1200,10: [Host #9] IO processing of VM #79 elapsed time is 5,39850 s
+1200,10: [Host #9] IO processing of VM #78 elapsed time is 1,58000 s
+1200,10: [Host #9] IO processing of VM #79 elapsed time is 1,58000 s
 1200,10: [Host #9] Total allocated MIPS for VM #72 (Host #9) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1200,10: [Host #9] MIPS for VM #72 by PEs (1 * 16000.0). PE #0: 2000,00.
 1200,10: [Host #9] Total allocated MIPS for VM #73 (Host #9) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -6304,8 +5524,8 @@ New resource usage for the time frame starting at 1200,10:
 1200,10: [Host #10] IO processing of VM #83 elapsed time is 5,39850 s
 1200,10: [Host #10] IO processing of VM #84 elapsed time is 5,39850 s
 1200,10: [Host #10] IO processing of VM #85 elapsed time is 5,39850 s
-1200,10: [Host #10] IO processing of VM #86 elapsed time is 5,39850 s
-1200,10: [Host #10] IO processing of VM #87 elapsed time is 5,39850 s
+1200,10: [Host #10] IO processing of VM #86 elapsed time is 1,58000 s
+1200,10: [Host #10] IO processing of VM #87 elapsed time is 1,58000 s
 1200,10: [Host #10] Total allocated MIPS for VM #80 (Host #10) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1200,10: [Host #10] MIPS for VM #80 by PEs (1 * 16000.0). PE #0: 2000,00.
 1200,10: [Host #10] Total allocated MIPS for VM #81 (Host #10) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -6330,8 +5550,8 @@ New resource usage for the time frame starting at 1200,10:
 1200,10: [Host #11] IO processing of VM #91 elapsed time is 5,39850 s
 1200,10: [Host #11] IO processing of VM #92 elapsed time is 5,39850 s
 1200,10: [Host #11] IO processing of VM #93 elapsed time is 5,39850 s
-1200,10: [Host #11] IO processing of VM #94 elapsed time is 5,39850 s
-1200,10: [Host #11] IO processing of VM #95 elapsed time is 5,39850 s
+1200,10: [Host #11] IO processing of VM #94 elapsed time is 1,58000 s
+1200,10: [Host #11] IO processing of VM #95 elapsed time is 1,58000 s
 1200,10: [Host #11] Total allocated MIPS for VM #88 (Host #11) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1200,10: [Host #11] MIPS for VM #88 by PEs (1 * 16000.0). PE #0: 2000,00.
 1200,10: [Host #11] Total allocated MIPS for VM #89 (Host #11) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -6356,8 +5576,8 @@ New resource usage for the time frame starting at 1200,10:
 1200,10: [Host #12] IO processing of VM #99 elapsed time is 5,39850 s
 1200,10: [Host #12] IO processing of VM #100 elapsed time is 5,39850 s
 1200,10: [Host #12] IO processing of VM #101 elapsed time is 5,39850 s
-1200,10: [Host #12] IO processing of VM #102 elapsed time is 5,39850 s
-1200,10: [Host #12] IO processing of VM #103 elapsed time is 5,39850 s
+1200,10: [Host #12] IO processing of VM #102 elapsed time is 1,58000 s
+1200,10: [Host #12] IO processing of VM #103 elapsed time is 1,58000 s
 1200,10: [Host #12] Total allocated MIPS for VM #96 (Host #12) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1200,10: [Host #12] MIPS for VM #96 by PEs (1 * 16000.0). PE #0: 2000,00.
 1200,10: [Host #12] Total allocated MIPS for VM #97 (Host #12) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -6382,8 +5602,8 @@ New resource usage for the time frame starting at 1200,10:
 1200,10: [Host #13] IO processing of VM #107 elapsed time is 5,39850 s
 1200,10: [Host #13] IO processing of VM #108 elapsed time is 5,39850 s
 1200,10: [Host #13] IO processing of VM #109 elapsed time is 5,39850 s
-1200,10: [Host #13] IO processing of VM #110 elapsed time is 5,39850 s
-1200,10: [Host #13] IO processing of VM #111 elapsed time is 5,39850 s
+1200,10: [Host #13] IO processing of VM #110 elapsed time is 1,58000 s
+1200,10: [Host #13] IO processing of VM #111 elapsed time is 1,58000 s
 1200,10: [Host #13] Total allocated MIPS for VM #104 (Host #13) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1200,10: [Host #13] MIPS for VM #104 by PEs (1 * 16000.0). PE #0: 2000,00.
 1200,10: [Host #13] Total allocated MIPS for VM #105 (Host #13) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -6408,8 +5628,8 @@ New resource usage for the time frame starting at 1200,10:
 1200,10: [Host #14] IO processing of VM #115 elapsed time is 5,39850 s
 1200,10: [Host #14] IO processing of VM #116 elapsed time is 5,39850 s
 1200,10: [Host #14] IO processing of VM #117 elapsed time is 5,39850 s
-1200,10: [Host #14] IO processing of VM #118 elapsed time is 5,39850 s
-1200,10: [Host #14] IO processing of VM #119 elapsed time is 5,39850 s
+1200,10: [Host #14] IO processing of VM #118 elapsed time is 1,58000 s
+1200,10: [Host #14] IO processing of VM #119 elapsed time is 1,58000 s
 1200,10: [Host #14] Total allocated MIPS for VM #112 (Host #14) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1200,10: [Host #14] MIPS for VM #112 by PEs (1 * 16000.0). PE #0: 2000,00.
 1200,10: [Host #14] Total allocated MIPS for VM #113 (Host #14) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -6434,8 +5654,8 @@ New resource usage for the time frame starting at 1200,10:
 1200,10: [Host #15] IO processing of VM #123 elapsed time is 5,39850 s
 1200,10: [Host #15] IO processing of VM #124 elapsed time is 5,39850 s
 1200,10: [Host #15] IO processing of VM #125 elapsed time is 5,39850 s
-1200,10: [Host #15] IO processing of VM #126 elapsed time is 5,39850 s
-1200,10: [Host #15] IO processing of VM #127 elapsed time is 5,39850 s
+1200,10: [Host #15] IO processing of VM #126 elapsed time is 1,58000 s
+1200,10: [Host #15] IO processing of VM #127 elapsed time is 1,58000 s
 1200,10: [Host #15] Total allocated MIPS for VM #120 (Host #15) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1200,10: [Host #15] MIPS for VM #120 by PEs (1 * 16000.0). PE #0: 2000,00.
 1200,10: [Host #15] Total allocated MIPS for VM #121 (Host #15) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -6460,8 +5680,8 @@ New resource usage for the time frame starting at 1200,10:
 1200,10: [Host #16] IO processing of VM #131 elapsed time is 5,39850 s
 1200,10: [Host #16] IO processing of VM #132 elapsed time is 5,39850 s
 1200,10: [Host #16] IO processing of VM #133 elapsed time is 5,39850 s
-1200,10: [Host #16] IO processing of VM #134 elapsed time is 5,39850 s
-1200,10: [Host #16] IO processing of VM #135 elapsed time is 5,39850 s
+1200,10: [Host #16] IO processing of VM #134 elapsed time is 1,58000 s
+1200,10: [Host #16] IO processing of VM #135 elapsed time is 1,58000 s
 1200,10: [Host #16] Total allocated MIPS for VM #128 (Host #16) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1200,10: [Host #16] MIPS for VM #128 by PEs (1 * 16000.0). PE #0: 2000,00.
 1200,10: [Host #16] Total allocated MIPS for VM #129 (Host #16) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -6486,8 +5706,8 @@ New resource usage for the time frame starting at 1200,10:
 1200,10: [Host #17] IO processing of VM #139 elapsed time is 5,39850 s
 1200,10: [Host #17] IO processing of VM #140 elapsed time is 5,39850 s
 1200,10: [Host #17] IO processing of VM #141 elapsed time is 5,39850 s
-1200,10: [Host #17] IO processing of VM #142 elapsed time is 5,39850 s
-1200,10: [Host #17] IO processing of VM #143 elapsed time is 5,39850 s
+1200,10: [Host #17] IO processing of VM #142 elapsed time is 1,58000 s
+1200,10: [Host #17] IO processing of VM #143 elapsed time is 1,58000 s
 1200,10: [Host #17] Total allocated MIPS for VM #136 (Host #17) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1200,10: [Host #17] MIPS for VM #136 by PEs (1 * 16000.0). PE #0: 2000,00.
 1200,10: [Host #17] Total allocated MIPS for VM #137 (Host #17) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -7004,110 +6224,6 @@ New resource usage for the time frame starting at 1200,10:
 
 1200,10: [Host #47] utilization is 0,00%
 
-1200,10: [Host #48] utilization is 0,00%
-
-1200,10: [Host #49] utilization is 0,00%
-
-1200,10: [Host #50] utilization is 0,00%
-
-1200,10: [Host #51] utilization is 0,00%
-
-1200,10: [Host #52] utilization is 0,00%
-
-1200,10: [Host #53] utilization is 0,00%
-
-1200,10: [Host #54] utilization is 0,00%
-
-1200,10: [Host #55] utilization is 0,00%
-
-1200,10: [Host #56] utilization is 0,00%
-
-1200,10: [Host #57] utilization is 0,00%
-
-1200,10: [Host #58] utilization is 0,00%
-
-1200,10: [Host #59] utilization is 0,00%
-
-1200,10: [Host #60] utilization is 0,00%
-
-1200,10: [Host #61] utilization is 0,00%
-
-1200,10: [Host #62] utilization is 0,00%
-
-1200,10: [Host #63] utilization is 0,00%
-
-1200,10: [Host #64] utilization is 0,00%
-
-1200,10: [Host #65] utilization is 0,00%
-
-1200,10: [Host #66] utilization is 0,00%
-
-1200,10: [Host #67] utilization is 0,00%
-
-1200,10: [Host #68] utilization is 0,00%
-
-1200,10: [Host #69] utilization is 0,00%
-
-1200,10: [Host #70] utilization is 0,00%
-
-1200,10: [Host #71] utilization is 0,00%
-
-1200,10: [Host #72] utilization is 0,00%
-
-1200,10: [Host #73] utilization is 0,00%
-
-1200,10: [Host #74] utilization is 0,00%
-
-1200,10: [Host #75] utilization is 0,00%
-
-1200,10: [Host #76] utilization is 0,00%
-
-1200,10: [Host #77] utilization is 0,00%
-
-1200,10: [Host #78] utilization is 0,00%
-
-1200,10: [Host #79] utilization is 0,00%
-
-1200,10: [Host #80] utilization is 0,00%
-
-1200,10: [Host #81] utilization is 0,00%
-
-1200,10: [Host #82] utilization is 0,00%
-
-1200,10: [Host #83] utilization is 0,00%
-
-1200,10: [Host #84] utilization is 0,00%
-
-1200,10: [Host #85] utilization is 0,00%
-
-1200,10: [Host #86] utilization is 0,00%
-
-1200,10: [Host #87] utilization is 0,00%
-
-1200,10: [Host #88] utilization is 0,00%
-
-1200,10: [Host #89] utilization is 0,00%
-
-1200,10: [Host #90] utilization is 0,00%
-
-1200,10: [Host #91] utilization is 0,00%
-
-1200,10: [Host #92] utilization is 0,00%
-
-1200,10: [Host #93] utilization is 0,00%
-
-1200,10: [Host #94] utilization is 0,00%
-
-1200,10: [Host #95] utilization is 0,00%
-
-1200,10: [Host #96] utilization is 0,00%
-
-1200,10: [Host #97] utilization is 0,00%
-
-1200,10: [Host #98] utilization is 0,00%
-
-1200,10: [Host #99] utilization is 0,00%
-
 Energy consumption for the last time frame from 900,10 to 1200,10:
 
 1200,10: [Host #0] utilization at 900,10 was 100,00%, now is 100,00%
@@ -7253,162 +6369,6 @@ Energy consumption for the last time frame from 900,10 to 1200,10:
 
 1200,10: [Host #47] utilization at 900,10 was 0,00%, now is 0,00%
 1200,10: [Host #47] energy is 0,00 W*sec
-
-1200,10: [Host #48] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #48] energy is 0,00 W*sec
-
-1200,10: [Host #49] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #49] energy is 0,00 W*sec
-
-1200,10: [Host #50] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #50] energy is 0,00 W*sec
-
-1200,10: [Host #51] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #51] energy is 0,00 W*sec
-
-1200,10: [Host #52] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #52] energy is 0,00 W*sec
-
-1200,10: [Host #53] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #53] energy is 0,00 W*sec
-
-1200,10: [Host #54] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #54] energy is 0,00 W*sec
-
-1200,10: [Host #55] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #55] energy is 0,00 W*sec
-
-1200,10: [Host #56] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #56] energy is 0,00 W*sec
-
-1200,10: [Host #57] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #57] energy is 0,00 W*sec
-
-1200,10: [Host #58] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #58] energy is 0,00 W*sec
-
-1200,10: [Host #59] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #59] energy is 0,00 W*sec
-
-1200,10: [Host #60] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #60] energy is 0,00 W*sec
-
-1200,10: [Host #61] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #61] energy is 0,00 W*sec
-
-1200,10: [Host #62] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #62] energy is 0,00 W*sec
-
-1200,10: [Host #63] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #63] energy is 0,00 W*sec
-
-1200,10: [Host #64] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #64] energy is 0,00 W*sec
-
-1200,10: [Host #65] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #65] energy is 0,00 W*sec
-
-1200,10: [Host #66] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #66] energy is 0,00 W*sec
-
-1200,10: [Host #67] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #67] energy is 0,00 W*sec
-
-1200,10: [Host #68] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #68] energy is 0,00 W*sec
-
-1200,10: [Host #69] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #69] energy is 0,00 W*sec
-
-1200,10: [Host #70] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #70] energy is 0,00 W*sec
-
-1200,10: [Host #71] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #71] energy is 0,00 W*sec
-
-1200,10: [Host #72] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #72] energy is 0,00 W*sec
-
-1200,10: [Host #73] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #73] energy is 0,00 W*sec
-
-1200,10: [Host #74] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #74] energy is 0,00 W*sec
-
-1200,10: [Host #75] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #75] energy is 0,00 W*sec
-
-1200,10: [Host #76] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #76] energy is 0,00 W*sec
-
-1200,10: [Host #77] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #77] energy is 0,00 W*sec
-
-1200,10: [Host #78] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #78] energy is 0,00 W*sec
-
-1200,10: [Host #79] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #79] energy is 0,00 W*sec
-
-1200,10: [Host #80] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #80] energy is 0,00 W*sec
-
-1200,10: [Host #81] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #81] energy is 0,00 W*sec
-
-1200,10: [Host #82] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #82] energy is 0,00 W*sec
-
-1200,10: [Host #83] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #83] energy is 0,00 W*sec
-
-1200,10: [Host #84] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #84] energy is 0,00 W*sec
-
-1200,10: [Host #85] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #85] energy is 0,00 W*sec
-
-1200,10: [Host #86] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #86] energy is 0,00 W*sec
-
-1200,10: [Host #87] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #87] energy is 0,00 W*sec
-
-1200,10: [Host #88] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #88] energy is 0,00 W*sec
-
-1200,10: [Host #89] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #89] energy is 0,00 W*sec
-
-1200,10: [Host #90] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #90] energy is 0,00 W*sec
-
-1200,10: [Host #91] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #91] energy is 0,00 W*sec
-
-1200,10: [Host #92] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #92] energy is 0,00 W*sec
-
-1200,10: [Host #93] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #93] energy is 0,00 W*sec
-
-1200,10: [Host #94] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #94] energy is 0,00 W*sec
-
-1200,10: [Host #95] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #95] energy is 0,00 W*sec
-
-1200,10: [Host #96] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #96] energy is 0,00 W*sec
-
-1200,10: [Host #97] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #97] energy is 0,00 W*sec
-
-1200,10: [Host #98] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #98] energy is 0,00 W*sec
-
-1200,10: [Host #99] utilization at 900,10 was 0,00%, now is 0,00%
-1200,10: [Host #99] energy is 0,00 W*sec
 
 1200,10: Data center's energy is 1140000,00 W*sec
 
@@ -7666,8 +6626,8 @@ New resource usage for the time frame starting at 1500,10:
 1500,10: [Host #0] IO processing of VM #3 elapsed time is 9,72180 s
 1500,10: [Host #0] IO processing of VM #4 elapsed time is 9,72180 s
 1500,10: [Host #0] IO processing of VM #5 elapsed time is 9,72180 s
-1500,10: [Host #0] IO processing of VM #6 elapsed time is 9,72180 s
-1500,10: [Host #0] IO processing of VM #7 elapsed time is 9,72180 s
+1500,10: [Host #0] IO processing of VM #6 elapsed time is 2,90000 s
+1500,10: [Host #0] IO processing of VM #7 elapsed time is 2,90000 s
 1500,10: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #0] MIPS for VM #0 by PEs (1 * 16000.0). PE #0: 2000,00.
 1500,10: [Host #0] Total allocated MIPS for VM #1 (Host #0) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -7692,8 +6652,8 @@ New resource usage for the time frame starting at 1500,10:
 1500,10: [Host #1] IO processing of VM #11 elapsed time is 9,72180 s
 1500,10: [Host #1] IO processing of VM #12 elapsed time is 9,72180 s
 1500,10: [Host #1] IO processing of VM #13 elapsed time is 9,72180 s
-1500,10: [Host #1] IO processing of VM #14 elapsed time is 9,72180 s
-1500,10: [Host #1] IO processing of VM #15 elapsed time is 9,72180 s
+1500,10: [Host #1] IO processing of VM #14 elapsed time is 2,90000 s
+1500,10: [Host #1] IO processing of VM #15 elapsed time is 2,90000 s
 1500,10: [Host #1] Total allocated MIPS for VM #8 (Host #1) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #1] MIPS for VM #8 by PEs (1 * 16000.0). PE #0: 2000,00.
 1500,10: [Host #1] Total allocated MIPS for VM #9 (Host #1) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -7718,8 +6678,8 @@ New resource usage for the time frame starting at 1500,10:
 1500,10: [Host #2] IO processing of VM #19 elapsed time is 9,72180 s
 1500,10: [Host #2] IO processing of VM #20 elapsed time is 9,72180 s
 1500,10: [Host #2] IO processing of VM #21 elapsed time is 9,72180 s
-1500,10: [Host #2] IO processing of VM #22 elapsed time is 9,72180 s
-1500,10: [Host #2] IO processing of VM #23 elapsed time is 9,72180 s
+1500,10: [Host #2] IO processing of VM #22 elapsed time is 2,90000 s
+1500,10: [Host #2] IO processing of VM #23 elapsed time is 2,90000 s
 1500,10: [Host #2] Total allocated MIPS for VM #16 (Host #2) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #2] MIPS for VM #16 by PEs (1 * 16000.0). PE #0: 2000,00.
 1500,10: [Host #2] Total allocated MIPS for VM #17 (Host #2) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -7744,8 +6704,8 @@ New resource usage for the time frame starting at 1500,10:
 1500,10: [Host #3] IO processing of VM #27 elapsed time is 9,72180 s
 1500,10: [Host #3] IO processing of VM #28 elapsed time is 9,72180 s
 1500,10: [Host #3] IO processing of VM #29 elapsed time is 9,72180 s
-1500,10: [Host #3] IO processing of VM #30 elapsed time is 9,72180 s
-1500,10: [Host #3] IO processing of VM #31 elapsed time is 9,72180 s
+1500,10: [Host #3] IO processing of VM #30 elapsed time is 2,90000 s
+1500,10: [Host #3] IO processing of VM #31 elapsed time is 2,90000 s
 1500,10: [Host #3] Total allocated MIPS for VM #24 (Host #3) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #3] MIPS for VM #24 by PEs (1 * 16000.0). PE #0: 2000,00.
 1500,10: [Host #3] Total allocated MIPS for VM #25 (Host #3) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -7770,8 +6730,8 @@ New resource usage for the time frame starting at 1500,10:
 1500,10: [Host #4] IO processing of VM #35 elapsed time is 9,72180 s
 1500,10: [Host #4] IO processing of VM #36 elapsed time is 9,72180 s
 1500,10: [Host #4] IO processing of VM #37 elapsed time is 9,72180 s
-1500,10: [Host #4] IO processing of VM #38 elapsed time is 9,72180 s
-1500,10: [Host #4] IO processing of VM #39 elapsed time is 9,72180 s
+1500,10: [Host #4] IO processing of VM #38 elapsed time is 2,90000 s
+1500,10: [Host #4] IO processing of VM #39 elapsed time is 2,90000 s
 1500,10: [Host #4] Total allocated MIPS for VM #32 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #4] MIPS for VM #32 by PEs (1 * 16000.0). PE #0: 2000,00.
 1500,10: [Host #4] Total allocated MIPS for VM #33 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -7796,8 +6756,8 @@ New resource usage for the time frame starting at 1500,10:
 1500,10: [Host #5] IO processing of VM #43 elapsed time is 9,72180 s
 1500,10: [Host #5] IO processing of VM #44 elapsed time is 9,72180 s
 1500,10: [Host #5] IO processing of VM #45 elapsed time is 9,72180 s
-1500,10: [Host #5] IO processing of VM #46 elapsed time is 9,72180 s
-1500,10: [Host #5] IO processing of VM #47 elapsed time is 9,72180 s
+1500,10: [Host #5] IO processing of VM #46 elapsed time is 2,90000 s
+1500,10: [Host #5] IO processing of VM #47 elapsed time is 2,90000 s
 1500,10: [Host #5] Total allocated MIPS for VM #40 (Host #5) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #5] MIPS for VM #40 by PEs (1 * 16000.0). PE #0: 2000,00.
 1500,10: [Host #5] Total allocated MIPS for VM #41 (Host #5) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -7822,8 +6782,8 @@ New resource usage for the time frame starting at 1500,10:
 1500,10: [Host #6] IO processing of VM #51 elapsed time is 9,72180 s
 1500,10: [Host #6] IO processing of VM #52 elapsed time is 9,72180 s
 1500,10: [Host #6] IO processing of VM #53 elapsed time is 9,72180 s
-1500,10: [Host #6] IO processing of VM #54 elapsed time is 9,72180 s
-1500,10: [Host #6] IO processing of VM #55 elapsed time is 9,72180 s
+1500,10: [Host #6] IO processing of VM #54 elapsed time is 2,90000 s
+1500,10: [Host #6] IO processing of VM #55 elapsed time is 2,90000 s
 1500,10: [Host #6] Total allocated MIPS for VM #48 (Host #6) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #6] MIPS for VM #48 by PEs (1 * 16000.0). PE #0: 2000,00.
 1500,10: [Host #6] Total allocated MIPS for VM #49 (Host #6) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -7848,8 +6808,8 @@ New resource usage for the time frame starting at 1500,10:
 1500,10: [Host #7] IO processing of VM #59 elapsed time is 9,72180 s
 1500,10: [Host #7] IO processing of VM #60 elapsed time is 9,72180 s
 1500,10: [Host #7] IO processing of VM #61 elapsed time is 9,72180 s
-1500,10: [Host #7] IO processing of VM #62 elapsed time is 9,72180 s
-1500,10: [Host #7] IO processing of VM #63 elapsed time is 9,72180 s
+1500,10: [Host #7] IO processing of VM #62 elapsed time is 2,90000 s
+1500,10: [Host #7] IO processing of VM #63 elapsed time is 2,90000 s
 1500,10: [Host #7] Total allocated MIPS for VM #56 (Host #7) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #7] MIPS for VM #56 by PEs (1 * 16000.0). PE #0: 2000,00.
 1500,10: [Host #7] Total allocated MIPS for VM #57 (Host #7) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -7874,8 +6834,8 @@ New resource usage for the time frame starting at 1500,10:
 1500,10: [Host #8] IO processing of VM #67 elapsed time is 9,72180 s
 1500,10: [Host #8] IO processing of VM #68 elapsed time is 9,72180 s
 1500,10: [Host #8] IO processing of VM #69 elapsed time is 9,72180 s
-1500,10: [Host #8] IO processing of VM #70 elapsed time is 9,72180 s
-1500,10: [Host #8] IO processing of VM #71 elapsed time is 9,72180 s
+1500,10: [Host #8] IO processing of VM #70 elapsed time is 2,90000 s
+1500,10: [Host #8] IO processing of VM #71 elapsed time is 2,90000 s
 1500,10: [Host #8] Total allocated MIPS for VM #64 (Host #8) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #8] MIPS for VM #64 by PEs (1 * 16000.0). PE #0: 2000,00.
 1500,10: [Host #8] Total allocated MIPS for VM #65 (Host #8) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -7900,8 +6860,8 @@ New resource usage for the time frame starting at 1500,10:
 1500,10: [Host #9] IO processing of VM #75 elapsed time is 9,72180 s
 1500,10: [Host #9] IO processing of VM #76 elapsed time is 9,72180 s
 1500,10: [Host #9] IO processing of VM #77 elapsed time is 9,72180 s
-1500,10: [Host #9] IO processing of VM #78 elapsed time is 9,72180 s
-1500,10: [Host #9] IO processing of VM #79 elapsed time is 9,72180 s
+1500,10: [Host #9] IO processing of VM #78 elapsed time is 2,90000 s
+1500,10: [Host #9] IO processing of VM #79 elapsed time is 2,90000 s
 1500,10: [Host #9] Total allocated MIPS for VM #72 (Host #9) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #9] MIPS for VM #72 by PEs (1 * 16000.0). PE #0: 2000,00.
 1500,10: [Host #9] Total allocated MIPS for VM #73 (Host #9) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -7926,8 +6886,8 @@ New resource usage for the time frame starting at 1500,10:
 1500,10: [Host #10] IO processing of VM #83 elapsed time is 9,72180 s
 1500,10: [Host #10] IO processing of VM #84 elapsed time is 9,72180 s
 1500,10: [Host #10] IO processing of VM #85 elapsed time is 9,72180 s
-1500,10: [Host #10] IO processing of VM #86 elapsed time is 9,72180 s
-1500,10: [Host #10] IO processing of VM #87 elapsed time is 9,72180 s
+1500,10: [Host #10] IO processing of VM #86 elapsed time is 2,90000 s
+1500,10: [Host #10] IO processing of VM #87 elapsed time is 2,90000 s
 1500,10: [Host #10] Total allocated MIPS for VM #80 (Host #10) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #10] MIPS for VM #80 by PEs (1 * 16000.0). PE #0: 2000,00.
 1500,10: [Host #10] Total allocated MIPS for VM #81 (Host #10) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -7952,8 +6912,8 @@ New resource usage for the time frame starting at 1500,10:
 1500,10: [Host #11] IO processing of VM #91 elapsed time is 9,72180 s
 1500,10: [Host #11] IO processing of VM #92 elapsed time is 9,72180 s
 1500,10: [Host #11] IO processing of VM #93 elapsed time is 9,72180 s
-1500,10: [Host #11] IO processing of VM #94 elapsed time is 9,72180 s
-1500,10: [Host #11] IO processing of VM #95 elapsed time is 9,72180 s
+1500,10: [Host #11] IO processing of VM #94 elapsed time is 2,90000 s
+1500,10: [Host #11] IO processing of VM #95 elapsed time is 2,90000 s
 1500,10: [Host #11] Total allocated MIPS for VM #88 (Host #11) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #11] MIPS for VM #88 by PEs (1 * 16000.0). PE #0: 2000,00.
 1500,10: [Host #11] Total allocated MIPS for VM #89 (Host #11) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -7978,8 +6938,8 @@ New resource usage for the time frame starting at 1500,10:
 1500,10: [Host #12] IO processing of VM #99 elapsed time is 9,72180 s
 1500,10: [Host #12] IO processing of VM #100 elapsed time is 9,72180 s
 1500,10: [Host #12] IO processing of VM #101 elapsed time is 9,72180 s
-1500,10: [Host #12] IO processing of VM #102 elapsed time is 9,72180 s
-1500,10: [Host #12] IO processing of VM #103 elapsed time is 9,72180 s
+1500,10: [Host #12] IO processing of VM #102 elapsed time is 2,90000 s
+1500,10: [Host #12] IO processing of VM #103 elapsed time is 2,90000 s
 1500,10: [Host #12] Total allocated MIPS for VM #96 (Host #12) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #12] MIPS for VM #96 by PEs (1 * 16000.0). PE #0: 2000,00.
 1500,10: [Host #12] Total allocated MIPS for VM #97 (Host #12) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -8004,8 +6964,8 @@ New resource usage for the time frame starting at 1500,10:
 1500,10: [Host #13] IO processing of VM #107 elapsed time is 9,72180 s
 1500,10: [Host #13] IO processing of VM #108 elapsed time is 9,72180 s
 1500,10: [Host #13] IO processing of VM #109 elapsed time is 9,72180 s
-1500,10: [Host #13] IO processing of VM #110 elapsed time is 9,72180 s
-1500,10: [Host #13] IO processing of VM #111 elapsed time is 9,72180 s
+1500,10: [Host #13] IO processing of VM #110 elapsed time is 2,90000 s
+1500,10: [Host #13] IO processing of VM #111 elapsed time is 2,90000 s
 1500,10: [Host #13] Total allocated MIPS for VM #104 (Host #13) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #13] MIPS for VM #104 by PEs (1 * 16000.0). PE #0: 2000,00.
 1500,10: [Host #13] Total allocated MIPS for VM #105 (Host #13) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -8030,8 +6990,8 @@ New resource usage for the time frame starting at 1500,10:
 1500,10: [Host #14] IO processing of VM #115 elapsed time is 9,72180 s
 1500,10: [Host #14] IO processing of VM #116 elapsed time is 9,72180 s
 1500,10: [Host #14] IO processing of VM #117 elapsed time is 9,72180 s
-1500,10: [Host #14] IO processing of VM #118 elapsed time is 9,72180 s
-1500,10: [Host #14] IO processing of VM #119 elapsed time is 9,72180 s
+1500,10: [Host #14] IO processing of VM #118 elapsed time is 2,90000 s
+1500,10: [Host #14] IO processing of VM #119 elapsed time is 2,90000 s
 1500,10: [Host #14] Total allocated MIPS for VM #112 (Host #14) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #14] MIPS for VM #112 by PEs (1 * 16000.0). PE #0: 2000,00.
 1500,10: [Host #14] Total allocated MIPS for VM #113 (Host #14) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -8056,8 +7016,8 @@ New resource usage for the time frame starting at 1500,10:
 1500,10: [Host #15] IO processing of VM #123 elapsed time is 9,72180 s
 1500,10: [Host #15] IO processing of VM #124 elapsed time is 9,72180 s
 1500,10: [Host #15] IO processing of VM #125 elapsed time is 9,72180 s
-1500,10: [Host #15] IO processing of VM #126 elapsed time is 9,72180 s
-1500,10: [Host #15] IO processing of VM #127 elapsed time is 9,72180 s
+1500,10: [Host #15] IO processing of VM #126 elapsed time is 2,90000 s
+1500,10: [Host #15] IO processing of VM #127 elapsed time is 2,90000 s
 1500,10: [Host #15] Total allocated MIPS for VM #120 (Host #15) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #15] MIPS for VM #120 by PEs (1 * 16000.0). PE #0: 2000,00.
 1500,10: [Host #15] Total allocated MIPS for VM #121 (Host #15) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -8082,8 +7042,8 @@ New resource usage for the time frame starting at 1500,10:
 1500,10: [Host #16] IO processing of VM #131 elapsed time is 9,72180 s
 1500,10: [Host #16] IO processing of VM #132 elapsed time is 9,72180 s
 1500,10: [Host #16] IO processing of VM #133 elapsed time is 9,72180 s
-1500,10: [Host #16] IO processing of VM #134 elapsed time is 9,72180 s
-1500,10: [Host #16] IO processing of VM #135 elapsed time is 9,72180 s
+1500,10: [Host #16] IO processing of VM #134 elapsed time is 2,90000 s
+1500,10: [Host #16] IO processing of VM #135 elapsed time is 2,90000 s
 1500,10: [Host #16] Total allocated MIPS for VM #128 (Host #16) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #16] MIPS for VM #128 by PEs (1 * 16000.0). PE #0: 2000,00.
 1500,10: [Host #16] Total allocated MIPS for VM #129 (Host #16) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -8108,8 +7068,8 @@ New resource usage for the time frame starting at 1500,10:
 1500,10: [Host #17] IO processing of VM #139 elapsed time is 9,72180 s
 1500,10: [Host #17] IO processing of VM #140 elapsed time is 9,72180 s
 1500,10: [Host #17] IO processing of VM #141 elapsed time is 9,72180 s
-1500,10: [Host #17] IO processing of VM #142 elapsed time is 9,72180 s
-1500,10: [Host #17] IO processing of VM #143 elapsed time is 9,72180 s
+1500,10: [Host #17] IO processing of VM #142 elapsed time is 2,90000 s
+1500,10: [Host #17] IO processing of VM #143 elapsed time is 2,90000 s
 1500,10: [Host #17] Total allocated MIPS for VM #136 (Host #17) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #17] MIPS for VM #136 by PEs (1 * 16000.0). PE #0: 2000,00.
 1500,10: [Host #17] Total allocated MIPS for VM #137 (Host #17) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
@@ -8626,110 +7586,6 @@ New resource usage for the time frame starting at 1500,10:
 
 1500,10: [Host #47] utilization is 0,00%
 
-1500,10: [Host #48] utilization is 0,00%
-
-1500,10: [Host #49] utilization is 0,00%
-
-1500,10: [Host #50] utilization is 0,00%
-
-1500,10: [Host #51] utilization is 0,00%
-
-1500,10: [Host #52] utilization is 0,00%
-
-1500,10: [Host #53] utilization is 0,00%
-
-1500,10: [Host #54] utilization is 0,00%
-
-1500,10: [Host #55] utilization is 0,00%
-
-1500,10: [Host #56] utilization is 0,00%
-
-1500,10: [Host #57] utilization is 0,00%
-
-1500,10: [Host #58] utilization is 0,00%
-
-1500,10: [Host #59] utilization is 0,00%
-
-1500,10: [Host #60] utilization is 0,00%
-
-1500,10: [Host #61] utilization is 0,00%
-
-1500,10: [Host #62] utilization is 0,00%
-
-1500,10: [Host #63] utilization is 0,00%
-
-1500,10: [Host #64] utilization is 0,00%
-
-1500,10: [Host #65] utilization is 0,00%
-
-1500,10: [Host #66] utilization is 0,00%
-
-1500,10: [Host #67] utilization is 0,00%
-
-1500,10: [Host #68] utilization is 0,00%
-
-1500,10: [Host #69] utilization is 0,00%
-
-1500,10: [Host #70] utilization is 0,00%
-
-1500,10: [Host #71] utilization is 0,00%
-
-1500,10: [Host #72] utilization is 0,00%
-
-1500,10: [Host #73] utilization is 0,00%
-
-1500,10: [Host #74] utilization is 0,00%
-
-1500,10: [Host #75] utilization is 0,00%
-
-1500,10: [Host #76] utilization is 0,00%
-
-1500,10: [Host #77] utilization is 0,00%
-
-1500,10: [Host #78] utilization is 0,00%
-
-1500,10: [Host #79] utilization is 0,00%
-
-1500,10: [Host #80] utilization is 0,00%
-
-1500,10: [Host #81] utilization is 0,00%
-
-1500,10: [Host #82] utilization is 0,00%
-
-1500,10: [Host #83] utilization is 0,00%
-
-1500,10: [Host #84] utilization is 0,00%
-
-1500,10: [Host #85] utilization is 0,00%
-
-1500,10: [Host #86] utilization is 0,00%
-
-1500,10: [Host #87] utilization is 0,00%
-
-1500,10: [Host #88] utilization is 0,00%
-
-1500,10: [Host #89] utilization is 0,00%
-
-1500,10: [Host #90] utilization is 0,00%
-
-1500,10: [Host #91] utilization is 0,00%
-
-1500,10: [Host #92] utilization is 0,00%
-
-1500,10: [Host #93] utilization is 0,00%
-
-1500,10: [Host #94] utilization is 0,00%
-
-1500,10: [Host #95] utilization is 0,00%
-
-1500,10: [Host #96] utilization is 0,00%
-
-1500,10: [Host #97] utilization is 0,00%
-
-1500,10: [Host #98] utilization is 0,00%
-
-1500,10: [Host #99] utilization is 0,00%
-
 Energy consumption for the last time frame from 1200,10 to 1500,10:
 
 1500,10: [Host #0] utilization at 1200,10 was 100,00%, now is 100,00%
@@ -8875,162 +7731,6 @@ Energy consumption for the last time frame from 1200,10 to 1500,10:
 
 1500,10: [Host #47] utilization at 1200,10 was 0,00%, now is 0,00%
 1500,10: [Host #47] energy is 0,00 W*sec
-
-1500,10: [Host #48] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #48] energy is 0,00 W*sec
-
-1500,10: [Host #49] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #49] energy is 0,00 W*sec
-
-1500,10: [Host #50] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #50] energy is 0,00 W*sec
-
-1500,10: [Host #51] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #51] energy is 0,00 W*sec
-
-1500,10: [Host #52] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #52] energy is 0,00 W*sec
-
-1500,10: [Host #53] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #53] energy is 0,00 W*sec
-
-1500,10: [Host #54] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #54] energy is 0,00 W*sec
-
-1500,10: [Host #55] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #55] energy is 0,00 W*sec
-
-1500,10: [Host #56] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #56] energy is 0,00 W*sec
-
-1500,10: [Host #57] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #57] energy is 0,00 W*sec
-
-1500,10: [Host #58] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #58] energy is 0,00 W*sec
-
-1500,10: [Host #59] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #59] energy is 0,00 W*sec
-
-1500,10: [Host #60] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #60] energy is 0,00 W*sec
-
-1500,10: [Host #61] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #61] energy is 0,00 W*sec
-
-1500,10: [Host #62] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #62] energy is 0,00 W*sec
-
-1500,10: [Host #63] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #63] energy is 0,00 W*sec
-
-1500,10: [Host #64] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #64] energy is 0,00 W*sec
-
-1500,10: [Host #65] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #65] energy is 0,00 W*sec
-
-1500,10: [Host #66] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #66] energy is 0,00 W*sec
-
-1500,10: [Host #67] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #67] energy is 0,00 W*sec
-
-1500,10: [Host #68] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #68] energy is 0,00 W*sec
-
-1500,10: [Host #69] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #69] energy is 0,00 W*sec
-
-1500,10: [Host #70] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #70] energy is 0,00 W*sec
-
-1500,10: [Host #71] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #71] energy is 0,00 W*sec
-
-1500,10: [Host #72] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #72] energy is 0,00 W*sec
-
-1500,10: [Host #73] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #73] energy is 0,00 W*sec
-
-1500,10: [Host #74] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #74] energy is 0,00 W*sec
-
-1500,10: [Host #75] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #75] energy is 0,00 W*sec
-
-1500,10: [Host #76] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #76] energy is 0,00 W*sec
-
-1500,10: [Host #77] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #77] energy is 0,00 W*sec
-
-1500,10: [Host #78] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #78] energy is 0,00 W*sec
-
-1500,10: [Host #79] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #79] energy is 0,00 W*sec
-
-1500,10: [Host #80] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #80] energy is 0,00 W*sec
-
-1500,10: [Host #81] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #81] energy is 0,00 W*sec
-
-1500,10: [Host #82] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #82] energy is 0,00 W*sec
-
-1500,10: [Host #83] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #83] energy is 0,00 W*sec
-
-1500,10: [Host #84] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #84] energy is 0,00 W*sec
-
-1500,10: [Host #85] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #85] energy is 0,00 W*sec
-
-1500,10: [Host #86] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #86] energy is 0,00 W*sec
-
-1500,10: [Host #87] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #87] energy is 0,00 W*sec
-
-1500,10: [Host #88] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #88] energy is 0,00 W*sec
-
-1500,10: [Host #89] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #89] energy is 0,00 W*sec
-
-1500,10: [Host #90] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #90] energy is 0,00 W*sec
-
-1500,10: [Host #91] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #91] energy is 0,00 W*sec
-
-1500,10: [Host #92] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #92] energy is 0,00 W*sec
-
-1500,10: [Host #93] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #93] energy is 0,00 W*sec
-
-1500,10: [Host #94] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #94] energy is 0,00 W*sec
-
-1500,10: [Host #95] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #95] energy is 0,00 W*sec
-
-1500,10: [Host #96] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #96] energy is 0,00 W*sec
-
-1500,10: [Host #97] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #97] energy is 0,00 W*sec
-
-1500,10: [Host #98] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #98] energy is 0,00 W*sec
-
-1500,10: [Host #99] utilization at 1200,10 was 0,00%, now is 0,00%
-1500,10: [Host #99] energy is 0,00 W*sec
 
 1500,10: Data center's energy is 1140000,00 W*sec
 
@@ -9865,10 +8565,10 @@ Simulation completed.
 Received 290 cloudlets
 Simulation completed.
 
-Experiment name: 2vm_per_host_greedyMinStrgCost_mmt_1_0
-Number of hosts: 100
+Experiment name: 2vm_per_host_greedyMinStrgCost_mu_1_0
+Number of hosts: 48
 Number of VMs: 290
-Total simulation time: 1577,87 sec
+Total simulation time: 1558,43 sec
 Energy consumption: 1,26667 kWh
 Number of VM migrations: 0
 SLA: 0,00000%
@@ -9876,21 +8576,25 @@ SLA perf degradation due to migration: 0,00%
 SLA time per active host: 0,00%
 Overall SLA violation: 0,00%
 Average SLA violation: 0,00%
-Number of host shutdowns: 53
+SLA time per host: 0,00%
+Number of host shutdowns: 1
 Mean time before a host shutdown: 300,10 sec
-StDev time before a host shutdown: 0,00 sec
+StDev time before a host shutdown: NaN sec
 Mean time before a VM migration: NaN sec
 StDev time before a VM migration: NaN sec
 Execution time - VM selection mean: 0,00000 sec
 Execution time - VM selection stDev: 0,00000 sec
-Execution time - host selection mean: 0,00000 sec
-Execution time - host selection stDev: 0,00000 sec
-Execution time - VM reallocation mean: 0,00020 sec
-Execution time - VM reallocation stDev: 0,00045 sec
+Execution time - host selection mean: 0,00020 sec
+Execution time - host selection stDev: 0,00045 sec
+Execution time - VM reallocation mean: 0,00000 sec
+Execution time - VM reallocation stDev: 0,00000 sec
 Execution time - total mean: 0,00580 sec
-Execution time - total stDev: 0,00192 sec
+Execution time - total stDev: 0,00130 sec
 =========== Storage System Stats ============
-Hamza: Storage Energy consumption: 0,07420 kWh
-Hamza: total Energy consumption (CPU+storage): 1,34087 kWh
+Hamza: Storage Energy consumption: 0,02569 kWh
+Hamza: total Energy consumption (CPU+storage): 1,29235 kWh
+Hamza: Cost Energy consumption: 0,23 $
 Hamza: Wear-Out cost: 0,00 $
+Hamza: SLA cost: 0,00 $
+Hamza: All Storage cost: -3764,51 $
 
