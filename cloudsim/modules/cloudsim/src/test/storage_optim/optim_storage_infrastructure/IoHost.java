@@ -323,14 +323,21 @@ public class IoHost extends PowerHostUtilizationHistory {
 	 * Assign the storage device list to this host
 	 */
 	public void assignStorage(List<? extends Storage> storageDevices) {
+		int id = 0;
+		
 		for (Storage device : storageDevices) {
+			
 			if(device instanceof IoHarddriveStorage) {
 				IoHarddriveStorage hdd = (IoHarddriveStorage) device;
 				hdd.setHost(this);
+				hdd.setId(id);
 			}else if (device instanceof IoSolidStateStorage) {
 				IoSolidStateStorage ssd = (IoSolidStateStorage) device;
 				ssd.setHost(this);
+				ssd.setId(id);
 			}
+			
+			id++;
 		}
 	}
 }

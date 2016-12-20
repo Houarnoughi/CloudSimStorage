@@ -198,7 +198,6 @@ public class IoSolidStateStorage implements Storage {
 		//setMaxDataWrite(150000);	// 150TBW (Terabytes Written)	
 		setMaxDataWrite(70000000);
 		setWarrantyPriod(5);		// Warranty period in years
-		
 		setMttf(240000);	// Sets the MTTF in hours
 	}
 	

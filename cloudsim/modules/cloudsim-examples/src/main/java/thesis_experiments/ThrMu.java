@@ -19,7 +19,7 @@ import java.io.IOException;
  * @author Anton Beloglazov
  * @since Jan 5, 2012
  */
-public class GreedyMinStorageCostMu {
+public class ThrMu {
 
 	/**
 	 * The main method.
@@ -32,9 +32,9 @@ public class GreedyMinStorageCostMu {
 		boolean outputToFile = true;
 		String inputFolder = IoConstants.INPUT_IO_WORKLOAD_CPU_DIR;
 		String outputFolder = "output";
-		String workload = "8vm_per_host"; // Real Workload
-		String ioVmAllocationPolicy = "greedyMinStrgCost"; // Min Storage Cost
-		String ioVmSelectionPolicy = "mu"; // Minimum CPU Utilization (MU) VM selection policy
+		String workload = "2vm_per_host"; // Real Workload
+		String ioVmAllocationPolicy = "thr"; // Min Storage Cost
+		String ioVmSelectionPolicy = "mu"; // Random Selection (RS) VM selection policy
 		String parameter = "1"; // the static utilization threshold
 		String maxThr = "1";
 		String minThr = "0";
