@@ -10429,7 +10429,7 @@ Simulation completed.
 Received 600 cloudlets
 Simulation completed.
 
-Experiment name: 8vm_per_host_greedyMinStrgCost_mu_1_0
+Experiment name: 8vm_per_host_greedyMinStrgCost_rs_1_0
 Number of hosts: 100
 Number of VMs: 600
 Total simulation time: 615,08 sec
@@ -10448,12 +10448,12 @@ Mean time before a VM migration: NaN sec
 StDev time before a VM migration: NaN sec
 Execution time - VM selection mean: 0,00000 sec
 Execution time - VM selection stDev: 0,00000 sec
-Execution time - host selection mean: 0,00000 sec
-Execution time - host selection stDev: 0,00000 sec
+Execution time - host selection mean: 0,00050 sec
+Execution time - host selection stDev: 0,00071 sec
 Execution time - VM reallocation mean: 0,00000 sec
 Execution time - VM reallocation stDev: 0,00000 sec
-Execution time - total mean: 0,01250 sec
-Execution time - total stDev: 0,00212 sec
+Execution time - total mean: 0,01300 sec
+Execution time - total stDev: 0,00424 sec
 =========== Storage System Stats ============
 Hamza: Storage Energy consumption: 0,00627 kWh
 Hamza: total Energy consumption (CPU+storage): 0,66461 kWh
