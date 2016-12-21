@@ -2,7 +2,9 @@ package optim_storage_infrastructure;
 
 import java.util.List;
 
+import org.cloudbus.cloudsim.Log;
 import org.cloudbus.cloudsim.Storage;
+import org.cloudbus.cloudsim.core.CloudSim;
 
 
 /**
@@ -61,41 +63,12 @@ public class IoStorageWearOutModel {
 	 * @return cost in dollars
 	 */
 	private double getWearOutCostFromHdd(IoHarddriveStorage hdd, List<IoVm> vmlist, double time){
-		List<String> fileNameList = hdd.getFileNameList();
+		//List<String> fileNameList = hdd.getFileNameList();
 		double wearout = 0;
-		/*
-		// If there are no vm files
-		if (fileNameList.size() <= 0 ) {
-			return 0;
-		}
-		
-		// We assume that files' name are the same as VMs' name (ID)
-				for (IoVm vm: vmlist) {
-					if(fileNameList.contains(vm.getUid())) {
-						
-						wearout += getCostPerPowerOnSecond(hdd);
-					}
-				}
-		return wearout;
-		*/
-		double costPerMb = getCostPerMb(hdd);
-		
-		// If there are no vm files
-		if (fileNameList.size() <= 0 ) {
-			return 0;
-		}
-		double writeTot = 0.0;
-		// We assume that files' name are the same as VMs' name (ID)
 		for (IoVm vm: vmlist) {
-			if(fileNameList.contains(vm.getUid())) {
-				
-				// The amount of written data, in MB
-				writeTot = Math.ceil((1 - vm.getIoWorkloadModel().getReadRate(time)) * vm.getIoWorkloadModel().getVolume(time));
-				
-				// So the wear out cost is
-				wearout += writeTot * costPerMb;
-			}
-			
+			double tmpWearout = getExeHddWearOutCost(vm, hdd);
+			Log.printLine("Wear out cost Host #"+vm.getHost().getId()+" VM #"+vm.getId()+" Device #"+hdd.getUid()+" Cost "+tmpWearout);
+			wearout += tmpWearout;
 		}
 		return wearout;
 	}
@@ -106,26 +79,9 @@ public class IoStorageWearOutModel {
 	 * @return cost in dollars
 	 */
 	private double getWearOutCostFromSsd(IoSolidStateStorage ssd, List<IoVm> vmlist, double time){
-		List<String> fileNameList = ssd.getFileNameList();
 		double wearout = 0;
-		double costPerMb = getCostPerMb(ssd);
-		
-		// If there are no vm files
-		if (fileNameList.size() <= 0 ) {
-			return 0;
-		}
-		double writeTot = 0.0;
-		// We assume that files' name are the same as VMs' name (ID)
 		for (IoVm vm: vmlist) {
-			if(fileNameList.contains(vm.getUid())) {
-				
-				// The amount of written data, in MB
-				writeTot = Math.ceil((1 - vm.getIoWorkloadModel().getReadRate(time)) * vm.getIoWorkloadModel().getVolume(time));
-				
-				// So the wear out cost is
-				wearout += writeTot * costPerMb;
-			}
-			
+			wearout += getExeSsdWearOutCost(vm, ssd);
 		}
 		return wearout;
 	}
@@ -221,5 +177,65 @@ public class IoStorageWearOutModel {
 		return 0;
 	}
 	*/
+	
+	/**
+	 * Get the execution Wear Out Cost from HDD
+	 * @param vm the virtual machine
+	 * @param device HDD
+	 * @return
+	 */
+	private double getExeHddWearOutCost(IoVm vm, IoHarddriveStorage hdd) {
+		double exeWOCost = 0.0;
+		IoWorkloadModel model = vm.getIoWorkloadModel();
+		double schedulingTime = vm.getSchedulingInterval();
+		double currentTime  = CloudSim.clock();
+		
+		/* First: we calculate the total volume of data written */
+		Double sched = new Double(schedulingTime);
+		int ioNum = model.getArrivalRate(currentTime) * sched.intValue();
+		double writeRate = (1 - model.getReadRate(CloudSim.clock()));
+		int writeIos = (int)Math.ceil(ioNum*writeRate);
+		double writeVolume = writeIos * model.getIoSize(currentTime);
+		
+		/* Second we calculate the cost of writing one MB */
+		double costPerMb = ((hdd.getStorageUnitPrice()/1000) * hdd.getCapacity()) 
+							/ hdd.getMaxDataWrite();
+		
+		//Log.printLine(" Unit price "+hdd.getStorageUnitPrice()+" capacity  "+hdd.getCapacity()+ "getMaxDataWrite"+hdd.getMaxDataWrite());
+		/* Finally: we calculate the cost of writing this volume */
+		exeWOCost = writeVolume * costPerMb;
+		
+		return exeWOCost;
+	}
+	
+	/**
+	 * Get the execution Wear Out Cost from SSD
+	 * @param vm the virtual machine
+	 * @param device SSD
+	 * @return
+	 */
+	private double getExeSsdWearOutCost(IoVm vm, IoSolidStateStorage ssd) {
+		double exeWOCost = 0.0;
+		IoWorkloadModel model = vm.getIoWorkloadModel();
+		double schedulingTime = vm.getSchedulingInterval();
+		double currentTime  = CloudSim.clock();
+		
+		/* First: we calculate the total volume of data written */
+		Double sched = new Double(schedulingTime);
+		int ioNum = model.getArrivalRate(currentTime) * sched.intValue();
+		double writeRate = (1 - model.getReadRate(CloudSim.clock()));
+		int writeIos = (int)Math.ceil(ioNum*writeRate);
+		double writeVolume = writeIos * model.getIoSize(currentTime);
+		
+		/* Second we calculate the cost of writing one MB */
+		double costPerMb = ((ssd.getStorageUnitPrice()/1000) * ssd.getCapacity()) 
+							/ ssd.getMaxDataWrite();
+		
+		//Log.printLine(" Unit price "+hdd.getStorageUnitPrice()+" capacity  "+hdd.getCapacity()+ "getMaxDataWrite"+hdd.getMaxDataWrite());
+		/* Finally: we calculate the cost of writing this volume */
+		exeWOCost = writeVolume * costPerMb;
+		
+		return exeWOCost;
+	}
 
 }

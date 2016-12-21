@@ -165,10 +165,7 @@ public class Helper {
 			}
 			
 			try {
-				storageList.add(new IoSolidStateStorage(500000));
-				storageList.add(new IoSolidStateStorage(500000));
-				storageList.add(new IoSolidStateStorage(500000));
-				storageList.add(new IoSolidStateStorage(500000));
+				storageList.add(new IoSolidStateStorage(2000000));
 				/*
 				storageList.add(new IoHarddriveStorage(500000));
 				storageList.add(new IoHarddriveStorage(500000));

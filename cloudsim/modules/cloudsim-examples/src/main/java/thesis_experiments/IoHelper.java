@@ -170,10 +170,8 @@ public class IoHelper {
 			}
 			
 			try {
-				storageList.add(new IoHarddriveStorage(60000));
-				storageList.add(new IoSolidStateStorage(50000));
-				//storageList.add(new IoSolidStateStorage(50000));
-				//storageList.add(new IoHarddriveStorage(100000));
+				storageList.add(new IoHarddriveStorage(1000000));
+				storageList.add(new IoSolidStateStorage(250000));
 				} catch (ParameterException e) {
 					e.printStackTrace();
 				}

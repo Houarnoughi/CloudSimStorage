@@ -86,7 +86,7 @@ public class IoSolidStateStorage implements Storage {
 	private double storageUnitPrice;
 	
 	/** the max amount of data to write before the SSD get worn out in GB **/
-	private double maxDataWrite;
+	private long maxDataWrite;
 	
 	/** the amount of data written on SSD unti now in GB **/
 	private double totalDataWrite;
@@ -177,26 +177,25 @@ public class IoSolidStateStorage implements Storage {
 		
 		// Performance attributes 
 	 	setLatency(0.00416);     		// avg latency 4.16 ms in seconds
-		setAvgTransferRate(470);		// Average data rate, read/write (MB/s)
-		setAvgIops(75000);				// 4k iops
-		setMaxIops(75000);				// 4k iops
+		setAvgTransferRate(530);		// Average data rate, read/write (MB/s)
+		setAvgIops(76000);				// 4k iops
+		setMaxIops(98000);				// 4k iops
 			
 		// From the old implementation
 		setAvgSeekTime(0.009);   		// 9 ms
-		setMaxTransferRate(550); 		// in MB/sec
+		setMaxTransferRate(530); 		// in MB/sec
 		
 		// Power attributes
-		setIdlePower(0.65);		// Idle power in watts
+		setIdlePower(0.07);		// Idle power in watts
 		setStandbyPower(0.0002);	// Standby power in watts
-		setRandReadPower(5); 	// operating mode
-		setRandWritePower(5);	// operating mode
-		setSeqReadPower(5);	// operating mode
-		setSeqWritePower(5);	// operating mode
+		setRandReadPower(3.1); 	// operating mode
+		setRandWritePower(3.6);	// operating mode
+		setSeqReadPower(3.1);	// operating mode
+		setSeqWritePower(3.6);	// operating mode
 		
 		// Cost related attributes
-		setStorageUnitPrice(0.717);	// Samsung SSD 840 PRO Series price 128GB
-		//setMaxDataWrite(150000);	// 150TBW (Terabytes Written)	
-		setMaxDataWrite(70000000);
+		setStorageUnitPrice(0.354980469);	// Samsung SSD 850 EVO PRO Series price 2TB
+		setMaxDataWrite(300000000);
 		setWarrantyPriod(5);		// Warranty period in years
 		setMttf(240000);	// Sets the MTTF in hours
 	}
@@ -841,7 +840,7 @@ public class IoSolidStateStorage implements Storage {
 		return maxDataWrite;
 	}
 
-	public boolean setMaxDataWrite(double max) {
+	public boolean setMaxDataWrite(long max) {
 		if (max <= 0) {
 			return false;
 		}

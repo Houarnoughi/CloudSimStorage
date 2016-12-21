@@ -46,9 +46,9 @@ public class IoStorageList {
 	 * @return storage device
 	 */
 	public static <T extends Storage> Storage getSuitableStorage(List<T> storageList, IoVm vm) {
-		IoVm tmpVm = vm;
+		//IoVm tmpVm = vm;
 		for (Storage device: storageList) {
-			if (device.getAvailableSpace() >= vm.getSize() && device.getMaxIops() >= tmpVm.getRequestedIops()) {
+			if (device.getAvailableSpace() >= vm.getSize()) {
 				return device;
 			}
 		}

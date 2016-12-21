@@ -338,12 +338,13 @@ public class IoVmAllocationPolicyGreedyMinStorageCost extends IoVmAllocationPoli
 						minCost = costAfterAllocation;
 						allocatedHost = host;
 						allocatedDevice = device;
+						vm.setStorageDevice(allocatedDevice.getUid());
 						}
 					}
 				}
 			}
 		}
-		vm.setStorageDevice(allocatedDevice.getUid());
+		
 		return allocatedHost;
 	}
 	

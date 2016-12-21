@@ -167,38 +167,15 @@ public class IoHost extends PowerHostUtilizationHistory {
 	* @return
 	*/
 	public boolean allocateStorageForVm(IoVm vm) {
-	
-		double transactionTime = 0.0;
 		
 		Storage availableDev = IoStorageList.getSuitableStorage(getStorageDevices(), vm);
-		
 		if (availableDev == null) {
-			
-			return false;
-			
-		}else{
-			try {
-				
-				File vmImage = new File(vm.getUid(),Math.toIntExact(vm.getSize()));
-					
-				transactionTime = availableDev.addFile(vmImage);
-				
-				getVmStorageDeviceMap().put(vm.getUid(), availableDev.getUid());
-				
-				vm.setTransactionTime(transactionTime);
-				
-				// Add the energy to add a vm to the Host
-				/*
-				EnergyDataCenter dataCenter = (EnergyDataCenter) getDatacenter();
-				double relatedEnergy = dataCenter.getStorageEnergyModel().getVmStorageAddToHostEnergy(this, vm);
-				dataCenter.setStoragePower(dataCenter.getStoragePower() + relatedEnergy);
-				*/
-			} catch(Exception e) {
-					e.printStackTrace();
-					}
-			return true;
+			Log.printLine("Host #"+getId()+" no available storage device for vm #"+vm.getId());
+				return false;
+			} else {
+				return storeVmInDevice(vm, availableDev);
 			}
-		}
+	}
 	
 	/**
 	 * Deallocate storage occupied by the VM
@@ -339,5 +316,39 @@ public class IoHost extends PowerHostUtilizationHistory {
 			
 			id++;
 		}
+	}
+	
+	/**
+	 * Store the VM image in the storage device
+	 */
+	
+	private boolean storeVmInDevice (IoVm vm, Storage device) {
+		
+		double transactionTime = 0.0;
+		
+		try {
+			
+			File vmImage = new File(vm.getUid(),Math.toIntExact(vm.getSize()));
+			transactionTime = device.addFile(vmImage);
+			
+			getVmStorageDeviceMap().put(vm.getUid(), device.getUid());
+			
+			vm.setTransactionTime(transactionTime);
+			
+			// Add the energy to add a vm to the Host
+			/*
+			EnergyDataCenter dataCenter = (EnergyDataCenter) getDatacenter();
+			double relatedEnergy = dataCenter.getStorageEnergyModel().getVmStorageAddToHostEnergy(this, vm);
+			dataCenter.setStoragePower(dataCenter.getStoragePower() + relatedEnergy);
+			*/
+			return true;
+			
+		} catch(Exception e) {
+			
+			e.printStackTrace();
+			return false;
+			
+		}
+		
 	}
 }

@@ -109,7 +109,7 @@ public class IoHarddriveStorage implements Storage {
 	private int maxStartStop;
 	
 	/** the max amount of data to write before the SSD get worn out in GB **/
-	private double maxDataWrite;
+	private long maxDataWrite;
 	
 	/** the total number of start stop cycles before the HDD been changed **/
 	private int totalStartStop;
@@ -162,7 +162,6 @@ public class IoHarddriveStorage implements Storage {
 		this.name = name;
 		setId(id);
 		setHostId(hostId);
-		setDeviceUid(name);
 		setCapacity(capacity);
 		// Cost model
 		setStorageUnitPrice(storageUnitPrice);
@@ -246,13 +245,13 @@ public class IoHarddriveStorage implements Storage {
 		setSpinupEnergy(0);		// Energy in W/s NOT yet defined
 		
 		// Cost related attributes
-		setStorageUnitPrice(0.115);	// The hdd unitary price $/GB
+		setStorageUnitPrice(0.075);	// The hdd unitary price $/GB
 		setMaxStartStop(50000);		// Max star-stop cycles
 		setTotalStartStop(0);		// Initialize current star-stop cycles
 		setWarrantyPriod(2);		// Warranty period in years
 		
 		setMttf(1000000);	// Sets the MTTF in hours
-		setMaxDataWrite(70000000);
+		setMaxDataWrite(2500000000L); // https://www.micron.com/about/blogs/2016/february/the-myth-of-hdd-endurance
 	}
 
 	/**
@@ -990,7 +989,8 @@ public class IoHarddriveStorage implements Storage {
 	public void setUid(String deviceUid) {
 		this.deviceUid = deviceUid;
 	}
-
+	
+	/*
 	public String getDeviceUid() {
 		setUid(getName()+"_"+Integer.toString(getId())+"_"+Integer.toString(getHostId()));
 		return deviceUid;
@@ -999,7 +999,8 @@ public class IoHarddriveStorage implements Storage {
 	public void setDeviceUid(String deviceUid) {
 		this.deviceUid = deviceUid;
 	}
-
+	*/
+	
 	public void setCapacity(long capacity) {
 		this.capacity = capacity;
 	}
@@ -1041,7 +1042,7 @@ public class IoHarddriveStorage implements Storage {
 		return maxDataWrite;
 	}
 
-	public void setMaxDataWrite(double maxDataWrite) {
+	public void setMaxDataWrite(long maxDataWrite) {
 		this.maxDataWrite = maxDataWrite;
 	}
 }

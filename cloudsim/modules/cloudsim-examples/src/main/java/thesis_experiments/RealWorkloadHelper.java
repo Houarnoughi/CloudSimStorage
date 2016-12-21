@@ -53,7 +53,8 @@ public class RealWorkloadHelper {
 		File[] files = inputFolder.listFiles();
 		
 		//System.out.println("RealWorkloadHelper : "+inputFolderName);
-		for (int i = 0; i < files.length; i++) {
+		//for (int i = 0; i < files.length; i++) {
+		for (int i = 0; i < IoRandomConstants.NUMBER_OF_VMS; i++) {
 			Cloudlet cloudlet = null;
 			try {
 				cloudlet = new Cloudlet(i, IoConstants.CLOUDLET_LENGTH,

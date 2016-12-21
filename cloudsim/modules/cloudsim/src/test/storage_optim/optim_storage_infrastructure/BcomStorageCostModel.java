@@ -44,7 +44,6 @@ public class BcomStorageCostModel implements IoStorageCostModel {
 		totalCost = getNonRecurrStorageCost() + 
 				workloadExecutionCost(egyVm, device) + 
 				vmStorageMigration(egyVm, device);
-		//Log.printLine("The cost of VM "+egyVm.getId()+" in the device "+device.getUid()+" is "+totalCost);
 		return totalCost;
 	}
 	
@@ -154,6 +153,7 @@ public class BcomStorageCostModel implements IoStorageCostModel {
 			exePenCost = 0.0;
 		}
 		
+		//System.out.println("B-COM Storage Cost Model : "+exePenCost);
 		return exePenCost; 
 	}
 	
@@ -289,7 +289,6 @@ public class BcomStorageCostModel implements IoStorageCostModel {
 		egy = rndIoTime * Math.max(ssd.getRandReadPower(), ssd.getRandWritePower()) +
 				seqIoTime * Math.max(ssd.getSeqReadPower(), ssd.getSeqWritePower());
 		*/
-		
 		egy = vm.getLastIoProcessingTime() * Double.max(ssd.getSeqReadPower(), ssd.getRandReadPower());
 		
 		/* Fourth: get the energy from using the CPU usage */
@@ -317,13 +316,18 @@ public class BcomStorageCostModel implements IoStorageCostModel {
 	private double getExeHddWearOutCost(IoVm vm, IoHarddriveStorage hdd) {
 		double exeWOCost = 0.0;
 		IoWorkloadModel model = vm.getIoWorkloadModel();
+		double schedulingTime = vm.getSchedulingInterval();
+		double currentTime  = CloudSim.clock();
 		
 		/* First: we calculate the total volume of data written */
-		double volume = model.getVolume(CloudSim.clock());
-		double writeVolume = volume * (1 - model.getReadRate(CloudSim.clock()));
+		Double sched = new Double(schedulingTime);
+		int ioNum = model.getArrivalRate(currentTime) * sched.intValue();
+		double writeRate = (1 - model.getReadRate(CloudSim.clock()));
+		int writeIos = (int)Math.ceil(ioNum*writeRate);
+		double writeVolume = writeIos * model.getIoSize(currentTime);
 		
 		/* Second we calculate the cost of writing one MB */
-		double costPerMb = (hdd.getStorageUnitPrice() * hdd.getCapacity()) 
+		double costPerMb = ((hdd.getStorageUnitPrice()/1000) * hdd.getCapacity()) 
 							/ hdd.getMaxDataWrite();
 		
 		//Log.printLine(" Unit price "+hdd.getStorageUnitPrice()+" capacity  "+hdd.getCapacity()+ "getMaxDataWrite"+hdd.getMaxDataWrite());
@@ -342,15 +346,21 @@ public class BcomStorageCostModel implements IoStorageCostModel {
 	private double getExeSsdWearOutCost(IoVm vm, IoSolidStateStorage ssd) {
 		double exeWOCost = 0.0;
 		IoWorkloadModel model = vm.getIoWorkloadModel();
+		double schedulingTime = vm.getSchedulingInterval();
+		double currentTime  = CloudSim.clock();
 		
 		/* First: we calculate the total volume of data written */
-		double volume = model.getVolume(CloudSim.clock());
-		double writeVolume = volume * (1 - model.getReadRate(CloudSim.clock()));
+		Double sched = new Double(schedulingTime);
+		int ioNum = model.getArrivalRate(currentTime) * sched.intValue();
+		double writeRate = (1 - model.getReadRate(CloudSim.clock()));
+		int writeIos = (int)Math.ceil(ioNum*writeRate);
+		double writeVolume = writeIos * model.getIoSize(currentTime);
 		
 		/* Second we calculate the cost of writing one MB */
-		double costPerMb = (ssd.getStorageUnitPrice() * ssd.getCapacity()) 
+		double costPerMb = ((ssd.getStorageUnitPrice()/1000) * ssd.getCapacity()) 
 							/ ssd.getMaxDataWrite();
 		
+		//Log.printLine(" Unit price "+hdd.getStorageUnitPrice()+" capacity  "+hdd.getCapacity()+ "getMaxDataWrite"+hdd.getMaxDataWrite());
 		/* Finally: we calculate the cost of writing this volume */
 		exeWOCost = writeVolume * costPerMb;
 		

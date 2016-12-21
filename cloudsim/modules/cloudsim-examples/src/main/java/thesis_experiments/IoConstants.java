@@ -60,13 +60,13 @@ public class IoConstants {
 	public final static int [] VM_SIZE = {10000, 10000, 10000, 10000}; // 10GB, 20GB
 	
 	// VM storage
-	public final static int [] VM_IOPS = {100, 100, 200, 200};
+	public final static int [] VM_IOPS = {10000, 10000, 20000, 20000};
 	public final static int [] VM_THR = {100, 100, 200, 200};
 	public final static boolean STORAGE_ENABLED = true;
 	public final static IoWorkloadModel ioWorkload1 = new IoWorkloadModel("seq_read_dominant", 0.9, 0.1, 1024, 1000, 32300);
 	public final static boolean REAL_IO = true;
-	public final static String INPUT_IO_WORKLOAD_STORAGE_DIR = "/home/hamza/CloudSimStorage/cloudsim/modules/cloudsim-examples/src/main/resources/workload/io/hdd/";
-	public final static String INPUT_IO_WORKLOAD_CPU_DIR = "/home/hamza/CloudSimStorage/cloudsim/modules/cloudsim-examples/src/main/resources/workload/io/cpu/";
+	public final static String INPUT_IO_WORKLOAD_STORAGE_DIR = "/home/hamza/git/CloudSimStorage/cloudsim/modules/cloudsim-examples/src/main/resources/workload/io/hdd/";
+	public final static String INPUT_IO_WORKLOAD_CPU_DIR = "/home/hamza/git/CloudSimStorage/cloudsim/modules/cloudsim-examples/src/main/resources/workload/io/cpu/";
 	
 	/*
 	 * Host types: Presented in the paper fgcs

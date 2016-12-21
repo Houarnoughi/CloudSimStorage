@@ -32,7 +32,7 @@ public class GreedyMinStorageCostRs {
 		boolean outputToFile = true;
 		String inputFolder = IoConstants.INPUT_IO_WORKLOAD_CPU_DIR;
 		String outputFolder = "output";
-		String workload = "2vm_per_host"; // Real Workload
+		String workload = "8vm_per_host"; // Real Workload
 		String ioVmAllocationPolicy = "greedyMinStrgCost"; // Min Storage Cost
 		String ioVmSelectionPolicy = "rs"; // Random Selection (RS) VM selection policy
 		String parameter = "1"; // the static utilization threshold

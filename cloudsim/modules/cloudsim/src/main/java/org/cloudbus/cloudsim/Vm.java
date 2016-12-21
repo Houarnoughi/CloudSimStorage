@@ -137,7 +137,7 @@ public class Vm {
 		setCurrentAllocatedMips(null);
 		setCurrentAllocatedRam(0);
 		setCurrentAllocatedSize(0);
-		setStorageDevice("nope");
+		setStorageDevice(null);
 	}
 
 	/**
