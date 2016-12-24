@@ -14,7 +14,7 @@ package thesis_experiments;
  */
 public class IoRandomConstants {
 
-	public final static int NUMBER_OF_VMS = 600;
+	public final static int NUMBER_OF_VMS = 617;
 
 	public final static int NUMBER_OF_HOSTS = 100;
 
