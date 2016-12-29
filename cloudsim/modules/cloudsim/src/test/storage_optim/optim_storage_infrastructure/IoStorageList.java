@@ -19,7 +19,8 @@ public class IoStorageList {
 	 */
 	public static <T extends Storage> Storage getDeviceByUid(List<T> storageList, String uid){
 		for (Storage device: storageList) {
-			if (device.getUid() == uid) {
+			if (device.getUid().equals(uid)) {
+				//System.out.println("Attempt to get device "+ uid +" but "+device.getUid());
 				return device;
 			}
 		}

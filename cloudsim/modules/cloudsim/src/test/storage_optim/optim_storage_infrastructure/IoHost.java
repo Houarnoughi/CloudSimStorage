@@ -168,6 +168,15 @@ public class IoHost extends PowerHostUtilizationHistory {
 	*/
 	public boolean allocateStorageForVm(IoVm vm) {
 		
+		if (vm.getStorageDevice() != null){
+			//System.out.println("VM #"+vm.getUid()+" in device "+vm.getStorageDevice());
+			Storage strg = IoStorageList.getDeviceByUid(getStorageDevices(), vm.getStorageDevice());
+			if (strg != null){
+				System.out.println("The found storage device "+strg.getUid());
+				return storeVmInDevice(vm, strg);
+			}
+		}
+		
 		Storage availableDev = IoStorageList.getSuitableStorage(getStorageDevices(), vm);
 		if (availableDev == null) {
 			Log.printLine("Host #"+getId()+" no available storage device for vm #"+vm.getId());

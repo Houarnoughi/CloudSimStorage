@@ -230,19 +230,6 @@ public class IoVmAllocationPolicyMinCostSolutionEnum extends IoVmAllocationPolic
 		List<Map<String, Object>> migrationMap = new LinkedList<Map<String, Object>>();
 		//Log.printLine("Hamza: IoVmAllocationPolicyMinStorageCost called");
 		
-		for (Vm vm : vmsToMigrate) {
-			if (vm != null) {
-				IoHost allocatedHost = findHostForVm(vm, excludedHosts);
-				if (allocatedHost != null) {
-					allocatedHost.vmCreate(vm);
-					Log.printLine("VM #" + vm.getId() + " allocated to host #" + allocatedHost.getId());
-					Map<String, Object> migrate = new HashMap<String, Object>();
-					migrate.put("vm", vm);
-					migrate.put("host", allocatedHost);
-					migrationMap.add(migrate);
-				}
-			}
-		}
 		return migrationMap;
 	}
 

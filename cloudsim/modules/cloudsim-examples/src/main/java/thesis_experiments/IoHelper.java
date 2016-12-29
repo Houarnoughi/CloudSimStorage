@@ -170,8 +170,8 @@ public class IoHelper {
 			}
 			
 			try {
-				storageList.add(new IoHarddriveStorage(1000000));
-				storageList.add(new IoSolidStateStorage(250000));
+				//storageList.add(new IoHarddriveStorage(80000));
+				storageList.add(new IoSolidStateStorage(80000));
 				} catch (ParameterException e) {
 					e.printStackTrace();
 				}
@@ -837,7 +837,7 @@ public class IoHelper {
 		double costEnergy = datacenter.getCostPerKwh() * (storagePower + energy);
 		double wearOutCost = datacenter.getStorageWearout();
 		double slaStorage = datacenter.getStorageSla();
-		double allStorageCost = datacenter.getAllStorageCost();
+		double allStorageCost = costEnergy + wearOutCost + slaStorage;
 		
 		StringBuilder data = new StringBuilder();
 		String delimeter = ",";

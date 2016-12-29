@@ -334,7 +334,7 @@ public class IoVmAllocationPolicyGreedyMinStorageCost extends IoVmAllocationPoli
 				for (Storage device: host.getStorageDevices()) {
 					if (device != null) {
 						double costAfterAllocation = costModel.getVmStorageCost(vm, device);
-						if (costAfterAllocation < minCost) {
+						if (costAfterAllocation < minCost && isStorageSuitable(vm, device)) {
 						minCost = costAfterAllocation;
 						allocatedHost = host;
 						allocatedDevice = device;
@@ -348,6 +348,14 @@ public class IoVmAllocationPolicyGreedyMinStorageCost extends IoVmAllocationPoli
 		return allocatedHost;
 	}
 	
+	private boolean isStorageSuitable(Vm vm, Storage device) {
+		if (vm.getSize() <= device.getAvailableSpace()) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 	/**
 	 * Restore allocation.
 	 */
