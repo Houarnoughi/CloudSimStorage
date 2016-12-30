@@ -33,10 +33,10 @@ public class ThrMu {
 		String inputFolder = IoConstants.INPUT_IO_WORKLOAD_CPU_DIR;
 		String outputFolder = "output";
 		String workload = "8vm_per_host"; // Real Workload
-		String ioVmAllocationPolicy = "thr"; // Min Storage Cost
+		String ioVmAllocationPolicy = "lr"; // Min Storage Cost
 		String ioVmSelectionPolicy = "mu"; // Random Selection (RS) VM selection policy
-		String parameter = "1"; // the static utilization threshold
-		String maxThr = "1";
+		String parameter = "0.7"; // the static utilization threshold
+		String maxThr = "0.9";
 		String minThr = "0";
 
 		new IoRandomRunner(

@@ -16,6 +16,8 @@ public class IoUtilizationModelRealWorkloadInMemory implements UtilizationModel 
 	/** The data (5 min * 288 = 24 hours). */
 	private final double[] data; 
 	
+	private int sample;
+	
 	/**
 	 * Instantiates a new utilization model PlanetLab.
 	 * 
@@ -48,6 +50,7 @@ public class IoUtilizationModelRealWorkloadInMemory implements UtilizationModel 
 	public IoUtilizationModelRealWorkloadInMemory(String inputPath, double schedulingInterval, int dataSamples)
 			throws NumberFormatException,
 			IOException {
+		this.sample = dataSamples;
 		setSchedulingInterval(schedulingInterval);
 		data = new double[dataSamples];
 		BufferedReader input = new BufferedReader(new FileReader(inputPath));
@@ -72,8 +75,8 @@ public class IoUtilizationModelRealWorkloadInMemory implements UtilizationModel 
 		}
 		int time1 = (int) Math.floor(time / getSchedulingInterval());
 		int time2 = (int) Math.ceil(time / getSchedulingInterval());
-		double utilization1 = data[time1];
-		double utilization2 = data[time2];
+		double utilization1 = data[time1%this.sample];
+		double utilization2 = data[time2%this.sample];
 		double delta = (utilization2 - utilization1) / ((time2 - time1) * getSchedulingInterval());
 		double utilization = utilization1 + delta * (time - time1 * getSchedulingInterval());
 		//Log.printLine("HAMZA: utilization "+utilization);

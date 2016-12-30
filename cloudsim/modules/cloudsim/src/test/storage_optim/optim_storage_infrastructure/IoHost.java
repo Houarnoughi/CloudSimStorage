@@ -172,7 +172,7 @@ public class IoHost extends PowerHostUtilizationHistory {
 			//System.out.println("VM #"+vm.getUid()+" in device "+vm.getStorageDevice());
 			Storage strg = IoStorageList.getDeviceByUid(getStorageDevices(), vm.getStorageDevice());
 			if (strg != null){
-				System.out.println("The found storage device "+strg.getUid());
+				//System.out.println("The found storage device "+strg.getUid());
 				return storeVmInDevice(vm, strg);
 			}
 		}

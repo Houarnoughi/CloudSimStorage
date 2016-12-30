@@ -1611,6 +1611,7 @@ public class Cloudlet {
      * @return the utilization of cpu
      */
     public double getUtilizationOfCpu(final double time) {
+    	//Log.print("Cloudlet.getUtilizationOfCpu time "+time);
         return getUtilizationModelCpu().getUtilization(time);
     }
 

@@ -114,10 +114,20 @@ public class IoVmAllocationPolicyGreedyMinStorageCost extends IoVmAllocationPoli
 	protected List<IoHost> getOverUtilizedHosts() {
 		List<IoHost> overUtilizedHosts = new LinkedList<IoHost>();
 		for (IoHost host : this.<IoHost> getHostList()) {
-			if (isHostOverUtilized(host)) {
+			
+			addHistoryEntry(host, getMaxThreshold());
+			double totalRequestedMips = 0;
+			for (Vm vm : host.getVmList()) {
+				totalRequestedMips += vm.getCurrentRequestedTotalMips();
+			}
+			double utilization = totalRequestedMips / host.getTotalMips();
+			//System.out.println("Host #"+host.getId()+" Utilization "+utilization+" Threshold "+getUtilizationThreshold());
+			if (utilization - getMaxThreshold() > 0.000) {
+				//System.out.println("isHostOverUtilized returns "+true);
 				overUtilizedHosts.add(host);
 			}
 		}
+		//System.out.println("OverUtilizedHosts "+overUtilizedHosts.size());
 		return overUtilizedHosts;
 	}
 	
@@ -227,9 +237,10 @@ public class IoVmAllocationPolicyGreedyMinStorageCost extends IoVmAllocationPoli
 	 */
 	public List<Map<String, Object>> getNewVmPlacement(List<? extends Vm> vmsToMigrate,
 			Set<? extends Host> excludedHosts) {
+		//System.out.println(" Greedy vms to migrate "+vmsToMigrate.size()+" overUtilizzedHosts "+excludedHosts.size());
 		List<Map<String, Object>> migrationMap = new LinkedList<Map<String, Object>>();
 		//Log.printLine("Hamza: IoVmAllocationPolicyMinStorageCost called");
-		
+		//System.out.println("vmsToMigrate "+vmsToMigrate.size());
 		for (Vm vm : vmsToMigrate) {
 			if (vm != null) {
 				IoHost allocatedHost = findHostForVm(vm, excludedHosts);
@@ -327,6 +338,7 @@ public class IoVmAllocationPolicyGreedyMinStorageCost extends IoVmAllocationPoli
 			}
 			
 			if (host.isSuitableForVm(vm)) {
+				//System.out.println("IoVmAllocationPolicyGreedyMinStorageCost findHostForVm "+host.getId());
 				if (getUtilizationOfCpuMips(host) != 0 && isHostOverUtilizedAfterAllocation(host, vm)) {
 					continue;
 				}

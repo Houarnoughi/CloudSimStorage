@@ -20,6 +20,7 @@ import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationLocalRegress
 import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationMedianAbsoluteDeviation;
 import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationStaticIopsThreshold;
 import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationStaticThreshold;
+import optim_storage_allocation_policy.IoVmAllocationPolicyMinCostSolutionEnum;
 import optim_storage_allocation_policy.IoVmAllocationPolicySimple;
 import optim_storage_infrastructure.IoDataCenter;
 import optim_storage_infrastructure.IoHost;
@@ -224,6 +225,12 @@ public abstract class IoRunnerAbstract {
 					hostList, ioVmSelectionPolicy, parameter);
 		} else if (ioVmAllocationPolicyName.equals("greedyMinStrgCost")) {
 			ioVmAllocationPolicy = new IoVmAllocationPolicyGreedyMinStorageCost(hostList, 
+					ioVmSelectionPolicy,
+					max,
+					min,
+					parameter);
+		} else if (ioVmAllocationPolicyName.equals("BFMC")) {
+			ioVmAllocationPolicy = new IoVmAllocationPolicyMinCostSolutionEnum(hostList, 
 					ioVmSelectionPolicy,
 					max,
 					min,

@@ -39,7 +39,6 @@ import optim_storage_allocation_policy.IoVmAllocationPolicy;
 import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationAbstract;
 import optim_storage_infrastructure.IoCpuCorrelationModel;
 import optim_storage_infrastructure.IoDataCenter;
-import optim_storage_infrastructure.IoHarddriveStorage;
 import optim_storage_infrastructure.IoHost;
 import optim_storage_infrastructure.IoSolidStateStorage;
 import optim_storage_infrastructure.IoStorageEnergyModel;
@@ -175,11 +174,15 @@ public class IoHelper {
 				} catch (ParameterException e) {
 					e.printStackTrace();
 				}
+			int storage_capacity = 0;
+			for (Storage dev : storageList) {
+				storage_capacity += dev.getCapacity();
+			}
 
 			hostList.add(new IoHost(i,
 					new RamProvisionerSimple(IoConstants.HOST_RAM[hostType]),
 					new BwProvisionerSimple(IoConstants.HOST_BW),
-					IoConstants.HOST_STORAGE, 
+					storage_capacity, 
 					peList,
 					new VmSchedulerTimeSharedOverSubscription(peList),
 					IoConstants.HOST_POWER,

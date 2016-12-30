@@ -80,7 +80,7 @@ public class BcomStorageCostModel implements IoStorageCostModel {
 				costMig = 0.0;
 			} else {
 				// The penalty cost: TCO + Penalty 
-				costMig = getMigTcoCost(vm, device) + getMigPenaltyCost(vm, device);
+				costMig = getMigTcoCost(vm, device);// + getMigPenaltyCost(vm, device);
 			}
 			
 		}
@@ -186,25 +186,25 @@ public class BcomStorageCostModel implements IoStorageCostModel {
 	 * @param device the storage device
 	 * @return execution penalty cost
 	 */
-	private double getMigPenaltyCost(IoVm vm, Storage device) {
-		double exePenCost = 0.0;
-		double secPerMonth = 30 * 24 * 60;
+	// private double getMigPenaltyCost(IoVm vm, Storage device) {
+		// double exePenCost = 0.0;
+		// double secPerMonth = 30 * 24 * 60;
 		
-		IoDataCenter datacenter = (IoDataCenter) vm.getHost().getDatacenter();
-		Storage source = IoStorageList.getDeviceContainsVm(datacenter.getAllStorageDevices(), vm);
+		// IoDataCenter datacenter = (IoDataCenter) vm.getHost().getDatacenter();
+		// Storage source = IoStorageList.getDeviceContainsVm(datacenter.getAllStorageDevices(), vm);
 		
 		/* Suppose that are no IOs during migration => (offPerfs = 0 during migTime) */
 		
 		/* First: we calculate the migration time */
-		double timeMig = vm.getSize() / 
-							Math.min(device.getMaxTransferRate(), 
-									source.getMaxTransferRate());
+		// double timeMig = vm.getSize() / 
+			//				Math.min(device.getMaxTransferRate(), 
+				//					source.getMaxTransferRate());
 		
 		/* The ratio of migrationTime(s)/Month's Bill(s) */
-		exePenCost = ((timeMig * 100)/secPerMonth) * getBillAmount();
+		// exePenCost = ((timeMig * 100)/secPerMonth) * getBillAmount();
 		
-		return exePenCost; 
-	}
+		// return exePenCost; 
+	//}
 
 /****************** Third Level Costs (Energy + WearOut) ********************************/
 	

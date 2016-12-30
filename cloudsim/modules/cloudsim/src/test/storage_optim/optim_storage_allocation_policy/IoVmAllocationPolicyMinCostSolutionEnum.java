@@ -8,7 +8,7 @@
 
 package optim_storage_allocation_policy;
 
-import java.util.HashMap;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -22,7 +22,6 @@ import org.cloudbus.cloudsim.Vm;
 import org.cloudbus.cloudsim.core.CloudSim;
 import org.cloudbus.cloudsim.util.ExecutionTimeMeasurer;
 
-import optim_storage_infrastructure.BcomStorageCostModel;
 import optim_storage_infrastructure.IoHost;
 import optim_storage_infrastructure.IoVm;
 import optim_storage_selection_policy.IoVmSelectionPolicy;
@@ -46,7 +45,7 @@ public class IoVmAllocationPolicyMinCostSolutionEnum extends IoVmAllocationPolic
 	
 	/** The max min utilization threshold. */
 	private double maxThreshold = 0.9;
-	private double minThreshold = 0.0;
+	private double minThreshold = 0.9;
 
 	/**
 	 * Instantiates a new power vm allocation policy simple.
@@ -114,7 +113,14 @@ public class IoVmAllocationPolicyMinCostSolutionEnum extends IoVmAllocationPolic
 	protected List<IoHost> getOverUtilizedHosts() {
 		List<IoHost> overUtilizedHosts = new LinkedList<IoHost>();
 		for (IoHost host : this.<IoHost> getHostList()) {
-			if (isHostOverUtilized(host)) {
+			
+			addHistoryEntry(host, getMaxThreshold());
+			double totalRequestedMips = 0;
+			for (Vm vm : host.getVmList()) {
+				totalRequestedMips += vm.getCurrentRequestedTotalMips();
+			}
+			double utilization = totalRequestedMips / host.getTotalMips();
+			if (utilization - getMaxThreshold() > 0.000) {
 				overUtilizedHosts.add(host);
 			}
 		}
@@ -227,9 +233,14 @@ public class IoVmAllocationPolicyMinCostSolutionEnum extends IoVmAllocationPolic
 	 */
 	public List<Map<String, Object>> getNewVmPlacement(List<? extends Vm> vmsToMigrate,
 			Set<? extends Host> excludedHosts) {
-		List<Map<String, Object>> migrationMap = new LinkedList<Map<String, Object>>();
-		//Log.printLine("Hamza: IoVmAllocationPolicyMinStorageCost called");
 		
+		List<Host> ready_pm = new ArrayList<Host>();
+		ready_pm = getReadyPmList(excludedHosts);
+		IoSolutionsEnumeration exhaustive = new IoSolutionsEnumeration(vmsToMigrate, ready_pm);
+		List<Map<String, Object>> migrationMap = new LinkedList<Map<String, Object>>();
+		
+		/* Get the min migration Map*/
+		migrationMap = exhaustive.getMinPlacementPlan(vmsToMigrate.size());
 		return migrationMap;
 	}
 
@@ -289,49 +300,6 @@ public class IoVmAllocationPolicyMinCostSolutionEnum extends IoVmAllocationPolic
 	}
 	
 	/**
-	 * Find host for vm.
-	 * 
-	 * @param vm the vm
-	 * @param excludedHosts the excluded hosts
-	 * @return the power host
-	 */
-	public IoHost findHostForVm(Vm vm, Set<? extends Host> excludedHosts) {
-		double minCost = Double.MAX_VALUE;
-		IoHost allocatedHost = null;
-		
-		// Get the cost model used to run the optimization
-		double constCost = 0.0 ; 				//non recurring costs
-		double egyPriceKwh = 0.0887; 			// 0.0887 euros / kWh
-		double egyPrice =  egyPriceKwh/3600000; // Price per WattSec (Joule)
-		double CloudServPrice = 0.5;			// Cloud Service Price / hour
-		double bill = CloudServPrice * 30 * 24; // Bill amount / month
-		BcomStorageCostModel costModel = new BcomStorageCostModel(constCost, egyPrice, bill);
-
-		for (IoHost host : this.<IoHost> getHostList()) {
-			if (excludedHosts.contains(host)) {
-				continue;
-			}
-			
-			if (host.isSuitableForVm(vm)) {
-				if (getUtilizationOfCpuMips(host) != 0 && isHostOverUtilizedAfterAllocation(host, vm)) {
-					continue;
-				}
-				
-				for (Storage device: host.getStorageDevices()) {
-					if (device != null) {
-						double costAfterAllocation = costModel.getVmStorageCost(vm, device);
-						if (costAfterAllocation < minCost) {
-						minCost = costAfterAllocation;
-						allocatedHost = host;
-						}
-					}
-				}
-			}
-		}
-		return allocatedHost;
-	}
-	
-	/**
 	 * Restore allocation.
 	 */
 	protected void restoreAllocation() {
@@ -364,6 +332,26 @@ public class IoVmAllocationPolicyMinCostSolutionEnum extends IoVmAllocationPolic
 
 	public void setMinThreshold(double minThreshold) {
 		this.minThreshold = minThreshold;
+	}
+	
+	@SuppressWarnings("unchecked")
+	public <T extends Host> List<T> getReadyPmList(Set<? extends Host> excludedHosts) {
+		List<Host> ready_pm = new ArrayList<Host>();
+		for (Host pm: getHostList()) {
+			if (!excludedHosts.contains(pm)) {
+				ready_pm.add(pm);
+			}
+		}
+		return (List<T>) ready_pm;
+	}
+	
+	/**
+	 * Gets the utilization threshold.
+	 * 
+	 * @return the utilization threshold
+	 */
+	protected double getUtilizationThreshold() {
+		return maxThreshold;
 	}
 
 }

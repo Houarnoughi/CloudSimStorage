@@ -36,7 +36,7 @@ public class GreedyMinStorageCostRs {
 		String ioVmAllocationPolicy = "greedyMinStrgCost"; // Min Storage Cost
 		String ioVmSelectionPolicy = "rs"; // Random Selection (RS) VM selection policy
 		String parameter = "1"; // the static utilization threshold
-		String maxThr = "1";
+		String maxThr = "0.9";
 		String minThr = "0";
 
 		new IoRandomRunner(
