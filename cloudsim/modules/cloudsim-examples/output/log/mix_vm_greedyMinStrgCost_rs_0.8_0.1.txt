@@ -712,7 +712,7 @@ Over-utilized hosts:
 Host #4
 
 Reallocation of VMs from the over-utilized hosts:
-VM #8 allocated to host #6
+VM #9 allocated to host #6
 
 Under-utilized host: host #2
 
@@ -729,16 +729,16 @@ Under-utilized host: host #0
 Reallocation of VMs from the under-utilized host: 0 1 2 3 4 
 Not all VMs can be reallocated from the host, reallocation cancelled
 
-900,10: Migration of VM #8 from Host #4 to Host #6 is started
-900,10: [Host #6] Total allocated MIPS for VM #8 (Host #4) is 200,00, was requested 2000,00 out of total 2000,00 (100,00%)
-900,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 200,00.
-900,10: [Host #6] VM #8 is being migrated to Host #6
-900,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
-900,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
-900,10: [Host #4] Under allocated MIPS for VM #8: 200,00
-900,10: [Host #4] VM #8 is in migration
-900,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-900,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 860,00. PE #1: 1640,00.
+900,10: Migration of VM #9 from Host #4 to Host #6 is started
+900,10: [Host #6] Total allocated MIPS for VM #9 (Host #4) is 250,00, was requested 2500,00 out of total 2500,00 (100,00%)
+900,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 250,00.
+900,10: [Host #6] VM #9 is being migrated to Host #6
+900,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+900,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+900,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2250,00, was requested 2500,00 out of total 2500,00 (100,00%)
+900,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1590,00.
+900,10: [Host #4] Under allocated MIPS for VM #9: 250,00
+900,10: [Host #4] VM #9 is in migration
 900.1: Broker: Cloudlet 5 received
 
 
@@ -781,20 +781,20 @@ New resource usage for the time frame starting at 940,10:
 
 940,10: [Host #4] IO processing of VM #8 elapsed time is 0,37547 s
 940,10: [Host #4] IO processing of VM #9 elapsed time is 1,75472 s
-940,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
-940,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
-940,10: [Host #4] Under allocated MIPS for VM #8: 200,00
-940,10: [Host #4] VM #8 is in migration
-940,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-940,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 860,00. PE #1: 1640,00.
+940,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+940,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+940,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2250,00, was requested 2500,00 out of total 2500,00 (100,00%)
+940,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1590,00.
+940,10: [Host #4] Under allocated MIPS for VM #9: 250,00
+940,10: [Host #4] VM #9 is in migration
 940,10: [Host #4] utilization is 84,59%
 
 940,10: [Host #5] utilization is 0,00%
 
-940,10: [Host #6] Total allocated MIPS for VM #8 (Host #4) is 200,00, was requested 2000,00 out of total 2000,00 (100,00%)
-940,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 200,00.
-940,10: [Host #6] VM #8 is being migrated to Host #6
-940,10: [Host #6] utilization is 3,76%
+940,10: [Host #6] Total allocated MIPS for VM #9 (Host #4) is 250,00, was requested 2500,00 out of total 2500,00 (100,00%)
+940,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 250,00.
+940,10: [Host #6] VM #9 is being migrated to Host #6
+940,10: [Host #6] utilization is 4,70%
 
 940,10: [Host #7] utilization is 0,00%
 
@@ -822,8 +822,8 @@ Energy consumption for the last time frame from 900,10 to 940,10:
 940,10: [Host #5] utilization at 900,10 was 0,00%, now is 0,00%
 940,10: [Host #5] energy is 0,00 W*sec
 
-940,10: [Host #6] utilization at 900,10 was 3,76%, now is 3,76%
-940,10: [Host #6] energy is 2060,15 W*sec
+940,10: [Host #6] utilization at 900,10 was 4,70%, now is 4,70%
+940,10: [Host #6] energy is 2075,19 W*sec
 
 940,10: [Host #7] utilization at 900,10 was 0,00%, now is 0,00%
 940,10: [Host #7] energy is 0,00 W*sec
@@ -834,13 +834,13 @@ Energy consumption for the last time frame from 900,10 to 940,10:
 940,10: [Host #9] utilization at 900,10 was 0,00%, now is 0,00%
 940,10: [Host #9] energy is 0,00 W*sec
 
-940,10: Data center's energy is 14099,28 W*sec
+940,10: Data center's energy is 14114,32 W*sec
 
-[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-8
+[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-9
 
-[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-8
-940,10: VM #8 has been allocated to the host #6
-940,10: Migration of VM #8 to Host #6 is completed
+[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-9
+940,10: VM #9 has been allocated to the host #6
+940,10: Migration of VM #9 to Host #6 is completed
 
 
 --------------------------------------------------------------
@@ -880,17 +880,17 @@ New resource usage for the time frame starting at 940,10:
 
 940,10: [Host #3] utilization is 0,00%
 
-940,10: [Host #4] IO processing of VM #9 elapsed time is 1,75472 s
-940,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-940,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2500,00.
-940,10: [Host #4] utilization is 46,99%
+940,10: [Host #4] IO processing of VM #8 elapsed time is 0,37547 s
+940,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+940,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+940,10: [Host #4] utilization is 37,59%
 
 940,10: [Host #5] utilization is 0,00%
 
-940,10: [Host #6] IO processing of VM #8 elapsed time is 0,37547 s
-940,10: [Host #6] Total allocated MIPS for VM #8 (Host #6) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-940,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
-940,10: [Host #6] utilization is 37,59%
+940,10: [Host #6] IO processing of VM #9 elapsed time is 1,75472 s
+940,10: [Host #6] Total allocated MIPS for VM #9 (Host #6) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+940,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2500,00.
+940,10: [Host #6] utilization is 46,99%
 
 940,10: [Host #7] utilization is 0,00%
 
@@ -937,17 +937,17 @@ New resource usage for the time frame starting at 1200,10:
 
 1200,10: [Host #3] utilization is 0,00%
 
-1200,10: [Host #4] IO processing of VM #9 elapsed time is 0,52453 s
-1200,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-1200,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2500,00.
-1200,10: [Host #4] utilization is 46,99%
+1200,10: [Host #4] IO processing of VM #8 elapsed time is 2,98868 s
+1200,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+1200,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+1200,10: [Host #4] utilization is 37,59%
 
 1200,10: [Host #5] utilization is 0,00%
 
-1200,10: [Host #6] IO processing of VM #8 elapsed time is 2,98868 s
-1200,10: [Host #6] Total allocated MIPS for VM #8 (Host #6) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-1200,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
-1200,10: [Host #6] utilization is 37,59%
+1200,10: [Host #6] IO processing of VM #9 elapsed time is 0,52453 s
+1200,10: [Host #6] Total allocated MIPS for VM #9 (Host #6) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+1200,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2500,00.
+1200,10: [Host #6] utilization is 46,99%
 
 1200,10: [Host #7] utilization is 0,00%
 
@@ -969,14 +969,14 @@ Energy consumption for the last time frame from 940,10 to 1200,10:
 1200,10: [Host #3] utilization at 940,10 was 0,00%, now is 0,00%
 1200,10: [Host #3] energy is 0,00 W*sec
 
-1200,10: [Host #4] utilization at 940,10 was 46,99%, now is 46,99%
-1200,10: [Host #4] energy is 17887,22 W*sec
+1200,10: [Host #4] utilization at 940,10 was 37,59%, now is 37,59%
+1200,10: [Host #4] energy is 16909,77 W*sec
 
 1200,10: [Host #5] utilization at 940,10 was 0,00%, now is 0,00%
 1200,10: [Host #5] energy is 0,00 W*sec
 
-1200,10: [Host #6] utilization at 940,10 was 37,59%, now is 37,59%
-1200,10: [Host #6] energy is 16909,77 W*sec
+1200,10: [Host #6] utilization at 940,10 was 46,99%, now is 46,99%
+1200,10: [Host #6] energy is 17887,22 W*sec
 
 1200,10: [Host #7] utilization at 940,10 was 0,00%, now is 0,00%
 1200,10: [Host #7] energy is 0,00 W*sec
@@ -997,8 +997,8 @@ Reallocation of VMs from the over-utilized hosts:
 
 Under-utilized host: host #6
 
-Reallocation of VMs from the under-utilized host: 8 
-VM #8 allocated to host #4
+Reallocation of VMs from the under-utilized host: 9 
+VM #9 allocated to host #4
 
 Under-utilized host: host #2
 
@@ -1016,16 +1016,16 @@ Reallocation of VMs from the under-utilized host: 0 1 2 3 4
 VM #1 allocated to host #4
 Not all VMs can be reallocated from the host, reallocation cancelled
 
-1200,10: Migration of VM #8 from Host #6 to Host #4 is started
-1200,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-1200,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2460,00. PE #1: 40,00.
-1200,10: [Host #4] Total allocated MIPS for VM #8 (Host #6) is 200,00, was requested 2000,00 out of total 2000,00 (100,00%)
-1200,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 200,00.
-1200,10: [Host #4] VM #8 is being migrated to Host #4
-1200,10: [Host #6] Total allocated MIPS for VM #8 (Host #6) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
-1200,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
-1200,10: [Host #6] Under allocated MIPS for VM #8: 200,00
-1200,10: [Host #6] VM #8 is in migration
+1200,10: Migration of VM #9 from Host #6 to Host #4 is started
+1200,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+1200,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+1200,10: [Host #4] Total allocated MIPS for VM #9 (Host #6) is 250,00, was requested 2500,00 out of total 2500,00 (100,00%)
+1200,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 250,00.
+1200,10: [Host #4] VM #9 is being migrated to Host #4
+1200,10: [Host #6] Total allocated MIPS for VM #9 (Host #6) is 2250,00, was requested 2500,00 out of total 2500,00 (100,00%)
+1200,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2250,00.
+1200,10: [Host #6] Under allocated MIPS for VM #9: 250,00
+1200,10: [Host #6] VM #9 is in migration
 1200.1: Broker: Cloudlet 9 received
 
 
@@ -1066,22 +1066,22 @@ New resource usage for the time frame starting at 1240,10:
 
 1240,10: [Host #3] utilization is 0,00%
 
-1240,10: [Host #4] IO processing of VM #9 elapsed time is 0,52453 s
-1240,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-1240,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2460,00. PE #1: 40,00.
-1240,10: [Host #4] Total allocated MIPS for VM #8 (Host #6) is 200,00, was requested 2000,00 out of total 2000,00 (100,00%)
-1240,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 200,00.
-1240,10: [Host #4] VM #8 is being migrated to Host #4
-1240,10: [Host #4] utilization is 50,75%
+1240,10: [Host #4] IO processing of VM #8 elapsed time is 2,98868 s
+1240,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+1240,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+1240,10: [Host #4] Total allocated MIPS for VM #9 (Host #6) is 250,00, was requested 2500,00 out of total 2500,00 (100,00%)
+1240,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 250,00.
+1240,10: [Host #4] VM #9 is being migrated to Host #4
+1240,10: [Host #4] utilization is 42,29%
 
 1240,10: [Host #5] utilization is 0,00%
 
-1240,10: [Host #6] IO processing of VM #8 elapsed time is 2,98868 s
-1240,10: [Host #6] Total allocated MIPS for VM #8 (Host #6) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
-1240,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
-1240,10: [Host #6] Under allocated MIPS for VM #8: 200,00
-1240,10: [Host #6] VM #8 is in migration
-1240,10: [Host #6] utilization is 37,59%
+1240,10: [Host #6] IO processing of VM #9 elapsed time is 0,52453 s
+1240,10: [Host #6] Total allocated MIPS for VM #9 (Host #6) is 2250,00, was requested 2500,00 out of total 2500,00 (100,00%)
+1240,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2250,00.
+1240,10: [Host #6] Under allocated MIPS for VM #9: 250,00
+1240,10: [Host #6] VM #9 is in migration
+1240,10: [Host #6] utilization is 46,99%
 
 1240,10: [Host #7] utilization is 0,00%
 
@@ -1103,14 +1103,14 @@ Energy consumption for the last time frame from 1200,10 to 1240,10:
 1240,10: [Host #3] utilization at 1200,10 was 0,00%, now is 0,00%
 1240,10: [Host #3] energy is 0,00 W*sec
 
-1240,10: [Host #4] utilization at 1200,10 was 50,75%, now is 50,75%
-1240,10: [Host #4] energy is 2812,03 W*sec
+1240,10: [Host #4] utilization at 1200,10 was 42,29%, now is 42,29%
+1240,10: [Host #4] energy is 2676,69 W*sec
 
 1240,10: [Host #5] utilization at 1200,10 was 0,00%, now is 0,00%
 1240,10: [Host #5] energy is 0,00 W*sec
 
-1240,10: [Host #6] utilization at 1200,10 was 37,59%, now is 37,59%
-1240,10: [Host #6] energy is 2601,50 W*sec
+1240,10: [Host #6] utilization at 1200,10 was 46,99%, now is 46,99%
+1240,10: [Host #6] energy is 2751,88 W*sec
 
 1240,10: [Host #7] utilization at 1200,10 was 0,00%, now is 0,00%
 1240,10: [Host #7] energy is 0,00 W*sec
@@ -1121,13 +1121,13 @@ Energy consumption for the last time frame from 1200,10 to 1240,10:
 1240,10: [Host #9] utilization at 1200,10 was 0,00%, now is 0,00%
 1240,10: [Host #9] energy is 0,00 W*sec
 
-1240,10: Data center's energy is 14099,28 W*sec
+1240,10: Data center's energy is 14114,32 W*sec
 
-[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-8
+[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-9
 
-[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-8
-1240,10: VM #8 has been allocated to the host #4
-1240,10: Migration of VM #8 to Host #4 is completed
+[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-9
+1240,10: VM #9 has been allocated to the host #4
+1240,10: Migration of VM #9 to Host #4 is completed
 
 
 --------------------------------------------------------------
@@ -1167,12 +1167,12 @@ New resource usage for the time frame starting at 1240,10:
 
 1240,10: [Host #3] utilization is 0,00%
 
-1240,10: [Host #4] IO processing of VM #9 elapsed time is 0,52453 s
 1240,10: [Host #4] IO processing of VM #8 elapsed time is 2,98868 s
-1240,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-1240,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1840,00.
+1240,10: [Host #4] IO processing of VM #9 elapsed time is 0,52453 s
 1240,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1240,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+1240,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+1240,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1840,00.
 1240,10: [Host #4] utilization is 84,59%
 
 1240,10: [Host #5] utilization is 0,00%
@@ -1226,12 +1226,12 @@ New resource usage for the time frame starting at 1500,10:
 
 1500,10: [Host #3] utilization is 0,00%
 
-1500,10: [Host #4] IO processing of VM #9 elapsed time is 0,47170 s
 1500,10: [Host #4] IO processing of VM #8 elapsed time is 0,25283 s
-1500,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-1500,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1840,00.
+1500,10: [Host #4] IO processing of VM #9 elapsed time is 0,47170 s
 1500,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+1500,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+1500,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1840,00.
 1500,10: [Host #4] utilization is 84,59%
 
 1500,10: [Host #5] utilization is 0,00%
@@ -1305,12 +1305,12 @@ Not all VMs can be reallocated from the host, reallocation cancelled
 1500,10: [Host #6] Total allocated MIPS for VM #8 (Host #4) is 200,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 200,00.
 1500,10: [Host #6] VM #8 is being migrated to Host #6
-1500,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-1500,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 860,00. PE #1: 1640,00.
 1500,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1500,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
 1500,10: [Host #4] Under allocated MIPS for VM #8: 200,00
 1500,10: [Host #4] VM #8 is in migration
+1500,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+1500,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 860,00. PE #1: 1640,00.
 1500.1: Broker: Cloudlet 8 received
 
 
@@ -1351,14 +1351,14 @@ New resource usage for the time frame starting at 1540,10:
 
 1540,10: [Host #3] utilization is 0,00%
 
-1540,10: [Host #4] IO processing of VM #9 elapsed time is 0,47170 s
 1540,10: [Host #4] IO processing of VM #8 elapsed time is 0,25283 s
-1540,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-1540,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 860,00. PE #1: 1640,00.
+1540,10: [Host #4] IO processing of VM #9 elapsed time is 0,47170 s
 1540,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
 1540,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
 1540,10: [Host #4] Under allocated MIPS for VM #8: 200,00
 1540,10: [Host #4] VM #8 is in migration
+1540,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+1540,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 860,00. PE #1: 1640,00.
 1540,10: [Host #4] utilization is 84,59%
 
 1540,10: [Host #5] utilization is 0,00%
@@ -1853,7 +1853,7 @@ Over-utilized hosts:
 Host #4
 
 Reallocation of VMs from the over-utilized hosts:
-VM #9 allocated to host #6
+VM #8 allocated to host #6
 
 Under-utilized host: host #2
 
@@ -1870,16 +1870,16 @@ Under-utilized host: host #0
 Reallocation of VMs from the under-utilized host: 0 1 2 3 4 
 Not all VMs can be reallocated from the host, reallocation cancelled
 
-2100,10: Migration of VM #9 from Host #4 to Host #6 is started
-2100,10: [Host #6] Total allocated MIPS for VM #9 (Host #4) is 250,00, was requested 2500,00 out of total 2500,00 (100,00%)
-2100,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 250,00.
-2100,10: [Host #6] VM #9 is being migrated to Host #6
-2100,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2250,00, was requested 2500,00 out of total 2500,00 (100,00%)
-2100,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1590,00.
-2100,10: [Host #4] Under allocated MIPS for VM #9: 250,00
-2100,10: [Host #4] VM #9 is in migration
-2100,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-2100,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+2100,10: Migration of VM #8 from Host #4 to Host #6 is started
+2100,10: [Host #6] Total allocated MIPS for VM #8 (Host #4) is 200,00, was requested 2000,00 out of total 2000,00 (100,00%)
+2100,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 200,00.
+2100,10: [Host #6] VM #8 is being migrated to Host #6
+2100,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+2100,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 860,00. PE #1: 1640,00.
+2100,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
+2100,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
+2100,10: [Host #4] Under allocated MIPS for VM #8: 200,00
+2100,10: [Host #4] VM #8 is in migration
 
 
 --------------------------------------------------------------
@@ -1921,20 +1921,20 @@ New resource usage for the time frame starting at 2140,10:
 
 2140,10: [Host #4] IO processing of VM #9 elapsed time is 3,08113 s
 2140,10: [Host #4] IO processing of VM #8 elapsed time is 5,98491 s
-2140,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2250,00, was requested 2500,00 out of total 2500,00 (100,00%)
-2140,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1590,00.
-2140,10: [Host #4] Under allocated MIPS for VM #9: 250,00
-2140,10: [Host #4] VM #9 is in migration
-2140,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-2140,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+2140,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+2140,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 860,00. PE #1: 1640,00.
+2140,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
+2140,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
+2140,10: [Host #4] Under allocated MIPS for VM #8: 200,00
+2140,10: [Host #4] VM #8 is in migration
 2140,10: [Host #4] utilization is 84,59%
 
 2140,10: [Host #5] utilization is 0,00%
 
-2140,10: [Host #6] Total allocated MIPS for VM #9 (Host #4) is 250,00, was requested 2500,00 out of total 2500,00 (100,00%)
-2140,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 250,00.
-2140,10: [Host #6] VM #9 is being migrated to Host #6
-2140,10: [Host #6] utilization is 4,70%
+2140,10: [Host #6] Total allocated MIPS for VM #8 (Host #4) is 200,00, was requested 2000,00 out of total 2000,00 (100,00%)
+2140,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 200,00.
+2140,10: [Host #6] VM #8 is being migrated to Host #6
+2140,10: [Host #6] utilization is 3,76%
 
 2140,10: [Host #7] utilization is 0,00%
 
@@ -1962,8 +1962,8 @@ Energy consumption for the last time frame from 2100,10 to 2140,10:
 2140,10: [Host #5] utilization at 2100,10 was 0,00%, now is 0,00%
 2140,10: [Host #5] energy is 0,00 W*sec
 
-2140,10: [Host #6] utilization at 2100,10 was 4,70%, now is 4,70%
-2140,10: [Host #6] energy is 2075,19 W*sec
+2140,10: [Host #6] utilization at 2100,10 was 3,76%, now is 3,76%
+2140,10: [Host #6] energy is 2060,15 W*sec
 
 2140,10: [Host #7] utilization at 2100,10 was 0,00%, now is 0,00%
 2140,10: [Host #7] energy is 0,00 W*sec
@@ -1974,13 +1974,13 @@ Energy consumption for the last time frame from 2100,10 to 2140,10:
 2140,10: [Host #9] utilization at 2100,10 was 0,00%, now is 0,00%
 2140,10: [Host #9] energy is 0,00 W*sec
 
-2140,10: Data center's energy is 14114,32 W*sec
+2140,10: Data center's energy is 14099,28 W*sec
 
-[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-9
+[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-8
 
-[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-9
-2140,10: VM #9 has been allocated to the host #6
-2140,10: Migration of VM #9 to Host #6 is completed
+[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-8
+2140,10: VM #8 has been allocated to the host #6
+2140,10: Migration of VM #8 to Host #6 is completed
 
 
 --------------------------------------------------------------
@@ -2020,17 +2020,17 @@ New resource usage for the time frame starting at 2140,10:
 
 2140,10: [Host #3] utilization is 0,00%
 
-2140,10: [Host #4] IO processing of VM #8 elapsed time is 5,98491 s
-2140,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-2140,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
-2140,10: [Host #4] utilization is 37,59%
+2140,10: [Host #4] IO processing of VM #9 elapsed time is 3,08113 s
+2140,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+2140,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2500,00.
+2140,10: [Host #4] utilization is 46,99%
 
 2140,10: [Host #5] utilization is 0,00%
 
-2140,10: [Host #6] IO processing of VM #9 elapsed time is 3,08113 s
-2140,10: [Host #6] Total allocated MIPS for VM #9 (Host #6) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-2140,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2500,00.
-2140,10: [Host #6] utilization is 46,99%
+2140,10: [Host #6] IO processing of VM #8 elapsed time is 5,98491 s
+2140,10: [Host #6] Total allocated MIPS for VM #8 (Host #6) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+2140,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+2140,10: [Host #6] utilization is 37,59%
 
 2140,10: [Host #7] utilization is 0,00%
 
@@ -2077,17 +2077,17 @@ New resource usage for the time frame starting at 2400,10:
 
 2400,10: [Host #3] utilization is 0,00%
 
-2400,10: [Host #4] IO processing of VM #8 elapsed time is 1,55472 s
-2400,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-2400,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
-2400,10: [Host #4] utilization is 37,59%
+2400,10: [Host #4] IO processing of VM #9 elapsed time is 0,42830 s
+2400,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+2400,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2500,00.
+2400,10: [Host #4] utilization is 46,99%
 
 2400,10: [Host #5] utilization is 0,00%
 
-2400,10: [Host #6] IO processing of VM #9 elapsed time is 0,42830 s
-2400,10: [Host #6] Total allocated MIPS for VM #9 (Host #6) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-2400,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2500,00.
-2400,10: [Host #6] utilization is 46,99%
+2400,10: [Host #6] IO processing of VM #8 elapsed time is 1,55472 s
+2400,10: [Host #6] Total allocated MIPS for VM #8 (Host #6) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+2400,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+2400,10: [Host #6] utilization is 37,59%
 
 2400,10: [Host #7] utilization is 0,00%
 
@@ -2109,14 +2109,14 @@ Energy consumption for the last time frame from 2140,10 to 2400,10:
 2400,10: [Host #3] utilization at 2140,10 was 0,00%, now is 0,00%
 2400,10: [Host #3] energy is 0,00 W*sec
 
-2400,10: [Host #4] utilization at 2140,10 was 37,59%, now is 37,59%
-2400,10: [Host #4] energy is 16909,77 W*sec
+2400,10: [Host #4] utilization at 2140,10 was 46,99%, now is 46,99%
+2400,10: [Host #4] energy is 17887,22 W*sec
 
 2400,10: [Host #5] utilization at 2140,10 was 0,00%, now is 0,00%
 2400,10: [Host #5] energy is 0,00 W*sec
 
-2400,10: [Host #6] utilization at 2140,10 was 46,99%, now is 46,99%
-2400,10: [Host #6] energy is 17887,22 W*sec
+2400,10: [Host #6] utilization at 2140,10 was 37,59%, now is 37,59%
+2400,10: [Host #6] energy is 16909,77 W*sec
 
 2400,10: [Host #7] utilization at 2140,10 was 0,00%, now is 0,00%
 2400,10: [Host #7] energy is 0,00 W*sec
@@ -2137,8 +2137,8 @@ Reallocation of VMs from the over-utilized hosts:
 
 Under-utilized host: host #6
 
-Reallocation of VMs from the under-utilized host: 9 
-VM #9 allocated to host #4
+Reallocation of VMs from the under-utilized host: 8 
+VM #8 allocated to host #4
 
 Under-utilized host: host #2
 
@@ -2156,16 +2156,16 @@ Reallocation of VMs from the under-utilized host: 0 1 2 3 4
 VM #0 allocated to host #4
 Not all VMs can be reallocated from the host, reallocation cancelled
 
-2400,10: Migration of VM #9 from Host #6 to Host #4 is started
-2400,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-2400,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
-2400,10: [Host #4] Total allocated MIPS for VM #9 (Host #6) is 250,00, was requested 2500,00 out of total 2500,00 (100,00%)
-2400,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 250,00.
-2400,10: [Host #4] VM #9 is being migrated to Host #4
-2400,10: [Host #6] Total allocated MIPS for VM #9 (Host #6) is 2250,00, was requested 2500,00 out of total 2500,00 (100,00%)
-2400,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2250,00.
-2400,10: [Host #6] Under allocated MIPS for VM #9: 250,00
-2400,10: [Host #6] VM #9 is in migration
+2400,10: Migration of VM #8 from Host #6 to Host #4 is started
+2400,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+2400,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2460,00. PE #1: 40,00.
+2400,10: [Host #4] Total allocated MIPS for VM #8 (Host #6) is 200,00, was requested 2000,00 out of total 2000,00 (100,00%)
+2400,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 200,00.
+2400,10: [Host #4] VM #8 is being migrated to Host #4
+2400,10: [Host #6] Total allocated MIPS for VM #8 (Host #6) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
+2400,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
+2400,10: [Host #6] Under allocated MIPS for VM #8: 200,00
+2400,10: [Host #6] VM #8 is in migration
 
 
 --------------------------------------------------------------
@@ -2205,22 +2205,22 @@ New resource usage for the time frame starting at 2440,10:
 
 2440,10: [Host #3] utilization is 0,00%
 
-2440,10: [Host #4] IO processing of VM #8 elapsed time is 1,55472 s
-2440,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-2440,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
-2440,10: [Host #4] Total allocated MIPS for VM #9 (Host #6) is 250,00, was requested 2500,00 out of total 2500,00 (100,00%)
-2440,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 250,00.
-2440,10: [Host #4] VM #9 is being migrated to Host #4
-2440,10: [Host #4] utilization is 42,29%
+2440,10: [Host #4] IO processing of VM #9 elapsed time is 0,42830 s
+2440,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+2440,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2460,00. PE #1: 40,00.
+2440,10: [Host #4] Total allocated MIPS for VM #8 (Host #6) is 200,00, was requested 2000,00 out of total 2000,00 (100,00%)
+2440,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 200,00.
+2440,10: [Host #4] VM #8 is being migrated to Host #4
+2440,10: [Host #4] utilization is 50,75%
 
 2440,10: [Host #5] utilization is 0,00%
 
-2440,10: [Host #6] IO processing of VM #9 elapsed time is 0,42830 s
-2440,10: [Host #6] Total allocated MIPS for VM #9 (Host #6) is 2250,00, was requested 2500,00 out of total 2500,00 (100,00%)
-2440,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2250,00.
-2440,10: [Host #6] Under allocated MIPS for VM #9: 250,00
-2440,10: [Host #6] VM #9 is in migration
-2440,10: [Host #6] utilization is 46,99%
+2440,10: [Host #6] IO processing of VM #8 elapsed time is 1,55472 s
+2440,10: [Host #6] Total allocated MIPS for VM #8 (Host #6) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
+2440,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
+2440,10: [Host #6] Under allocated MIPS for VM #8: 200,00
+2440,10: [Host #6] VM #8 is in migration
+2440,10: [Host #6] utilization is 37,59%
 
 2440,10: [Host #7] utilization is 0,00%
 
@@ -2242,14 +2242,14 @@ Energy consumption for the last time frame from 2400,10 to 2440,10:
 2440,10: [Host #3] utilization at 2400,10 was 0,00%, now is 0,00%
 2440,10: [Host #3] energy is 0,00 W*sec
 
-2440,10: [Host #4] utilization at 2400,10 was 42,29%, now is 42,29%
-2440,10: [Host #4] energy is 2676,69 W*sec
+2440,10: [Host #4] utilization at 2400,10 was 50,75%, now is 50,75%
+2440,10: [Host #4] energy is 2812,03 W*sec
 
 2440,10: [Host #5] utilization at 2400,10 was 0,00%, now is 0,00%
 2440,10: [Host #5] energy is 0,00 W*sec
 
-2440,10: [Host #6] utilization at 2400,10 was 46,99%, now is 46,99%
-2440,10: [Host #6] energy is 2751,88 W*sec
+2440,10: [Host #6] utilization at 2400,10 was 37,59%, now is 37,59%
+2440,10: [Host #6] energy is 2601,50 W*sec
 
 2440,10: [Host #7] utilization at 2400,10 was 0,00%, now is 0,00%
 2440,10: [Host #7] energy is 0,00 W*sec
@@ -2260,13 +2260,13 @@ Energy consumption for the last time frame from 2400,10 to 2440,10:
 2440,10: [Host #9] utilization at 2400,10 was 0,00%, now is 0,00%
 2440,10: [Host #9] energy is 0,00 W*sec
 
-2440,10: Data center's energy is 14114,32 W*sec
+2440,10: Data center's energy is 14099,28 W*sec
 
-[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-9
+[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-8
 
-[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-9
-2440,10: VM #9 has been allocated to the host #4
-2440,10: Migration of VM #9 to Host #4 is completed
+[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-8
+2440,10: VM #8 has been allocated to the host #4
+2440,10: Migration of VM #8 to Host #4 is completed
 
 
 --------------------------------------------------------------
@@ -2306,12 +2306,12 @@ New resource usage for the time frame starting at 2440,10:
 
 2440,10: [Host #3] utilization is 0,00%
 
-2440,10: [Host #4] IO processing of VM #8 elapsed time is 1,55472 s
 2440,10: [Host #4] IO processing of VM #9 elapsed time is 0,42830 s
-2440,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-2440,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+2440,10: [Host #4] IO processing of VM #8 elapsed time is 1,55472 s
 2440,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
 2440,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1840,00.
+2440,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+2440,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
 2440,10: [Host #4] utilization is 84,59%
 
 2440,10: [Host #5] utilization is 0,00%
@@ -2363,12 +2363,12 @@ New resource usage for the time frame starting at 2700,10:
 
 2700,10: [Host #3] utilization is 0,00%
 
-2700,10: [Host #4] IO processing of VM #8 elapsed time is 1,72075 s
 2700,10: [Host #4] IO processing of VM #9 elapsed time is 0,42830 s
-2700,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-2700,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+2700,10: [Host #4] IO processing of VM #8 elapsed time is 1,72075 s
 2700,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
 2700,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1840,00.
+2700,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+2700,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
 2700,10: [Host #4] utilization is 84,59%
 
 2700,10: [Host #5] utilization is 0,00%
@@ -2442,12 +2442,12 @@ Not all VMs can be reallocated from the host, reallocation cancelled
 2700,10: [Host #6] Total allocated MIPS for VM #8 (Host #4) is 200,00, was requested 2000,00 out of total 2000,00 (100,00%)
 2700,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 200,00.
 2700,10: [Host #6] VM #8 is being migrated to Host #6
+2700,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+2700,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 860,00. PE #1: 1640,00.
 2700,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
 2700,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
 2700,10: [Host #4] Under allocated MIPS for VM #8: 200,00
 2700,10: [Host #4] VM #8 is in migration
-2700,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-2700,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 860,00. PE #1: 1640,00.
 
 
 --------------------------------------------------------------
@@ -2487,14 +2487,14 @@ New resource usage for the time frame starting at 2740,10:
 
 2740,10: [Host #3] utilization is 0,00%
 
-2740,10: [Host #4] IO processing of VM #8 elapsed time is 1,72075 s
 2740,10: [Host #4] IO processing of VM #9 elapsed time is 0,42830 s
+2740,10: [Host #4] IO processing of VM #8 elapsed time is 1,72075 s
+2740,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+2740,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 860,00. PE #1: 1640,00.
 2740,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
 2740,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
 2740,10: [Host #4] Under allocated MIPS for VM #8: 200,00
 2740,10: [Host #4] VM #8 is in migration
-2740,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-2740,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 860,00. PE #1: 1640,00.
 2740,10: [Host #4] utilization is 84,59%
 
 2740,10: [Host #5] utilization is 0,00%
@@ -3557,7 +3557,7 @@ Over-utilized hosts:
 Host #4
 
 Reallocation of VMs from the over-utilized hosts:
-VM #8 allocated to host #6
+VM #9 allocated to host #6
 
 Under-utilized host: host #2
 
@@ -3574,16 +3574,16 @@ Under-utilized host: host #0
 Reallocation of VMs from the under-utilized host: 0 1 2 3 4 
 Not all VMs can be reallocated from the host, reallocation cancelled
 
-3900,10: Migration of VM #8 from Host #4 to Host #6 is started
-3900,10: [Host #6] Total allocated MIPS for VM #8 (Host #4) is 200,00, was requested 2000,00 out of total 2000,00 (100,00%)
-3900,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 200,00.
-3900,10: [Host #6] VM #8 is being migrated to Host #6
-3900,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
-3900,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
-3900,10: [Host #4] Under allocated MIPS for VM #8: 200,00
-3900,10: [Host #4] VM #8 is in migration
-3900,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-3900,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 860,00. PE #1: 1640,00.
+3900,10: Migration of VM #9 from Host #4 to Host #6 is started
+3900,10: [Host #6] Total allocated MIPS for VM #9 (Host #4) is 250,00, was requested 2500,00 out of total 2500,00 (100,00%)
+3900,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 250,00.
+3900,10: [Host #6] VM #9 is being migrated to Host #6
+3900,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+3900,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+3900,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2250,00, was requested 2500,00 out of total 2500,00 (100,00%)
+3900,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1590,00.
+3900,10: [Host #4] Under allocated MIPS for VM #9: 250,00
+3900,10: [Host #4] VM #9 is in migration
 
 
 --------------------------------------------------------------
@@ -3625,20 +3625,20 @@ New resource usage for the time frame starting at 3940,10:
 
 3940,10: [Host #4] IO processing of VM #8 elapsed time is 0,37547 s
 3940,10: [Host #4] IO processing of VM #9 elapsed time is 1,75472 s
-3940,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
-3940,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
-3940,10: [Host #4] Under allocated MIPS for VM #8: 200,00
-3940,10: [Host #4] VM #8 is in migration
-3940,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-3940,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 860,00. PE #1: 1640,00.
+3940,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+3940,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+3940,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2250,00, was requested 2500,00 out of total 2500,00 (100,00%)
+3940,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1590,00.
+3940,10: [Host #4] Under allocated MIPS for VM #9: 250,00
+3940,10: [Host #4] VM #9 is in migration
 3940,10: [Host #4] utilization is 84,59%
 
 3940,10: [Host #5] utilization is 0,00%
 
-3940,10: [Host #6] Total allocated MIPS for VM #8 (Host #4) is 200,00, was requested 2000,00 out of total 2000,00 (100,00%)
-3940,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 200,00.
-3940,10: [Host #6] VM #8 is being migrated to Host #6
-3940,10: [Host #6] utilization is 3,76%
+3940,10: [Host #6] Total allocated MIPS for VM #9 (Host #4) is 250,00, was requested 2500,00 out of total 2500,00 (100,00%)
+3940,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 250,00.
+3940,10: [Host #6] VM #9 is being migrated to Host #6
+3940,10: [Host #6] utilization is 4,70%
 
 3940,10: [Host #7] utilization is 0,00%
 
@@ -3666,8 +3666,8 @@ Energy consumption for the last time frame from 3900,10 to 3940,10:
 3940,10: [Host #5] utilization at 3900,10 was 0,00%, now is 0,00%
 3940,10: [Host #5] energy is 0,00 W*sec
 
-3940,10: [Host #6] utilization at 3900,10 was 3,76%, now is 3,76%
-3940,10: [Host #6] energy is 2060,15 W*sec
+3940,10: [Host #6] utilization at 3900,10 was 4,70%, now is 4,70%
+3940,10: [Host #6] energy is 2075,19 W*sec
 
 3940,10: [Host #7] utilization at 3900,10 was 0,00%, now is 0,00%
 3940,10: [Host #7] energy is 0,00 W*sec
@@ -3678,13 +3678,13 @@ Energy consumption for the last time frame from 3900,10 to 3940,10:
 3940,10: [Host #9] utilization at 3900,10 was 0,00%, now is 0,00%
 3940,10: [Host #9] energy is 0,00 W*sec
 
-3940,10: Data center's energy is 14099,28 W*sec
+3940,10: Data center's energy is 14114,32 W*sec
 
-[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-8
+[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-9
 
-[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-8
-3940,10: VM #8 has been allocated to the host #6
-3940,10: Migration of VM #8 to Host #6 is completed
+[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-9
+3940,10: VM #9 has been allocated to the host #6
+3940,10: Migration of VM #9 to Host #6 is completed
 
 
 --------------------------------------------------------------
@@ -3724,17 +3724,17 @@ New resource usage for the time frame starting at 3940,10:
 
 3940,10: [Host #3] utilization is 0,00%
 
-3940,10: [Host #4] IO processing of VM #9 elapsed time is 1,75472 s
-3940,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-3940,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2500,00.
-3940,10: [Host #4] utilization is 46,99%
+3940,10: [Host #4] IO processing of VM #8 elapsed time is 0,37547 s
+3940,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+3940,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+3940,10: [Host #4] utilization is 37,59%
 
 3940,10: [Host #5] utilization is 0,00%
 
-3940,10: [Host #6] IO processing of VM #8 elapsed time is 0,37547 s
-3940,10: [Host #6] Total allocated MIPS for VM #8 (Host #6) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-3940,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
-3940,10: [Host #6] utilization is 37,59%
+3940,10: [Host #6] IO processing of VM #9 elapsed time is 1,75472 s
+3940,10: [Host #6] Total allocated MIPS for VM #9 (Host #6) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+3940,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2500,00.
+3940,10: [Host #6] utilization is 46,99%
 
 3940,10: [Host #7] utilization is 0,00%
 
@@ -3781,17 +3781,17 @@ New resource usage for the time frame starting at 4200,10:
 
 4200,10: [Host #3] utilization is 0,00%
 
-4200,10: [Host #4] IO processing of VM #9 elapsed time is 0,52453 s
-4200,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-4200,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2500,00.
-4200,10: [Host #4] utilization is 46,99%
+4200,10: [Host #4] IO processing of VM #8 elapsed time is 2,98868 s
+4200,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+4200,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+4200,10: [Host #4] utilization is 37,59%
 
 4200,10: [Host #5] utilization is 0,00%
 
-4200,10: [Host #6] IO processing of VM #8 elapsed time is 2,98868 s
-4200,10: [Host #6] Total allocated MIPS for VM #8 (Host #6) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-4200,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
-4200,10: [Host #6] utilization is 37,59%
+4200,10: [Host #6] IO processing of VM #9 elapsed time is 0,52453 s
+4200,10: [Host #6] Total allocated MIPS for VM #9 (Host #6) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+4200,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2500,00.
+4200,10: [Host #6] utilization is 46,99%
 
 4200,10: [Host #7] utilization is 0,00%
 
@@ -3813,14 +3813,14 @@ Energy consumption for the last time frame from 3940,10 to 4200,10:
 4200,10: [Host #3] utilization at 3940,10 was 0,00%, now is 0,00%
 4200,10: [Host #3] energy is 0,00 W*sec
 
-4200,10: [Host #4] utilization at 3940,10 was 46,99%, now is 46,99%
-4200,10: [Host #4] energy is 17887,22 W*sec
+4200,10: [Host #4] utilization at 3940,10 was 37,59%, now is 37,59%
+4200,10: [Host #4] energy is 16909,77 W*sec
 
 4200,10: [Host #5] utilization at 3940,10 was 0,00%, now is 0,00%
 4200,10: [Host #5] energy is 0,00 W*sec
 
-4200,10: [Host #6] utilization at 3940,10 was 37,59%, now is 37,59%
-4200,10: [Host #6] energy is 16909,77 W*sec
+4200,10: [Host #6] utilization at 3940,10 was 46,99%, now is 46,99%
+4200,10: [Host #6] energy is 17887,22 W*sec
 
 4200,10: [Host #7] utilization at 3940,10 was 0,00%, now is 0,00%
 4200,10: [Host #7] energy is 0,00 W*sec
@@ -3841,8 +3841,8 @@ Reallocation of VMs from the over-utilized hosts:
 
 Under-utilized host: host #6
 
-Reallocation of VMs from the under-utilized host: 8 
-VM #8 allocated to host #4
+Reallocation of VMs from the under-utilized host: 9 
+VM #9 allocated to host #4
 
 Under-utilized host: host #2
 
@@ -3860,16 +3860,16 @@ Reallocation of VMs from the under-utilized host: 0 1 2 3 4
 VM #0 allocated to host #4
 Not all VMs can be reallocated from the host, reallocation cancelled
 
-4200,10: Migration of VM #8 from Host #6 to Host #4 is started
-4200,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-4200,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2460,00. PE #1: 40,00.
-4200,10: [Host #4] Total allocated MIPS for VM #8 (Host #6) is 200,00, was requested 2000,00 out of total 2000,00 (100,00%)
-4200,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 200,00.
-4200,10: [Host #4] VM #8 is being migrated to Host #4
-4200,10: [Host #6] Total allocated MIPS for VM #8 (Host #6) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
-4200,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
-4200,10: [Host #6] Under allocated MIPS for VM #8: 200,00
-4200,10: [Host #6] VM #8 is in migration
+4200,10: Migration of VM #9 from Host #6 to Host #4 is started
+4200,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+4200,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+4200,10: [Host #4] Total allocated MIPS for VM #9 (Host #6) is 250,00, was requested 2500,00 out of total 2500,00 (100,00%)
+4200,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 250,00.
+4200,10: [Host #4] VM #9 is being migrated to Host #4
+4200,10: [Host #6] Total allocated MIPS for VM #9 (Host #6) is 2250,00, was requested 2500,00 out of total 2500,00 (100,00%)
+4200,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2250,00.
+4200,10: [Host #6] Under allocated MIPS for VM #9: 250,00
+4200,10: [Host #6] VM #9 is in migration
 
 
 --------------------------------------------------------------
@@ -3909,22 +3909,22 @@ New resource usage for the time frame starting at 4240,10:
 
 4240,10: [Host #3] utilization is 0,00%
 
-4240,10: [Host #4] IO processing of VM #9 elapsed time is 0,52453 s
-4240,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-4240,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2460,00. PE #1: 40,00.
-4240,10: [Host #4] Total allocated MIPS for VM #8 (Host #6) is 200,00, was requested 2000,00 out of total 2000,00 (100,00%)
-4240,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 200,00.
-4240,10: [Host #4] VM #8 is being migrated to Host #4
-4240,10: [Host #4] utilization is 50,75%
+4240,10: [Host #4] IO processing of VM #8 elapsed time is 2,98868 s
+4240,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+4240,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+4240,10: [Host #4] Total allocated MIPS for VM #9 (Host #6) is 250,00, was requested 2500,00 out of total 2500,00 (100,00%)
+4240,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 250,00.
+4240,10: [Host #4] VM #9 is being migrated to Host #4
+4240,10: [Host #4] utilization is 42,29%
 
 4240,10: [Host #5] utilization is 0,00%
 
-4240,10: [Host #6] IO processing of VM #8 elapsed time is 2,98868 s
-4240,10: [Host #6] Total allocated MIPS for VM #8 (Host #6) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
-4240,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
-4240,10: [Host #6] Under allocated MIPS for VM #8: 200,00
-4240,10: [Host #6] VM #8 is in migration
-4240,10: [Host #6] utilization is 37,59%
+4240,10: [Host #6] IO processing of VM #9 elapsed time is 0,52453 s
+4240,10: [Host #6] Total allocated MIPS for VM #9 (Host #6) is 2250,00, was requested 2500,00 out of total 2500,00 (100,00%)
+4240,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2250,00.
+4240,10: [Host #6] Under allocated MIPS for VM #9: 250,00
+4240,10: [Host #6] VM #9 is in migration
+4240,10: [Host #6] utilization is 46,99%
 
 4240,10: [Host #7] utilization is 0,00%
 
@@ -3946,14 +3946,14 @@ Energy consumption for the last time frame from 4200,10 to 4240,10:
 4240,10: [Host #3] utilization at 4200,10 was 0,00%, now is 0,00%
 4240,10: [Host #3] energy is 0,00 W*sec
 
-4240,10: [Host #4] utilization at 4200,10 was 50,75%, now is 50,75%
-4240,10: [Host #4] energy is 2812,03 W*sec
+4240,10: [Host #4] utilization at 4200,10 was 42,29%, now is 42,29%
+4240,10: [Host #4] energy is 2676,69 W*sec
 
 4240,10: [Host #5] utilization at 4200,10 was 0,00%, now is 0,00%
 4240,10: [Host #5] energy is 0,00 W*sec
 
-4240,10: [Host #6] utilization at 4200,10 was 37,59%, now is 37,59%
-4240,10: [Host #6] energy is 2601,50 W*sec
+4240,10: [Host #6] utilization at 4200,10 was 46,99%, now is 46,99%
+4240,10: [Host #6] energy is 2751,88 W*sec
 
 4240,10: [Host #7] utilization at 4200,10 was 0,00%, now is 0,00%
 4240,10: [Host #7] energy is 0,00 W*sec
@@ -3964,13 +3964,13 @@ Energy consumption for the last time frame from 4200,10 to 4240,10:
 4240,10: [Host #9] utilization at 4200,10 was 0,00%, now is 0,00%
 4240,10: [Host #9] energy is 0,00 W*sec
 
-4240,10: Data center's energy is 14099,28 W*sec
+4240,10: Data center's energy is 14114,32 W*sec
 
-[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-8
+[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-9
 
-[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-8
-4240,10: VM #8 has been allocated to the host #4
-4240,10: Migration of VM #8 to Host #4 is completed
+[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-9
+4240,10: VM #9 has been allocated to the host #4
+4240,10: Migration of VM #9 to Host #4 is completed
 
 
 --------------------------------------------------------------
@@ -4010,12 +4010,12 @@ New resource usage for the time frame starting at 4240,10:
 
 4240,10: [Host #3] utilization is 0,00%
 
-4240,10: [Host #4] IO processing of VM #9 elapsed time is 0,52453 s
 4240,10: [Host #4] IO processing of VM #8 elapsed time is 2,98868 s
-4240,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-4240,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1840,00.
+4240,10: [Host #4] IO processing of VM #9 elapsed time is 0,52453 s
 4240,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 4240,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+4240,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+4240,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1840,00.
 4240,10: [Host #4] utilization is 84,59%
 
 4240,10: [Host #5] utilization is 0,00%
@@ -4067,12 +4067,12 @@ New resource usage for the time frame starting at 4500,10:
 
 4500,10: [Host #3] utilization is 0,00%
 
-4500,10: [Host #4] IO processing of VM #9 elapsed time is 0,47170 s
 4500,10: [Host #4] IO processing of VM #8 elapsed time is 0,25283 s
-4500,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-4500,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1840,00.
+4500,10: [Host #4] IO processing of VM #9 elapsed time is 0,47170 s
 4500,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
 4500,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+4500,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+4500,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1840,00.
 4500,10: [Host #4] utilization is 84,59%
 
 4500,10: [Host #5] utilization is 0,00%
@@ -4125,7 +4125,7 @@ Over-utilized hosts:
 Host #4
 
 Reallocation of VMs from the over-utilized hosts:
-VM #9 allocated to host #6
+VM #8 allocated to host #6
 
 Under-utilized host: host #2
 
@@ -4142,16 +4142,117 @@ Under-utilized host: host #0
 Reallocation of VMs from the under-utilized host: 0 1 2 3 4 
 Not all VMs can be reallocated from the host, reallocation cancelled
 
-4500,10: Migration of VM #9 from Host #4 to Host #6 is started
-4500,10: [Host #6] Total allocated MIPS for VM #9 (Host #4) is 250,00, was requested 2500,00 out of total 2500,00 (100,00%)
-4500,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 250,00.
-4500,10: [Host #6] VM #9 is being migrated to Host #6
-4500,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2250,00, was requested 2500,00 out of total 2500,00 (100,00%)
-4500,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1590,00.
-4500,10: [Host #4] Under allocated MIPS for VM #9: 250,00
-4500,10: [Host #4] VM #9 is in migration
-4500,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-4500,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+4500,10: Migration of VM #8 from Host #4 to Host #6 is started
+4500,10: [Host #6] Total allocated MIPS for VM #8 (Host #4) is 200,00, was requested 2000,00 out of total 2000,00 (100,00%)
+4500,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 200,00.
+4500,10: [Host #6] VM #8 is being migrated to Host #6
+4500,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
+4500,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
+4500,10: [Host #4] Under allocated MIPS for VM #8: 200,00
+4500,10: [Host #4] VM #8 is in migration
+4500,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+4500,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 860,00. PE #1: 1640,00.
+
+
+--------------------------------------------------------------
+
+
+New resource usage for the time frame starting at 4540,10:
+
+4540,10: [Host #0] IO processing of VM #0 elapsed time is 2,93396 s
+4540,10: [Host #0] IO processing of VM #1 elapsed time is 2,93396 s
+4540,10: [Host #0] IO processing of VM #2 elapsed time is 2,93396 s
+4540,10: [Host #0] IO processing of VM #3 elapsed time is 2,87358 s
+4540,10: [Host #0] IO processing of VM #4 elapsed time is 2,87358 s
+4540,10: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 500,00, was requested 500,00 out of total 500,00 (100,00%)
+4540,10: [Host #0] MIPS for VM #0 by PEs (2 * 2660.0). PE #0: 500,00.
+4540,10: [Host #0] Total allocated MIPS for VM #1 (Host #0) is 500,00, was requested 500,00 out of total 500,00 (100,00%)
+4540,10: [Host #0] MIPS for VM #1 by PEs (2 * 2660.0). PE #0: 500,00.
+4540,10: [Host #0] Total allocated MIPS for VM #2 (Host #0) is 500,00, was requested 500,00 out of total 500,00 (100,00%)
+4540,10: [Host #0] MIPS for VM #2 by PEs (2 * 2660.0). PE #0: 500,00.
+4540,10: [Host #0] Total allocated MIPS for VM #3 (Host #0) is 1000,00, was requested 1000,00 out of total 1000,00 (100,00%)
+4540,10: [Host #0] MIPS for VM #3 by PEs (2 * 2660.0). PE #0: 1000,00.
+4540,10: [Host #0] Total allocated MIPS for VM #4 (Host #0) is 1000,00, was requested 1000,00 out of total 1000,00 (100,00%)
+4540,10: [Host #0] MIPS for VM #4 by PEs (2 * 2660.0). PE #0: 160,00. PE #1: 840,00.
+4540,10: [Host #0] utilization is 65,79%
+
+4540,10: [Host #1] IO processing of VM #5 elapsed time is 2,87358 s
+4540,10: [Host #1] Total allocated MIPS for VM #5 (Host #1) is 1000,00, was requested 1000,00 out of total 1000,00 (100,00%)
+4540,10: [Host #1] MIPS for VM #5 by PEs (2 * 1860.0). PE #0: 1000,00.
+4540,10: [Host #1] utilization is 26,88%
+
+4540,10: [Host #2] IO processing of VM #6 elapsed time is 0,25283 s
+4540,10: [Host #2] IO processing of VM #7 elapsed time is 0,25283 s
+4540,10: [Host #2] Total allocated MIPS for VM #6 (Host #2) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+4540,10: [Host #2] MIPS for VM #6 by PEs (2 * 2660.0). PE #0: 2000,00.
+4540,10: [Host #2] Total allocated MIPS for VM #7 (Host #2) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+4540,10: [Host #2] MIPS for VM #7 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1340,00.
+4540,10: [Host #2] utilization is 75,19%
+
+4540,10: [Host #3] utilization is 0,00%
+
+4540,10: [Host #4] IO processing of VM #8 elapsed time is 0,25283 s
+4540,10: [Host #4] IO processing of VM #9 elapsed time is 0,47170 s
+4540,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
+4540,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
+4540,10: [Host #4] Under allocated MIPS for VM #8: 200,00
+4540,10: [Host #4] VM #8 is in migration
+4540,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+4540,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 860,00. PE #1: 1640,00.
+4540,10: [Host #4] utilization is 84,59%
+
+4540,10: [Host #5] utilization is 0,00%
+
+4540,10: [Host #6] Total allocated MIPS for VM #8 (Host #4) is 200,00, was requested 2000,00 out of total 2000,00 (100,00%)
+4540,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 200,00.
+4540,10: [Host #6] VM #8 is being migrated to Host #6
+4540,10: [Host #6] utilization is 3,76%
+
+4540,10: [Host #7] utilization is 0,00%
+
+4540,10: [Host #8] utilization is 0,00%
+
+4540,10: [Host #9] utilization is 0,00%
+
+Energy consumption for the last time frame from 4500,10 to 4540,10:
+
+4540,10: [Host #0] utilization at 4500,10 was 65,79%, now is 65,79%
+4540,10: [Host #0] energy is 3052,63 W*sec
+
+4540,10: [Host #1] utilization at 4500,10 was 26,88%, now is 26,88%
+4540,10: [Host #1] energy is 2430,11 W*sec
+
+4540,10: [Host #2] utilization at 4500,10 was 75,19%, now is 75,19%
+4540,10: [Host #2] energy is 3203,01 W*sec
+
+4540,10: [Host #3] utilization at 4500,10 was 0,00%, now is 0,00%
+4540,10: [Host #3] energy is 0,00 W*sec
+
+4540,10: [Host #4] utilization at 4500,10 was 84,59%, now is 84,59%
+4540,10: [Host #4] energy is 3353,38 W*sec
+
+4540,10: [Host #5] utilization at 4500,10 was 0,00%, now is 0,00%
+4540,10: [Host #5] energy is 0,00 W*sec
+
+4540,10: [Host #6] utilization at 4500,10 was 3,76%, now is 3,76%
+4540,10: [Host #6] energy is 2060,15 W*sec
+
+4540,10: [Host #7] utilization at 4500,10 was 0,00%, now is 0,00%
+4540,10: [Host #7] energy is 0,00 W*sec
+
+4540,10: [Host #8] utilization at 4500,10 was 0,00%, now is 0,00%
+4540,10: [Host #8] energy is 0,00 W*sec
+
+4540,10: [Host #9] utilization at 4500,10 was 0,00%, now is 0,00%
+4540,10: [Host #9] energy is 0,00 W*sec
+
+4540,10: Data center's energy is 14099,28 W*sec
+
+[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-8
+
+[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-8
+4540,10: VM #8 has been allocated to the host #6
+4540,10: Migration of VM #8 to Host #6 is completed
 
 
 --------------------------------------------------------------
@@ -4192,117 +4293,16 @@ New resource usage for the time frame starting at 4540,10:
 4540,10: [Host #3] utilization is 0,00%
 
 4540,10: [Host #4] IO processing of VM #9 elapsed time is 0,47170 s
-4540,10: [Host #4] IO processing of VM #8 elapsed time is 0,25283 s
-4540,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2250,00, was requested 2500,00 out of total 2500,00 (100,00%)
-4540,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1590,00.
-4540,10: [Host #4] Under allocated MIPS for VM #9: 250,00
-4540,10: [Host #4] VM #9 is in migration
-4540,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-4540,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
-4540,10: [Host #4] utilization is 84,59%
+4540,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+4540,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2500,00.
+4540,10: [Host #4] utilization is 46,99%
 
 4540,10: [Host #5] utilization is 0,00%
 
-4540,10: [Host #6] Total allocated MIPS for VM #9 (Host #4) is 250,00, was requested 2500,00 out of total 2500,00 (100,00%)
-4540,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 250,00.
-4540,10: [Host #6] VM #9 is being migrated to Host #6
-4540,10: [Host #6] utilization is 4,70%
-
-4540,10: [Host #7] utilization is 0,00%
-
-4540,10: [Host #8] utilization is 0,00%
-
-4540,10: [Host #9] utilization is 0,00%
-
-Energy consumption for the last time frame from 4500,10 to 4540,10:
-
-4540,10: [Host #0] utilization at 4500,10 was 65,79%, now is 65,79%
-4540,10: [Host #0] energy is 3052,63 W*sec
-
-4540,10: [Host #1] utilization at 4500,10 was 26,88%, now is 26,88%
-4540,10: [Host #1] energy is 2430,11 W*sec
-
-4540,10: [Host #2] utilization at 4500,10 was 75,19%, now is 75,19%
-4540,10: [Host #2] energy is 3203,01 W*sec
-
-4540,10: [Host #3] utilization at 4500,10 was 0,00%, now is 0,00%
-4540,10: [Host #3] energy is 0,00 W*sec
-
-4540,10: [Host #4] utilization at 4500,10 was 84,59%, now is 84,59%
-4540,10: [Host #4] energy is 3353,38 W*sec
-
-4540,10: [Host #5] utilization at 4500,10 was 0,00%, now is 0,00%
-4540,10: [Host #5] energy is 0,00 W*sec
-
-4540,10: [Host #6] utilization at 4500,10 was 4,70%, now is 4,70%
-4540,10: [Host #6] energy is 2075,19 W*sec
-
-4540,10: [Host #7] utilization at 4500,10 was 0,00%, now is 0,00%
-4540,10: [Host #7] energy is 0,00 W*sec
-
-4540,10: [Host #8] utilization at 4500,10 was 0,00%, now is 0,00%
-4540,10: [Host #8] energy is 0,00 W*sec
-
-4540,10: [Host #9] utilization at 4500,10 was 0,00%, now is 0,00%
-4540,10: [Host #9] energy is 0,00 W*sec
-
-4540,10: Data center's energy is 14114,32 W*sec
-
-[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-9
-
-[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-9
-4540,10: VM #9 has been allocated to the host #6
-4540,10: Migration of VM #9 to Host #6 is completed
-
-
---------------------------------------------------------------
-
-
-New resource usage for the time frame starting at 4540,10:
-
-4540,10: [Host #0] IO processing of VM #0 elapsed time is 2,93396 s
-4540,10: [Host #0] IO processing of VM #1 elapsed time is 2,93396 s
-4540,10: [Host #0] IO processing of VM #2 elapsed time is 2,93396 s
-4540,10: [Host #0] IO processing of VM #3 elapsed time is 2,87358 s
-4540,10: [Host #0] IO processing of VM #4 elapsed time is 2,87358 s
-4540,10: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 500,00, was requested 500,00 out of total 500,00 (100,00%)
-4540,10: [Host #0] MIPS for VM #0 by PEs (2 * 2660.0). PE #0: 500,00.
-4540,10: [Host #0] Total allocated MIPS for VM #1 (Host #0) is 500,00, was requested 500,00 out of total 500,00 (100,00%)
-4540,10: [Host #0] MIPS for VM #1 by PEs (2 * 2660.0). PE #0: 500,00.
-4540,10: [Host #0] Total allocated MIPS for VM #2 (Host #0) is 500,00, was requested 500,00 out of total 500,00 (100,00%)
-4540,10: [Host #0] MIPS for VM #2 by PEs (2 * 2660.0). PE #0: 500,00.
-4540,10: [Host #0] Total allocated MIPS for VM #3 (Host #0) is 1000,00, was requested 1000,00 out of total 1000,00 (100,00%)
-4540,10: [Host #0] MIPS for VM #3 by PEs (2 * 2660.0). PE #0: 1000,00.
-4540,10: [Host #0] Total allocated MIPS for VM #4 (Host #0) is 1000,00, was requested 1000,00 out of total 1000,00 (100,00%)
-4540,10: [Host #0] MIPS for VM #4 by PEs (2 * 2660.0). PE #0: 160,00. PE #1: 840,00.
-4540,10: [Host #0] utilization is 65,79%
-
-4540,10: [Host #1] IO processing of VM #5 elapsed time is 2,87358 s
-4540,10: [Host #1] Total allocated MIPS for VM #5 (Host #1) is 1000,00, was requested 1000,00 out of total 1000,00 (100,00%)
-4540,10: [Host #1] MIPS for VM #5 by PEs (2 * 1860.0). PE #0: 1000,00.
-4540,10: [Host #1] utilization is 26,88%
-
-4540,10: [Host #2] IO processing of VM #6 elapsed time is 0,25283 s
-4540,10: [Host #2] IO processing of VM #7 elapsed time is 0,25283 s
-4540,10: [Host #2] Total allocated MIPS for VM #6 (Host #2) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-4540,10: [Host #2] MIPS for VM #6 by PEs (2 * 2660.0). PE #0: 2000,00.
-4540,10: [Host #2] Total allocated MIPS for VM #7 (Host #2) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-4540,10: [Host #2] MIPS for VM #7 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1340,00.
-4540,10: [Host #2] utilization is 75,19%
-
-4540,10: [Host #3] utilization is 0,00%
-
-4540,10: [Host #4] IO processing of VM #8 elapsed time is 0,25283 s
-4540,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-4540,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
-4540,10: [Host #4] utilization is 37,59%
-
-4540,10: [Host #5] utilization is 0,00%
-
-4540,10: [Host #6] IO processing of VM #9 elapsed time is 0,47170 s
-4540,10: [Host #6] Total allocated MIPS for VM #9 (Host #6) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-4540,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2500,00.
-4540,10: [Host #6] utilization is 46,99%
+4540,10: [Host #6] IO processing of VM #8 elapsed time is 0,25283 s
+4540,10: [Host #6] Total allocated MIPS for VM #8 (Host #6) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+4540,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+4540,10: [Host #6] utilization is 37,59%
 
 4540,10: [Host #7] utilization is 0,00%
 
@@ -4349,17 +4349,17 @@ New resource usage for the time frame starting at 4800,10:
 
 4800,10: [Host #3] utilization is 0,00%
 
-4800,10: [Host #4] IO processing of VM #8 elapsed time is 1,55094 s
-4800,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-4800,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
-4800,10: [Host #4] utilization is 37,59%
+4800,10: [Host #4] IO processing of VM #9 elapsed time is 0,23208 s
+4800,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+4800,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2500,00.
+4800,10: [Host #4] utilization is 46,99%
 
 4800,10: [Host #5] utilization is 0,00%
 
-4800,10: [Host #6] IO processing of VM #9 elapsed time is 0,23208 s
-4800,10: [Host #6] Total allocated MIPS for VM #9 (Host #6) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-4800,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2500,00.
-4800,10: [Host #6] utilization is 46,99%
+4800,10: [Host #6] IO processing of VM #8 elapsed time is 1,55094 s
+4800,10: [Host #6] Total allocated MIPS for VM #8 (Host #6) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+4800,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+4800,10: [Host #6] utilization is 37,59%
 
 4800,10: [Host #7] utilization is 0,00%
 
@@ -4381,14 +4381,14 @@ Energy consumption for the last time frame from 4540,10 to 4800,10:
 4800,10: [Host #3] utilization at 4540,10 was 0,00%, now is 0,00%
 4800,10: [Host #3] energy is 0,00 W*sec
 
-4800,10: [Host #4] utilization at 4540,10 was 37,59%, now is 37,59%
-4800,10: [Host #4] energy is 16909,77 W*sec
+4800,10: [Host #4] utilization at 4540,10 was 46,99%, now is 46,99%
+4800,10: [Host #4] energy is 17887,22 W*sec
 
 4800,10: [Host #5] utilization at 4540,10 was 0,00%, now is 0,00%
 4800,10: [Host #5] energy is 0,00 W*sec
 
-4800,10: [Host #6] utilization at 4540,10 was 46,99%, now is 46,99%
-4800,10: [Host #6] energy is 17887,22 W*sec
+4800,10: [Host #6] utilization at 4540,10 was 37,59%, now is 37,59%
+4800,10: [Host #6] energy is 16909,77 W*sec
 
 4800,10: [Host #7] utilization at 4540,10 was 0,00%, now is 0,00%
 4800,10: [Host #7] energy is 0,00 W*sec
@@ -4409,8 +4409,8 @@ Reallocation of VMs from the over-utilized hosts:
 
 Under-utilized host: host #6
 
-Reallocation of VMs from the under-utilized host: 9 
-VM #9 allocated to host #4
+Reallocation of VMs from the under-utilized host: 8 
+VM #8 allocated to host #4
 
 Under-utilized host: host #2
 
@@ -4428,16 +4428,16 @@ Reallocation of VMs from the under-utilized host: 0 1 2 3 4
 VM #0 allocated to host #4
 Not all VMs can be reallocated from the host, reallocation cancelled
 
-4800,10: Migration of VM #9 from Host #6 to Host #4 is started
-4800,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-4800,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
-4800,10: [Host #4] Total allocated MIPS for VM #9 (Host #6) is 250,00, was requested 2500,00 out of total 2500,00 (100,00%)
-4800,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 250,00.
-4800,10: [Host #4] VM #9 is being migrated to Host #4
-4800,10: [Host #6] Total allocated MIPS for VM #9 (Host #6) is 2250,00, was requested 2500,00 out of total 2500,00 (100,00%)
-4800,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2250,00.
-4800,10: [Host #6] Under allocated MIPS for VM #9: 250,00
-4800,10: [Host #6] VM #9 is in migration
+4800,10: Migration of VM #8 from Host #6 to Host #4 is started
+4800,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+4800,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2460,00. PE #1: 40,00.
+4800,10: [Host #4] Total allocated MIPS for VM #8 (Host #6) is 200,00, was requested 2000,00 out of total 2000,00 (100,00%)
+4800,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 200,00.
+4800,10: [Host #4] VM #8 is being migrated to Host #4
+4800,10: [Host #6] Total allocated MIPS for VM #8 (Host #6) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
+4800,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
+4800,10: [Host #6] Under allocated MIPS for VM #8: 200,00
+4800,10: [Host #6] VM #8 is in migration
 
 
 --------------------------------------------------------------
@@ -4477,22 +4477,22 @@ New resource usage for the time frame starting at 4840,10:
 
 4840,10: [Host #3] utilization is 0,00%
 
-4840,10: [Host #4] IO processing of VM #8 elapsed time is 1,55094 s
-4840,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-4840,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
-4840,10: [Host #4] Total allocated MIPS for VM #9 (Host #6) is 250,00, was requested 2500,00 out of total 2500,00 (100,00%)
-4840,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 250,00.
-4840,10: [Host #4] VM #9 is being migrated to Host #4
-4840,10: [Host #4] utilization is 42,29%
+4840,10: [Host #4] IO processing of VM #9 elapsed time is 0,23208 s
+4840,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+4840,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2460,00. PE #1: 40,00.
+4840,10: [Host #4] Total allocated MIPS for VM #8 (Host #6) is 200,00, was requested 2000,00 out of total 2000,00 (100,00%)
+4840,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 200,00.
+4840,10: [Host #4] VM #8 is being migrated to Host #4
+4840,10: [Host #4] utilization is 50,75%
 
 4840,10: [Host #5] utilization is 0,00%
 
-4840,10: [Host #6] IO processing of VM #9 elapsed time is 0,23208 s
-4840,10: [Host #6] Total allocated MIPS for VM #9 (Host #6) is 2250,00, was requested 2500,00 out of total 2500,00 (100,00%)
-4840,10: [Host #6] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 2250,00.
-4840,10: [Host #6] Under allocated MIPS for VM #9: 250,00
-4840,10: [Host #6] VM #9 is in migration
-4840,10: [Host #6] utilization is 46,99%
+4840,10: [Host #6] IO processing of VM #8 elapsed time is 1,55094 s
+4840,10: [Host #6] Total allocated MIPS for VM #8 (Host #6) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
+4840,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
+4840,10: [Host #6] Under allocated MIPS for VM #8: 200,00
+4840,10: [Host #6] VM #8 is in migration
+4840,10: [Host #6] utilization is 37,59%
 
 4840,10: [Host #7] utilization is 0,00%
 
@@ -4514,14 +4514,14 @@ Energy consumption for the last time frame from 4800,10 to 4840,10:
 4840,10: [Host #3] utilization at 4800,10 was 0,00%, now is 0,00%
 4840,10: [Host #3] energy is 0,00 W*sec
 
-4840,10: [Host #4] utilization at 4800,10 was 42,29%, now is 42,29%
-4840,10: [Host #4] energy is 2676,69 W*sec
+4840,10: [Host #4] utilization at 4800,10 was 50,75%, now is 50,75%
+4840,10: [Host #4] energy is 2812,03 W*sec
 
 4840,10: [Host #5] utilization at 4800,10 was 0,00%, now is 0,00%
 4840,10: [Host #5] energy is 0,00 W*sec
 
-4840,10: [Host #6] utilization at 4800,10 was 46,99%, now is 46,99%
-4840,10: [Host #6] energy is 2751,88 W*sec
+4840,10: [Host #6] utilization at 4800,10 was 37,59%, now is 37,59%
+4840,10: [Host #6] energy is 2601,50 W*sec
 
 4840,10: [Host #7] utilization at 4800,10 was 0,00%, now is 0,00%
 4840,10: [Host #7] energy is 0,00 W*sec
@@ -4532,13 +4532,13 @@ Energy consumption for the last time frame from 4800,10 to 4840,10:
 4840,10: [Host #9] utilization at 4800,10 was 0,00%, now is 0,00%
 4840,10: [Host #9] energy is 0,00 W*sec
 
-4840,10: Data center's energy is 14114,32 W*sec
+4840,10: Data center's energy is 14099,28 W*sec
 
-[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-9
+[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-8
 
-[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-9
-4840,10: VM #9 has been allocated to the host #4
-4840,10: Migration of VM #9 to Host #4 is completed
+[MyStorageList.getDeviceContainsVm]: there is no device containing the vm 2-8
+4840,10: VM #8 has been allocated to the host #4
+4840,10: Migration of VM #8 to Host #4 is completed
 
 
 --------------------------------------------------------------
@@ -4578,12 +4578,12 @@ New resource usage for the time frame starting at 4840,10:
 
 4840,10: [Host #3] utilization is 0,00%
 
-4840,10: [Host #4] IO processing of VM #8 elapsed time is 1,55094 s
 4840,10: [Host #4] IO processing of VM #9 elapsed time is 0,23208 s
-4840,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-4840,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+4840,10: [Host #4] IO processing of VM #8 elapsed time is 1,55094 s
 4840,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
 4840,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1840,00.
+4840,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+4840,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
 4840,10: [Host #4] utilization is 84,59%
 
 4840,10: [Host #5] utilization is 0,00%
@@ -4635,12 +4635,12 @@ New resource usage for the time frame starting at 5100,10:
 
 5100,10: [Host #3] utilization is 0,00%
 
-5100,10: [Host #4] IO processing of VM #8 elapsed time is 5,98491 s
 5100,10: [Host #4] IO processing of VM #9 elapsed time is 3,08113 s
-5100,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
-5100,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
+5100,10: [Host #4] IO processing of VM #8 elapsed time is 5,98491 s
 5100,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
 5100,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 660,00. PE #1: 1840,00.
+5100,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 2000,00, was requested 2000,00 out of total 2000,00 (100,00%)
+5100,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 2000,00.
 5100,10: [Host #4] utilization is 84,59%
 
 5100,10: [Host #5] utilization is 0,00%
@@ -4714,12 +4714,12 @@ Not all VMs can be reallocated from the host, reallocation cancelled
 5100,10: [Host #6] Total allocated MIPS for VM #8 (Host #4) is 200,00, was requested 2000,00 out of total 2000,00 (100,00%)
 5100,10: [Host #6] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 200,00.
 5100,10: [Host #6] VM #8 is being migrated to Host #6
+5100,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
+5100,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 860,00. PE #1: 1640,00.
 5100,10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 1800,00, was requested 2000,00 out of total 2000,00 (100,00%)
 5100,10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0). PE #0: 1800,00.
 5100,10: [Host #4] Under allocated MIPS for VM #8: 200,00
 5100,10: [Host #4] VM #8 is in migration
-5100,10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 2500,00, was requested 2500,00 out of total 2500,00 (100,00%)
-5100,10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0). PE #0: 860,00. PE #1: 1640,00.
 5100.1: Broker: Cloudlet 0 received
 5100.1: Broker: Cloudlet 2 received
 5100.1: Broker: All Cloudlets executed. Finishing...
@@ -4858,17 +4858,17 @@ Mean time before a VM migration: 40,00 sec
 StDev time before a VM migration: 0,00 sec
 Execution time - VM selection mean: 0,00012 sec
 Execution time - VM selection stDev: 0,00033 sec
-Execution time - host selection mean: 0,00012 sec
-Execution time - host selection stDev: 0,00033 sec
-Execution time - VM reallocation mean: 0,00006 sec
-Execution time - VM reallocation stDev: 0,00024 sec
-Execution time - total mean: 0,00094 sec
-Execution time - total stDev: 0,00056 sec
+Execution time - host selection mean: 0,00006 sec
+Execution time - host selection stDev: 0,00024 sec
+Execution time - VM reallocation mean: 0,00024 sec
+Execution time - VM reallocation stDev: 0,00044 sec
+Execution time - total mean: 0,00212 sec
+Execution time - total stDev: 0,00060 sec
 =========== Storage System Stats ============
 Hamza: Storage Energy consumption: 0,00103 kWh
 Hamza: total Energy consumption (CPU+storage): 0,44377 kWh
 Hamza: Cost Energy consumption: 0,08 $
-Hamza: Wear-Out cost: 296,70 $
+Hamza: Wear-Out cost: 298,22 $
 Hamza: SLA cost: 0,00 $
-Hamza: All Storage cost: 296,78 $
+Hamza: All Storage cost: 298,30 $
 

@@ -47,7 +47,7 @@ import optim_storage_selection_policy.IoVmSelectionPolicy;
  * @author Anton Beloglazov
  * @since CloudSim Toolkit 3.0
  */
-public class IoVmAllocationPolicyMinCostHeuristic extends IoVmAllocationPolicyMigrationAbstract {
+public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocationPolicyMigrationAbstract {
 	
 	/** The max min utilization threshold. */
 	private double maxThreshold = 0.9;
@@ -58,7 +58,7 @@ public class IoVmAllocationPolicyMinCostHeuristic extends IoVmAllocationPolicyMi
 	 * 
 	 * @param list the list
 	 */
-	public IoVmAllocationPolicyMinCostHeuristic(List<? extends Host> hostList,
+	public IoVmAllocationPolicyMinCostHeuristicPackDevices(List<? extends Host> hostList,
 			IoVmSelectionPolicy vmSelectionPolicy, 
 			double maxThr,
 			double minThr,

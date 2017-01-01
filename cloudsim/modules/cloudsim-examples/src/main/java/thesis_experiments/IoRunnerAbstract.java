@@ -20,7 +20,8 @@ import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationLocalRegress
 import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationMedianAbsoluteDeviation;
 import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationStaticIopsThreshold;
 import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationStaticThreshold;
-import optim_storage_allocation_policy.IoVmAllocationPolicyMinCostHeuristic;
+import optim_storage_allocation_policy.IoVmAllocationPolicyMinCostHeuristicPackDevices;
+import optim_storage_allocation_policy.IoVmAllocationPolicyMinCostHeuristicPackHosts;
 import optim_storage_allocation_policy.IoVmAllocationPolicyMinCostSolutionEnum;
 import optim_storage_allocation_policy.IoVmAllocationPolicySimple;
 import optim_storage_infrastructure.IoDataCenter;
@@ -236,8 +237,14 @@ public abstract class IoRunnerAbstract {
 					max,
 					min,
 					parameter);
-		} else if (ioVmAllocationPolicyName.equals("HMSC")) {
-			ioVmAllocationPolicy = new IoVmAllocationPolicyMinCostHeuristic(hostList, 
+		} else if (ioVmAllocationPolicyName.equals("HPSD")) {
+			ioVmAllocationPolicy = new IoVmAllocationPolicyMinCostHeuristicPackDevices(hostList, 
+					ioVmSelectionPolicy,
+					max,
+					min,
+					parameter);
+		} else if (ioVmAllocationPolicyName.equals("HPPM")) {
+			ioVmAllocationPolicy = new IoVmAllocationPolicyMinCostHeuristicPackHosts(hostList, 
 					ioVmSelectionPolicy,
 					max,
 					min,

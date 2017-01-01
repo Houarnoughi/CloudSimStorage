@@ -72,7 +72,7 @@ public class IoRandomRunner extends IoRunnerAbstract {
 
 			broker = IoHelper.createBroker();
 			int brokerId = broker.getId();
-			System.out.println("Workload "+workload);
+			//System.out.println("Workload "+workload);
 			cloudletList = RealWorkloadHelper.createCloudletListRealWorkload(
 					brokerId, inputFolder + "/" + workload);
 			vmList = IoHelper.createVmList(brokerId, cloudletList.size(), workload);

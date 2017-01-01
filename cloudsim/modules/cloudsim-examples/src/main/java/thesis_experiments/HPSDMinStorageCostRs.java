@@ -19,7 +19,7 @@ import java.io.IOException;
  * @author Anton Beloglazov
  * @since Jan 5, 2012
  */
-public class HeuristicMinStorageCostRs {
+public class HPSDMinStorageCostRs {
 
 	/**
 	 * The main method.
@@ -33,7 +33,7 @@ public class HeuristicMinStorageCostRs {
 		String inputFolder = IoConstants.INPUT_IO_WORKLOAD_CPU_DIR;
 		String outputFolder = "output";
 		String workload = "mix_vm"; // Real Workload
-		String ioVmAllocationPolicy = "HMSC"; // Heuristic Min Cost
+		String ioVmAllocationPolicy = "HPSD"; // Heuristic Min Cost
 		String ioVmSelectionPolicy = "rs"; // Random selection
 		String parameter = "1"; // the static utilization threshold
 		String maxThr = "0.8";

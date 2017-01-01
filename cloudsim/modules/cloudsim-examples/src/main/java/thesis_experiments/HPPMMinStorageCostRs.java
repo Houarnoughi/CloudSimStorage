@@ -19,7 +19,7 @@ import java.io.IOException;
  * @author Anton Beloglazov
  * @since Jan 5, 2012
  */
-public class ThrRs {
+public class HPPMMinStorageCostRs {
 
 	/**
 	 * The main method.
@@ -33,11 +33,11 @@ public class ThrRs {
 		String inputFolder = IoConstants.INPUT_IO_WORKLOAD_CPU_DIR;
 		String outputFolder = "output";
 		String workload = "mix_vm"; // Real Workload
-		String ioVmAllocationPolicy = "thr"; // Min Storage Cost
-		String ioVmSelectionPolicy = "rs"; // Random Selection (RS) VM selection policy
+		String ioVmAllocationPolicy = "HPPM"; // Heuristic Min Cost
+		String ioVmSelectionPolicy = "rs"; // Random selection
 		String parameter = "1"; // the static utilization threshold
 		String maxThr = "0.8";
-		String minThr = "0";
+		String minThr = "0.1";
 
 		new IoRandomRunner(
 				enableOutput,
