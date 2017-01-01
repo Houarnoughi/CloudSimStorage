@@ -33,7 +33,8 @@ public class IoConstants {
 	public final static double SCHEDULING_INTERVAL = 300;
 	public final static double SIMULATION_LIMIT = 24 * 60 * 60;
 
-	public final static int CLOUDLET_LENGTH	= 2500 * (int) SIMULATION_LIMIT;
+	// public final static int CLOUDLET_LENGTH	= 2500 * (int) SIMULATION_LIMIT;
+	public final static int CLOUDLET_LENGTH	= 600000;
 	public final static int CLOUDLET_PES	= 1;
 
 	/*
@@ -60,8 +61,8 @@ public class IoConstants {
 	public final static boolean STORAGE_ENABLED = true;
 	public final static IoWorkloadModel ioWorkload1 = new IoWorkloadModel("seq_read_dominant", 0.9, 0.1, 1024, 1000, 32300);
 	public final static boolean REAL_IO = true;
-	public final static String INPUT_IO_WORKLOAD_STORAGE_DIR = "/home/hamza/git/CloudSimStorage/cloudsim/modules/cloudsim-examples/src/main/resources/workload/io/hdd/";
-	public final static String INPUT_IO_WORKLOAD_CPU_DIR = "/home/hamza/git/CloudSimStorage/cloudsim/modules/cloudsim-examples/src/main/resources/workload/io/cpu/";
+	public final static String INPUT_IO_WORKLOAD_STORAGE_DIR = "/home/hamza/git/CloudSimStorage/cloudsim/modules/cloudsim-examples/src/main/resources/workload/io_mix/storage/";
+	public final static String INPUT_IO_WORKLOAD_CPU_DIR = "/home/hamza/git/CloudSimStorage/cloudsim/modules/cloudsim-examples/src/main/resources/workload/io_mix/cpu/";
 	
 	/*
 	 * Host types:

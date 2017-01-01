@@ -76,27 +76,32 @@ public class HostDynamicWorkload extends Host {
 			double totalAllocatedMips = getVmScheduler().getTotalAllocatedMipsForVm(vm);
 
 			if (!Log.isDisabled()) {
-				Log.formatLine(
-						"%.2f: [Host #" + getId() + "] Total allocated MIPS for VM #" + vm.getId()
-								+ " (Host #" + vm.getHost().getId()
-								+ ") is %.2f, was requested %.2f out of total %.2f (%.2f%%)",
-						CloudSim.clock(),
-						totalAllocatedMips,
-						totalRequestedMips,
-						vm.getMips(),
-						totalRequestedMips / vm.getMips() * 100);
+				Host host = vm.getHost();
+				if (host != null) {
+					Log.formatLine(
+							"%.2f: [Host #" + getId() + "] Total allocated MIPS for VM #" + vm.getId()
+									+ " (Host #" + vm.getHost().getId()
+									+ ") is %.2f, was requested %.2f out of total %.2f (%.2f%%)",
+							CloudSim.clock(),
+							totalAllocatedMips,
+							totalRequestedMips,
+							vm.getMips(),
+							totalRequestedMips / vm.getMips() * 100);
 
-				List<Pe> pes = getVmScheduler().getPesAllocatedForVM(vm);
-				StringBuilder pesString = new StringBuilder();
-				for (Pe pe : pes) {
-					pesString.append(String.format(" PE #" + pe.getId() + ": %.2f.", pe.getPeProvisioner()
-							.getTotalAllocatedMipsForVm(vm)));
+					List<Pe> pes = getVmScheduler().getPesAllocatedForVM(vm);
+					StringBuilder pesString = new StringBuilder();
+					for (Pe pe : pes) {
+						pesString.append(String.format(" PE #" + pe.getId() + ": %.2f.", pe.getPeProvisioner()
+								.getTotalAllocatedMipsForVm(vm)));
+					}
+					Log.formatLine(
+							"%.2f: [Host #" + getId() + "] MIPS for VM #" + vm.getId() + " by PEs ("
+									+ getNumberOfPes() + " * " + getVmScheduler().getPeCapacity() + ")."
+									+ pesString,
+							CloudSim.clock());
+					
 				}
-				Log.formatLine(
-						"%.2f: [Host #" + getId() + "] MIPS for VM #" + vm.getId() + " by PEs ("
-								+ getNumberOfPes() + " * " + getVmScheduler().getPeCapacity() + ")."
-								+ pesString,
-						CloudSim.clock());
+				
 			}
 
 			if (getVmsMigratingIn().contains(vm)) {

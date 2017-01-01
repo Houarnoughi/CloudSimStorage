@@ -41,14 +41,11 @@ public class IoWorkloadModelInMemory extends IoWorkloadModel {
 		ioPerSec = new int[dataSample];
 		
 		// Hamza : Fill tables
-		//System.out.println("IoWorkloadModelInMemory : "+ IofilePath);
 		FileReader fr = new FileReader(IofilePath);
 		BufferedReader br = new BufferedReader(fr);
-		
 		int n = volume.length;
 		for (int i = 0; i < n - 1; i++) {
 			String[] arrayLine = br.readLine().split("\\,", -1);
-			//System.out.println("IoWorkloadModelInMemory Hamza: je suis la !!!!");
 			// Hamza: we have 5 characteristics of IO workload  
 			if (arrayLine.length >= 5) {
 				//System.out.println("Hamza: je suis la !!!!");
@@ -139,6 +136,7 @@ public class IoWorkloadModelInMemory extends IoWorkloadModel {
 		Double d = new Double(Math.ceil(io1 + delta * ((time2 - time1) * getSchedulingInterval())));
 		retIoSize = d.intValue() ;
 		
+		//System.out.println("IoWorkloadModelInMemory Hamza: je suis la !!!!" +retIoSize);
 		return retIoSize;
 	}
 	
@@ -156,7 +154,7 @@ public class IoWorkloadModelInMemory extends IoWorkloadModel {
 		int ioPer2 = ioPerSec[time2];
 		double delta = (ioPer2 - ioPer1) / ((time2 - time1) * getSchedulingInterval());
 		Double d = new Double(Math.ceil(ioPer1 + delta * (time2 - time1 * getSchedulingInterval())));
-		retIoPerSec = d.intValue() ;
+		retIoPerSec = Math.abs(d.intValue()) ;
 		
 		//System.out.println("IoWorkloadModelInMemory Hamza: je suis la !!!!" +retIoPerSec);
 		return retIoPerSec;

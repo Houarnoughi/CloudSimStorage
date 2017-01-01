@@ -32,12 +32,12 @@ public class HeuristicMinStorageCostRs {
 		boolean outputToFile = true;
 		String inputFolder = IoConstants.INPUT_IO_WORKLOAD_CPU_DIR;
 		String outputFolder = "output";
-		String workload = "8vm_per_host"; // Real Workload
+		String workload = "mix_vm"; // Real Workload
 		String ioVmAllocationPolicy = "HMSC"; // Heuristic Min Cost
 		String ioVmSelectionPolicy = "rs"; // Random selection
 		String parameter = "1"; // the static utilization threshold
 		String maxThr = "0.9";
-		String minThr = "0";
+		String minThr = "0.1";
 
 		new IoRandomRunner(
 				enableOutput,

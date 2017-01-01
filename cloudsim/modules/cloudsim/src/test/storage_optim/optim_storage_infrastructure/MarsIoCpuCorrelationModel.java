@@ -9,6 +9,7 @@ public class MarsIoCpuCorrelationModel {
 		IoWorkloadModel ioModel = vm.getIoWorkloadModel();
 		
 		// The variables used in the MARS model
+		// System.out.println("ioModel.getArrivalRate(time))"+ioModel.getArrivalRate(time)+" time "+time);
 		 double _iops = 1/(ioModel.getArrivalRate(time));
 		 double io_size = ioModel.getIoSize(time);
 		 double wrt_rate = (1-ioModel.getReadRate(time));
