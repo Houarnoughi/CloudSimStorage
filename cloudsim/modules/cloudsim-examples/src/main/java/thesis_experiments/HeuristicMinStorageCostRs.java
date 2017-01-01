@@ -36,7 +36,7 @@ public class HeuristicMinStorageCostRs {
 		String ioVmAllocationPolicy = "HMSC"; // Heuristic Min Cost
 		String ioVmSelectionPolicy = "rs"; // Random selection
 		String parameter = "1"; // the static utilization threshold
-		String maxThr = "0.9";
+		String maxThr = "0.8";
 		String minThr = "0.1";
 
 		new IoRandomRunner(

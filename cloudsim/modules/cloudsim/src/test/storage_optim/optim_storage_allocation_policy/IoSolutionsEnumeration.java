@@ -56,12 +56,11 @@ public class IoSolutionsEnumeration {
 		if (nbVm <= 0) {
 			double total_cost = 0.0;
 			if (isValid(plan_array)) {
-				for (int i=0; i<plan_array.length; i++) {
+				for (int i=0; i<this.nbVm; i++) {
 					/* Calculate the total cost of these placement plan*/
 					IoVm vm = (IoVm) getVmList().get(i);
 					Storage dev = getAllStorageDevices().get(plan_array[i]);
 					total_cost += costModel.getVmStorageCost(vm, dev);
-					
 					/* Is it the min cost ?*/
 					if (total_cost<minCost) {
 						this.minCost = total_cost;
@@ -100,7 +99,7 @@ public class IoSolutionsEnumeration {
 				}
 			}
 			
-			if(available_space <= 0 || available_iops <= 0){
+			if(available_space < 0 || available_iops < 0){
 				return false;
 			}
 		}
@@ -128,7 +127,7 @@ public class IoSolutionsEnumeration {
 				}
 			}
 			
-			if (pm_avalaible_cpu <= 0 || pm_avalaible_ram <= 0) {
+			if (pm_avalaible_cpu < 0 || pm_avalaible_ram < 0) {
 				return false;
 			}
 		}

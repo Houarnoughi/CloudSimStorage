@@ -49,9 +49,9 @@ public class IoConstants {
 	 */
 	
 	public final static int VM_TYPES	= 4;
-	public final static int[] VM_MIPS	= { 2500, 2000, 1000, 500 };
+	public final static int[] VM_MIPS	= { 500, 1000, 2000, 2500 };
 	public final static int[] VM_PES	= { 1, 1, 1, 1 };
-	public final static int[] VM_RAM = { 870, 1740, 1740, 613 };
+	public final static int[] VM_RAM = { 613, 870 , 1740, 1740 };
 	public final static int [] VM_BW = {100000, 100000, 100000, 100000}; // 100 Mbit/s
 	public final static int [] VM_SIZE = {2500, 2500, 2500, 2500}; // 10GB, 20GB
 	
@@ -71,7 +71,7 @@ public class IoConstants {
 	 *   We increase the memory size to enable over-subscription (x4)
 	 */
 	public final static int HOST_TYPES	 = 2;
-	public final static int[] HOST_MIPS	 = { 1860, 2660 };
+	public final static int[] HOST_MIPS	 = { 2660, 1860 };
 	public final static int[] HOST_PES	 = { 2, 2 };
 	public final static int[] HOST_RAM	 = { 4096, 4096 };
 	public final static int HOST_BW		 = 1000000; // 1 Gbit/s
