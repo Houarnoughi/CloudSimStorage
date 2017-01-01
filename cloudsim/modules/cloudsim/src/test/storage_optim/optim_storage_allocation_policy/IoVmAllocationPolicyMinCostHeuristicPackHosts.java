@@ -261,45 +261,38 @@ public class IoVmAllocationPolicyMinCostHeuristicPackHosts extends IoVmAllocatio
 		/* The start and stop of VM list*/
 		int start = 0;
 		int stop = ioVm_array.length-1;
-		//System.out.println("start "+start+" stop "+stop);
-		//while (stop>0 && start<stop) {
-			//System.out.println("start "+start+" stop "+stop);
-			/* Run through PMs */
-			for (IoHost host : this.<IoHost> getHostList()) {
-				if (excludedHosts.contains(host)) {
-					continue;
+		/* Run through PMs */
+		for (IoHost host : this.<IoHost> getHostList()) {
+			if (excludedHosts.contains(host)) {
+				continue;
 				}
-				
-				//while (stop>0 && start<stop) {
-				/* Run through PMs */
-				for (Storage device: host.getStorageDevices()) {
-					if (device != null) {
-						/* If Its an SSD */
-						if (device instanceof IoSolidStateStorage) {
-							while (stop>0 && start<stop) {
-								IoVm ioVm = (IoVm) ioVm_array[start];
-								if(host.isSuitableForVm(ioVm)) {
-									Storage current_device = IoStorageList.getDeviceByUid(allDevices, ioVm.getStorageDevice());
-									double current_cost = costModel.getVmStorageCost(ioVm, current_device);
-									double costAfterAllocation = costModel.getVmStorageCost(ioVm, device);
-									if (costAfterAllocation < current_cost && isStorageSuitable(ioVm, device)) {
-										ioVm.setStorageDevice(device.getUid());
-										host.vmCreate(ioVm);
-										Log.printLine("VM #" + ioVm.getId() + " allocated to host #" + host.getId());
-										Map<String, Object> migrate = new HashMap<String, Object>();
-										migrate.put("vm", ioVm);
-										migrate.put("host", host);
-										migrationMap.add(migrate);
-										start++;
-
-										System.out.println("start "+start+" stop "+stop);
-									} else {
-										start++;
+			
+			/* Run through PMs */
+			for (Storage device: host.getStorageDevices()) {
+				if (device != null) {
+					/* If Its an SSD */
+					if (device instanceof IoSolidStateStorage) {
+						while (stop>0 && start<stop) {
+							IoVm ioVm = (IoVm) ioVm_array[start];
+							if(host.isSuitableForVm(ioVm)) {
+								Storage current_device = IoStorageList.getDeviceByUid(allDevices, ioVm.getStorageDevice());
+								double current_cost = costModel.getVmStorageCost(ioVm, current_device);
+								double costAfterAllocation = costModel.getVmStorageCost(ioVm, device);
+								if (costAfterAllocation < current_cost && isStorageSuitable(ioVm, device)) {
+									ioVm.setStorageDevice(device.getUid());
+									host.vmCreate(ioVm);
+									Log.printLine("VM #" + ioVm.getId() + " allocated to host #" + host.getId());
+									Map<String, Object> migrate = new HashMap<String, Object>();
+									migrate.put("vm", ioVm);
+									migrate.put("host", host);
+									migrationMap.add(migrate);
+									start++;
 									}
 								} else {
 									start ++;
-								}
+									}
 							}
+						
 						/* If its HDD */
 						} else if (device instanceof IoHarddriveStorage) {
 							while (stop>0 && start<stop) {
@@ -317,22 +310,18 @@ public class IoVmAllocationPolicyMinCostHeuristicPackHosts extends IoVmAllocatio
 										migrate.put("host", host);
 										migrationMap.add(migrate);
 										stop--;
+										} 
 									} else {
 										stop--;
-									}
-								} else {
-									stop--;
+										}
 								}
 							}
-							
-						}
 					}
 				}
-			//}
-		}			
-		
+			}
 		/* Get the min migration Map*/;
 		return migrationMap;
+		
 	}
 	
 	/**

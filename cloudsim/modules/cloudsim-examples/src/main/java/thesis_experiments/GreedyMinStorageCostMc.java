@@ -19,7 +19,7 @@ import java.io.IOException;
  * @author Anton Beloglazov
  * @since Jan 5, 2012
  */
-public class BruteForceMinStorageCostRs {
+public class GreedyMinStorageCostMc {
 
 	/**
 	 * The main method.
@@ -33,8 +33,8 @@ public class BruteForceMinStorageCostRs {
 		String inputFolder = IoConstants.INPUT_IO_WORKLOAD_CPU_DIR;
 		String outputFolder = "output";
 		String workload = "mix_vm"; // Real Workload
-		String ioVmAllocationPolicy = "BFMC"; // Brute Force Min Cost
-		String ioVmSelectionPolicy = "rs"; // Random selection
+		String ioVmAllocationPolicy = "greedyMinStrgCost"; // Min Storage Cost
+		String ioVmSelectionPolicy = "mc"; // Random Selection (RS) VM selection policy
 		String parameter = "1"; // the static utilization threshold
 		String maxThr = "0.8";
 		String minThr = "0.1";
