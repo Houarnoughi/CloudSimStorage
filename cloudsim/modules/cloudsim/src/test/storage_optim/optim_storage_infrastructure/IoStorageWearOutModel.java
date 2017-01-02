@@ -195,8 +195,7 @@ public class IoStorageWearOutModel {
 		int ioNum = model.getArrivalRate(currentTime) * sched.intValue();
 		double writeRate = (1 - model.getReadRate(CloudSim.clock()));
 		int writeIos = (int)Math.ceil(ioNum*writeRate);
-		/*The Io Size is in KB. We have to convert it to MB*/
-		double writeVolume = (writeIos * model.getIoSize(currentTime))/1024;
+		double writeVolume = writeIos * model.getIoSize(currentTime);
 		
 		/* Second we calculate the cost of writing one MB */
 		double costPerMb = ((hdd.getStorageUnitPrice()/1000) * hdd.getCapacity()) 
@@ -226,8 +225,7 @@ public class IoStorageWearOutModel {
 		int ioNum = model.getArrivalRate(currentTime) * sched.intValue();
 		double writeRate = (1 - model.getReadRate(CloudSim.clock()));
 		int writeIos = (int)Math.ceil(ioNum*writeRate);
-		/*The Io Size is in KB. We have to convert it to MB*/
-		double writeVolume = (writeIos * model.getIoSize(currentTime))/1024;
+		double writeVolume = writeIos * model.getIoSize(currentTime);
 		
 		/* Second we calculate the cost of writing one MB */
 		double costPerMb = ((ssd.getStorageUnitPrice()/1000) * ssd.getCapacity()) 

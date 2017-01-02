@@ -256,37 +256,6 @@ public class IoVmAllocationPolicyGreedyMinStorageCost extends IoVmAllocationPoli
 		}
 		return migrationMap;
 	}
-	
-	/**
-	 * Gets the new vm placement from under utilized host.
-	 * 
-	 * @param vmsToMigrate the vms to migrate
-	 * @param excludedHosts the excluded hosts
-	 * @return the new vm placement from under utilized host
-	 */
-	protected List<Map<String, Object>> getNewVmPlacementFromUnderUtilizedHost(
-			List<? extends Vm> vmsToMigrate,
-			Set<? extends Host> excludedHosts) {
-		
-		//System.out.println(" Greedy vms to migrate "+vmsToMigrate.size()+" overUtilizzedHosts "+excludedHosts.size());
-				List<Map<String, Object>> migrationMap = new LinkedList<Map<String, Object>>();
-				//Log.printLine("Hamza: IoVmAllocationPolicyMinStorageCost called");
-				//System.out.println("vmsToMigrate "+vmsToMigrate.size());
-				for (Vm vm : vmsToMigrate) {
-					if (vm != null) {
-						IoHost allocatedHost = findHostForVm(vm, excludedHosts);
-						if (allocatedHost != null) {
-							allocatedHost.vmCreate(vm);
-							Log.printLine("VM #" + vm.getId() + " allocated to host #" + allocatedHost.getId());
-							Map<String, Object> migrate = new HashMap<String, Object>();
-							migrate.put("vm", vm);
-							migrate.put("host", allocatedHost);
-							migrationMap.add(migrate);
-						}
-					}
-				}
-				return migrationMap;
-	}
 
 	/**
 	 * Check if this host is over utilized in terms of IOPS

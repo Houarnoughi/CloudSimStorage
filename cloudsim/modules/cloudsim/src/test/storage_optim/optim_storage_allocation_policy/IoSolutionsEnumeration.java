@@ -107,10 +107,8 @@ public class IoSolutionsEnumeration {
 		/* Check the available CPU and RAM */
 		
 		for (IoHost pm : this.<IoHost> getPmList()) {
-			double pm_pe_cap = pm.getVmScheduler().getPeCapacity();
-			double pm_mips_cap = pm.getVmScheduler().getAvailableMips();
-			int pm_avalaible_ram = pm.getRamProvisioner().getAvailableRam();
-			long pm_bw_capacity = pm.getBwProvisioner().getAvailableBw();
+			double pm_avalaible_cpu = pm.getAvailableMips();
+			int pm_avalaible_ram = pm.getRam();
 			
 			for (int i = 0; i < nbSd; i++){
 				Storage dev = getAllStorageDevices().get(i);
@@ -122,22 +120,19 @@ public class IoSolutionsEnumeration {
 						if (plan_array[j] == i) {
 							IoVm vm = (IoVm) getVmList().get(j);
 							
-							pm_pe_cap = pm_pe_cap - vm.getCurrentRequestedMaxMips();
-							pm_mips_cap = pm_mips_cap - vm.getCurrentRequestedTotalMips();
+							pm_avalaible_cpu = pm_avalaible_cpu - vm.getCurrentRequestedTotalMips();
 							pm_avalaible_ram = pm_avalaible_ram - vm.getCurrentRequestedRam();
-							pm_bw_capacity = pm_bw_capacity - vm.getCurrentRequestedBw();
 						}
 					}
 				}
 			}
 			
-			if (pm_pe_cap >= 0 && pm_mips_cap >= 0 
-					&& pm_avalaible_ram >= 0 
-					&& pm_bw_capacity >= 0 ) {
-				return true;
+			if (pm_avalaible_cpu < 0 || pm_avalaible_ram < 0) {
+				return false;
 			}
 		}
-		return false;
+		
+		return true;
 	}
 	
 	/**

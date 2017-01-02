@@ -46,10 +46,6 @@ public class IoDataCenter extends PowerDatacenter {
 	
 	private double allStorageCost;
 	
-	private double bill;
-
-	double CloudServPrice = 0.5;			// Cloud Service Price / hour
-	
 	/** The List of all storage devices got from hosts **/
 	private List<Storage> allStorageDevices;
 
@@ -76,7 +72,6 @@ public class IoDataCenter extends PowerDatacenter {
 		setAllStorageCost(0);
 		setCostPerKwh(cotPerKwh);
 		setLocalStorageEnabled(storageEnabled);
-		setBill(this.CloudServPrice*30*24);
 	}
 
 	/**
@@ -275,7 +270,8 @@ public class IoDataCenter extends PowerDatacenter {
 		
 		double egyPriceKwh = 0.0887; 			// 0.0887 euros / kWh
 		double egyPrice =  egyPriceKwh/3600000; // Price per WattSec (Joule)
-		double bill = getBill(); // Bill amount / month
+		double CloudServPrice = 0.5;			// Cloud Service Price / hour
+		double bill = CloudServPrice * 30 * 24; // Bill amount / month
 		
 		// Hamza: Storage energy
 		double storageEnergy = 0.0;
@@ -482,14 +478,6 @@ public class IoDataCenter extends PowerDatacenter {
 
 	public void setAllStorageCost(double allStorageCost) {
 		this.allStorageCost = allStorageCost;
-	}
-
-	public double getBill() {
-		return bill;
-	}
-
-	public void setBill(double bill) {
-		this.bill = bill;
 	}
 
 }

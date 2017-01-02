@@ -811,7 +811,7 @@ public class IoHelper {
 						executionTimeTotalStDev));
 				
 				// Print the Storage system stats
-				printStorageStats(datacenter, vms, lastClock, experimentName, outputInCsv, outputFolder, energy, (slaOverall*100));
+				printStorageStats(datacenter, vms, lastClock, experimentName, outputInCsv, outputFolder, energy);
 			}
 			Log.printLine();
 		}
@@ -834,14 +834,12 @@ public class IoHelper {
 											String experimentName, 
 											boolean outputInCsv,
 											String outputFolder,
-											double energy,
-											double slaOverall) {
+											double energy) {
 		// Hamza: Storage energy
 		double storagePower = datacenter.getStoragePower() / (3600 * 1000);
 		double costEnergy = datacenter.getCostPerKwh() * (storagePower + energy);
 		double wearOutCost = datacenter.getStorageWearout();
-		double bill = datacenter.getBill();
-		double slaStorage = (datacenter.getStorageSla() + slaOverall) * bill;
+		double slaStorage = datacenter.getStorageSla();
 		double allStorageCost = costEnergy + wearOutCost + slaStorage;
 		
 		StringBuilder data = new StringBuilder();
@@ -854,13 +852,12 @@ public class IoHelper {
 		data.append(String.format("%.5f", wearOutCost) + delimeter);
 		data.append(String.format("%.5f", slaStorage) + delimeter);
 		data.append(String.format("%.5f", allStorageCost) + delimeter);
-		data.append(String.format("%.5f", bill) + delimeter);
-		Log.printLine(String.format("Storage Energy consumption: %.5f kWh", storagePower));
-		Log.printLine(String.format("total Energy consumption (CPU+storage): %.5f kWh", storagePower+energy));
-		Log.printLine(String.format("Cost Energy consumption: %.5f $", costEnergy));
-		Log.printLine(String.format("Wear-Out cost: %.5f $", wearOutCost));
-		Log.printLine(String.format("SLA cost: %.5f $", slaStorage));
-		Log.printLine(String.format("All costs: %.5f $", allStorageCost));
+		Log.printLine(String.format("Hamza: Storage Energy consumption: %.5f kWh", storagePower));
+		Log.printLine(String.format("Hamza: total Energy consumption (CPU+storage): %.5f kWh", storagePower+energy));
+		Log.printLine(String.format("Hamza: Cost Energy consumption: %.2f $", costEnergy));
+		Log.printLine(String.format("Hamza: Wear-Out cost: %.2f $", wearOutCost));
+		Log.printLine(String.format("Hamza: SLA cost: %.2f $", slaStorage));
+		Log.printLine(String.format("Hamza: All Storage cost: %.2f $", allStorageCost));
 		
 		
 	}

@@ -542,9 +542,7 @@ public abstract class IoVmAllocationPolicyMigrationAbstract extends IoVmAllocati
 	protected double getPowerAfterAllocation(IoHost host, Vm vm) {
 		double power = 0;
 		try {
-			double max_utilization = getMaxUtilizationAfterAllocation(host, vm);
-			//System.out.println("Max utilization "+max_utilization);
-			power = host.getPowerModel().getPower(max_utilization);
+			power = host.getPowerModel().getPower(getMaxUtilizationAfterAllocation(host, vm));
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.exit(0);
