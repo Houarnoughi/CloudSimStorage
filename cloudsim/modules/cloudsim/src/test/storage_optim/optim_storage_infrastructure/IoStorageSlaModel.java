@@ -10,6 +10,7 @@ import org.cloudbus.cloudsim.Storage;
  *
  */
 public class IoStorageSlaModel {
+	private double bill;
 
 	public double getDatacenterStorageSla(List<IoHost> hosts, double time) {
 		double all_sla = 0.0;
@@ -46,4 +47,11 @@ public class IoStorageSlaModel {
 		return (prop<1 && prop>0)?prop:0;
 	}
 
+	public double getBill() {
+		return bill;
+	}
+
+	public void setBill(double bill) {
+		this.bill = bill;
+	}
 }

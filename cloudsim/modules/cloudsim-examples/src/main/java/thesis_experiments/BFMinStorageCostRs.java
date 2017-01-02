@@ -28,7 +28,7 @@ public class BFMinStorageCostRs {
 	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	public static void main(String[] args) throws IOException {
-		boolean enableOutput = true;
+		boolean enableOutput = false;
 		boolean outputToFile = true;
 		String inputFolder = IoConstants.INPUT_IO_WORKLOAD_CPU_DIR;
 		String outputFolder = "output";
