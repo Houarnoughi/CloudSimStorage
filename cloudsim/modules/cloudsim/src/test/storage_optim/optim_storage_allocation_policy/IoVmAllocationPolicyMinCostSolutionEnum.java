@@ -273,6 +273,26 @@ public class IoVmAllocationPolicyMinCostSolutionEnum extends IoVmAllocationPolic
 	}
 	
 	/**
+	 * Gets the new vm placement from under utilized host.
+	 * 
+	 * @param vmsToMigrate the vms to migrate
+	 * @param excludedHosts the excluded hosts
+	 * @return the new vm placement from under utilized host
+	 */
+	protected List<Map<String, Object>> getNewVmPlacementFromUnderUtilizedHost(
+			List<? extends Vm> vmsToMigrate,
+			Set<? extends Host> excludedHosts) {
+		List<Host> ready_pm = new ArrayList<Host>();
+		ready_pm = getReadyPmList(excludedHosts);
+		IoSolutionsEnumeration exhaustive = new IoSolutionsEnumeration(vmsToMigrate, ready_pm);
+		List<Map<String, Object>> migrationMap = new LinkedList<Map<String, Object>>();
+		
+		/* Get the min migration Map*/
+		migrationMap = exhaustive.getMinPlacementPlan(vmsToMigrate.size());
+		return migrationMap;
+	}
+	
+	/**
 	 * Check if this host is under utilized in terms of IOPS
 	 * @param host
 	 * @return boolean
