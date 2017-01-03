@@ -37,7 +37,7 @@ public class BFMinStorageCostMc {
 		String outputFolder = "output";
 		String workload = "mix_vm"; // Real Workload
 		String ioVmAllocationPolicy = "BFMC"; // Brute Force Min Cost
-		String ioVmSelectionPolicy = "mc"; // Random selection
+		String ioVmSelectionPolicy = "mc"; // Maximum correlation selection policy
 		String parameter = "1"; // the static utilization threshold
 		String maxThr = "0.8";
 		String minThr = "0.1";
