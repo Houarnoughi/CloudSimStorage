@@ -128,6 +128,7 @@ public class IoHelper {
 														IoStorageSlaModel.class,
 														IoCpuCorrelationModel.class,
 														Double.TYPE,
+														Double.TYPE,
 														Boolean.TYPE).newInstance(name, 
 																						   characteristics,
 																						   ioVmAllocationPolicy, 
@@ -138,6 +139,7 @@ public class IoHelper {
 																						   IoConstants.STRG_SLA,
 																						   IoConstants.STRG_CPU,
 																						   IoConstants.COST_PER_KWH,
+																						   IoConstants.CLOUD_SERVICE_PRICE,
 																						   IoConstants.STORAGE_ENABLED);
 		} catch (Exception e) {
 			e.printStackTrace();

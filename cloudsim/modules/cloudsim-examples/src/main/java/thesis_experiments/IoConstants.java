@@ -91,6 +91,7 @@ public class IoConstants {
 	public final static IoStorageWearOutModel STRG_WO = new IoStorageWearOutModel();
 	public final static IoStorageSlaModel STRG_SLA = new IoStorageSlaModel();
 	public final static IoCpuCorrelationModel STRG_CPU = new IoCpuCorrelationModel();
-	public final static double COST_PER_KWH = 0.1763; /// Prix en californie
+	public final static double COST_PER_KWH = 0.1763;		// Prix en californie
+	public final static double CLOUD_SERVICE_PRICE = 0.5;
 
 }

@@ -1,6 +1,9 @@
-package thesis_experiments;
+package rs_experiments;
 
 import java.io.IOException;
+
+import thesis_experiments.IoConstants;
+import thesis_experiments.IoRandomRunner;
 
 /**
  * A simulation of a heterogeneous power aware data center that applies the Static Threshold (THR)
@@ -28,7 +31,7 @@ public class HPPMMinStorageCostRs {
 	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	public static void main(String[] args) throws IOException {
-		boolean enableOutput = true;
+		boolean enableOutput = false;
 		boolean outputToFile = true;
 		String inputFolder = IoConstants.INPUT_IO_WORKLOAD_CPU_DIR;
 		String outputFolder = "output";

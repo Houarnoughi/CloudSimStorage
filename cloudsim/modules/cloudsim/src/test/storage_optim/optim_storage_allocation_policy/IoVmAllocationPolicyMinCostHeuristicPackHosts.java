@@ -24,6 +24,7 @@ import org.cloudbus.cloudsim.core.CloudSim;
 import org.cloudbus.cloudsim.util.ExecutionTimeMeasurer;
 
 import optim_storage_infrastructure.BcomStorageCostModel;
+import optim_storage_infrastructure.IoDataCenter;
 import optim_storage_infrastructure.IoHarddriveStorage;
 import optim_storage_infrastructure.IoHost;
 import optim_storage_infrastructure.IoSolidStateStorage;
@@ -242,10 +243,15 @@ public class IoVmAllocationPolicyMinCostHeuristicPackHosts extends IoVmAllocatio
 		List<Map<String, Object>> migrationMap = new LinkedList<Map<String, Object>>();
 		/****** Initialization *******/
 		// cost model parameters
-		double egyPriceKwh = 0.0887; 			// 0.0887 euros / kWh
-		double egyPrice =  egyPriceKwh/3600000; // Price per WattSec (Joule)
-		double CloudServPrice = 0.5;			// Cloud Service Price / hour
-		double bill = CloudServPrice * 30 * 24; // Bill amount / month
+		double egyPrice =  0;		// Price per WattSec (Joule)
+		double bill = 0;			// Bill amount / month
+		if (!getHostList().isEmpty())
+		{
+			IoDataCenter dc = (IoDataCenter) getHostList().get(0).getDatacenter();
+			egyPrice = dc.getCostPerWattSec();
+			bill = dc.getBill();
+		}
+		
 		BcomStorageCostModel costModel = new BcomStorageCostModel(0.0, egyPrice, bill);
 		List<Storage> allDevices = new ArrayList<Storage>();
 		
@@ -260,20 +266,21 @@ public class IoVmAllocationPolicyMinCostHeuristicPackHosts extends IoVmAllocatio
 		
 		/* The start and stop of VM list*/
 		int start = 0;
-		int stop = ioVm_array.length-1;
+		int stop = ioVm_array.length;
+
 		/* Run through PMs */
 		for (IoHost host : this.<IoHost> getHostList()) {
 			if (excludedHosts.contains(host)) {
 				continue;
 				}
 			
-			/* Run through PMs */
+			/* Run through Storage devices  */
 			for (Storage device: host.getStorageDevices()) {
 				if (device != null) {
 					/* If Its an SSD */
 					if (device instanceof IoSolidStateStorage) {
-						while (stop>0 && start<stop) {
-							IoVm ioVm = (IoVm) ioVm_array[start];
+						for (int i = start; i < stop; i++) {
+							IoVm ioVm = (IoVm) ioVm_array[i];
 							if(host.isSuitableForVm(ioVm)) {
 								Storage current_device = IoStorageList.getDeviceByUid(allDevices, ioVm.getStorageDevice());
 								double current_cost = costModel.getVmStorageCost(ioVm, current_device);
@@ -286,17 +293,14 @@ public class IoVmAllocationPolicyMinCostHeuristicPackHosts extends IoVmAllocatio
 									migrate.put("vm", ioVm);
 									migrate.put("host", host);
 									migrationMap.add(migrate);
-									start++;
 									}
-								} else {
-									start ++;
-									}
+								}
 							}
 						
 						/* If its HDD */
 						} else if (device instanceof IoHarddriveStorage) {
-							while (stop>0 && start<stop) {
-								IoVm ioVm = (IoVm) ioVm_array[stop];
+							for (int i = stop-1 ; i > start; i--) {
+								IoVm ioVm = (IoVm) ioVm_array[i];
 								if(host.isSuitableForVm(ioVm)) {
 									Storage current_device = IoStorageList.getDeviceByUid(allDevices, ioVm.getStorageDevice());
 									double current_cost = costModel.getVmStorageCost(ioVm, current_device);
@@ -309,11 +313,8 @@ public class IoVmAllocationPolicyMinCostHeuristicPackHosts extends IoVmAllocatio
 										migrate.put("vm", ioVm);
 										migrate.put("host", host);
 										migrationMap.add(migrate);
-										stop--;
 										} 
-									} else {
-										stop--;
-										}
+									}
 								}
 							}
 					}
@@ -337,10 +338,15 @@ public class IoVmAllocationPolicyMinCostHeuristicPackHosts extends IoVmAllocatio
 		List<Map<String, Object>> migrationMap = new LinkedList<Map<String, Object>>();
 		/****** Initialization *******/
 		// cost model parameters
-		double egyPriceKwh = 0.0887; 			// 0.0887 euros / kWh
-		double egyPrice =  egyPriceKwh/3600000; // Price per WattSec (Joule)
-		double CloudServPrice = 0.5;			// Cloud Service Price / hour
-		double bill = CloudServPrice * 30 * 24; // Bill amount / month
+		double egyPrice =  0;		// Price per WattSec (Joule)
+		double bill = 0;			// Bill amount / month
+		if (!getHostList().isEmpty())
+		{
+			IoDataCenter dc = (IoDataCenter) getHostList().get(0).getDatacenter();
+			egyPrice = dc.getCostPerWattSec();
+			bill = dc.getBill();
+		}
+		
 		BcomStorageCostModel costModel = new BcomStorageCostModel(0.0, egyPrice, bill);
 		List<Storage> allDevices = new ArrayList<Storage>();
 		
@@ -355,20 +361,21 @@ public class IoVmAllocationPolicyMinCostHeuristicPackHosts extends IoVmAllocatio
 		
 		/* The start and stop of VM list*/
 		int start = 0;
-		int stop = ioVm_array.length-1;
+		int stop = ioVm_array.length;
+
 		/* Run through PMs */
 		for (IoHost host : this.<IoHost> getHostList()) {
 			if (excludedHosts.contains(host)) {
 				continue;
 				}
 			
-			/* Run through PMs */
+			/* Run through Storage devices  */
 			for (Storage device: host.getStorageDevices()) {
 				if (device != null) {
 					/* If Its an SSD */
 					if (device instanceof IoSolidStateStorage) {
-						while (stop>0 && start<stop) {
-							IoVm ioVm = (IoVm) ioVm_array[start];
+						for (int i = start; i < stop; i++) {
+							IoVm ioVm = (IoVm) ioVm_array[i];
 							if(host.isSuitableForVm(ioVm)) {
 								Storage current_device = IoStorageList.getDeviceByUid(allDevices, ioVm.getStorageDevice());
 								double current_cost = costModel.getVmStorageCost(ioVm, current_device);
@@ -381,17 +388,14 @@ public class IoVmAllocationPolicyMinCostHeuristicPackHosts extends IoVmAllocatio
 									migrate.put("vm", ioVm);
 									migrate.put("host", host);
 									migrationMap.add(migrate);
-									start++;
 									}
-								} else {
-									start ++;
-									}
+								}
 							}
 						
 						/* If its HDD */
 						} else if (device instanceof IoHarddriveStorage) {
-							while (stop>0 && start<stop) {
-								IoVm ioVm = (IoVm) ioVm_array[stop];
+							for (int i = stop-1 ; i > start; i--) {
+								IoVm ioVm = (IoVm) ioVm_array[i];
 								if(host.isSuitableForVm(ioVm)) {
 									Storage current_device = IoStorageList.getDeviceByUid(allDevices, ioVm.getStorageDevice());
 									double current_cost = costModel.getVmStorageCost(ioVm, current_device);
@@ -404,11 +408,8 @@ public class IoVmAllocationPolicyMinCostHeuristicPackHosts extends IoVmAllocatio
 										migrate.put("vm", ioVm);
 										migrate.put("host", host);
 										migrationMap.add(migrate);
-										stop--;
 										} 
-									} else {
-										stop--;
-										}
+									}
 								}
 							}
 					}

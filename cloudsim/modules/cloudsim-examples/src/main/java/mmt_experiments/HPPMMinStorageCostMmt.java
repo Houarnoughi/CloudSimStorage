@@ -1,6 +1,9 @@
-package thesis_experiments;
+package mmt_experiments;
 
 import java.io.IOException;
+
+import thesis_experiments.IoConstants;
+import thesis_experiments.IoRandomRunner;
 
 /**
  * A simulation of a heterogeneous power aware data center that applies the Static Threshold (THR)
@@ -19,7 +22,7 @@ import java.io.IOException;
  * @author Anton Beloglazov
  * @since Jan 5, 2012
  */
-public class GreedyMinStorageCostRs {
+public class HPPMMinStorageCostMmt {
 
 	/**
 	 * The main method.
@@ -28,13 +31,13 @@ public class GreedyMinStorageCostRs {
 	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	public static void main(String[] args) throws IOException {
-		boolean enableOutput = true;
+		boolean enableOutput = false;
 		boolean outputToFile = true;
 		String inputFolder = IoConstants.INPUT_IO_WORKLOAD_CPU_DIR;
 		String outputFolder = "output";
 		String workload = "mix_vm"; // Real Workload
-		String ioVmAllocationPolicy = "greedyMinStrgCost"; // Min Storage Cost
-		String ioVmSelectionPolicy = "rs"; // Random Selection (RS) VM selection policy
+		String ioVmAllocationPolicy = "HPPM"; // Heuristic Min Cost
+		String ioVmSelectionPolicy = "mmt"; // Random selection
 		String parameter = "1"; // the static utilization threshold
 		String maxThr = "0.8";
 		String minThr = "0.1";

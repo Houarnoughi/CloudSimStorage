@@ -44,11 +44,13 @@ public class IoDataCenter extends PowerDatacenter {
 	
 	private double costPerKwh;
 	
+	private double costPerWattSec;
+	
 	private double allStorageCost;
 	
 	private double bill;
 
-	double CloudServPrice = 0.5;			// Cloud Service Price / hour
+	private double cloudServicePrice = 0.5;			// Cloud Service Price / hour
 	
 	/** The List of all storage devices got from hosts **/
 	private List<Storage> allStorageDevices;
@@ -64,6 +66,7 @@ public class IoDataCenter extends PowerDatacenter {
 							IoStorageSlaModel storageSlaModel, 
 							IoCpuCorrelationModel ioToCpuCorrelationModel,
 							double cotPerKwh,
+							double cloudServicePrice,
 							boolean storageEnabled) throws Exception {
 		super(name, characteristics, vmAllocationPolicy, storageList, schedulingInterval);
 		setStorageEnergyModel(storageEnergyModel);
@@ -75,8 +78,10 @@ public class IoDataCenter extends PowerDatacenter {
 		setStorageWearout(0);
 		setAllStorageCost(0);
 		setCostPerKwh(cotPerKwh);
+		setCostPerWattSec(getCostPerKwh()/3600000);
 		setLocalStorageEnabled(storageEnabled);
-		setBill(this.CloudServPrice*30*24);
+		setCloudServicePrice(cloudServicePrice);
+		setBill(getCloudServicePrice()*30*24);
 	}
 
 	/**
@@ -490,6 +495,22 @@ public class IoDataCenter extends PowerDatacenter {
 
 	public void setBill(double bill) {
 		this.bill = bill;
+	}
+
+	public double getCostPerWattSec() {
+		return costPerWattSec;
+	}
+
+	public void setCostPerWattSec(double costPerWattSec) {
+		this.costPerWattSec = costPerWattSec;
+	}
+
+	public double getCloudServicePrice() {
+		return cloudServicePrice;
+	}
+
+	public void setCloudServicePrice(double cloudServicePrice) {
+		this.cloudServicePrice = cloudServicePrice;
 	}
 
 }
