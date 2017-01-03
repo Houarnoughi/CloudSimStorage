@@ -813,7 +813,7 @@ public class IoHelper {
 						executionTimeTotalStDev));
 				
 				// Print the Storage system stats
-				printStorageStats(datacenter, vms, lastClock, experimentName, outputInCsv, outputFolder, energy, (slaOverall*100));
+				printStorageStats(datacenter, vms, lastClock, experimentName, outputInCsv, outputFolder, energy, (sla * 100));
 			}
 			Log.printLine();
 		}

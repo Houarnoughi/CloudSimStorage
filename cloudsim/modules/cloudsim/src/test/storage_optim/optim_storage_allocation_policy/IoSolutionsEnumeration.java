@@ -12,6 +12,7 @@ import org.cloudbus.cloudsim.Storage;
 import org.cloudbus.cloudsim.Vm;
 
 import optim_storage_infrastructure.BcomStorageCostModel;
+import optim_storage_infrastructure.IoDataCenter;
 import optim_storage_infrastructure.IoHarddriveStorage;
 import optim_storage_infrastructure.IoHost;
 import optim_storage_infrastructure.IoSolidStateStorage;
@@ -32,10 +33,16 @@ public class IoSolutionsEnumeration {
 	double minCost = Double.MAX_VALUE;
 
 	public IoSolutionsEnumeration(List<? extends Vm> vmList, List<? extends Host> pmList) {
-		double egyPriceKwh = 0.0887; 			// 0.0887 euros / kWh
-		double egyPrice =  egyPriceKwh/3600000; // Price per WattSec (Joule)
-		double CloudServPrice = 0.5;			// Cloud Service Price / hour
-		double bill = CloudServPrice * 30 * 24; // Bill amount / month
+		/****** Initialization *******/
+		// cost model parameters
+		double egyPrice =  0;		// Price per WattSec (Joule)
+		double bill = 0;			// Bill amount / month
+		if (!pmList.isEmpty())
+		{
+			IoDataCenter dc = (IoDataCenter) pmList.get(0).getDatacenter();
+			egyPrice = dc.getCostPerWattSec();
+			bill = dc.getBill();
+		}
 		
 		this.setPmList(pmList);
 		this.setVmList(vmList);
@@ -68,6 +75,7 @@ public class IoSolutionsEnumeration {
 					}
 				}
 			}
+			//printPlacementPlan(plan_array);
 			migrationMap = constructPlacementPlanFromArray(plan_array);
 		/* If there is more VM to place*/
 		} else {
@@ -214,5 +222,16 @@ public class IoSolutionsEnumeration {
 			return null;
 		}
 		
+	}
+	
+	private void printPlacementPlan(int plan_array[]) {
+		
+		for (int i = 0; i < plan_array.length; i++) {
+			IoVm vm = (IoVm) getVmList().get(i);
+			Storage dev = getAllStorageDevices().get(plan_array[i]);
+			IoHost pm_of_dev = getHotOfStorageDeveice(dev);
+			System.out.print("VM #"+vm.getId()+" in PM #"+pm_of_dev.getId()+" in SD #"+dev.getUid()+" ");
+		}
+	System.out.println();
 	}
 }

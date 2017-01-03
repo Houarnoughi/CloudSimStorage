@@ -23,6 +23,7 @@ import org.cloudbus.cloudsim.core.CloudSim;
 import org.cloudbus.cloudsim.util.ExecutionTimeMeasurer;
 
 import optim_storage_infrastructure.BcomStorageCostModel;
+import optim_storage_infrastructure.IoDataCenter;
 import optim_storage_infrastructure.IoHost;
 import optim_storage_infrastructure.IoVm;
 import optim_storage_selection_policy.IoVmSelectionPolicy;
@@ -355,13 +356,18 @@ public class IoVmAllocationPolicyGreedyMinStorageCost extends IoVmAllocationPoli
 		IoHost allocatedHost = null;
 		Storage allocatedDevice = null;
 		
-		// Get the cost model used to run the optimization
-		double constCost = 0.0 ; 				//non recurring costs
-		double egyPriceKwh = 0.0887; 			// 0.0887 euros / kWh
-		double egyPrice =  egyPriceKwh/3600000; // Price per WattSec (Joule)
-		double CloudServPrice = 0.5;			// Cloud Service Price / hour
-		double bill = CloudServPrice * 30 * 24; // Bill amount / month
-		BcomStorageCostModel costModel = new BcomStorageCostModel(constCost, egyPrice, bill);
+		/****** Initialization *******/
+		// cost model parameters
+		double egyPrice =  0;		// Price per WattSec (Joule)
+		double bill = 0;			// Bill amount / month
+		if (!getHostList().isEmpty())
+		{
+			IoDataCenter dc = (IoDataCenter) getHostList().get(0).getDatacenter();
+			egyPrice = dc.getCostPerWattSec();
+			bill = dc.getBill();
+		}
+		
+		BcomStorageCostModel costModel = new BcomStorageCostModel(0.0, egyPrice, bill);
 
 		for (IoHost host : this.<IoHost> getHostList()) {
 			if (excludedHosts.contains(host)) {

@@ -278,9 +278,10 @@ public class IoDataCenter extends PowerDatacenter {
 		double timeFrameDatacenterEnergy = 0.0;
 		double ioTime = 0.0;
 		
-		double egyPriceKwh = 0.0887; 			// 0.0887 euros / kWh
-		double egyPrice =  egyPriceKwh/3600000; // Price per WattSec (Joule)
-		double bill = getBill(); // Bill amount / month
+		/****** Initialization *******/
+		// cost model parameters
+		double egyPrice =  getCostPerWattSec();		// Price per WattSec (Joule)
+		double bill = getBill();			// Bill amount / month
 		
 		// Hamza: Storage energy
 		double storageEnergy = 0.0;

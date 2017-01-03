@@ -24,6 +24,7 @@ import org.cloudbus.cloudsim.core.CloudSim;
 import org.cloudbus.cloudsim.util.ExecutionTimeMeasurer;
 
 import optim_storage_infrastructure.BcomStorageCostModel;
+import optim_storage_infrastructure.IoDataCenter;
 import optim_storage_infrastructure.IoHarddriveStorage;
 import optim_storage_infrastructure.IoHost;
 import optim_storage_infrastructure.IoSolidStateStorage;
@@ -242,10 +243,15 @@ public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocat
 		List<Map<String, Object>> migrationMap = new LinkedList<Map<String, Object>>();
 		/****** Initialization *******/
 		// cost model parameters
-		double egyPriceKwh = 0.0887; 			// 0.0887 euros / kWh
-		double egyPrice =  egyPriceKwh/3600000; // Price per WattSec (Joule)
-		double CloudServPrice = 0.5;			// Cloud Service Price / hour
-		double bill = CloudServPrice * 30 * 24; // Bill amount / month
+		double egyPrice =  0;		// Price per WattSec (Joule)
+		double bill = 0;			// Bill amount / month
+		if (!getHostList().isEmpty())
+		{
+			IoDataCenter dc = (IoDataCenter) getHostList().get(0).getDatacenter();
+			egyPrice = dc.getCostPerWattSec();
+			bill = dc.getBill();
+		}
+		
 		BcomStorageCostModel costModel = new BcomStorageCostModel(0.0, egyPrice, bill);
 		
 		IoVmList.sortByRndWrtRatio(vmsToMigrate);
@@ -337,10 +343,14 @@ public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocat
 		List<Map<String, Object>> migrationMap = new LinkedList<Map<String, Object>>();
 		/****** Initialization *******/
 		// cost model parameters
-		double egyPriceKwh = 0.0887; 			// 0.0887 euros / kWh
-		double egyPrice =  egyPriceKwh/3600000; // Price per WattSec (Joule)
-		double CloudServPrice = 0.5;			// Cloud Service Price / hour
-		double bill = CloudServPrice * 30 * 24; // Bill amount / month
+		double egyPrice =  0;		// Price per WattSec (Joule)
+		double bill = 0;			// Bill amount / month
+		if (!getHostList().isEmpty())
+		{
+			IoDataCenter dc = (IoDataCenter) getHostList().get(0).getDatacenter();
+			egyPrice = dc.getCostPerWattSec();
+			bill = dc.getBill();
+		}
 		BcomStorageCostModel costModel = new BcomStorageCostModel(0.0, egyPrice, bill);
 		
 		IoVmList.sortByRndWrtRatio(vmsToMigrate);
