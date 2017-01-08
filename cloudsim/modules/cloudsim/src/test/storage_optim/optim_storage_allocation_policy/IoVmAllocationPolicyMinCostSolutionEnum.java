@@ -240,10 +240,38 @@ public class IoVmAllocationPolicyMinCostSolutionEnum extends IoVmAllocationPolic
 		List<Map<String, Object>> migrationMap = new LinkedList<Map<String, Object>>();
 		
 		/* Get the min migration Map*/
-		migrationMap = exhaustive.getMinPlacementPlan(vmsToMigrate.size());
+		migrationMap = exhaustive.getNewPlacementPlan();
 		return migrationMap;
 	}
-
+	
+	/**
+	 * Find host for vm.
+	 * 
+	 * @param vm the vm
+	 * @param excludedHosts the excluded hosts
+	 * @return the power host
+	 */
+	/*
+	public IoHost findHostForVm(Vm vm, Set<? extends Host> excludedHosts) {
+		
+		IoHost allocatedHost = null;
+		List<Host> ready_pm = new ArrayList<Host>();
+		ready_pm = getReadyPmList(excludedHosts);
+		//System.out.println("ready_pm map size "+ready_pm.size());
+		List<Vm> vmList = new ArrayList<Vm>();
+		vmList.add(vm);
+		//System.out.println("vmList map size "+vmList.size());
+		IoSolutionsEnumeration exhaustive = new IoSolutionsEnumeration(vmList, ready_pm);
+		List<Map<String, Object>> migrationMap = new LinkedList<Map<String, Object>>();
+		migrationMap = exhaustive.getNewPlacementPlan();
+		if (!migrationMap.isEmpty()) {
+			//System.out.println("Migration map size"+migrationMap.size());
+			allocatedHost = (IoHost) migrationMap.get(0).get("host");
+			//allocatedHost.vmDestroy(vm);
+		}
+		return allocatedHost;
+	}
+*/
 	/**
 	 * Check if this host is over utilized in terms of IOPS
 	 * @param host
@@ -288,7 +316,7 @@ public class IoVmAllocationPolicyMinCostSolutionEnum extends IoVmAllocationPolic
 		List<Map<String, Object>> migrationMap = new LinkedList<Map<String, Object>>();
 		
 		/* Get the min migration Map*/
-		migrationMap = exhaustive.getMinPlacementPlan(vmsToMigrate.size());
+		migrationMap = exhaustive.getNewPlacementPlan();
 		return migrationMap;
 	}
 	
@@ -315,7 +343,7 @@ public class IoVmAllocationPolicyMinCostSolutionEnum extends IoVmAllocationPolic
 		//Log.printLine("isHostUnderUtilized : offered IOPS "+totalIops+ " Requested "+totalRequestedIops);
 		
 		double utilization = totalRequestedIops / totalIops;
-		return utilization < getMaxThreshold();
+		return utilization < getMinThreshold();
 		
 	}
 	

@@ -215,6 +215,8 @@ public abstract class IoVmAllocationPolicyMigrationAbstract extends IoVmAllocati
 	 * @return the power host
 	 */
 	public IoHost findHostForVm(Vm vm, Set<? extends Host> excludedHosts) {
+
+		//System.out.println("IoVmAllocationPolicyMigrationAbstract + findHostForVm");
 		double minPower = Double.MAX_VALUE;
 		IoHost allocatedHost = null;
 
@@ -298,6 +300,7 @@ public abstract class IoVmAllocationPolicyMigrationAbstract extends IoVmAllocati
 	protected List<Map<String, Object>> getNewVmPlacement(
 			List<? extends Vm> vmsToMigrate,
 			Set<? extends Host> excludedHosts) {
+		//System.out.println("IoVmAllocationPolicyMigrationAbstract + getNewVmPlacement");
 		List<Map<String, Object>> migrationMap = new LinkedList<Map<String, Object>>();
 		PowerVmList.sortByCpuUtilization(vmsToMigrate);
 		for (Vm vm : vmsToMigrate) {
@@ -325,6 +328,7 @@ public abstract class IoVmAllocationPolicyMigrationAbstract extends IoVmAllocati
 	protected List<Map<String, Object>> getNewVmPlacementFromUnderUtilizedHost(
 			List<? extends Vm> vmsToMigrate,
 			Set<? extends Host> excludedHosts) {
+		System.out.println("IoVmAllocationPolicyMigrationAbstract + getNewVmPlacementFromUnderUtilizedHost");
 		List<Map<String, Object>> migrationMap = new LinkedList<Map<String, Object>>();
 		PowerVmList.sortByCpuUtilization(vmsToMigrate);
 		for (Vm vm : vmsToMigrate) {

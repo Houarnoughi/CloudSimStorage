@@ -256,6 +256,7 @@ public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocat
 		
 		IoVmList.sortByRndWrtRatio(vmsToMigrate);
 		List<Vm> vm_of_ssd = new ArrayList<Vm>();
+		List<Vm> vm_of_hdd = new ArrayList<Vm>();
 		
 		List<Storage> ssdList = new ArrayList<Storage>();
 		List<Storage> hddList = new ArrayList<Storage>();
@@ -297,6 +298,7 @@ public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocat
 			}
 		}
 		vmsToMigrate.removeAll(vm_of_ssd);
+		
 		/* Pack into HDD */
 		for (Vm vm : vmsToMigrate) {
 			/* Get the current cost */
@@ -319,11 +321,12 @@ public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocat
 						migrate.put("vm", ioVm);
 						migrate.put("host", pm);
 						migrationMap.add(migrate);
-						vmsToMigrate.remove(vm);
+						vm_of_hdd.add(vm);
 					}
 				}
 			}
 		}
+		vmsToMigrate.removeAll(vm_of_hdd);
 		
 		/* Get the min migration Map*/;
 		return migrationMap;
@@ -355,6 +358,7 @@ public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocat
 		
 		IoVmList.sortByRndWrtRatio(vmsToMigrate);
 		List<Vm> vm_of_ssd = new ArrayList<Vm>();
+		List<Vm> vm_of_hdd = new ArrayList<Vm>();
 		
 		List<Storage> ssdList = new ArrayList<Storage>();
 		List<Storage> hddList = new ArrayList<Storage>();
@@ -418,11 +422,12 @@ public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocat
 						migrate.put("vm", ioVm);
 						migrate.put("host", pm);
 						migrationMap.add(migrate);
-						vmsToMigrate.remove(vm);
+						vm_of_hdd.add(vm);
 					}
 				}
 			}
 		}
+		vmsToMigrate.removeAll(vm_of_hdd);
 		
 		/* Get the min migration Map*/;
 		return migrationMap;
@@ -522,7 +527,7 @@ public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocat
 		//Log.printLine("isHostUnderUtilized : offered IOPS "+totalIops+ " Requested "+totalRequestedIops);
 		
 		double utilization = totalRequestedIops / totalIops;
-		return utilization < getMaxThreshold();
+		return utilization < getMinThreshold();
 		
 	}
 	

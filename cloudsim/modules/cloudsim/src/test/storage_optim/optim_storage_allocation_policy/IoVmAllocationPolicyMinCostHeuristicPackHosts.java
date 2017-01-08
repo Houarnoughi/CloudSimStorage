@@ -470,24 +470,29 @@ public class IoVmAllocationPolicyMinCostHeuristicPackHosts extends IoVmAllocatio
 	@Override
 	protected boolean isHostOverUtilized(IoHost host) {
 		//addHistoryEntry(host, getUtilizationThreshold());
+		/******** Storage part ************/
 		double totalRequestedIops = 0;
 		double totalIops = 0;
 		
-		// Get the total available IOPS on the 
 		for (Storage device : host.getStorageDevices()) {
 			totalIops += device.getMaxIops();
 		}
 		
-		// Get the total requested IOPS by VMs
 		for (Vm vm : host.getVmList()) {
 			IoVm ioVm = (IoVm) vm;
 			totalRequestedIops += ioVm.getIoWorkloadModel().getArrivalRate(CloudSim.clock());
 		}
+		double ioUtilization = totalRequestedIops / totalIops;
 		
-		//Log.printLine("isHostOverUtilized : offered IOPS "+totalIops+ " Requested "+totalRequestedIops); 
+		/********* CPU part *****************/
+		addHistoryEntry(host, getMaxThreshold());
+		double totalRequestedMips = 0;
+		for (Vm vm : host.getVmList()) {
+			totalRequestedMips += vm.getCurrentRequestedTotalMips();
+		}
+		double cpuUtilization = totalRequestedMips / host.getTotalMips();
 		
-		double utilization = totalRequestedIops / totalIops;
-		return utilization > getMaxThreshold();
+		return (ioUtilization > getMaxThreshold() || cpuUtilization > getMaxThreshold()) ;
 	}
 	
 	/**

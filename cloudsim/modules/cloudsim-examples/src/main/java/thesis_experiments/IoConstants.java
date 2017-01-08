@@ -33,8 +33,8 @@ public class IoConstants {
 	public final static double SCHEDULING_INTERVAL = 300;
 	public final static double SIMULATION_LIMIT = 24 * 60 * 60;
 
-	// public final static int CLOUDLET_LENGTH	= 2500 * (int) SIMULATION_LIMIT;
-	public final static int CLOUDLET_LENGTH	= 600000;
+	//public final static int CLOUDLET_LENGTH	= 2500 * (int) SIMULATION_LIMIT;
+	public final static int CLOUDLET_LENGTH	= 150000;
 	public final static int CLOUDLET_PES	= 1;
 
 	/*
@@ -49,9 +49,9 @@ public class IoConstants {
 	 */
 	
 	public final static int VM_TYPES	= 4;
-	public final static int[] VM_MIPS	= { 500, 1000, 2000, 2500 };
+	public final static int[] VM_MIPS	= { 250, 500, 750, 1000};
 	public final static int[] VM_PES	= { 1, 1, 1, 1 };
-	public final static int[] VM_RAM = { 613, 870 , 1740, 1740 };
+	public final static int[] VM_RAM = { 128, 128, 128, 128 };
 	public final static int [] VM_BW = {100000, 100000, 100000, 100000}; // 100 Mbit/s
 	public final static int [] VM_SIZE = {2500, 2500, 2500, 2500}; // 10GB, 20GB
 	
@@ -63,17 +63,19 @@ public class IoConstants {
 	public final static boolean REAL_IO = true;
 	public final static String INPUT_IO_WORKLOAD_STORAGE_DIR = "/home/hamza/git/CloudSimStorage/cloudsim/modules/cloudsim-examples/src/main/resources/workload/io_mix/storage/";
 	public final static String INPUT_IO_WORKLOAD_CPU_DIR = "/home/hamza/git/CloudSimStorage/cloudsim/modules/cloudsim-examples/src/main/resources/workload/io_mix/cpu/";
-	
+	//public final static String STORAGE_DEVICE_TYPE = "hdd";
+	public final static String STORAGE_DEVICE_TYPE = "ssd";
+	//public final static String STORAGE_DEVICE_TYPE = "hybrid";
 	/*
 	 * Host types:
 	 *   HP ProLiant ML110 G4 (1 x [Xeon 3040 1860 MHz, 2 cores], 4GB)
 	 *   HP ProLiant ML110 G5 (1 x [Xeon 3075 2660 MHz, 2 cores], 4GB)
 	 *   We increase the memory size to enable over-subscription (x4)
 	 */
-	public final static int HOST_TYPES	 = 2;
-	public final static int[] HOST_MIPS	 = { 2660, 1860 };
-	public final static int[] HOST_PES	 = { 2, 2 };
-	public final static int[] HOST_RAM	 = { 4096, 4096 };
+	public final static int HOST_TYPES	 = 3;
+	public final static int[] HOST_MIPS	 = { 4000, 4000, 1000 };
+	public final static int[] HOST_PES	 = { 1, 1, 1 };
+	public final static int[] HOST_RAM	 = { 8192, 8192, 8192 };
 	public final static int HOST_BW		 = 1000000; // 1 Gbit/s
 	public final static int HOST_STORAGE = 1000000; // 1 GB
 	

@@ -18,7 +18,6 @@ import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationInterQuartil
 import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationLocalRegression;
 import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationLocalRegressionRobust;
 import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationMedianAbsoluteDeviation;
-import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationStaticIopsThreshold;
 import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationStaticThreshold;
 import optim_storage_allocation_policy.IoVmAllocationPolicyMinCostHeuristicPackDevices;
 import optim_storage_allocation_policy.IoVmAllocationPolicyMinCostHeuristicPackHosts;
@@ -222,9 +221,9 @@ public abstract class IoRunnerAbstract {
 		} else if (ioVmAllocationPolicyName.equals("dvfs")) {
 			ioVmAllocationPolicy = new IoVmAllocationPolicySimple(hostList);
 		//////// Storage Allocation optimization Policies //////////////
-		} else if (ioVmAllocationPolicyName.equals("iopsthr")) {
-			ioVmAllocationPolicy = new IoVmAllocationPolicyMigrationStaticIopsThreshold(
-					hostList, ioVmSelectionPolicy, parameter);
+		//} else if (ioVmAllocationPolicyName.equals("iopsthr")) {
+			//ioVmAllocationPolicy = new IoVmAllocationPolicyMigrationStaticIopsThreshold(
+				//	hostList, ioVmSelectionPolicy, parameter);
 		} else if (ioVmAllocationPolicyName.equals("greedyMinStrgCost")) {
 			ioVmAllocationPolicy = new IoVmAllocationPolicyGreedyMinStorageCost(hostList, 
 					ioVmSelectionPolicy,

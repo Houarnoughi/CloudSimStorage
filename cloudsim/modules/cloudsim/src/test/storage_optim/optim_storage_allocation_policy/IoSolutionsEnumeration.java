@@ -56,35 +56,46 @@ public class IoSolutionsEnumeration {
 		costModel = new BcomStorageCostModel(0.0, egyPrice, bill);
 	}
 
-	public List<Map<String, Object>> getMinPlacementPlan(int nbVm) {
-		List<Map<String, Object>> migrationMap = new LinkedList<Map<String, Object>>();
+	public void getMinPlacementPlan(int nb_Vm) {
 		
 		/* The trivial case => No more VM to place */
-		if (nbVm <= 0) {
+		if (nb_Vm <= 0) {
 			double total_cost = 0.0;
 			if (isValid(plan_array)) {
 				for (int i=0; i<this.nbVm; i++) {
 					/* Calculate the total cost of these placement plan*/
 					IoVm vm = (IoVm) getVmList().get(i);
 					Storage dev = getAllStorageDevices().get(plan_array[i]);
+					//IoHost pm = null;
+					//if (dev instanceof IoHarddriveStorage) {
+					//	IoHarddriveStorage hdd = (IoHarddriveStorage) dev;
+					//	pm = hdd.getHost();
+					//} else if (dev instanceof IoSolidStateStorage) {
+					//	IoSolidStateStorage ssd = (IoSolidStateStorage) dev;
+					//	pm = ssd.getHost();
+					//}
+					//double currentPower = pm.getPower();
+					//double newPower = getPowerAfterAllocation(pm, vm);
+					
 					total_cost += costModel.getVmStorageCost(vm, dev);
+					//System.out.println("Total cost "+total_cost);
 					/* Is it the min cost ?*/
 					if (total_cost<minCost) {
-						this.minCost = total_cost;
-						this.min_plan_placement = plan_array;
+						minCost = total_cost;
+						min_plan_placement = plan_array;
+						//printPlacementPlan(min_plan_placement);
 					}
 				}
 			}
-			//printPlacementPlan(plan_array);
-			migrationMap = constructPlacementPlanFromArray(plan_array);
+			
 		/* If there is more VM to place*/
 		} else {
 			for(int j=0; j<nbSd; j++){
-				plan_array[nbVm - 1] = j;
-				getMinPlacementPlan(nbVm - 1);
+				plan_array[nb_Vm - 1] = j;
+				getMinPlacementPlan(nb_Vm - 1);
 			}
 		}
-	return migrationMap;
+		//System.out.println("Min cost "+minCost);
 	}
 	
 	/**
@@ -107,7 +118,7 @@ public class IoSolutionsEnumeration {
 				}
 			}
 			
-			if(available_space < 0 || available_iops < 0){
+			if (available_space < 0 || available_iops < 0) {
 				return false;
 			}
 		}
@@ -139,13 +150,12 @@ public class IoSolutionsEnumeration {
 				}
 			}
 			
-			if (pm_pe_cap >= 0 && pm_mips_cap >= 0 
-					&& pm_avalaible_ram >= 0 
-					&& pm_bw_capacity >= 0 ) {
-				return true;
+			if (pm_pe_cap < 0 || pm_mips_cap < 0 || pm_avalaible_ram < 0 || pm_bw_capacity < 0) {
+				return false;
 			}
 		}
-		return false;
+		//printPlacementPlan(plan_array);
+		return true;
 	}
 	
 	/**
@@ -224,8 +234,69 @@ public class IoSolutionsEnumeration {
 		
 	}
 	
+	/**
+	 * Gets the power after allocation.
+	 * 
+	 * @param host the host
+	 * @param vm the vm
+	 * 
+	 * @return the power after allocation
+	 */
+	protected double getPowerAfterAllocation(IoHost host, IoVm vm) {
+		double power = 0;
+		try {
+			double max_utilization = getMaxUtilizationAfterAllocation(host, vm);
+			if (max_utilization > 1) {
+				return Double.MAX_VALUE;
+			}
+			//System.out.println("Max utilization "+max_utilization);
+			power = host.getPowerModel().getPower(max_utilization);
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.exit(0);
+		}
+		return power;
+	}
+	
+	/**
+	 * Gets the power after allocation. We assume that load is balanced between PEs. The only
+	 * restriction is: VM's max MIPS < PE's MIPS
+	 * 
+	 * @param host the host
+	 * @param vm the vm
+	 * 
+	 * @return the power after allocation
+	 */
+	private double getMaxUtilizationAfterAllocation(IoHost host, IoVm vm) {
+		double requestedTotalMips = vm.getCurrentRequestedTotalMips();
+		double hostUtilizationMips = getUtilizationOfCpuMips(host);
+		double hostPotentialUtilizationMips = hostUtilizationMips + requestedTotalMips;
+		double pePotentialUtilization = hostPotentialUtilizationMips / host.getTotalMips();
+		return pePotentialUtilization;
+	}
+	
+	/**
+	 * Gets the utilization of the CPU in MIPS for the current potentially allocated VMs.
+	 *
+	 * @param host the host
+	 *
+	 * @return the utilization of the CPU in MIPS
+	 */
+	protected double getUtilizationOfCpuMips(IoHost host) {
+		double hostUtilizationMips = 0;
+		for (Vm vm2 : host.getVmList()) {
+			if (host.getVmsMigratingIn().contains(vm2)) {
+				// calculate additional potential CPU usage of a migrating in VM
+				hostUtilizationMips += host.getTotalAllocatedMipsForVm(vm2) * 0.9 / 0.1;
+			}
+			hostUtilizationMips += host.getTotalAllocatedMipsForVm(vm2);
+		}
+		return hostUtilizationMips;
+	}
+	
+	/*
 	private void printPlacementPlan(int plan_array[]) {
-		
+		System.out.println("The optimal placement plan is the below : ");
 		for (int i = 0; i < plan_array.length; i++) {
 			IoVm vm = (IoVm) getVmList().get(i);
 			Storage dev = getAllStorageDevices().get(plan_array[i]);
@@ -233,5 +304,18 @@ public class IoSolutionsEnumeration {
 			System.out.print("VM #"+vm.getId()+" in PM #"+pm_of_dev.getId()+" in SD #"+dev.getUid()+" ");
 		}
 	System.out.println();
+	}
+	*/
+	
+	public List<Map<String, Object>> getNewPlacementPlan() {
+		List<Map<String, Object>> migrationMap = new LinkedList<Map<String, Object>>();
+		getMinPlacementPlan(this.nbVm);
+		
+		//printPlacementPlan(min_plan_placement);
+		if (isValid(min_plan_placement)) {
+			migrationMap = constructPlacementPlanFromArray (min_plan_placement);
+		}
+		
+		return migrationMap;
 	}
 }

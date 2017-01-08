@@ -2,7 +2,6 @@ package optim_storage_infrastructure;
 
 import java.util.List;
 
-import org.cloudbus.cloudsim.Log;
 import org.cloudbus.cloudsim.Storage;
 import org.cloudbus.cloudsim.core.CloudSim;
 
@@ -66,9 +65,7 @@ public class IoStorageWearOutModel {
 		//List<String> fileNameList = hdd.getFileNameList();
 		double wearout = 0;
 		for (IoVm vm: vmlist) {
-			double tmpWearout = getExeHddWearOutCost(vm, hdd);
-			Log.printLine("Wear out cost Host #"+vm.getHost().getId()+" VM #"+vm.getId()+" Device #"+hdd.getUid()+" Cost "+tmpWearout);
-			wearout += tmpWearout;
+			wearout += getExeHddWearOutCost(vm, hdd);
 		}
 		return wearout;
 	}

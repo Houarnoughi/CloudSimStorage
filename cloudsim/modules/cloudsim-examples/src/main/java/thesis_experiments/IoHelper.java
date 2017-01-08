@@ -11,7 +11,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
-
 import org.cloudbus.cloudsim.Cloudlet;
 import org.cloudbus.cloudsim.CloudletSchedulerDynamicWorkload;
 import org.cloudbus.cloudsim.Datacenter;
@@ -39,6 +38,7 @@ import optim_storage_allocation_policy.IoVmAllocationPolicy;
 import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationAbstract;
 import optim_storage_infrastructure.IoCpuCorrelationModel;
 import optim_storage_infrastructure.IoDataCenter;
+import optim_storage_infrastructure.IoHarddriveStorage;
 import optim_storage_infrastructure.IoHost;
 import optim_storage_infrastructure.IoSolidStateStorage;
 import optim_storage_infrastructure.IoStorageEnergyModel;
@@ -63,6 +63,8 @@ import optim_storage_infrastructure.IoWorkloadModelInMemory;
  * @author Anton Beloglazov
  */
 public class IoHelper {
+	
+	private static Map<String, Double> stats = new HashMap<>();
 
 	/**
 	 * Creates the broker.
@@ -171,8 +173,19 @@ public class IoHelper {
 			}
 			
 			try {
-				//storageList.add(new IoHarddriveStorage(80000));
-				storageList.add(new IoSolidStateStorage(80000));
+				if (IoConstants.STORAGE_DEVICE_TYPE.equals("hdd")) {
+					storageList.add(new IoHarddriveStorage(500000));
+					//storageList.add(new IoHarddriveStorage(500000));
+					} else if (IoConstants.STORAGE_DEVICE_TYPE.equals("ssd")) {
+						storageList.add(new IoSolidStateStorage(250000));
+						//storageList.add(new IoSolidStateStorage(250000));
+						//storageList.add(new IoSolidStateStorage(250000));
+						//storageList.add(new IoSolidStateStorage(250000));
+						//storageList.add(new IoSolidStateStorage(250000));
+						} else if (IoConstants.STORAGE_DEVICE_TYPE.equals("hybrid")) {
+							storageList.add(new IoHarddriveStorage(500000));
+							storageList.add(new IoSolidStateStorage(250000));
+							}
 				} catch (ParameterException e) {
 					e.printStackTrace();
 				}
@@ -559,13 +572,22 @@ public class IoHelper {
 			String outputFolder) {
 		Log.enable();
 		List<Host> hosts = datacenter.getHostList();
+		
+		Map<String, Double> new_stats = new HashMap<String, Double>();
 
 		int numberOfHosts = hosts.size();
 		int numberOfVms = vms.size();
+		
+		new_stats.put("#NB_PM", (double)numberOfHosts);
+		new_stats.put("NB_VM", (double) numberOfVms);
 
 		double totalSimulationTime = lastClock;
 		double energy = datacenter.getPower() / (3600 * 1000);
 		int numberOfMigrations = datacenter.getMigrationCount();
+		
+		new_stats.put("sim_time", totalSimulationTime);
+		new_stats.put("cpu_energy", energy);
+		new_stats.put("nb_mig", (double)numberOfMigrations);
 
 		Map<String, Double> slaMetrics = getSlaMetrics(vms);
 
@@ -581,7 +603,9 @@ public class IoHelper {
 		double slaTimePerActiveHost = getSlaTimePerActiveHost(hosts);
 
 		double sla = slaTimePerActiveHost * slaDegradationDueToMigration;
-
+		
+		new_stats.put("all_sla", sla*100);
+		
 		List<Double> timeBeforeHostShutdown = getTimesBeforeHostShutdown(hosts);
 
 		int numberOfHostShutdowns = timeBeforeHostShutdown.size();
@@ -778,11 +802,17 @@ public class IoHelper {
 				double executionTimeVmReallocationMean = MathUtil
 						.mean(vmAllocationPolicy
 								.getExecutionTimeHistoryVmReallocation());
+				
+				new_stats.put("vm_realloc_mean", executionTimeVmReallocationMean);
+				
 				double executionTimeVmReallocationStDev = MathUtil
 						.stDev(vmAllocationPolicy
 								.getExecutionTimeHistoryVmReallocation());
 				double executionTimeTotalMean = MathUtil
 						.mean(vmAllocationPolicy.getExecutionTimeHistoryTotal());
+				
+				new_stats.put("exe_time_mean", executionTimeTotalMean);
+				
 				double executionTimeTotalStDev = MathUtil
 						.stDev(vmAllocationPolicy
 								.getExecutionTimeHistoryTotal());
@@ -812,6 +842,7 @@ public class IoHelper {
 						"Execution time - total stDev: %.5f sec",
 						executionTimeTotalStDev));
 				
+				setStats(new_stats);
 				// Print the Storage system stats
 				printStorageStats(datacenter, vms, lastClock, experimentName, outputInCsv, outputFolder, energy, (sla * 100));
 			}
@@ -838,6 +869,7 @@ public class IoHelper {
 											String outputFolder,
 											double energy,
 											double slaOverall) {
+		Map<String, Double> new_stats = new HashMap<String, Double>();
 		// Hamza: Storage energy
 		double storagePower = datacenter.getStoragePower() / (3600 * 1000);
 		double costEnergy = datacenter.getCostPerKwh() * (storagePower + energy);
@@ -848,6 +880,14 @@ public class IoHelper {
 		
 		StringBuilder data = new StringBuilder();
 		String delimeter = ",";
+		
+		new_stats.put("strg_egy", storagePower);
+		new_stats.put("egy_cost", costEnergy);
+		new_stats.put("wo_cost",wearOutCost);
+		new_stats.put("sla_cost",slaStorage);
+		new_stats.put("all_cost", allStorageCost);
+		new_stats.putAll(getStats());
+		setStats(new_stats);
 		
 		Log.printLine("=========== Storage System Stats ============");
 		// Hamza: format storage power
@@ -969,6 +1009,14 @@ public class IoHelper {
 				System.exit(0);
 			}
 		}
+	}
+
+	public static Map<String, Double> getStats() {
+		return stats;
+	}
+
+	public static void setStats(Map<String, Double> new_stats) {
+		stats = new_stats;
 	}
 
 }

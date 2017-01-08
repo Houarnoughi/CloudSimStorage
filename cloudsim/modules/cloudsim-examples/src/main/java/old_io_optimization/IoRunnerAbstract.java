@@ -12,7 +12,6 @@ import org.cloudbus.cloudsim.Log;
 import org.cloudbus.cloudsim.core.CloudSim;
 
 import optim_storage_allocation_policy.IoVmAllocationPolicy;
-import optim_storage_allocation_policy.IoVmAllocationPolicyMigrationStaticIopsThreshold;
 import optim_storage_allocation_policy.IoVmAllocationPolicySimple;
 import optim_storage_infrastructure.IoDataCenter;
 import optim_storage_infrastructure.IoHost;
@@ -173,9 +172,9 @@ public abstract class IoRunnerAbstract {
 			if (ioVmAllocationPolicyName.equals("dvfs")) {
 			ioVmAllocationPolicy = new IoVmAllocationPolicySimple(hostList);
 		//////// Storage Allocation optimization Policies //////////////
-		} else if (ioVmAllocationPolicyName.equals("iopsthr")) {
-			ioVmAllocationPolicy = new IoVmAllocationPolicyMigrationStaticIopsThreshold(
-					hostList, ioVmSelectionPolicy, parameter);
+		//} else if (ioVmAllocationPolicyName.equals("iopsthr")) {
+			//ioVmAllocationPolicy = new IoVmAllocationPolicyMigrationStaticIopsThreshold(
+				//	hostList, ioVmSelectionPolicy, parameter);
 		/* } 
 		else if (ioVmAllocationPolicyName.equals("minstrcost")) {
 			ioVmAllocationPolicy = new IoVmAllocationPolicyGreedyMinStorageCost(hostList, ioVmSelectionPolicy, parameter);
