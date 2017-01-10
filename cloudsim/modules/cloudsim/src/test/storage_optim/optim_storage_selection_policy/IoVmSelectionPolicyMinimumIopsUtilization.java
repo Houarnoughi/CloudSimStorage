@@ -38,7 +38,9 @@ public class IoVmSelectionPolicyMinimumIopsUtilization extends IoVmSelectionPoli
 				continue;
 			}
 			
-			double metric = vm.getIoWorkloadModel().getArrivalRate(CloudSim.clock()) / vm.getRequestedIops();
+			double iopsUtilization = vm.getIoWorkloadModel().getArrivalRate(CloudSim.clock()) / vm.getRequestedIops();
+			double cpuUtilization = vm.getTotalUtilizationOfCpuMips(CloudSim.clock()) / vm.getMips();
+			double metric = (1/iopsUtilization) * (1/cpuUtilization);
 			if (metric < minMetric) {
 				minMetric = metric;
 				vmToMigrate = vm;

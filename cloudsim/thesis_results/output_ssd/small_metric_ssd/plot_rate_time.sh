@@ -31,22 +31,20 @@ echo "
 		set encoding iso_8859_1
 		set title \"Temps d'exécution des algorithmes d'optimisation\" offset 0,-0.8,0
 		set terminal pdf enhanced color font 'Helvetica Bold,18'
-        set output \"time_report.pdf\"
+        set output \"small_time_report_miops.pdf\"
         set datafile separator \",\"
         set xlabel \"Nombre de VM\"
         set ylabel \"Temps normalisé\"
-        set yrange [0:*]
-        set xrange [-1:9]
+        #~ set yrange [0:*]
+        set xrange [-1:10]
 		# set format y \"%g %%\"
-		set grid
-		set key inside top left vertical box
+		set key inside reverse Left top left vertical box
 		set key font 'Helvetica Bold,14'
-		set key width 1
+		set key width 0.5
+		set key samplen 2
+		set key spacing 1
 		set grid
-		#~ set style data histogram
-		#~ set style fill transparent solid 0.5 border -1
-		#~ set boxwidth 1 relative
-		#~ set style histogram clustered gap 1 title  offset character 0, 0, 0
+		set log y 2
         plot \"./$FILE1\" using 4:xticlabels(2) with lp ps 1 lw 2 ti \"Glouton\" ,\
         \"./$FILE1\" using 6:xticlabels(2) with lp ps 1 lw 2 ti \"HPSD\" ,\
         \"./$FILE1\" using 8:xticlabels(2) with lp ps 1 lw 2 ti \"HPPD\" ,\

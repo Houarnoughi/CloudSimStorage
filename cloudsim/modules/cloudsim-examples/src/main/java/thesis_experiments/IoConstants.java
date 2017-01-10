@@ -73,7 +73,7 @@ public class IoConstants {
 	 *   We increase the memory size to enable over-subscription (x4)
 	 */
 	public final static int HOST_TYPES	 = 3;
-	public final static int[] HOST_MIPS	 = { 4000, 4000, 1000 };
+	public final static int[] HOST_MIPS	 = { 4000, 3000, 1000 };
 	public final static int[] HOST_PES	 = { 1, 1, 1 };
 	public final static int[] HOST_RAM	 = { 8192, 8192, 8192 };
 	public final static int HOST_BW		 = 1000000; // 1 Gbit/s

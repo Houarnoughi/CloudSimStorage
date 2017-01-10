@@ -48,8 +48,8 @@ public class ThrMmt {
 		String workload = "mix_vm"; // Real Workload
 		String ioVmAllocationPolicy = "thr"; // Min Storage Cost
 		String ioVmSelectionPolicy = "mmt"; // Random Selection (RS) VM selection policy
-		String parameter = "0.95"; // the static utilization threshold
-		String maxThr = "0.95";
+		String parameter = "0.8"; // the static utilization threshold
+		String maxThr = "0.8";
 		String minThr = "0";
 		
 		builder.append(outputDir+"/"+ioVmAllocationPolicy+"_"+ioVmSelectionPolicy+"_"+IoRandomConstants.NUMBER_OF_HOSTS+"_"+IoRandomConstants.NUMBER_OF_VMS+"_"+maxThr+".csv");

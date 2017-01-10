@@ -64,6 +64,9 @@ public class IoVmSelectionPolicyMinimumStorageMigrationTime extends IoVmSelectio
 			
 			// Calculate the time to read 
 			double time = Math.max(ioVm.getSize()/device.getMaxTransferRate(), ioVm.getSize()/host.getBw());
+			//double ioTime = 1/ioVm.getIoWorkloadModel().getArrivalRate(CloudSim.clock());
+			//double all_time = time * ioTime;
+			//if (all_time < minMigTime) {
 			if (time < minMigTime) {
 				minMigTime = time;
 				vmToMigrate = vm;

@@ -14,9 +14,9 @@ package thesis_experiments;
  */
 public class IoRandomConstants {
 
-	public final static int NUMBER_OF_VMS = 270;
+	public final static int NUMBER_OF_VMS = 50;
 
-	public final static int NUMBER_OF_HOSTS = 100;
+	public final static int NUMBER_OF_HOSTS = 20;
 
 	public final static long CLOUDLET_UTILIZATION_SEED = 1;
 

@@ -178,10 +178,12 @@ public class IoHelper {
 					//storageList.add(new IoHarddriveStorage(500000));
 					} else if (IoConstants.STORAGE_DEVICE_TYPE.equals("ssd")) {
 						storageList.add(new IoSolidStateStorage(250000));
-						//storageList.add(new IoSolidStateStorage(250000));
-						//storageList.add(new IoSolidStateStorage(250000));
-						//storageList.add(new IoSolidStateStorage(250000));
-						//storageList.add(new IoSolidStateStorage(250000));
+						storageList.add(new IoSolidStateStorage(250000));
+						storageList.add(new IoSolidStateStorage(250000));
+						storageList.add(new IoSolidStateStorage(250000));
+						storageList.add(new IoSolidStateStorage(250000));
+						storageList.add(new IoSolidStateStorage(250000));
+						storageList.add(new IoHarddriveStorage(500000));
 						} else if (IoConstants.STORAGE_DEVICE_TYPE.equals("hybrid")) {
 							storageList.add(new IoHarddriveStorage(500000));
 							storageList.add(new IoSolidStateStorage(250000));

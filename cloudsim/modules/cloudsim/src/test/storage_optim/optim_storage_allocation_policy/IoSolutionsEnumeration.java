@@ -166,7 +166,7 @@ public class IoSolutionsEnumeration {
 		for (int i = 0; i<plan_array.length; i++) {
 			IoVm vm = (IoVm) getVmList().get(i);
 			int dev_index = plan_array[i];
-			
+			System.out.println("Size "+ getAllStorageDevices().size());
 			Storage dev = getAllStorageDevices().get(dev_index);
 			IoHost pm = getHotOfStorageDeveice(dev);
 			vm.setStorageDevice(dev.getUid());

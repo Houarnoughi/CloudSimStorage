@@ -10,7 +10,6 @@ package optim_storage_selection_policy;
 
 import java.util.List;
 
-import org.cloudbus.cloudsim.Log;
 import org.cloudbus.cloudsim.Vm;
 import org.cloudbus.cloudsim.core.CloudSim;
 
@@ -41,7 +40,7 @@ public class IoVmSelectionPolicyMinimumCpuUtilization extends IoVmSelectionPolic
 	 */
 	@Override
 	public Vm getVmToMigrate(IoHost host) {
-		Log.printLine("Hamza: getVmToMigrate IoVmSelectionPolicyMinimumCpuUtilization called");
+		//Log.printLine("Hamza: getVmToMigrate IoVmSelectionPolicyMinimumCpuUtilization called");
 		List<IoVm> migratableVms = getMigratableVms(host);
 		if (migratableVms.isEmpty()) {
 			return null;

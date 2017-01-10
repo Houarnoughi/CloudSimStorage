@@ -51,8 +51,8 @@ public class HPPMMinStorageCostMstrgmt {
 		String workload = "mix_vm"; // Real Workload
 		String ioVmAllocationPolicy = "HPPM"; // Heuristic Min Cost
 		String ioVmSelectionPolicy = "mstrgmt"; // Random selection
-		String parameter = "0.95"; // the static utilization threshold
-		String maxThr = "0.95";
+		String parameter = "0.8"; // the static utilization threshold
+		String maxThr = "0.8";
 		String minThr = "0.1";
 		/*==================================*/
 		
