@@ -36,7 +36,7 @@ echo "
 		set encoding iso_8859_1
 		set title \"Temps d'exécution des algorithmes d'optimisation\" offset 0,-0.8,0
 		set terminal pdf enhanced color font 'Helvetica Bold,18'
-        set output \"time_report_miopsu.pdf\"
+        set output \"big_time_report_mmt.pdf\"
         set datafile separator \",\"
         set xlabel \"Seuil maximum d'utilisation\"
         set ylabel \"Temps d'exécution (seconde)\"
@@ -47,5 +47,5 @@ echo "
 		set grid
         plot \"./$FILE1\" using 3:5 with lp ps 1 lw 2 ti \"Glouton\" ,\
         \"./$FILE1\" using 3:8 with lp ps 1 lw 2 ti \"HPSD\" ,\
-        \"./$FILE1\" using 3:11 with lp ps 1 lw 2 ti \"HPPD\" ,\
+        \"./$FILE1\" using 3:11 with lp ps 1 lw 2 ti \"HPPM\" ,\
         \"./$FILE1\" using 3:14 with lp ps 1 lw 2 ti \"Sans stockage\" " | gnuplot

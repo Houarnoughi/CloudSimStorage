@@ -31,7 +31,7 @@ echo "
 		set encoding iso_8859_1
 		set title \"Coût total de placement des VM\" offset 0,-0.8,0
 		set terminal pdf enhanced color font 'Helvetica Bold,18'
-        set output \"cost_report_miopsu.pdf\"
+        set output \"big_cost_report_mmt.pdf\"
         set datafile separator \",\"
         set xlabel \"Seuil maximum d'utilisation\"
         set ylabel \"Coût total (\$)\"
@@ -47,5 +47,5 @@ echo "
 		set grid
         plot \"./$FILE1\" using 3:4 with lp ps 1 lw 2 ti \"Glouton\" ,\
         \"./$FILE1\" using 3:7 with lp ps 1 lw 2 ti \"HPSD\" ,\
-        \"./$FILE1\" using 3:10 with lp ps 1 lw 2 ti \"HPPD\" ,\
+        \"./$FILE1\" using 3:10 with lp ps 1 lw 2 ti \"HPPM\" ,\
         \"./$FILE1\" using 3:13 with lp ps 1 lw 2 ti \"Sans stockage\" " | gnuplot

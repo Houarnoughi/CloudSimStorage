@@ -31,7 +31,7 @@ echo "
 		set encoding iso_8859_1
 		set title \"Coût total de placement des VM\" offset 0,-0.8,0
 		set terminal pdf enhanced color font 'Helvetica Bold,18'
-        set output \"cost_report_miopsu.pdf\"
+        set output \"cost_report_mmt.pdf\"
         set datafile separator \",\"
         set xlabel \"Nombre de VM\"
         set ylabel \"Coût normalisé\"
