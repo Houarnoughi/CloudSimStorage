@@ -585,5 +585,16 @@ public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocat
 	protected double getUtilizationThreshold() {
 		return maxThreshold;
 	}
+	
+	/* The optimization algorithm must be implemented here */
+	public IoHost findHostForVm(Vm vm, Set<? extends Host> excludedHosts) {
+		
+		double minCost = Double.MAX_VALUE;
+		IoHost allocatedHost = null;
+		Storage allocatedDevice = null;
+		
+		
+		return allocatedHost;
+	}
 
 }
