@@ -340,12 +340,12 @@ public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocat
 	 * @param excludedHosts the excluded hosts
 	 * @return the new vm placement from under utilized host
 	 */
+	/*
 	protected List<Map<String, Object>> getNewVmPlacementFromUnderUtilizedHost(
 			List<? extends Vm> vmsToMigrate,
 			Set<? extends Host> excludedHosts){
 		
 		List<Map<String, Object>> migrationMap = new LinkedList<Map<String, Object>>();
-		/****** Initialization *******/
 		// cost model parameters
 		double egyPrice =  0;		// Price per WattSec (Joule)
 		double bill = 0;			// Bill amount / month
@@ -368,14 +368,12 @@ public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocat
 		storage_map = getStorageDevicesMap(excludedHosts);
 		ssdList = storage_map.get("ssd");
 		hddList = storage_map.get("hdd");
-		/* Get all data center storage devices */
+		
 		for (IoHost ioHost : this.<IoHost> getHostList()) {
 			allDevices.addAll(ioHost.getStorageDevices());
 		}
 		
-		/* Pack into SSD */
 		for (Vm vm : vmsToMigrate) {
-			/* Get the current cost */
 			IoVm ioVm = (IoVm) vm;
 			Storage current_device = IoStorageList.getDeviceByUid(allDevices, ioVm.getStorageDevice());
 			double current_cost = costModel.getVmStorageCost(ioVm, current_device);
@@ -386,7 +384,6 @@ public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocat
 				if (pm.isSuitableForVm(vm) && isDeviceSuitableForVm(ioVm, ssd)){
 					double new_cost = costModel.getVmStorageCost(ioVm, ssd);
 					
-					/* If yhe new cost is less than the current cost then migrate VM */
 					if (new_cost < current_cost) {
 						ioVm.setStorageDevice(ssd.getUid());
 						pm.vmCreate(ioVm);
@@ -401,9 +398,7 @@ public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocat
 			}
 		}
 		vmsToMigrate.removeAll(vm_of_ssd);
-		/* Pack into HDD */
 		for (Vm vm : vmsToMigrate) {
-			/* Get the current cost */
 			IoVm ioVm = (IoVm) vm;
 			Storage current_device = IoStorageList.getDeviceByUid(allDevices, ioVm.getStorageDevice());
 			double current_cost = costModel.getVmStorageCost(ioVm, current_device);
@@ -414,7 +409,6 @@ public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocat
 				if (pm.isSuitableForVm(vm) && isDeviceSuitableForVm(ioVm, hdd)){
 					double new_cost = costModel.getVmStorageCost(ioVm, hdd);
 					
-					/* If yhe new cost is less than the current cost then migrate VM */
 					if (new_cost < current_cost) {
 						ioVm.setStorageDevice(hdd.getUid());
 						pm.vmCreate(ioVm);
@@ -429,12 +423,10 @@ public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocat
 			}
 		}
 		vmsToMigrate.removeAll(vm_of_hdd);
-		
-		/* Get the min migration Map*/;
 		return migrationMap;
 		
 	}
-	
+*/
 	/**
 	 * Get all storage devices of available hosts and separate them as SSD and HDD lists
 	 * @param excludedHosts excluded hosts from placement plan
@@ -589,27 +581,19 @@ public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocat
 	
 	/* The optimization algorithm must be implemented here */
 	public IoHost findHostForVm(Vm vm, Set<? extends Host> excludedHosts) {
-		
-		//double minCost = Double.MAX_VALUE;
 		IoHost allocatedHost = null;
-		//Storage allocatedDevice = null;
 		
 		/****** Initialization *******/
-		// cost model parameters
 		double egyPrice =  0;		// Price per WattSec (Joule)
 		double bill = 0;			// Bill amount / month
-		if (!getHostList().isEmpty())
-		{
+		if (!getHostList().isEmpty()) {
 			IoDataCenter dc = (IoDataCenter) getHostList().get(0).getDatacenter();
 			egyPrice = dc.getCostPerWattSec();
 			bill = dc.getBill();
-		}
+			}
 		
 		BcomStorageCostModel costModel = new BcomStorageCostModel(0.0, egyPrice, bill);
-		
 		List<Vm> vm_of_ssd = new ArrayList<Vm>();
-		//List<Vm> vm_of_hdd = new ArrayList<Vm>();
-		
 		List<Storage> ssdList = new ArrayList<Storage>();
 		List<Storage> hddList = new ArrayList<Storage>();
 		List<Storage> allDevices = new ArrayList<Storage>();
@@ -631,25 +615,17 @@ public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocat
 		for(Storage device : ssdList) {
 			IoSolidStateStorage ssd = (IoSolidStateStorage) device;
 			IoHost pm = ssd.getHost();
-			if (pm.isSuitableForVm(vm) && isDeviceSuitableForVm(ioVm, ssd)){
+			if (pm.isSuitableForVm(vm) && isDeviceSuitableForVm(ioVm, ssd)) {
 				double new_cost = costModel.getVmStorageCost(ioVm, ssd);
-				
 				/* If yhe new cost is less than the current cost then migrate VM */
 				if (new_cost < current_cost) {
 					allocatedHost = pm;
-					//allocatedDevice = ssd;
-					
 					ioVm.setStorageDevice(ssd.getUid());
-					//pm.vmCreate(ioVm);
 					Log.printLine("VM #" + ioVm.getId() + " allocated to host #" + pm.getId());
-					//Map<String, Object> migrate = new HashMap<String, Object>();
-					//migrate.put("vm", ioVm);
-					//migrate.put("host", pm);
-					//migrationMap.add(migrate);
 					vm_of_ssd.add(vm);
+					}
 				}
 			}
-		}
 		
 		if (!vm_of_ssd.contains(ioVm)) {
 			for(Storage device : hddList) {
@@ -657,20 +633,17 @@ public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocat
 				IoHost pm = hdd.getHost();
 				if (pm.isSuitableForVm(vm) && isDeviceSuitableForVm(ioVm, hdd)){
 					double new_cost = costModel.getVmStorageCost(ioVm, hdd);
-					
 					/* If yhe new cost is less than the current cost then migrate VM */
 					if (new_cost < current_cost) {
 						allocatedHost = pm;
-						//allocatedDevice = hdd;
 						ioVm.setStorageDevice(hdd.getUid());
 						Log.printLine("VM #" + ioVm.getId() + " allocated to host #" + pm.getId());
+						}
 					}
 				}
 			}
-		}
-		
 		return allocatedHost;
-	}
+		}
 	
 	/*
 	 * (non-Javadoc)
@@ -678,10 +651,8 @@ public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocat
 	 */
 	public List<Map<String, Object>> getNewVmPlacement(List<? extends Vm> vmsToMigrate,
 			Set<? extends Host> excludedHosts) {
-		//System.out.println(" Greedy vms to migrate "+vmsToMigrate.size()+" overUtilizzedHosts "+excludedHosts.size());
 		List<Map<String, Object>> migrationMap = new LinkedList<Map<String, Object>>();
-		//Log.printLine("Hamza: IoVmAllocationPolicyMinStorageCost called");
-		//System.out.println("vmsToMigrate "+vmsToMigrate.size());
+		IoVmList.sortByRndWrtRatio(vmsToMigrate);
 		for (Vm vm : vmsToMigrate) {
 			if (vm != null) {
 				IoHost allocatedHost = findHostForVm(vm, excludedHosts);
@@ -692,10 +663,37 @@ public class IoVmAllocationPolicyMinCostHeuristicPackDevices extends IoVmAllocat
 					migrate.put("vm", vm);
 					migrate.put("host", allocatedHost);
 					migrationMap.add(migrate);
+					}
 				}
 			}
-		}
 		return migrationMap;
-	}
-
+		}
+	
+	/**
+	 * Gets the new vm placement from under utilized host.
+	 * 
+	 * @param vmsToMigrate the vms to migrate
+	 * @param excludedHosts the excluded hosts
+	 * @return the new vm placement from under utilized host
+	 */
+	protected List<Map<String, Object>> getNewVmPlacementFromUnderUtilizedHost(
+			List<? extends Vm> vmsToMigrate,
+			Set<? extends Host> excludedHosts) {
+		List<Map<String, Object>> migrationMap = new LinkedList<Map<String, Object>>();
+		IoVmList.sortByRndWrtRatio(vmsToMigrate);
+		for (Vm vm : vmsToMigrate) {
+			if (vm != null) {
+				IoHost allocatedHost = findHostForVm(vm, excludedHosts);
+				if (allocatedHost != null) {
+					allocatedHost.vmCreate(vm);
+					Log.printLine("VM #" + vm.getId() + " allocated to host #" + allocatedHost.getId());
+					Map<String, Object> migrate = new HashMap<String, Object>();
+					migrate.put("vm", vm);
+					migrate.put("host", allocatedHost);
+					migrationMap.add(migrate);
+					}
+				}
+			}
+		return migrationMap;
+		}
 }
