@@ -29,23 +29,24 @@ echo "
 		reset
 		unset key
 		set encoding iso_8859_1
-		set title \"Coût total de placement des VM\" offset 0,-0.8,0
+		set title \"Coût de placement des VM\" offset 0,-0.8,0
 		set terminal pdf enhanced color font 'Helvetica Bold,18'
-        set output \"cost_report_mmt.pdf\"
+        set output \"cost_report_mu.pdf\"
         set datafile separator \",\"
-        set xlabel \"Nombre de VM\"
+        set xlabel \"Nombre de VM\" offset 0, 1
         set ylabel \"Coût normalisé\"
         set yrange [0:*]
         set xrange [-1:10]
 		# set format y \"%g %%\"
+		set xtics offset 0,graph 0.05
 		set key outside reverse Left top left horizontal box
 		set key font 'Helvetica Bold,13'
 		set key width 0.5
 		set key samplen 2
 		set key spacing 1
 		set grid
-        plot \"./$FILE1\" using 3:xticlabels(2) with lp ps 1 lw 2 ti \"Glouton\" ,\
+        plot \"./$FILE1\" using 3:xticlabels(2) with lp ps 1 lw 2 ti \"Approche gloutonne\" ,\
         \"./$FILE1\" using 5:xticlabels(2) with lp ps 1 lw 2 ti \"HPSD\" ,\
         \"./$FILE1\" using 7:xticlabels(2) with lp ps 1 lw 2 ti \"HPPM\" ,\
-        \"./$FILE1\" using 9:xticlabels(2) with lp ps 1 lw 2 ti \"Excate\" ,\
-        \"./$FILE1\" using 11:xticlabels(2) with lp ps 1 lw 2 ti \"Sans stockage\" " | gnuplot
+        \"./$FILE1\" using 9:xticlabels(2) with lp ps 1 lw 2 ti \"Méthode exacte\" ,\
+        \"./$FILE1\" using 11:xticlabels(2) with lp ps 1 lw 2 ti \"Beloglazov et al [26]\" " | gnuplot

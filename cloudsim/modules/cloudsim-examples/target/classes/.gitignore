@@ -1,5 +1,6 @@
 /workload/
 /mc_experiments/
+/miopsu_experiments/
 /mmt_experiments/
 /mstrgmt_experiments/
 /mu_experiments/
@@ -10,4 +11,3 @@
 /real_workload_examples/
 /rs_experiments/
 /thesis_experiments/
-/miopsu_experiments/

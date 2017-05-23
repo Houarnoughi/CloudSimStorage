@@ -34,18 +34,19 @@ echo "
 		set key samplen 2
 		set key spacing 1
 		set encoding iso_8859_1
-		set title \"Temps d'exécution des algorithmes d'optimisation\" offset 0,-0.8,0
+		set title \"Temps d'exécution\" offset 0,-0.8,0
 		set terminal pdf enhanced color font 'Helvetica Bold,18'
         set output \"big_time_report_mmt.pdf\"
         set datafile separator \",\"
-        set xlabel \"Seuil maximum d'utilisation\"
+        set xlabel \"Seuil maximum d'utilisation\" offset 0, 1
         set ylabel \"Temps d'exécution (seconde)\"
         set yrange [0:*]
         set format x \"%g %%\"
+        set xtics offset 0,graph 0.05
         set xtics 70,5,95
         set xrange [67:98]
 		set grid
-        plot \"./$FILE1\" using 3:5 with lp ps 1 lw 2 ti \"Glouton\" ,\
+        plot \"./$FILE1\" using 3:5 with lp ps 1 lw 2 ti \"Approche gloutonne\" ,\
         \"./$FILE1\" using 3:8 with lp ps 1 lw 2 ti \"HPSD\" ,\
         \"./$FILE1\" using 3:11 with lp ps 1 lw 2 ti \"HPPM\" ,\
-        \"./$FILE1\" using 3:14 with lp ps 1 lw 2 ti \"Sans stockage\" " | gnuplot
+        \"./$FILE1\" using 3:14 with lp ps 1 lw 2 ti \"Beloglazov et al [26]\" " | gnuplot
