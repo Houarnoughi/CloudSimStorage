@@ -92,6 +92,7 @@ public class ContainerAllocationPolicySimple extends ContainerAllocationPolicy {
 		return result;
 	}
 
+	@SuppressWarnings("unlikely-arg-type")
 	@Override
 	public boolean allocateVmForContainer(Container container, ContainerVm containerVm) {
 		if (containerVm.containerCreate(container)) { // if vm has been succesfully created in the host

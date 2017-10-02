@@ -29,7 +29,8 @@ public class CostumeCSVWriter {
 
     }
 
-    public void writeTofile(String[] entries) throws IOException {
+    @SuppressWarnings("deprecation")
+	public void writeTofile(String[] entries) throws IOException {
         // feed in your array (or convert your data to an array)
         try {
             writer = new CSVWriter(new FileWriter(fileAddress, true), ',',CSVWriter.NO_QUOTE_CHARACTER);
