@@ -131,14 +131,14 @@ public abstract class IoRunnerAbstract {
 			String ioVmAllocationPolicyName, String ioVmSelectionPolicyName,
 			String parameterName) {
 		IoVmAllocationPolicy ioVmAllocationPolicy = null;
-		IoVmSelectionPolicy ioVmSelectionPolicy = null;
-		if (!ioVmSelectionPolicyName.isEmpty()) {
-			ioVmSelectionPolicy = getVmSelectionPolicy(ioVmSelectionPolicyName);
-		}
-		double parameter = 0;
-		if (!parameterName.isEmpty()) {
-			parameter = Double.valueOf(parameterName);
-		}
+//		IoVmSelectionPolicy ioVmSelectionPolicy = null;
+//		if (!ioVmSelectionPolicyName.isEmpty()) {
+//			ioVmSelectionPolicy = getVmSelectionPolicy(ioVmSelectionPolicyName);
+//		}
+//		double parameter = 0;
+//		if (!parameterName.isEmpty()) {
+//			parameter = Double.valueOf(parameterName);
+//		}
 		/*
 		if (ioVmAllocationPolicyName.equals("iqr")) {
 			IoVmAllocationPolicyMigrationAbstract fallbackVmSelectionPolicy = new IoVmAllocationPolicyMigrationStaticThreshold(

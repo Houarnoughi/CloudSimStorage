@@ -859,7 +859,7 @@ public class HelperEx {
         }
     }
 
-    @SuppressWarnings("resource")
+    @SuppressWarnings({ "resource", "deprecation" })
 	public static void printResultsNew(PowerContainerDatacenter datacenter,
                                        ContainerDatacenterBroker broker,
                                        double lastClock,

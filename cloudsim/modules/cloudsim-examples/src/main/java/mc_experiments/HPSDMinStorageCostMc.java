@@ -1,8 +1,6 @@
 package mc_experiments;
 
 import java.io.IOException;
-
-import thesis_experiments.IoConstants;
 import thesis_experiments.IoRandomRunner;
 
 /**
@@ -33,7 +31,7 @@ public class HPSDMinStorageCostMc {
 	public static void main(String[] args) throws IOException {
 		boolean enableOutput = false;
 		boolean outputToFile = true;
-		String inputFolder = IoConstants.INPUT_IO_WORKLOAD_CPU_DIR;
+		final String inputFolder = System.getProperty("user.dir") + "/workload/io_mix/cpu/";
 		String outputFolder = "output";
 		String workload = "mix_vm"; // Real Workload
 		String ioVmAllocationPolicy = "HPSD"; // Heuristic Min Cost

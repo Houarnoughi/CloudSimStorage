@@ -231,7 +231,8 @@ public class IoHelper {
 			
 			if (IoConstants.REAL_IO) {
 				try {
-					File inputFolder = new File(IoConstants.INPUT_IO_WORKLOAD_STORAGE_DIR + "/" + workload);
+					final String workloadStorage = System.getProperty("user.dir") + "/workload/io_mix/storage/";
+					File inputFolder = new File(workloadStorage + "/" + workload);
 					File[] files = inputFolder.listFiles();
 					ioModel = new IoWorkloadModelInMemory(files[vmType].getAbsolutePath(),
 							IoConstants.SCHEDULING_INTERVAL, 10);
