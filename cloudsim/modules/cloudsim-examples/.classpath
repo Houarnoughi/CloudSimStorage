@@ -8,5 +8,6 @@
 	<classpathentry kind="lib" path="/home/hamza/eclipse-workspace/CloudSimStorage/cloudsim/easymock-3.0.jar"/>
 	<classpathentry kind="lib" path="/home/hamza/eclipse-workspace/CloudSimStorage/cloudsim/junit-4.10.jar"/>
 	<classpathentry kind="lib" path="/home/hamza/eclipse-workspace/CloudSimStorage/cloudsim/opencsv-4.0.jar"/>
+	<classpathentry kind="lib" path="/opt/ibm/ILOG/CPLEX_Studio_Community127/cplex/lib/cplex.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
