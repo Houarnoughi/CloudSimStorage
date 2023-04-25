@@ -1,2 +1,2 @@
 # CloudSimStorage
-It's a repo with my stuff on CloudSim storage support
+An extension of CloudSim to support storage system and I/Os
